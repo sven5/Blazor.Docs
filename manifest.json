@@ -869,11 +869,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
+      "source_relative_path": "docs/index.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "S80+2/3ZMSZ92a4nu21few=="
+          "relative_path": "docs/index.html",
+          "hash": "28FRNlQUUCdJKj6iQT8Sgg=="
         }
       },
       "is_incremental": false,
@@ -881,11 +881,11 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "articles/toc.yml",
+      "source_relative_path": "docs/toc.md",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "xVlQaX7Tk85omoiWv3O+Ag=="
+          "relative_path": "docs/toc.html",
+          "hash": "+FeAlZIUfXWAox3RmvJJlw=="
         }
       },
       "is_incremental": false,
@@ -909,7 +909,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "FoBn3u5HTBTQfNRooa9qJQ=="
+          "hash": "Vx6K6/d66icOEpBBIXF0fg=="
         }
       },
       "is_incremental": false,
