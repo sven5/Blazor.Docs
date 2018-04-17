@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction" class="text-break">Class RegisteredFunction
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides methods for invoking preregistered JavaScript functions from .NET code.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,9 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_Invoke_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.Invoke*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_Invoke__1_System_String_System_Object___" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.Invoke``1(System.String,System.Object[])">Invoke&lt;TRes&gt;(String, Object[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes the JavaScript function registered with the specified identifier.
+Arguments and return values are marshalled via JSON serialization.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -111,12 +114,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">identifier</span></td>
-        <td></td>
+        <td><p>The identifier used when registering the target function.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
-        <td></td>
+        <td><p>The arguments to pass, each of which must be JSON serializable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -131,7 +136,8 @@
     <tbody>
       <tr>
         <td><span class="xref">TRes</span></td>
-        <td></td>
+        <td><p>The result of the function invocation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +152,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TRes</span></td>
-        <td></td>
+        <td><p>The .NET type corresponding to the function&apos;s return value type. This type must be JSON deserializable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -154,7 +161,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled__1_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``1(System.String)">InvokeUnmarshalled&lt;TRes&gt;(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes the JavaScript function registered with the specified identifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,7 +181,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">identifier</span></td>
-        <td></td>
+        <td><p>The identifier used when registering the target function.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -188,7 +197,8 @@
     <tbody>
       <tr>
         <td><span class="xref">TRes</span></td>
-        <td></td>
+        <td><p>The result of the function invocation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -203,7 +213,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TRes</span></td>
-        <td></td>
+        <td><p>The .NET type corresponding to the function&apos;s return value type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -211,7 +222,12 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled__1_System_String_System_Object___" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``1(System.String,System.Object[])">InvokeUnmarshalled&lt;TRes&gt;(String, Object[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes the JavaScript function registered with the specified identifier.</p>
+<p>When using this overload, all arguments will be supplied as <span class="xref">System.Object</span>
+references, meaning that any reference types will be boxed. If you are passing
+3 or fewer arguments, it is preferable to instead call the overload that
+specifies generic type arguments for each argument.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -230,12 +246,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">identifier</span></td>
-        <td></td>
+        <td><p>The identifier used when registering the target function.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
-        <td></td>
+        <td><p>The arguments to pass, each of which will be supplied as a <span class="xref">System.Object</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -250,7 +268,8 @@
     <tbody>
       <tr>
         <td><span class="xref">TRes</span></td>
-        <td></td>
+        <td><p>The result of the function invocation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -265,7 +284,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TRes</span></td>
-        <td></td>
+        <td><p>The .NET type corresponding to the function&apos;s return value type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -273,7 +293,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled__2_System_String___0_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``2(System.String,``0)">InvokeUnmarshalled&lt;T0, TRes&gt;(String, T0)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes the JavaScript function registered with the specified identifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -292,12 +313,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">identifier</span></td>
-        <td></td>
+        <td><p>The identifier used when registering the target function.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">T0</span></td>
         <td><span class="parametername">arg0</span></td>
-        <td></td>
+        <td><p>The first argument.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -312,7 +335,8 @@
     <tbody>
       <tr>
         <td><span class="xref">TRes</span></td>
-        <td></td>
+        <td><p>The result of the function invocation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -327,11 +351,13 @@
     <tbody>
       <tr>
         <td><span class="parametername">T0</span></td>
-        <td></td>
+        <td><p>The type of the first argument.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">TRes</span></td>
-        <td></td>
+        <td><p>The .NET type corresponding to the function&apos;s return value type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -339,7 +365,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled__3_System_String___0___1_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``3(System.String,``0,``1)">InvokeUnmarshalled&lt;T0, T1, TRes&gt;(String, T0, T1)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes the JavaScript function registered with the specified identifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -358,17 +385,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">identifier</span></td>
-        <td></td>
+        <td><p>The identifier used when registering the target function.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">T0</span></td>
         <td><span class="parametername">arg0</span></td>
-        <td></td>
+        <td><p>The first argument.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">T1</span></td>
         <td><span class="parametername">arg1</span></td>
-        <td></td>
+        <td><p>The second argument.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -383,7 +413,8 @@
     <tbody>
       <tr>
         <td><span class="xref">TRes</span></td>
-        <td></td>
+        <td><p>The result of the function invocation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -398,15 +429,18 @@
     <tbody>
       <tr>
         <td><span class="parametername">T0</span></td>
-        <td></td>
+        <td><p>The type of the first argument.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">T1</span></td>
-        <td></td>
+        <td><p>The type of the second argument.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">TRes</span></td>
-        <td></td>
+        <td><p>The .NET type corresponding to the function&apos;s return value type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -414,7 +448,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled__4_System_String___0___1___2_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``4(System.String,``0,``1,``2)">InvokeUnmarshalled&lt;T0, T1, T2, TRes&gt;(String, T0, T1, T2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes the JavaScript function registered with the specified identifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -433,22 +468,26 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">identifier</span></td>
-        <td></td>
+        <td><p>The identifier used when registering the target function.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">T0</span></td>
         <td><span class="parametername">arg0</span></td>
-        <td></td>
+        <td><p>The first argument.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">T1</span></td>
         <td><span class="parametername">arg1</span></td>
-        <td></td>
+        <td><p>The second argument.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">T2</span></td>
         <td><span class="parametername">arg2</span></td>
-        <td></td>
+        <td><p>The third argument.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -463,7 +502,8 @@
     <tbody>
       <tr>
         <td><span class="xref">TRes</span></td>
-        <td></td>
+        <td><p>The result of the function invocation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -478,19 +518,23 @@
     <tbody>
       <tr>
         <td><span class="parametername">T0</span></td>
-        <td></td>
+        <td><p>The type of the first argument.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">T1</span></td>
-        <td></td>
+        <td><p>The type of the second argument.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">T2</span></td>
-        <td></td>
+        <td><p>The type of the third argument.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">TRes</span></td>
-        <td></td>
+        <td><p>The .NET type corresponding to the function&apos;s return value type.</p>
+</td>
       </tr>
     </tbody>
   </table>

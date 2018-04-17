@@ -73,7 +73,9 @@
   
   <h1 id="Microsoft_AspNetCore_Blazor_Rendering_Renderer" data-uid="Microsoft.AspNetCore.Blazor.Rendering.Renderer" class="text-break">Class Renderer
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides mechanisms for rendering hierarchies of <a class="xref" href="Microsoft.AspNetCore.Blazor.Components.IComponent.html">IComponent</a> instances,
+dispatching events to them, and notifying when the user interface is being updated.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -93,7 +95,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Rendering_Renderer__ctor_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.Renderer.#ctor*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Rendering_Renderer__ctor_System_IServiceProvider_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.Renderer.#ctor(System.IServiceProvider)">Renderer(IServiceProvider)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.Renderer.html">Renderer</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,7 +115,8 @@
       <tr>
         <td><span class="xref">System.IServiceProvider</span></td>
         <td><span class="parametername">serviceProvider</span></td>
-        <td></td>
+        <td><p>The <span class="xref">System.IServiceProvider</span> to be used when initialising components.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -122,7 +126,9 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Rendering_Renderer_AssignComponentId_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.Renderer.AssignComponentId*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Rendering_Renderer_AssignComponentId_Microsoft_AspNetCore_Blazor_Components_IComponent_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.Renderer.AssignComponentId(Microsoft.AspNetCore.Blazor.Components.IComponent)">AssignComponentId(IComponent)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Associates the <a class="xref" href="Microsoft.AspNetCore.Blazor.Components.IComponent.html">IComponent</a> with the <a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.Renderer.html">Renderer</a>, assigning
+an identifier that is unique within the scope of the <a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.Renderer.html">Renderer</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -141,7 +147,8 @@
       <tr>
         <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Components.IComponent.html">IComponent</a></td>
         <td><span class="parametername">component</span></td>
-        <td></td>
+        <td><p>The component.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -156,7 +163,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The component&apos;s assigned identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -164,7 +172,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Rendering_Renderer_DispatchEvent_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.Renderer.DispatchEvent*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Rendering_Renderer_DispatchEvent_System_Int32_System_Int32_Microsoft_AspNetCore_Blazor_UIEventArgs_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.Renderer.DispatchEvent(System.Int32,System.Int32,Microsoft.AspNetCore.Blazor.UIEventArgs)">DispatchEvent(Int32, Int32, UIEventArgs)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Notifies the specified component that an event has occurred.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -183,17 +192,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">componentId</span></td>
-        <td></td>
+        <td><p>The unique identifier for the component within the scope of this <a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.Renderer.html">Renderer</a>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">eventHandlerId</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_AttributeEventHandlerId">AttributeEventHandlerId</a> value from the original event attribute.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgs.html">UIEventArgs</a></td>
         <td><span class="parametername">eventArgs</span></td>
-        <td></td>
+        <td><p>Arguments to be passed to the event handler.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -201,7 +213,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Rendering_Renderer_InstantiateComponent_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.Renderer.InstantiateComponent*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Rendering_Renderer_InstantiateComponent_System_Type_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.Renderer.InstantiateComponent(System.Type)">InstantiateComponent(Type)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs a new component of the specified type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -220,7 +233,8 @@
       <tr>
         <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">componentType</span></td>
-        <td></td>
+        <td><p>The type of the component to instantiate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -235,7 +249,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Components.IComponent.html">IComponent</a></td>
-        <td></td>
+        <td><p>The component instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -243,7 +258,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Rendering_Renderer_UpdateDisplay_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.Renderer.UpdateDisplay*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Rendering_Renderer_UpdateDisplay_Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.Renderer.UpdateDisplay(Microsoft.AspNetCore.Blazor.Rendering.RenderBatch)">UpdateDisplay(RenderBatch)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates the visible UI.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -262,7 +278,8 @@
       <tr>
         <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.html">RenderBatch</a></td>
         <td><span class="parametername">renderBatch</span></td>
-        <td></td>
+        <td><p>The changes to the UI since the previous call.</p>
+</td>
       </tr>
     </tbody>
   </table>

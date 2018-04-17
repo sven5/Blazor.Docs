@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder" class="text-break">Class RenderTreeBuilder
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides methods for building a collection of <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html">RenderTreeFrame</a> entries.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder__ctor_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.#ctor*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder__ctor_Microsoft_AspNetCore_Blazor_Rendering_Renderer_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.#ctor(Microsoft.AspNetCore.Blazor.Rendering.Renderer)">RenderTreeBuilder(Renderer)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html">RenderTreeBuilder</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -111,7 +113,8 @@
       <tr>
         <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.Renderer.html">Renderer</a></td>
         <td><span class="parametername">renderer</span></td>
-        <td></td>
+        <td><p>The associated <a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.Renderer.html">Renderer</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -120,7 +123,8 @@
   
   
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_ChildContent" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.ChildContent">ChildContent</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The reserved parameter name used for supplying child content.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -147,7 +151,13 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame)">AddAttribute(Int32, RenderTreeFrame)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>
+Appends a frame representing an attribute.
+</p>
+<p>
+The attribute is associated with the most recently added element.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -166,12 +176,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html">RenderTreeFrame</a></td>
         <td><span class="parametername">frame</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html">RenderTreeFrame</a> holding the name and value of the attribute.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -179,7 +191,14 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIEventHandler_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIEventHandler)">AddAttribute(Int32, String, UIEventHandler)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>
+Appends a frame representing an <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandler.html">UIEventHandler</a>-valued attribute.
+</p>
+<p>
+The attribute is associated with the most recently added element. If the value is <code>null</code> and the
+current element is not a component, the frame will be omitted.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,25 +217,181 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name of the attribute.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandler.html">UIEventHandler</a></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The value of the attribute.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Action_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Action)">AddAttribute(Int32, String, Action)</h4>
+  <div class="markdown level1 summary"><p>
+Appends a frame representing an <span class="xref">System.Action</span>-valued attribute.
+</p>
+<p>
+The attribute is associated with the most recently added element. If the value is <code>null</code> and the
+current element is not a component, the frame will be omitted.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAttribute(int sequence, string name, Action value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the attribute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the attribute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Boolean_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Boolean)">AddAttribute(Int32, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>
+Appends a frame representing a bool-valued attribute.
+</p>
+<p>
+The attribute is associated with the most recently added element. If the value is <code>false</code> and the
+current element is not a component, the frame will be omitted.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAttribute(int sequence, string name, bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the attribute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the attribute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_MulticastDelegate_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.MulticastDelegate)">AddAttribute(Int32, String, MulticastDelegate)</h4>
+  <div class="markdown level1 summary"><p>
+Appends a frame representing a delegate-valued attribute.
+</p>
+<p>
+The attribute is associated with the most recently added element. If the value is <code>null</code> and the
+current element is not a component, the frame will be omitted.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAttribute(int sequence, string name, MulticastDelegate value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the attribute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.MulticastDelegate</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the attribute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_MulticastDelegate__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is provided for infrastructure purposes, and is used to be
+<a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html">UIEventHandlerRenderTreeBuilderExtensions</a> to provide support for delegates of specific
+types. For a good programming experience when using a custom delegate type, define an
+extension method similar to 
+<a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIChangeEventHandler_">AddAttribute(RenderTreeBuilder, Int32, String, UIChangeEventHandler)</a>
+that calls this method.</p>
+</div>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Object_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Object)">AddAttribute(Int32, String, Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Appends a frame representing a string-valued attribute.
+The attribute is associated with the most recently added element. If the value is <code>null</code>, or
+the <span class="xref">System.Boolean</span> value <code>false</code> and the current element is not a component, the 
+frame will be omitted.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -235,17 +410,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name of the attribute.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The value of the attribute.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -253,7 +431,14 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_String_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.String)">AddAttribute(Int32, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>
+Appends a frame representing a string-valued attribute.
+</p>
+<p>
+The attribute is associated with the most recently added element. If the value is <code>null</code> and the
+current element is not a component, the frame will be omitted.
+</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -272,17 +457,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name of the attribute.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The value of the attribute.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -290,7 +478,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_System_Int32_Microsoft_AspNetCore_Blazor_RenderFragment_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent(System.Int32,Microsoft.AspNetCore.Blazor.RenderFragment)">AddContent(Int32, RenderFragment)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Appends frames representing an arbitrary fragment of content.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -309,12 +498,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderFragment.html">RenderFragment</a></td>
         <td><span class="parametername">fragment</span></td>
-        <td></td>
+        <td><p>Content to append.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -322,7 +513,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_System_Int32_System_Object_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent(System.Int32,System.Object)">AddContent(Int32, Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Appends a frame representing text content.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -341,12 +533,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">textContent</span></td>
-        <td></td>
+        <td><p>Content for the new text frame.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -354,7 +548,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_System_Int32_System_String_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent(System.Int32,System.String)">AddContent(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Appends a frame representing text content.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -373,12 +568,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">textContent</span></td>
-        <td></td>
+        <td><p>Content for the new text frame.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -386,7 +583,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_Clear_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.Clear*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_Clear" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.Clear">Clear()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clears the builder.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -396,7 +594,9 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_CloseComponent_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.CloseComponent*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_CloseComponent" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.CloseComponent">CloseComponent()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Marks a previously appended component frame as closed. Calls to this method
+must be balanced with calls to <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_OpenComponent__1_System_Int32_">OpenComponent&lt;TComponent&gt;(Int32)</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -406,7 +606,9 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_CloseElement_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.CloseElement*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_CloseElement" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.CloseElement">CloseElement()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Marks a previously appended element frame as closed. Calls to this method
+must be balanced with calls to <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_OpenElement_System_Int32_System_String_">OpenElement(Int32, String)</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -416,7 +618,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_GetFrames_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.GetFrames*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_GetFrames" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.GetFrames">GetFrames()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html">RenderTreeFrame</a> values that have been appended.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -433,7 +636,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.ArrayRange-1.html">ArrayRange</a>&lt;<a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html">RenderTreeFrame</a>&gt;</td>
-        <td></td>
+        <td><p>An array range of <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html">RenderTreeFrame</a> values.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -441,7 +645,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_OpenComponent_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.OpenComponent*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_OpenComponent_System_Int32_System_Type_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.OpenComponent(System.Int32,System.Type)">OpenComponent(Int32, Type)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Appends a frame representing a child component.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -460,12 +665,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">componentType</span></td>
-        <td></td>
+        <td><p>The type of the child component.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -473,7 +680,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_OpenComponent_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.OpenComponent*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_OpenComponent__1_System_Int32_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.OpenComponent``1(System.Int32)">OpenComponent&lt;TComponent&gt;(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Appends a frame representing a child component.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -493,7 +701,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -508,7 +717,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TComponent</span></td>
-        <td></td>
+        <td><p>The type of the child component.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -516,7 +726,11 @@
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_OpenElement_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.OpenElement*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_OpenElement_System_Int32_System_String_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.OpenElement(System.Int32,System.String)">OpenElement(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Appends a frame representing an element, i.e., a container for other frames.
+In order for the <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html">RenderTreeBuilder</a> state to be valid, you must
+also call <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_CloseElement">CloseElement()</a> immediately after appending the
+new element&apos;s child frames.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -535,15 +749,27 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">sequence</span></td>
-        <td></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">elementName</span></td>
-        <td></td>
+        <td><p>A value representing the type of the element.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIChangeEventHandler_">UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIChangeEventHandler)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_">UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIKeyboardEventHandler)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIMouseEventHandler_">UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIMouseEventHandler)</a>
+  </div>
 </article>
           </div>
           

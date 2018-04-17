@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_AspNetCore_Blazor_Components_BindAttributes" data-uid="Microsoft.AspNetCore.Blazor.Components.BindAttributes" class="text-break">Class BindAttributes
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Infrastructure for the discovery of <code>bind</code> attributes for markup elements.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -88,8 +89,13 @@
 [BindInputElement(&quot;checkbox&quot;, null, &quot;value&quot;, &quot;onchange&quot;)]
 [BindInputElement(&quot;text&quot;, null, &quot;value&quot;, &quot;onchange&quot;)]
 [BindElement(&quot;select&quot;, null, &quot;value&quot;, &quot;onchange&quot;)]
+[BindElement(&quot;textarea&quot;, null, &quot;value&quot;, &quot;onchange&quot;)]
 public static class BindAttributes : Object</code></pre>
   </div>
+  <h5 id="Microsoft_AspNetCore_Blazor_Components_BindAttributes_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>To extend the set of <code>bind</code> attributes, define a public class named 
+<code>BindAttributes</code> and annotate it with the appropriate attributes.</p>
+</div>
 </article>
           </div>
           

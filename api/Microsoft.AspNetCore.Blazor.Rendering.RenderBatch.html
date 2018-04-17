@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_AspNetCore_Blazor_Rendering_RenderBatch" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RenderBatch" class="text-break">Class RenderBatch
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Describes a set of UI changes.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -92,7 +93,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_DisposedComponentIDs_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedComponentIDs*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_DisposedComponentIDs" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedComponentIDs">DisposedComponentIDs</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the IDs of the components that were disposed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -115,9 +117,38 @@
   </table>
   
   
+  <a id="Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_DisposedEventHandlerIDs_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedEventHandlerIDs*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_DisposedEventHandlerIDs" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedEventHandlerIDs">DisposedEventHandlerIDs</h4>
+  <div class="markdown level1 summary"><p>Gets the IDs of the event handlers that were disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayRange&lt;int&gt; DisposedEventHandlerIDs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.ArrayRange-1.html">ArrayRange</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_ReferenceFrames_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.ReferenceFrames*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_ReferenceFrames" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.ReferenceFrames">ReferenceFrames</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets render frames that may be referenced by entries in <a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.html#Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_UpdatedComponents">UpdatedComponents</a>.
+For example, edit entries of type <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_PrependFrame">PrependFrame</a>
+will point to an entry in this array to specify the subtree to be prepended.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -142,7 +173,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_UpdatedComponents_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.UpdatedComponents*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_UpdatedComponents" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.UpdatedComponents">UpdatedComponents</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the changes to components that were added or updated.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

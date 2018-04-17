@@ -73,7 +73,8 @@
   
   <h1 id="Microsoft_AspNetCore_Blazor_Services_IUriHelper" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper" class="text-break">Interface IUriHelper
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Helpers for working with URIs and navigation state.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.html">Microsoft.AspNetCore.Blazor.Services</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.dll</h6>
@@ -87,7 +88,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Services_IUriHelper_GetAbsoluteUri_" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper.GetAbsoluteUri*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Services_IUriHelper_GetAbsoluteUri" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper.GetAbsoluteUri">GetAbsoluteUri()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the current absolute URI.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -104,7 +106,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The current absolute URI.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -112,7 +115,9 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Services_IUriHelper_GetBaseUriPrefix_" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper.GetBaseUriPrefix*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Services_IUriHelper_GetBaseUriPrefix" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper.GetBaseUriPrefix">GetBaseUriPrefix()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the URI prefix that can be prepended before URI paths to produce an absolute URI.
+Typically this corresponds to the &apos;href&apos; attribute on the document&apos;s &lt;base&gt; element.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -129,7 +134,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The URI prefix.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -137,7 +143,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Services_IUriHelper_NavigateTo_" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper.NavigateTo*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Services_IUriHelper_NavigateTo_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper.NavigateTo(System.String)">NavigateTo(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Navigates to the specified URI.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -156,7 +163,9 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">uri</span></td>
-        <td></td>
+        <td><p>The destination URI. This can be absolute, or relative to the base URI
+prefix (as returned by <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html#Microsoft_AspNetCore_Blazor_Services_IUriHelper_GetBaseUriPrefix">GetBaseUriPrefix()</a>).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -164,7 +173,9 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Services_IUriHelper_ToAbsoluteUri_" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper.ToAbsoluteUri*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Services_IUriHelper_ToAbsoluteUri_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper.ToAbsoluteUri(System.String)">ToAbsoluteUri(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts a relative URI into an absolute one (by resolving it
+relative to the current absolute URI).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -183,7 +194,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">href</span></td>
-        <td></td>
+        <td><p>The relative URI.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -198,7 +210,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Uri</span></td>
-        <td></td>
+        <td><p>The absolute URI.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -206,7 +219,9 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Services_IUriHelper_ToBaseRelativePath_" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper.ToBaseRelativePath*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Services_IUriHelper_ToBaseRelativePath_System_String_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper.ToBaseRelativePath(System.String,System.String)">ToBaseRelativePath(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Given a base URI prefix (e.g., one previously returned by <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html#Microsoft_AspNetCore_Blazor_Services_IUriHelper_GetBaseUriPrefix">GetBaseUriPrefix()</a>),
+converts an absolute URI into one relative to the base URI prefix.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -225,12 +240,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">baseUriPrefix</span></td>
-        <td></td>
+        <td><p>The base URI prefix (e.g., previously returned by <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html#Microsoft_AspNetCore_Blazor_Services_IUriHelper_GetBaseUriPrefix">GetBaseUriPrefix()</a>).</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">locationAbsolute</span></td>
-        <td></td>
+        <td><p>An absolute URI that is within the space of the base URI prefix.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -245,7 +262,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>A relative URI path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -254,7 +272,8 @@
   
   
   <h4 id="Microsoft_AspNetCore_Blazor_Services_IUriHelper_OnLocationChanged" data-uid="Microsoft.AspNetCore.Blazor.Services.IUriHelper.OnLocationChanged">OnLocationChanged</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An event that fires when the navigation location has changed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

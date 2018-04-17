@@ -1,6 +1,36 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: api
+  name: Blazor API
+  href: api/index.html
+- uid: client-side/blazor/components/index
+  name: Blazor components
+  href: docs/components/index.html
+- uid: client-side/blazor/dependency-injection
+  name: Dependency injection in Blazor
+  href: docs/dependency-injection.html
+- uid: client-side/blazor/get-started
+  name: Get started with Blazor
+  href: docs/get-started.html
+- uid: client-side/blazor/host-and-deploy/index
+  name: Host and deploy Blazor
+  href: docs/host-and-deploy/index.html
+- uid: client-side/blazor/index
+  name: Blazor preview documentation
+  href: docs/index.html
+- uid: client-side/blazor/introduction/faq
+  name: Frequently asked questions (FAQ) about Blazor
+  href: docs/introduction/faq.html
+- uid: client-side/blazor/introduction/index
+  name: Introduction to Blazor
+  href: docs/introduction/index.html
+- uid: client-side/blazor/layouts
+  name: Blazor layouts
+  href: docs/layouts.html
+- uid: client-side/blazor/tutorials/first-app
+  name: Build your first Blazor app
+  href: docs/tutorials/build-your-first-blazor-app.html
 - uid: Microsoft.AspNetCore.Blazor
   name: Microsoft.AspNetCore.Blazor
   href: api/Microsoft.AspNetCore.Blazor.html
@@ -31,6 +61,24 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.#ctor
   fullName: Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.BrowserHttpMessageHandler
   nameWithType: BrowserHttpMessageHandler.BrowserHttpMessageHandler
+- uid: Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.DefaultCredentials
+  name: DefaultCredentials
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.html#Microsoft_AspNetCore_Blazor_Browser_Http_BrowserHttpMessageHandler_DefaultCredentials
+  commentId: P:Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.DefaultCredentials
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.DefaultCredentials
+  nameWithType: BrowserHttpMessageHandler.DefaultCredentials
+- uid: Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.DefaultCredentials*
+  name: DefaultCredentials
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.html#Microsoft_AspNetCore_Blazor_Browser_Http_BrowserHttpMessageHandler_DefaultCredentials_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.DefaultCredentials
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.DefaultCredentials
+  nameWithType: BrowserHttpMessageHandler.DefaultCredentials
+- uid: Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.FetchArgs
+  name: FetchArgs
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.html#Microsoft_AspNetCore_Blazor_Browser_Http_BrowserHttpMessageHandler_FetchArgs
+  commentId: F:Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.FetchArgs
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.FetchArgs
+  nameWithType: BrowserHttpMessageHandler.FetchArgs
 - uid: Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
   name: SendAsync(HttpRequestMessage, CancellationToken)
   href: api/Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.html#Microsoft_AspNetCore_Blazor_Browser_Http_BrowserHttpMessageHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
@@ -43,6 +91,36 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.SendAsync
   fullName: Microsoft.AspNetCore.Blazor.Browser.Http.BrowserHttpMessageHandler.SendAsync
   nameWithType: BrowserHttpMessageHandler.SendAsync
+- uid: Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption
+  name: FetchCredentialsOption
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption
+  nameWithType: FetchCredentialsOption
+- uid: Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.Include
+  name: Include
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.html#Microsoft_AspNetCore_Blazor_Browser_Http_FetchCredentialsOption_Include
+  commentId: F:Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.Include
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.Include
+  nameWithType: FetchCredentialsOption.Include
+- uid: Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.Omit
+  name: Omit
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.html#Microsoft_AspNetCore_Blazor_Browser_Http_FetchCredentialsOption_Omit
+  commentId: F:Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.Omit
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.Omit
+  nameWithType: FetchCredentialsOption.Omit
+- uid: Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.SameOrigin
+  name: SameOrigin
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.html#Microsoft_AspNetCore_Blazor_Browser_Http_FetchCredentialsOption_SameOrigin
+  commentId: F:Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.SameOrigin
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.SameOrigin
+  nameWithType: FetchCredentialsOption.SameOrigin
+- uid: Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.value__
+  name: value__
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.html#Microsoft_AspNetCore_Blazor_Browser_Http_FetchCredentialsOption_value__
+  commentId: F:Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.value__
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.value__
+  nameWithType: FetchCredentialsOption.value__
 - uid: Microsoft.AspNetCore.Blazor.Browser.Interop
   name: Microsoft.AspNetCore.Blazor.Browser.Interop
   href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.html
@@ -481,6 +559,39 @@ references:
   commentId: T:Microsoft.AspNetCore.Blazor.Components.BindMethods
   fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods
   nameWithType: BindMethods
+- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue*
+  name: GetEventHandlerValue
+  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_GetEventHandlerValue_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue
+  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue
+  nameWithType: BindMethods.GetEventHandlerValue
+- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue``1(System.Action)
+  name: GetEventHandlerValue<T>(Action)
+  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_GetEventHandlerValue__1_System_Action_
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue``1(System.Action)
+  name.vb: GetEventHandlerValue(Of T)(Action)
+  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue<T>(System.Action)
+  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue(Of T)(System.Action)
+  nameWithType: BindMethods.GetEventHandlerValue<T>(Action)
+  nameWithType.vb: BindMethods.GetEventHandlerValue(Of T)(Action)
+- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue``1(System.Action{``0})
+  name: GetEventHandlerValue<T>(Action<T>)
+  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_GetEventHandlerValue__1_System_Action___0__
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue``1(System.Action{``0})
+  name.vb: GetEventHandlerValue(Of T)(Action(Of T))
+  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue<T>(System.Action<T>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue(Of T)(System.Action(Of T))
+  nameWithType: BindMethods.GetEventHandlerValue<T>(Action<T>)
+  nameWithType.vb: BindMethods.GetEventHandlerValue(Of T)(Action(Of T))
+- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue``1(System.String)
+  name: GetEventHandlerValue<T>(String)
+  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_GetEventHandlerValue__1_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue``1(System.String)
+  name.vb: GetEventHandlerValue(Of T)(String)
+  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue<T>(System.String)
+  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue(Of T)(System.String)
+  nameWithType: BindMethods.GetEventHandlerValue<T>(String)
+  nameWithType.vb: BindMethods.GetEventHandlerValue(Of T)(String)
 - uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetValue(System.DateTime,System.String)
   name: GetValue(DateTime, String)
   href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_GetValue_System_DateTime_System_String_
@@ -640,24 +751,6 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.#ctor
   fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.BlazorComponent
   nameWithType: BlazorComponent.BlazorComponent
-- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.bind(System.DateTime,System.String)
-  name: bind(DateTime, String)
-  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_bind_System_DateTime_System_String_
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.bind(System.DateTime,System.String)
-  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.bind(System.DateTime, System.String)
-  nameWithType: BlazorComponent.bind(DateTime, String)
-- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.bind(System.Object)
-  name: bind(Object)
-  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_bind_System_Object_
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.bind(System.Object)
-  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.bind(System.Object)
-  nameWithType: BlazorComponent.bind(Object)
-- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.bind*
-  name: bind
-  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_bind_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.bind
-  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.bind
-  nameWithType: BlazorComponent.bind
 - uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.BuildRenderTree(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder)
   name: BuildRenderTree(RenderTreeBuilder)
   href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_BuildRenderTree_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_
@@ -676,18 +769,6 @@ references:
   commentId: F:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.BuildRenderTreeMethodName
   fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.BuildRenderTreeMethodName
   nameWithType: BlazorComponent.BuildRenderTreeMethodName
-- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.ExecuteAsync
-  name: ExecuteAsync()
-  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_ExecuteAsync
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.ExecuteAsync
-  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.ExecuteAsync()
-  nameWithType: BlazorComponent.ExecuteAsync()
-- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.ExecuteAsync*
-  name: ExecuteAsync
-  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_ExecuteAsync_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.ExecuteAsync
-  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.ExecuteAsync
-  nameWithType: BlazorComponent.ExecuteAsync
 - uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IComponent#Init(Microsoft.AspNetCore.Blazor.Components.RenderHandle)
   name: IComponent.Init(RenderHandle)
   href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IComponent_Init_Microsoft_AspNetCore_Blazor_Components_RenderHandle_
@@ -720,33 +801,6 @@ references:
   fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent
   nameWithType: BlazorComponent.IHandleEvent.HandleEvent
   nameWithType.vb: BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent
-- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onchange(System.Action{System.Object})
-  name: onchange(Action<Object>)
-  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_onchange_System_Action_System_Object__
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onchange(System.Action{System.Object})
-  name.vb: onchange(Action(Of Object))
-  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onchange(System.Action<System.Object>)
-  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onchange(System.Action(Of System.Object))
-  nameWithType: BlazorComponent.onchange(Action<Object>)
-  nameWithType.vb: BlazorComponent.onchange(Action(Of Object))
-- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onchange*
-  name: onchange
-  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_onchange_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onchange
-  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onchange
-  nameWithType: BlazorComponent.onchange
-- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onclick(System.Action)
-  name: onclick(Action)
-  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_onclick_System_Action_
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onclick(System.Action)
-  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onclick(System.Action)
-  nameWithType: BlazorComponent.onclick(Action)
-- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onclick*
-  name: onclick
-  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_onclick_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onclick
-  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.onclick
-  nameWithType: BlazorComponent.onclick
 - uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnInit
   name: OnInit()
   href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_OnInit
@@ -831,6 +885,54 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.StateHasChanged
   fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.StateHasChanged
   nameWithType: BlazorComponent.StateHasChanged
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute
+  name: EventHandlerAttribute
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute
+  nameWithType: EventHandlerAttribute
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.#ctor(System.String,System.Type)
+  name: EventHandlerAttribute(String, Type)
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.html#Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute__ctor_System_String_System_Type_
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.#ctor(System.String,System.Type)
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventHandlerAttribute(System.String, System.Type)
+  nameWithType: EventHandlerAttribute.EventHandlerAttribute(String, Type)
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.#ctor*
+  name: EventHandlerAttribute
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.html#Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventHandlerAttribute
+  nameWithType: EventHandlerAttribute.EventHandlerAttribute
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.AttributeName
+  name: AttributeName
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.html#Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute_AttributeName
+  commentId: P:Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.AttributeName
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.AttributeName
+  nameWithType: EventHandlerAttribute.AttributeName
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.AttributeName*
+  name: AttributeName
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.html#Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute_AttributeName_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.AttributeName
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.AttributeName
+  nameWithType: EventHandlerAttribute.AttributeName
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventArgsType
+  name: EventArgsType
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.html#Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute_EventArgsType
+  commentId: P:Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventArgsType
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventArgsType
+  nameWithType: EventHandlerAttribute.EventArgsType
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventArgsType*
+  name: EventArgsType
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.html#Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute_EventArgsType_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventArgsType
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventArgsType
+  nameWithType: EventHandlerAttribute.EventArgsType
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlers
+  name: EventHandlers
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlers.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Components.EventHandlers
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlers
+  nameWithType: EventHandlers
 - uid: Microsoft.AspNetCore.Blazor.Components.IComponent
   name: IComponent
   href: api/Microsoft.AspNetCore.Blazor.Components.IComponent.html
@@ -1353,354 +1455,6 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.SetParameters
   fullName: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.SetParameters
   nameWithType: LayoutDisplay.SetParameters
-- uid: Microsoft.AspNetCore.Blazor.Razor
-  name: Microsoft.AspNetCore.Blazor.Razor
-  href: api/Microsoft.AspNetCore.Blazor.Razor.html
-  commentId: N:Microsoft.AspNetCore.Blazor.Razor
-  fullName: Microsoft.AspNetCore.Blazor.Razor
-  nameWithType: Microsoft.AspNetCore.Blazor.Razor
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems
-  name: BlazorCodeDocItems
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems.html
-  commentId: T:Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems
-  nameWithType: BlazorCodeDocItems
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems.ClassName
-  name: ClassName
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems.html#Microsoft_AspNetCore_Blazor_Razor_BlazorCodeDocItems_ClassName
-  commentId: F:Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems.ClassName
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems.ClassName
-  nameWithType: BlazorCodeDocItems.ClassName
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems.Namespace
-  name: Namespace
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems.html#Microsoft_AspNetCore_Blazor_Razor_BlazorCodeDocItems_Namespace
-  commentId: F:Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems.Namespace
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorCodeDocItems.Namespace
-  nameWithType: BlazorCodeDocItems.Namespace
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorConfiguration
-  name: BlazorConfiguration
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorConfiguration.html
-  commentId: T:Microsoft.AspNetCore.Blazor.Razor.BlazorConfiguration
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorConfiguration
-  nameWithType: BlazorConfiguration
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorConfiguration.Default
-  name: Default
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorConfiguration.html#Microsoft_AspNetCore_Blazor_Razor_BlazorConfiguration_Default
-  commentId: F:Microsoft.AspNetCore.Blazor.Razor.BlazorConfiguration.Default
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorConfiguration.Default
-  nameWithType: BlazorConfiguration.Default
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer
-  name: BlazorExtensionInitializer
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.html
-  commentId: T:Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer
-  nameWithType: BlazorExtensionInitializer
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.#ctor
-  name: BlazorExtensionInitializer()
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.html#Microsoft_AspNetCore_Blazor_Razor_BlazorExtensionInitializer__ctor
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.BlazorExtensionInitializer()
-  nameWithType: BlazorExtensionInitializer.BlazorExtensionInitializer()
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.#ctor*
-  name: BlazorExtensionInitializer
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.html#Microsoft_AspNetCore_Blazor_Razor_BlazorExtensionInitializer__ctor_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.BlazorExtensionInitializer
-  nameWithType: BlazorExtensionInitializer.BlazorExtensionInitializer
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.DeclarationConfiguration
-  name: DeclarationConfiguration
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.html#Microsoft_AspNetCore_Blazor_Razor_BlazorExtensionInitializer_DeclarationConfiguration
-  commentId: F:Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.DeclarationConfiguration
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.DeclarationConfiguration
-  nameWithType: BlazorExtensionInitializer.DeclarationConfiguration
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.DefaultConfiguration
-  name: DefaultConfiguration
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.html#Microsoft_AspNetCore_Blazor_Razor_BlazorExtensionInitializer_DefaultConfiguration
-  commentId: F:Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.DefaultConfiguration
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.DefaultConfiguration
-  nameWithType: BlazorExtensionInitializer.DefaultConfiguration
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Initialize(Microsoft.AspNetCore.Razor.Language.RazorProjectEngineBuilder)
-  name: Initialize(RazorProjectEngineBuilder)
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.html#Microsoft_AspNetCore_Blazor_Razor_BlazorExtensionInitializer_Initialize_Microsoft_AspNetCore_Razor_Language_RazorProjectEngineBuilder_
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Initialize(Microsoft.AspNetCore.Razor.Language.RazorProjectEngineBuilder)
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Initialize(Microsoft.AspNetCore.Razor.Language.RazorProjectEngineBuilder)
-  nameWithType: BlazorExtensionInitializer.Initialize(RazorProjectEngineBuilder)
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Initialize*
-  name: Initialize
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.html#Microsoft_AspNetCore_Blazor_Razor_BlazorExtensionInitializer_Initialize_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Initialize
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Initialize
-  nameWithType: BlazorExtensionInitializer.Initialize
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Register(Microsoft.AspNetCore.Razor.Language.RazorProjectEngineBuilder)
-  name: Register(RazorProjectEngineBuilder)
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.html#Microsoft_AspNetCore_Blazor_Razor_BlazorExtensionInitializer_Register_Microsoft_AspNetCore_Razor_Language_RazorProjectEngineBuilder_
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Register(Microsoft.AspNetCore.Razor.Language.RazorProjectEngineBuilder)
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Register(Microsoft.AspNetCore.Razor.Language.RazorProjectEngineBuilder)
-  nameWithType: BlazorExtensionInitializer.Register(RazorProjectEngineBuilder)
-- uid: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Register*
-  name: Register
-  href: api/Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.html#Microsoft_AspNetCore_Blazor_Razor_BlazorExtensionInitializer_Register_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Register
-  fullName: Microsoft.AspNetCore.Blazor.Razor.BlazorExtensionInitializer.Register
-  nameWithType: BlazorExtensionInitializer.Register
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode
-  name: ComponentBodyExtensionNode
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html
-  commentId: T:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode
-  nameWithType: ComponentBodyExtensionNode
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.#ctor
-  name: ComponentBodyExtensionNode()
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode__ctor
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.ComponentBodyExtensionNode()
-  nameWithType: ComponentBodyExtensionNode.ComponentBodyExtensionNode()
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.#ctor(Microsoft.AspNetCore.Razor.Language.Intermediate.TagHelperBodyIntermediateNode)
-  name: ComponentBodyExtensionNode(TagHelperBodyIntermediateNode)
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode__ctor_Microsoft_AspNetCore_Razor_Language_Intermediate_TagHelperBodyIntermediateNode_
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.#ctor(Microsoft.AspNetCore.Razor.Language.Intermediate.TagHelperBodyIntermediateNode)
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.ComponentBodyExtensionNode(Microsoft.AspNetCore.Razor.Language.Intermediate.TagHelperBodyIntermediateNode)
-  nameWithType: ComponentBodyExtensionNode.ComponentBodyExtensionNode(TagHelperBodyIntermediateNode)
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.#ctor*
-  name: ComponentBodyExtensionNode
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode__ctor_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.ComponentBodyExtensionNode
-  nameWithType: ComponentBodyExtensionNode.ComponentBodyExtensionNode
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Accept(Microsoft.AspNetCore.Razor.Language.Intermediate.IntermediateNodeVisitor)
-  name: Accept(IntermediateNodeVisitor)
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode_Accept_Microsoft_AspNetCore_Razor_Language_Intermediate_IntermediateNodeVisitor_
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Accept(Microsoft.AspNetCore.Razor.Language.Intermediate.IntermediateNodeVisitor)
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Accept(Microsoft.AspNetCore.Razor.Language.Intermediate.IntermediateNodeVisitor)
-  nameWithType: ComponentBodyExtensionNode.Accept(IntermediateNodeVisitor)
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Accept*
-  name: Accept
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode_Accept_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Accept
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Accept
-  nameWithType: ComponentBodyExtensionNode.Accept
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Children
-  name: Children
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode_Children
-  commentId: P:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Children
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Children
-  nameWithType: ComponentBodyExtensionNode.Children
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Children*
-  name: Children
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode_Children_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Children
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.Children
-  nameWithType: ComponentBodyExtensionNode.Children
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagMode
-  name: TagMode
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode_TagMode
-  commentId: P:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagMode
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagMode
-  nameWithType: ComponentBodyExtensionNode.TagMode
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagMode*
-  name: TagMode
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode_TagMode_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagMode
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagMode
-  nameWithType: ComponentBodyExtensionNode.TagMode
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagName
-  name: TagName
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode_TagName
-  commentId: P:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagName
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagName
-  nameWithType: ComponentBodyExtensionNode.TagName
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagName*
-  name: TagName
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode_TagName_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagName
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.TagName
-  nameWithType: ComponentBodyExtensionNode.TagName
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.WriteNode(Microsoft.AspNetCore.Razor.Language.CodeGeneration.CodeTarget,Microsoft.AspNetCore.Razor.Language.CodeGeneration.CodeRenderingContext)
-  name: WriteNode(CodeTarget, CodeRenderingContext)
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode_WriteNode_Microsoft_AspNetCore_Razor_Language_CodeGeneration_CodeTarget_Microsoft_AspNetCore_Razor_Language_CodeGeneration_CodeRenderingContext_
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.WriteNode(Microsoft.AspNetCore.Razor.Language.CodeGeneration.CodeTarget,Microsoft.AspNetCore.Razor.Language.CodeGeneration.CodeRenderingContext)
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.WriteNode(Microsoft.AspNetCore.Razor.Language.CodeGeneration.CodeTarget, Microsoft.AspNetCore.Razor.Language.CodeGeneration.CodeRenderingContext)
-  nameWithType: ComponentBodyExtensionNode.WriteNode(CodeTarget, CodeRenderingContext)
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.WriteNode*
-  name: WriteNode
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.html#Microsoft_AspNetCore_Blazor_Razor_ComponentBodyExtensionNode_WriteNode_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.WriteNode
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentBodyExtensionNode.WriteNode
-  nameWithType: ComponentBodyExtensionNode.WriteNode
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass
-  name: ComponentDocumentClassifierPass
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html
-  commentId: T:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass
-  nameWithType: ComponentDocumentClassifierPass
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.#ctor
-  name: ComponentDocumentClassifierPass()
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass__ctor
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.ComponentDocumentClassifierPass()
-  nameWithType: ComponentDocumentClassifierPass.ComponentDocumentClassifierPass()
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.#ctor*
-  name: ComponentDocumentClassifierPass
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass__ctor_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.ComponentDocumentClassifierPass
-  nameWithType: ComponentDocumentClassifierPass.ComponentDocumentClassifierPass
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.BaseNamespace
-  name: BaseNamespace
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_BaseNamespace
-  commentId: P:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.BaseNamespace
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.BaseNamespace
-  nameWithType: ComponentDocumentClassifierPass.BaseNamespace
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.BaseNamespace*
-  name: BaseNamespace
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_BaseNamespace_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.BaseNamespace
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.BaseNamespace
-  nameWithType: ComponentDocumentClassifierPass.BaseNamespace
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.ComponentDocumentKind
-  name: ComponentDocumentKind
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_ComponentDocumentKind
-  commentId: F:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.ComponentDocumentKind
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.ComponentDocumentKind
-  nameWithType: ComponentDocumentClassifierPass.ComponentDocumentKind
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.DocumentKind
-  name: DocumentKind
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_DocumentKind
-  commentId: P:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.DocumentKind
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.DocumentKind
-  nameWithType: ComponentDocumentClassifierPass.DocumentKind
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.DocumentKind*
-  name: DocumentKind
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_DocumentKind_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.DocumentKind
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.DocumentKind
-  nameWithType: ComponentDocumentClassifierPass.DocumentKind
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.IsMatch(Microsoft.AspNetCore.Razor.Language.RazorCodeDocument,Microsoft.AspNetCore.Razor.Language.Intermediate.DocumentIntermediateNode)
-  name: IsMatch(RazorCodeDocument, DocumentIntermediateNode)
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_IsMatch_Microsoft_AspNetCore_Razor_Language_RazorCodeDocument_Microsoft_AspNetCore_Razor_Language_Intermediate_DocumentIntermediateNode_
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.IsMatch(Microsoft.AspNetCore.Razor.Language.RazorCodeDocument,Microsoft.AspNetCore.Razor.Language.Intermediate.DocumentIntermediateNode)
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.IsMatch(Microsoft.AspNetCore.Razor.Language.RazorCodeDocument, Microsoft.AspNetCore.Razor.Language.Intermediate.DocumentIntermediateNode)
-  nameWithType: ComponentDocumentClassifierPass.IsMatch(RazorCodeDocument, DocumentIntermediateNode)
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.IsMatch*
-  name: IsMatch
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_IsMatch_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.IsMatch
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.IsMatch
-  nameWithType: ComponentDocumentClassifierPass.IsMatch
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.MangleClassNames
-  name: MangleClassNames
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_MangleClassNames
-  commentId: P:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.MangleClassNames
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.MangleClassNames
-  nameWithType: ComponentDocumentClassifierPass.MangleClassNames
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.MangleClassNames*
-  name: MangleClassNames
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_MangleClassNames_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.MangleClassNames
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.MangleClassNames
-  nameWithType: ComponentDocumentClassifierPass.MangleClassNames
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnDocumentStructureCreated(Microsoft.AspNetCore.Razor.Language.RazorCodeDocument,Microsoft.AspNetCore.Razor.Language.Intermediate.NamespaceDeclarationIntermediateNode,Microsoft.AspNetCore.Razor.Language.Intermediate.ClassDeclarationIntermediateNode,Microsoft.AspNetCore.Razor.Language.Intermediate.MethodDeclarationIntermediateNode)
-  name: OnDocumentStructureCreated(RazorCodeDocument, NamespaceDeclarationIntermediateNode, ClassDeclarationIntermediateNode, MethodDeclarationIntermediateNode)
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_OnDocumentStructureCreated_Microsoft_AspNetCore_Razor_Language_RazorCodeDocument_Microsoft_AspNetCore_Razor_Language_Intermediate_NamespaceDeclarationIntermediateNode_Microsoft_AspNetCore_Razor_Language_Intermediate_ClassDeclarationIntermediateNode_Microsoft_AspNetCore_Razor_Language_Intermediate_MethodDeclarationIntermediateNode_
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnDocumentStructureCreated(Microsoft.AspNetCore.Razor.Language.RazorCodeDocument,Microsoft.AspNetCore.Razor.Language.Intermediate.NamespaceDeclarationIntermediateNode,Microsoft.AspNetCore.Razor.Language.Intermediate.ClassDeclarationIntermediateNode,Microsoft.AspNetCore.Razor.Language.Intermediate.MethodDeclarationIntermediateNode)
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnDocumentStructureCreated(Microsoft.AspNetCore.Razor.Language.RazorCodeDocument, Microsoft.AspNetCore.Razor.Language.Intermediate.NamespaceDeclarationIntermediateNode, Microsoft.AspNetCore.Razor.Language.Intermediate.ClassDeclarationIntermediateNode, Microsoft.AspNetCore.Razor.Language.Intermediate.MethodDeclarationIntermediateNode)
-  nameWithType: ComponentDocumentClassifierPass.OnDocumentStructureCreated(RazorCodeDocument, NamespaceDeclarationIntermediateNode, ClassDeclarationIntermediateNode, MethodDeclarationIntermediateNode)
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnDocumentStructureCreated*
-  name: OnDocumentStructureCreated
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_OnDocumentStructureCreated_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnDocumentStructureCreated
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnDocumentStructureCreated
-  nameWithType: ComponentDocumentClassifierPass.OnDocumentStructureCreated
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnInitialized
-  name: OnInitialized()
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_OnInitialized
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnInitialized
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnInitialized()
-  nameWithType: ComponentDocumentClassifierPass.OnInitialized()
-- uid: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnInitialized*
-  name: OnInitialized
-  href: api/Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.html#Microsoft_AspNetCore_Blazor_Razor_ComponentDocumentClassifierPass_OnInitialized_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnInitialized
-  fullName: Microsoft.AspNetCore.Blazor.Razor.ComponentDocumentClassifierPass.OnInitialized
-  nameWithType: ComponentDocumentClassifierPass.OnInitialized
-- uid: Microsoft.AspNetCore.Blazor.Razor.PageDirective
-  name: PageDirective
-  href: api/Microsoft.AspNetCore.Blazor.Razor.PageDirective.html
-  commentId: T:Microsoft.AspNetCore.Blazor.Razor.PageDirective
-  fullName: Microsoft.AspNetCore.Blazor.Razor.PageDirective
-  nameWithType: PageDirective
-- uid: Microsoft.AspNetCore.Blazor.Razor.PageDirective.Directive
-  name: Directive
-  href: api/Microsoft.AspNetCore.Blazor.Razor.PageDirective.html#Microsoft_AspNetCore_Blazor_Razor_PageDirective_Directive
-  commentId: F:Microsoft.AspNetCore.Blazor.Razor.PageDirective.Directive
-  fullName: Microsoft.AspNetCore.Blazor.Razor.PageDirective.Directive
-  nameWithType: PageDirective.Directive
-- uid: Microsoft.AspNetCore.Blazor.Razor.PageDirective.DirectiveNode
-  name: DirectiveNode
-  href: api/Microsoft.AspNetCore.Blazor.Razor.PageDirective.html#Microsoft_AspNetCore_Blazor_Razor_PageDirective_DirectiveNode
-  commentId: P:Microsoft.AspNetCore.Blazor.Razor.PageDirective.DirectiveNode
-  fullName: Microsoft.AspNetCore.Blazor.Razor.PageDirective.DirectiveNode
-  nameWithType: PageDirective.DirectiveNode
-- uid: Microsoft.AspNetCore.Blazor.Razor.PageDirective.DirectiveNode*
-  name: DirectiveNode
-  href: api/Microsoft.AspNetCore.Blazor.Razor.PageDirective.html#Microsoft_AspNetCore_Blazor_Razor_PageDirective_DirectiveNode_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.PageDirective.DirectiveNode
-  fullName: Microsoft.AspNetCore.Blazor.Razor.PageDirective.DirectiveNode
-  nameWithType: PageDirective.DirectiveNode
-- uid: Microsoft.AspNetCore.Blazor.Razor.PageDirective.Register(Microsoft.AspNetCore.Razor.Language.RazorProjectEngineBuilder)
-  name: Register(RazorProjectEngineBuilder)
-  href: api/Microsoft.AspNetCore.Blazor.Razor.PageDirective.html#Microsoft_AspNetCore_Blazor_Razor_PageDirective_Register_Microsoft_AspNetCore_Razor_Language_RazorProjectEngineBuilder_
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.PageDirective.Register(Microsoft.AspNetCore.Razor.Language.RazorProjectEngineBuilder)
-  fullName: Microsoft.AspNetCore.Blazor.Razor.PageDirective.Register(Microsoft.AspNetCore.Razor.Language.RazorProjectEngineBuilder)
-  nameWithType: PageDirective.Register(RazorProjectEngineBuilder)
-- uid: Microsoft.AspNetCore.Blazor.Razor.PageDirective.Register*
-  name: Register
-  href: api/Microsoft.AspNetCore.Blazor.Razor.PageDirective.html#Microsoft_AspNetCore_Blazor_Razor_PageDirective_Register_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.PageDirective.Register
-  fullName: Microsoft.AspNetCore.Blazor.Razor.PageDirective.Register
-  nameWithType: PageDirective.Register
-- uid: Microsoft.AspNetCore.Blazor.Razor.PageDirective.RouteTemplate
-  name: RouteTemplate
-  href: api/Microsoft.AspNetCore.Blazor.Razor.PageDirective.html#Microsoft_AspNetCore_Blazor_Razor_PageDirective_RouteTemplate
-  commentId: P:Microsoft.AspNetCore.Blazor.Razor.PageDirective.RouteTemplate
-  fullName: Microsoft.AspNetCore.Blazor.Razor.PageDirective.RouteTemplate
-  nameWithType: PageDirective.RouteTemplate
-- uid: Microsoft.AspNetCore.Blazor.Razor.PageDirective.RouteTemplate*
-  name: RouteTemplate
-  href: api/Microsoft.AspNetCore.Blazor.Razor.PageDirective.html#Microsoft_AspNetCore_Blazor_Razor_PageDirective_RouteTemplate_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.PageDirective.RouteTemplate
-  fullName: Microsoft.AspNetCore.Blazor.Razor.PageDirective.RouteTemplate
-  nameWithType: PageDirective.RouteTemplate
-- uid: Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException
-  name: RazorCompilerException
-  href: api/Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.html
-  commentId: T:Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException
-  fullName: Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException
-  nameWithType: RazorCompilerException
-- uid: Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.#ctor(Microsoft.AspNetCore.Razor.Language.RazorDiagnostic)
-  name: RazorCompilerException(RazorDiagnostic)
-  href: api/Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.html#Microsoft_AspNetCore_Blazor_Razor_RazorCompilerException__ctor_Microsoft_AspNetCore_Razor_Language_RazorDiagnostic_
-  commentId: M:Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.#ctor(Microsoft.AspNetCore.Razor.Language.RazorDiagnostic)
-  fullName: Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.RazorCompilerException(Microsoft.AspNetCore.Razor.Language.RazorDiagnostic)
-  nameWithType: RazorCompilerException.RazorCompilerException(RazorDiagnostic)
-- uid: Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.#ctor*
-  name: RazorCompilerException
-  href: api/Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.html#Microsoft_AspNetCore_Blazor_Razor_RazorCompilerException__ctor_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.RazorCompilerException
-  nameWithType: RazorCompilerException.RazorCompilerException
-- uid: Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.Diagnostic
-  name: Diagnostic
-  href: api/Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.html#Microsoft_AspNetCore_Blazor_Razor_RazorCompilerException_Diagnostic
-  commentId: P:Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.Diagnostic
-  fullName: Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.Diagnostic
-  nameWithType: RazorCompilerException.Diagnostic
-- uid: Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.Diagnostic*
-  name: Diagnostic
-  href: api/Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.html#Microsoft_AspNetCore_Blazor_Razor_RazorCompilerException_Diagnostic_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.Diagnostic
-  fullName: Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.Diagnostic
-  nameWithType: RazorCompilerException.Diagnostic
 - uid: Microsoft.AspNetCore.Blazor.RenderFragment
   name: RenderFragment
   href: api/Microsoft.AspNetCore.Blazor.RenderFragment.html
@@ -1779,6 +1533,18 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedComponentIDs
   fullName: Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedComponentIDs
   nameWithType: RenderBatch.DisposedComponentIDs
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedEventHandlerIDs
+  name: DisposedEventHandlerIDs
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.html#Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_DisposedEventHandlerIDs
+  commentId: P:Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedEventHandlerIDs
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedEventHandlerIDs
+  nameWithType: RenderBatch.DisposedEventHandlerIDs
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedEventHandlerIDs*
+  name: DisposedEventHandlerIDs
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.html#Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_DisposedEventHandlerIDs_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedEventHandlerIDs
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.DisposedEventHandlerIDs
+  nameWithType: RenderBatch.DisposedEventHandlerIDs
 - uid: Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.ReferenceFrames
   name: ReferenceFrames
   href: api/Microsoft.AspNetCore.Blazor.Rendering.RenderBatch.html#Microsoft_AspNetCore_Blazor_Rendering_RenderBatch_ReferenceFrames
@@ -1947,6 +1713,24 @@ references:
   commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIEventHandler)
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, Microsoft.AspNetCore.Blazor.UIEventHandler)
   nameWithType: RenderTreeBuilder.AddAttribute(Int32, String, UIEventHandler)
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Action)
+  name: AddAttribute(Int32, String, Action)
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Action_
+  commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Action)
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, System.Action)
+  nameWithType: RenderTreeBuilder.AddAttribute(Int32, String, Action)
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Boolean)
+  name: AddAttribute(Int32, String, Boolean)
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Boolean_
+  commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Boolean)
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, System.Boolean)
+  nameWithType: RenderTreeBuilder.AddAttribute(Int32, String, Boolean)
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.MulticastDelegate)
+  name: AddAttribute(Int32, String, MulticastDelegate)
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_MulticastDelegate_
+  commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.MulticastDelegate)
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, System.MulticastDelegate)
+  nameWithType: RenderTreeBuilder.AddAttribute(Int32, String, MulticastDelegate)
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Object)
   name: AddAttribute(Int32, String, Object)
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Object_
@@ -2340,6 +2124,18 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Routing.NavLink.#ctor
   fullName: Microsoft.AspNetCore.Blazor.Routing.NavLink.NavLink
   nameWithType: NavLink.NavLink
+- uid: Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass
+  name: ActiveClass
+  href: api/Microsoft.AspNetCore.Blazor.Routing.NavLink.html#Microsoft_AspNetCore_Blazor_Routing_NavLink_ActiveClass
+  commentId: P:Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass
+  fullName: Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass
+  nameWithType: NavLink.ActiveClass
+- uid: Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass*
+  name: ActiveClass
+  href: api/Microsoft.AspNetCore.Blazor.Routing.NavLink.html#Microsoft_AspNetCore_Blazor_Routing_NavLink_ActiveClass_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass
+  fullName: Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass
+  nameWithType: NavLink.ActiveClass
 - uid: Microsoft.AspNetCore.Blazor.Routing.NavLink.Dispose
   name: Dispose()
   href: api/Microsoft.AspNetCore.Blazor.Routing.NavLink.html#Microsoft_AspNetCore_Blazor_Routing_NavLink_Dispose
@@ -2625,6 +2421,60 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.UIChangeEventArgs.Value
   fullName: Microsoft.AspNetCore.Blazor.UIChangeEventArgs.Value
   nameWithType: UIChangeEventArgs.Value
+- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler
+  name: UIChangeEventHandler
+  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIChangeEventHandler
+  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler
+  nameWithType: UIChangeEventHandler
+- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.#ctor(System.Object,System.IntPtr)
+  name: UIChangeEventHandler(Object, IntPtr)
+  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler__ctor_System_Object_System_IntPtr_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.#ctor(System.Object,System.IntPtr)
+  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.UIChangeEventHandler(System.Object, System.IntPtr)
+  nameWithType: UIChangeEventHandler.UIChangeEventHandler(Object, IntPtr)
+- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.#ctor*
+  name: UIChangeEventHandler
+  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.UIChangeEventHandler
+  nameWithType: UIChangeEventHandler.UIChangeEventHandler
+- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs,System.AsyncCallback,System.Object)
+  name: BeginInvoke(UIChangeEventArgs, AsyncCallback, Object)
+  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_BeginInvoke_Microsoft_AspNetCore_Blazor_UIChangeEventArgs_System_AsyncCallback_System_Object_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs,System.AsyncCallback,System.Object)
+  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs, System.AsyncCallback, System.Object)
+  nameWithType: UIChangeEventHandler.BeginInvoke(UIChangeEventArgs, AsyncCallback, Object)
+- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke*
+  name: BeginInvoke
+  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_BeginInvoke_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke
+  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke
+  nameWithType: UIChangeEventHandler.BeginInvoke
+- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke(System.IAsyncResult)
+  name: EndInvoke(IAsyncResult)
+  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_EndInvoke_System_IAsyncResult_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke(System.IAsyncResult)
+  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke(System.IAsyncResult)
+  nameWithType: UIChangeEventHandler.EndInvoke(IAsyncResult)
+- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke*
+  name: EndInvoke
+  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_EndInvoke_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke
+  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke
+  nameWithType: UIChangeEventHandler.EndInvoke
+- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs)
+  name: Invoke(UIChangeEventArgs)
+  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_Invoke_Microsoft_AspNetCore_Blazor_UIChangeEventArgs_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs)
+  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs)
+  nameWithType: UIChangeEventHandler.Invoke(UIChangeEventArgs)
+- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke*
+  name: Invoke
+  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_Invoke_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke
+  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke
+  nameWithType: UIChangeEventHandler.Invoke
 - uid: Microsoft.AspNetCore.Blazor.UIEventArgs
   name: UIEventArgs
   href: api/Microsoft.AspNetCore.Blazor.UIEventArgs.html
@@ -2709,6 +2559,36 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.UIEventHandler.Invoke
   fullName: Microsoft.AspNetCore.Blazor.UIEventHandler.Invoke
   nameWithType: UIEventHandler.Invoke
+- uid: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions
+  name: UIEventHandlerRenderTreeBuilderExtensions
+  href: api/Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions
+  fullName: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions
+  nameWithType: UIEventHandlerRenderTreeBuilderExtensions
+- uid: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIChangeEventHandler)
+  name: AddAttribute(RenderTreeBuilder, Int32, String, UIChangeEventHandler)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIChangeEventHandler_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIChangeEventHandler)
+  fullName: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, Microsoft.AspNetCore.Blazor.UIChangeEventHandler)
+  nameWithType: UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIChangeEventHandler)
+- uid: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler)
+  name: AddAttribute(RenderTreeBuilder, Int32, String, UIKeyboardEventHandler)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler)
+  fullName: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler)
+  nameWithType: UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIKeyboardEventHandler)
+- uid: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIMouseEventHandler)
+  name: AddAttribute(RenderTreeBuilder, Int32, String, UIMouseEventHandler)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIMouseEventHandler_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIMouseEventHandler)
+  fullName: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, Microsoft.AspNetCore.Blazor.UIMouseEventHandler)
+  nameWithType: UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIMouseEventHandler)
+- uid: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute*
+  name: AddAttribute
+  href: api/Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute
+  fullName: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute
+  nameWithType: UIEventHandlerRenderTreeBuilderExtensions.AddAttribute
 - uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs
   name: UIKeyboardEventArgs
   href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.html
@@ -2739,6 +2619,60 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Key
   fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Key
   nameWithType: UIKeyboardEventArgs.Key
+- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler
+  name: UIKeyboardEventHandler
+  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler
+  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler
+  nameWithType: UIKeyboardEventHandler
+- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.#ctor(System.Object,System.IntPtr)
+  name: UIKeyboardEventHandler(Object, IntPtr)
+  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler__ctor_System_Object_System_IntPtr_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.#ctor(System.Object,System.IntPtr)
+  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.UIKeyboardEventHandler(System.Object, System.IntPtr)
+  nameWithType: UIKeyboardEventHandler.UIKeyboardEventHandler(Object, IntPtr)
+- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.#ctor*
+  name: UIKeyboardEventHandler
+  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.UIKeyboardEventHandler
+  nameWithType: UIKeyboardEventHandler.UIKeyboardEventHandler
+- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs,System.AsyncCallback,System.Object)
+  name: BeginInvoke(UIKeyboardEventArgs, AsyncCallback, Object)
+  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_BeginInvoke_Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_System_AsyncCallback_System_Object_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs,System.AsyncCallback,System.Object)
+  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs, System.AsyncCallback, System.Object)
+  nameWithType: UIKeyboardEventHandler.BeginInvoke(UIKeyboardEventArgs, AsyncCallback, Object)
+- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke*
+  name: BeginInvoke
+  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_BeginInvoke_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke
+  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke
+  nameWithType: UIKeyboardEventHandler.BeginInvoke
+- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke(System.IAsyncResult)
+  name: EndInvoke(IAsyncResult)
+  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_EndInvoke_System_IAsyncResult_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke(System.IAsyncResult)
+  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke(System.IAsyncResult)
+  nameWithType: UIKeyboardEventHandler.EndInvoke(IAsyncResult)
+- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke*
+  name: EndInvoke
+  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_EndInvoke_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke
+  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke
+  nameWithType: UIKeyboardEventHandler.EndInvoke
+- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs)
+  name: Invoke(UIKeyboardEventArgs)
+  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_Invoke_Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs)
+  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs)
+  nameWithType: UIKeyboardEventHandler.Invoke(UIKeyboardEventArgs)
+- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke*
+  name: Invoke
+  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_Invoke_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke
+  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke
+  nameWithType: UIKeyboardEventHandler.Invoke
 - uid: Microsoft.AspNetCore.Blazor.UIMouseEventArgs
   name: UIMouseEventArgs
   href: api/Microsoft.AspNetCore.Blazor.UIMouseEventArgs.html
@@ -2757,6 +2691,60 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.UIMouseEventArgs.#ctor
   fullName: Microsoft.AspNetCore.Blazor.UIMouseEventArgs.UIMouseEventArgs
   nameWithType: UIMouseEventArgs.UIMouseEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler
+  name: UIMouseEventHandler
+  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIMouseEventHandler
+  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler
+  nameWithType: UIMouseEventHandler
+- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.#ctor(System.Object,System.IntPtr)
+  name: UIMouseEventHandler(Object, IntPtr)
+  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler__ctor_System_Object_System_IntPtr_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.#ctor(System.Object,System.IntPtr)
+  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.UIMouseEventHandler(System.Object, System.IntPtr)
+  nameWithType: UIMouseEventHandler.UIMouseEventHandler(Object, IntPtr)
+- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.#ctor*
+  name: UIMouseEventHandler
+  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.UIMouseEventHandler
+  nameWithType: UIMouseEventHandler.UIMouseEventHandler
+- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs,System.AsyncCallback,System.Object)
+  name: BeginInvoke(UIMouseEventArgs, AsyncCallback, Object)
+  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_BeginInvoke_Microsoft_AspNetCore_Blazor_UIMouseEventArgs_System_AsyncCallback_System_Object_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs,System.AsyncCallback,System.Object)
+  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs, System.AsyncCallback, System.Object)
+  nameWithType: UIMouseEventHandler.BeginInvoke(UIMouseEventArgs, AsyncCallback, Object)
+- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke*
+  name: BeginInvoke
+  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_BeginInvoke_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke
+  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke
+  nameWithType: UIMouseEventHandler.BeginInvoke
+- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke(System.IAsyncResult)
+  name: EndInvoke(IAsyncResult)
+  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_EndInvoke_System_IAsyncResult_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke(System.IAsyncResult)
+  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke(System.IAsyncResult)
+  nameWithType: UIMouseEventHandler.EndInvoke(IAsyncResult)
+- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke*
+  name: EndInvoke
+  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_EndInvoke_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke
+  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke
+  nameWithType: UIMouseEventHandler.EndInvoke
+- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs)
+  name: Invoke(UIMouseEventArgs)
+  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_Invoke_Microsoft_AspNetCore_Blazor_UIMouseEventArgs_
+  commentId: M:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs)
+  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs)
+  nameWithType: UIMouseEventHandler.Invoke(UIMouseEventArgs)
+- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke*
+  name: Invoke
+  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_Invoke_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke
+  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke
+  nameWithType: UIMouseEventHandler.Invoke
 - uid: Microsoft.AspNetCore.Builder
   name: Microsoft.AspNetCore.Builder
   href: api/Microsoft.AspNetCore.Builder.html

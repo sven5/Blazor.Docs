@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RazorCompilerException
+    <title>Class EventHandlerAttribute
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RazorCompilerException
+    <meta name="title" content="Class EventHandlerAttribute
    ">
     <meta name="generator" content="docfx 2.34.0.0">
     
@@ -68,35 +68,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException">
+            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute">
   
   
-  <h1 id="Microsoft_AspNetCore_Blazor_Razor_RazorCompilerException" data-uid="Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException" class="text-break">Class RazorCompilerException
+  <h1 id="Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute" data-uid="Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute" class="text-break">Class EventHandlerAttribute
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Associates an event argument type with an event attribute name.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">RazorCompilerException</span></div>
+    <div class="level1"><span class="xref">EventHandlerAttribute</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.Razor.html">Microsoft.AspNetCore.Blazor.Razor</a></h6>
-  <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.Razor.Extensions.dll</h6>
-  <h5 id="Microsoft_AspNetCore_Blazor_Razor_RazorCompilerException_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.Components.html">Microsoft.AspNetCore.Blazor.Components</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.dll</h6>
+  <h5 id="Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RazorCompilerException : Exception</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class EventHandlerAttribute : Attribute</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_Razor_RazorCompilerException__ctor_" data-uid="Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.#ctor*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_Razor_RazorCompilerException__ctor_Microsoft_AspNetCore_Razor_Language_RazorDiagnostic_" data-uid="Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.#ctor(Microsoft.AspNetCore.Razor.Language.RazorDiagnostic)">RazorCompilerException(RazorDiagnostic)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute__ctor_" data-uid="Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.#ctor*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute__ctor_System_String_System_Type_" data-uid="Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.#ctor(System.String,System.Type)">EventHandlerAttribute(String, Type)</h4>
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.html">EventHandlerAttribute</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RazorCompilerException(RazorDiagnostic diagnostic)</code></pre>
+    <pre><code class="lang-csharp hljs">public EventHandlerAttribute(string attributeName, Type eventArgsType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -109,8 +111,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Razor.Language.RazorDiagnostic</span></td>
-        <td><span class="parametername">diagnostic</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">attributeName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">eventArgsType</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -119,13 +126,14 @@
   </h3>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_Razor_RazorCompilerException_Diagnostic_" data-uid="Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.Diagnostic*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_Razor_RazorCompilerException_Diagnostic" data-uid="Microsoft.AspNetCore.Blazor.Razor.RazorCompilerException.Diagnostic">Diagnostic</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute_AttributeName_" data-uid="Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.AttributeName*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute_AttributeName" data-uid="Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.AttributeName">AttributeName</h4>
+  <div class="markdown level1 summary"><p>Gets the attribute name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RazorDiagnostic Diagnostic { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string AttributeName { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,7 +145,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Razor.Language.RazorDiagnostic</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute_EventArgsType_" data-uid="Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventArgsType*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Components_EventHandlerAttribute_EventArgsType" data-uid="Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventArgsType">EventArgsType</h4>
+  <div class="markdown level1 summary"><p>Gets the event argument type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type EventArgsType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
         <td></td>
       </tr>
     </tbody>
