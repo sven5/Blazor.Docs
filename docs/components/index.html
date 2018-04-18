@@ -72,7 +72,7 @@
 <p>By <a href="https://github.com/guardrex">Luke Latham</a> and <a href="https://github.com/danroth27">Daniel Roth</a></p>
 <div class="NOTE"><h5>Note</h5><p>Blazor is an unsupported experimental web framework that shouldn&#39;t be used for production workloads at this time.</p>
 </div>
-<p><a href="https://github.com/aspnet/Docs/tree/master/aspnet/Blazor.Docs/docs/components/common/samples/">View or download sample code</a> (<a class="xref" href="../index.html#view-and-download-samples">how to download</a>). See the <a class="xref" href="../get-started.html">Get started</a> topic for prerequisites.</p>
+<p><a href="https://github.com/aspnet/Blazor.Docs/tree/master/docs/components/common/samples/">View or download sample code</a> (<a class="xref" href="../index.html#view-and-download-samples">how to download</a>). See the <a class="xref" href="../get-started.html">Get started</a> topic for prerequisites.</p>
 <p>Blazor apps are built using <em>components</em>. A component is a self-contained chunk of user interface (UI), such as a page, dialog, or form. A component includes both the HTML markup to render along with the processing logic needed to inject data or respond to UI events. Components are flexible and lightweight, and they can be nested, reused, and shared between projects.</p>
 <h2 id="component-classes">Component classes</h2>
 <p>Blazor components are typically implemented in <em>*.cshtml</em> files using a combination of C# and HTML markup. The UI for a component is defined using HTML. Dynamic rendering logic (for example, loops, conditionals, expressions) is added using an embedded C# syntax called <a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor">Razor</a>. When a Blazor app is compiled, the HTML markup and C# rendering logic are converted into a component class. The name of the generated class matches the name of the file.</p>
@@ -235,7 +235,7 @@
     return renderUI;
 }
 </code></pre><h2 id="component-disposal-with-idisposable">Component disposal with IDisposable</h2>
-<p>If a component implements <a href="/dotnet/api/system.idisposable">IDisposable</a>, the <a href="https://docs.microsoft.com/dotnet/standard/garbage-collection/implementing-dispose">Dispose method</a> is called when the component is removed from the UI. The following component uses <code>@implements IDisposable</code> and the <code>Dispose</code> method:</p>
+<p>If a component implements <a href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>, the <a href="https://docs.microsoft.com/dotnet/standard/garbage-collection/implementing-dispose">Dispose method</a> is called when the component is removed from the UI. The following component uses <code>@implements IDisposable</code> and the <code>Dispose</code> method:</p>
 <pre><code class="lang-csharp">@using System
 @implements IDisposable
 
