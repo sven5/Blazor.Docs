@@ -881,18 +881,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/components/common/samples/2.x/ComponentsSample/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/components/common/samples/2.x/ComponentsSample/README.html",
-          "hash": "agRDArdP7GCsB3DjI1qdjQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/components/index.md",
       "output": {
         ".html": {
@@ -1056,18 +1044,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "docs/tutorials/build-your-first-blazor-app/samples/2.x/BlazorApp1/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/tutorials/build-your-first-blazor-app/samples/2.x/BlazorApp1/README.html",
-          "hash": "rgXN76mDGm5sU2B8lKKh9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "index",
       "source_relative_path": "index.md",
       "output": {
@@ -1100,11 +1076,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
@@ -1116,6 +1087,11 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
