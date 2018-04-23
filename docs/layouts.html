@@ -76,7 +76,7 @@
 <h2 id="what-are-layouts">What are layouts?</h2>
 <p>Technically, a layout is just another Blazor component. A layout is defined in a Razor template or in C# code and can contain data binding, dependency injection, and other ordinary features of components. Two additional aspects turn a <em>component</em> into a <em>layout</em>:</p>
 <ul>
-<li>The layout component must implement <a href="/api/Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.html">Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent</a>. <code>ILayoutComponent</code> adds a <code>Body</code> property to the component that contains the content to be rendered inside the layout.</li>
+<li>The layout component must implement <a href="/api/Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.html">ILayoutComponent</a>. <code>ILayoutComponent</code> adds a <code>Body</code> property to the component that contains the content to be rendered inside the layout.</li>
 <li>The layout component uses the <code>Body</code> property to specify where the body content should be rendered using the Razor syntax <code>@Body</code>. During rendering, <code>@Body</code> is replaced by the content of the layout.</li>
 </ul>
 <p>The following code sample shows the Razor template of a layout component. Note the use of <code>ILayoutComponent</code> and <code>@Body</code>:</p>
@@ -104,7 +104,7 @@
     ...
 }
 </code></pre><h2 id="use-a-layout-in-a-component">Use a layout in a component</h2>
-<p>Use the Razor directive <code>@layout</code> to apply a layout to a component. The compiler converts this directive into a <a href="/api/Microsoft.AspNetCore.Blazor.Layouts.LayoutAttribute.html">Microsoft.AspNetCore.Blazor.Layouts.LayoutAttribute</a>, which is applied to the component class.</p>
+<p>Use the Razor directive <code>@layout</code> to apply a layout to a component. The compiler converts this directive into a <a href="/api/Microsoft.AspNetCore.Blazor.Layouts.LayoutAttribute.html">LayoutAttribute</a>, which is applied to the component class.</p>
 <p>The following code sample demonstrates the concept. The content of this component is inserted into the <em>MasterLayout</em> at the position of <code>@Body</code>:</p>
 <pre><code class="lang-csharp">@layout MasterLayout
 

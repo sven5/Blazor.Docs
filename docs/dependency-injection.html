@@ -91,7 +91,7 @@
 
     new BrowserRenderer(serviceProvider).AddComponent&lt;App&gt;(&quot;app&quot;);
 }
-</code></pre><p><code>BrowserServiceProvider</code> receives an action where app services are added to DI. <code>services</code> references the underlying <code>IServiceCollection</code>, which is a list of service descriptor objects (<a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">Microsoft.Extensions.DependencyInjection.ServiceDescriptor</a>). Services are added by providing service descriptors to the service collection. The following code sample demonstrates the concept:</p>
+</code></pre><p><code>BrowserServiceProvider</code> receives an action where app services are added to DI. <code>services</code> references the underlying <a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>, which is a list of service descriptor objects (<a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a>). Services are added by providing service descriptors to the service collection. The following code sample demonstrates the concept:</p>
 <pre><code class="lang-csharp">@using Microsoft.Extensions.DependencyInjection
 
 static void Main(string[] args)
@@ -113,21 +113,21 @@ static void Main(string[] args)
 </thead>
 <tbody>
 <tr>
-<td><code>Singleton</code></td>
+<td><a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor.singleton#Microsoft_Extensions_DependencyInjection_ServiceDescriptor_Singleton__1_System_Func_System_IServiceProvider___0__">Singleton</a></td>
 <td>DI creates a <em>single instance</em> of the service. All components requiring this service receive a reference to this instance.</td>
 </tr>
 <tr>
-<td><code>Transient</code></td>
+<td><a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor.transient">Transient</a></td>
 <td>Whenever a component requires this service, it receives a <em>new instance</em> of the service.</td>
 </tr>
 <tr>
-<td><code>Scoped</code></td>
+<td><a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor.scoped">Scoped</a></td>
 <td>Blazor doesn&#39;t currently have the concept of DI scopes. <code>Scoped</code> behaves like <code>Singleton</code>. Therefore, prefer <code>Singleton</code> and avoid <code>Scoped</code>.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="default-services">Default services</h2>
-<p>Blazor provides default services that are automatically added to the service collection of an app. The following table shows a list of the default services currently provided by Blazor&#39;s <code>BrowserServiceProvider</code>.</p>
+<p>Blazor provides default services that are automatically added to the service collection of an app. The following table shows a list of the default services currently provided by Blazor&#39;s <a href="/api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserServiceProvider.html">BrowserServiceProvider</a>.</p>
 <table>
 <thead>
 <tr>
@@ -137,12 +137,12 @@ static void Main(string[] args)
 </thead>
 <tbody>
 <tr>
-<td><code>IUriHelper</code></td>
+<td><a href="/api/Microsoft.AspNetCore.Blazor.Services.IUriHelper.html">IUriHelper</a></td>
 <td>Helpers for working with URIs and navigation state (singleton).</td>
 </tr>
 <tr>
-<td><code>HttpClient</code></td>
-<td>Provides methods for sending HTTP requests and receiving HTTP responses from a resource identified by a URI (singleton). Note that this instance of <a href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">System.Net.Http.HttpClient</a> uses the browser for handling the HTTP traffic in the background. <a href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient.baseaddress">HttpClient.BaseAddress</a> is automatically set to the base URI prefix of the app.</td>
+<td><a href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+<td>Provides methods for sending HTTP requests and receiving HTTP responses from a resource identified by a URI (singleton). Note that this instance of <code>HttpClient</code> uses the browser for handling the HTTP traffic in the background. <a href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient.baseaddress">HttpClient.BaseAddress</a> is automatically set to the base URI prefix of the app.</td>
 </tr>
 </tbody>
 </table>
@@ -180,7 +180,7 @@ static void Main(string[] args)
         Customers = await DataRepository.GetAllCustomersAsync();
     }
 }
-</code></pre><p>Internally, the generated property (<code>DataRepository</code>) is decorated with the <code>Microsoft.AspNetCore.Blazor.Components.InjectAttribute</code> attribute. Typically, this attribute isn&#39;t used directly. If a base class is required for components and injected properties are also required for the base class, <code>InjectAttribute</code> can be manually added:</p>
+</code></pre><p>Internally, the generated property (<code>DataRepository</code>) is decorated with the <a href="/api/Microsoft.AspNetCore.Blazor.Components.InjectAttribute.html">InjectAttribute</a> attribute. Typically, this attribute isn&#39;t used directly. If a base class is required for components and injected properties are also required for the base class, <code>InjectAttribute</code> can be manually added:</p>
 <pre><code class="lang-csharp">public class ComponentBase : BlazorComponent
 {
     // Blazor&#39;s dependency injection works even if using the
