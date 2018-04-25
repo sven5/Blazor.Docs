@@ -8,7 +8,7 @@
     <title>Host and deploy Blazor </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Host and deploy Blazor ">
-    <meta name="generator" content="docfx 2.34.0.0">
+    <meta name="generator" content="docfx 2.35.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -20,7 +20,7 @@
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -94,8 +94,8 @@
 <p>If a request is made using the browser&#39;s address bar for <code>www.contoso.com/About</code>, the request fails. No such resource exists on the app&#39;s Internet host, so a <em>404 Not found</em> response is returned.</p>
 <p>Because browsers make requests to Internet-based hosts for client-side pages, web servers and hosting services must rewrite all requests for resources not physically on the server to the <em>index.html</em> page. When <em>index.html</em> is returned, the app&#39;s client-side router takes over and responds with the correct resource.</p>
 <h2 id="app-base-path">App base path</h2>
-<p>The app base path is the virtual app root path on the server. For example, an app that resides on the Contoso server in a virtual folder at <code>/CoolBlazorApp</code> is reached at <code>https://www.contoso.com/CoolBlazorApp</code> and has a virtual base path of <code>/CoolBlazorApp</code>. By setting the app base path to <code>/CoolBlazorApp</code>, the app is made aware of where it virtually resides on the server. The app can use the app base path to construct URLs relative to the app root from a component that isn&#39;t in the root directory. This allows components that exist at different levels of the directory structure to build links to other resources at locations throughout the app. The app base path is also used to intercept hyperlink clicks where the <code>href</code> target of the link is within the app base path URI space&mdash;the Blazor router handles the internal navigation.</p>
-<p>In many hosting scenarios, the server&#39;s virtual path to the app is the root of the app. In these cases, the app base path is <code>/</code>, which is the default configuration for a Blazor app. In other hosting scenarios, such as GitHub Pages and IIS virtual directories, the app base path must be set to the server&#39;s virtual path to the app. To set the Blazor app&#39;s base path, update the <strong>&lt;base&gt;</strong> tag in <em>index.html</em>. Change the <code>href</code> attribute value from <code>/</code> to <code>/&lt;virtual-path&gt;</code>, where <code>&lt;virtual-path&gt;</code> is the full virtual app root path on the server for the app.</p>
+<p>The app base path is the virtual app root path on the server. For example, an app that resides on the Contoso server in a virtual folder at <code>/CoolBlazorApp/</code> is reached at <code>https://www.contoso.com/CoolBlazorApp</code> and has a virtual base path of <code>/CoolBlazorApp/</code>. By setting the app base path to <code>/CoolBlazorApp/</code>, the app is made aware of where it virtually resides on the server. The app can use the app base path to construct URLs relative to the app root from a component that isn&#39;t in the root directory. This allows components that exist at different levels of the directory structure to build links to other resources at locations throughout the app. The app base path is also used to intercept hyperlink clicks where the <code>href</code> target of the link is within the app base path URI space&mdash;the Blazor router handles the internal navigation.</p>
+<p>In many hosting scenarios, the server&#39;s virtual path to the app is the root of the app. In these cases, the app base path is <code>/</code>, which is the default configuration for a Blazor app. In other hosting scenarios, such as GitHub Pages and IIS virtual directories, the app base path must be set to the server&#39;s virtual path to the app. To set the Blazor app&#39;s base path, update the <strong>&lt;base&gt;</strong> tag in <em>index.html</em> on the <strong>&lt;head&gt;</strong> tag. Change the <code>href</code> attribute value from <code>/</code> to <code>/&lt;virtual-path&gt;/</code> (the trailing slash is required), where <code>/&lt;virtual-path&gt;/</code> is the full virtual app root path on the server for the app. </p>
 <h2 id="deployment-models">Deployment models</h2>
 <p>There are two deployment models for Blazor apps:</p>
 <ul>
