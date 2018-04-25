@@ -279,6 +279,26 @@
 }
 </code></pre><p>This approach has the benefit of working with JavaScript build tools, such as <a href="https://webpack.js.org/">webpack</a>.</p>
 <p>The Mono team is working on a library that exposes standard browser APIs to .NET.</p>
+<h2 id="base-class-inheritance-for-a-code-behind-experience">Base class inheritance for a &quot;code-behind&quot; experience</h2>
+<p>Blazor component files (<em>*.cshtml</em>) mix HTML markup and C# processing code in the same file. The <code>@inherits</code> directive can be used to provide Blazor with a &quot;code-behind&quot; experience that separates component markup from processing code.</p>
+<p>The <a href="https://github.com/aspnet/Blazor.Docs/tree/master/docs/components/common/samples/">sample app</a> shows how a component can inherit a base class, <code>BlazorRocksBase</code>, to provide the component&#39;s properties and methods.</p>
+<p><em>BlazorRocks.cshtml</em>:</p>
+<pre><code class="lang-cshtml">@page &quot;/BlazorRocks&quot;
+@*
+    The inherit directive provides the properties and methods
+    of the BlazorRocksBase class to this component.
+*@
+@inherits BlazorRocksBase
+
+&lt;h1&gt;@BlazorRocksText&lt;/h1&gt;
+</code></pre><p><em>BlazorRocksBase.cs</em>:</p>
+<pre><code class="lang-csharp">using Microsoft.AspNetCore.Blazor.Components;
+
+public class BlazorRocksBase : BlazorComponent
+{
+    public string BlazorRocksText { get; set; } = &quot;Blazor rocks the browser!&quot;;
+}
+</code></pre><p>The base class should derive from <a href="/api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html">BlazorComponent</a>.</p>
 <h2 id="razor-support">Razor support</h2>
 <p><strong>Razor directives</strong></p>
 <p>Razor directives active with Blazor apps are shown in the following table.</p>
