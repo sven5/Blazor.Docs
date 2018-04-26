@@ -8,7 +8,7 @@
     <title>Blazor components </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor components ">
-    <meta name="generator" content="docfx 2.35.0.0">
+    <meta name="generator" content="docfx 2.35.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -107,12 +107,12 @@
 </code></pre><p><em>ChildComponent.cshtml</em>:</p>
 <pre><code class="lang-cshtml" highlight-lines="7">&lt;div class=&quot;panel panel-success&quot;&gt;
   &lt;div class=&quot;panel-heading&quot;&gt;@Title&lt;/div&gt;
-  &lt;div class=&quot;panel-body&quot;&gt;@PanelContent&lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;@ChildContent&lt;/div&gt;
 &lt;/div&gt;
 
 @functions {
     public string Title { get; set; }
-    public RenderFragment PanelContent { get; set; }
+    public RenderFragment ChildContent { get; set; }
 }
 </code></pre><h2 id="child-content">Child content</h2>
 <p>Components can set the content of an element in another component by assigning to a property that represents a <a href="/api/Microsoft.AspNetCore.Blazor.RenderFragment.html">RenderFragment</a> type.</p>
@@ -128,12 +128,12 @@
 </code></pre><p><em>ChildComponent.cshtml</em>:</p>
 <pre><code class="lang-cshtml" highlight-lines="3,8">&lt;div class=&quot;panel panel-success&quot;&gt;
   &lt;div class=&quot;panel-heading&quot;&gt;@Title&lt;/div&gt;
-  &lt;div class=&quot;panel-body&quot;&gt;@PanelContent&lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;@ChildContent&lt;/div&gt;
 &lt;/div&gt;
 
 @functions {
     public string Title { get; set; }
-    public RenderFragment PanelContent { get; set; }
+    public RenderFragment ChildContent { get; set; }
 }
 </code></pre><h2 id="data-binding">Data binding</h2>
 <p>Data binding to both components and DOM elements is accomplished with the <code>bind</code> attribute. The following example binds the <code>ItalicsCheck</code> property to the check box&#39;s checked state:</p>
