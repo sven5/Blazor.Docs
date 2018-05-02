@@ -8,7 +8,7 @@
     <title>Blazor layouts </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor layouts ">
-    <meta name="generator" content="docfx 2.35.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -76,11 +76,11 @@
 <h2 id="what-are-layouts">What are layouts?</h2>
 <p>Technically, a layout is just another Blazor component. A layout is defined in a Razor template or in C# code and can contain data binding, dependency injection, and other ordinary features of components. Two additional aspects turn a <em>component</em> into a <em>layout</em>:</p>
 <ul>
-<li>The layout component must implement <a href="/api/Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.html">ILayoutComponent</a>. <code>ILayoutComponent</code> adds a <code>Body</code> property to the component that contains the content to be rendered inside the layout.</li>
+<li>The layout component must inherit from <a href="/api/Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.html">BlazorLayoutComponent</a>. <code>BlazorLayoutComponent</code> defines a <code>Body</code> property that contains the content to be rendered inside the layout.</li>
 <li>The layout component uses the <code>Body</code> property to specify where the body content should be rendered using the Razor syntax <code>@Body</code>. During rendering, <code>@Body</code> is replaced by the content of the layout.</li>
 </ul>
-<p>The following code sample shows the Razor template of a layout component. Note the use of <code>ILayoutComponent</code> and <code>@Body</code>:</p>
-<pre><code class="lang-csharp">@implements ILayoutComponent
+<p>The following code sample shows the Razor template of a layout component. Note the use of <code>BlazorLayoutComponent</code> and <code>@Body</code>:</p>
+<pre><code class="lang-csharp">@inherits BlazorLayoutComponent
 
 &lt;header&gt;
     &lt;h1&gt;ERP Master 3000&lt;/h1&gt;
@@ -100,7 +100,6 @@
 
 @functions {
     public string CopyrightMessage { get; set; }
-    public RenderFragment Body { get; set; }
     ...
 }
 </code></pre><h2 id="use-a-layout-in-a-component">Use a layout in a component</h2>
@@ -128,7 +127,7 @@
 </code></pre><p>The <em>MasterDataLayout.cshtml</em> file provides the <code>MasterDataLayout</code>. The layout references another layout, <code>MainLayout</code>, where it&#39;s going to be embedded.</p>
 <p><em>MasterDataLayout.cshtml</em>:</p>
 <pre><code class="lang-csharp">@layout MainLayout
-@implements ILayoutComponent
+@inherits BlazorLayoutComponent
 
 &lt;nav&gt;
     &lt;!-- Menu structure of master data module --&gt;
@@ -136,22 +135,14 @@
 &lt;/nav&gt;
 
 @Body
-
-@functions {
-    public RenderFragment Body { get; set; }
-}
 </code></pre><p>Finally, <code>MainLayout</code> contains the top-level layout elements, such as the header, footer, and main menu.</p>
 <p><em>MainLayout.cshtml</em>:</p>
-<pre><code class="lang-csharp">@implements ILayoutComponent
+<pre><code class="lang-csharp">@inherits BlazorLayoutComponent
 
 &lt;header&gt;...&lt;/header&gt;
 &lt;nav&gt;...&lt;/nav&gt;
 
 @Body
-
-@functions {
-    public RenderFragment Body { get; set; }
-}
 </code></pre></article>
           </div>
           

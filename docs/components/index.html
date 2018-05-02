@@ -8,7 +8,7 @@
     <title>Blazor components </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor components ">
-    <meta name="generator" content="docfx 2.35.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -94,7 +94,7 @@
 <p>The following markup renders a <code>HeadingComponent</code> (<em>HeadingComponent.cshtml</em>) instance:</p>
 <pre><code class="lang-cshtml">&lt;HeadingComponent /&gt;
 </code></pre><h2 id="component-parameters">Component parameters</h2>
-<p>Components can have <em>component parameters</em>, which are defined using public properties on the component class. Use attributes to specify arguments for a component in markup.</p>
+<p>Components can have <em>component parameters</em>, which are defined using <em>non-public</em> properties on the component class decorated with <code>[Parameter]</code>. Use attributes to specify arguments for a component in markup.</p>
 <p>In the following example, the <code>ParentComponent</code> sets the value of the <code>Title</code> property of the <code>ChildComponent</code>:</p>
 <p><em>ParentComponent.cshtml</em>:</p>
 <pre><code class="lang-cshtml" highlight-lines="5">@page &quot;/ParentComponent&quot;
@@ -105,14 +105,17 @@
     Child content of the child component is supplied by the parent component.
 &lt;/ChildComponent&gt;
 </code></pre><p><em>ChildComponent.cshtml</em>:</p>
-<pre><code class="lang-cshtml" highlight-lines="7">&lt;div class=&quot;panel panel-success&quot;&gt;
+<pre><code class="lang-cshtml" highlight-lines="7-8">&lt;div class=&quot;panel panel-success&quot;&gt;
   &lt;div class=&quot;panel-heading&quot;&gt;@Title&lt;/div&gt;
   &lt;div class=&quot;panel-body&quot;&gt;@ChildContent&lt;/div&gt;
 &lt;/div&gt;
 
 @functions {
-    public string Title { get; set; }
-    public RenderFragment ChildContent { get; set; }
+    [Parameter]
+    private string Title { get; set; }
+
+    [Parameter]
+    private RenderFragment ChildContent { get; set; }
 }
 </code></pre><h2 id="child-content">Child content</h2>
 <p>Components can set the content in another component. The assigning component provides the content between the tags that specify the receiving component. For example, a <code>ParentComponent</code> can provide content that is to be rendered by a <code>ChildComponent</code> by placing the content inside <strong>&lt;ChildComponent&gt;</strong> tags.</p>
@@ -126,14 +129,17 @@
 &lt;/ChildComponent&gt;
 </code></pre><p>The child component has a <code>ChildContent</code> property that represents a <a href="/api/Microsoft.AspNetCore.Blazor.RenderFragment.html">RenderFragment</a>. The value of <code>ChildContent</code> is positioned in the child component&#39;s markup where the content should be rendered. In the following example, the value of <code>ChildContent</code> is received from the parent component and rendered inside the Bootstrap panel&#39;s <code>panel-body</code>.</p>
 <p><em>ChildComponent.cshtml</em>:</p>
-<pre><code class="lang-cshtml" highlight-lines="3,8">&lt;div class=&quot;panel panel-success&quot;&gt;
+<pre><code class="lang-cshtml" highlight-lines="3,10-11">&lt;div class=&quot;panel panel-success&quot;&gt;
   &lt;div class=&quot;panel-heading&quot;&gt;@Title&lt;/div&gt;
   &lt;div class=&quot;panel-body&quot;&gt;@ChildContent&lt;/div&gt;
 &lt;/div&gt;
 
 @functions {
-    public string Title { get; set; }
-    public RenderFragment ChildContent { get; set; }
+    [Parameter]
+    private string Title { get; set; }
+
+    [Parameter]
+    private RenderFragment ChildContent { get; set; }
 }
 </code></pre><div class="NOTE"><h5>Note</h5><p>The property receiving the <code>RenderFragment</code> content must be named <code>ChildContent</code> by convention.</p>
 </div>
@@ -222,6 +228,15 @@
 {
     ...
 }
+</code></pre><p><code>OnAfterRenderAsync</code> and <code>OnAfterRender</code> are called each time after a component has finished rendering. Element and component references are populated at this point. Use this stage to perform additional initialization steps using the rendered content, such as activating third-party JavaScript libraries that operate on the rendered DOM elements.</p>
+<pre><code class="lang-csharp">protected override async Task OnAfterRenderAsync()
+{
+    await ...
+}
+</code></pre><pre><code class="lang-csharp">protected override void OnAfterRender()
+{
+    ...
+}
 </code></pre><p><code>SetParameters</code> can be overridden to execute code before parameters are set:</p>
 <pre><code class="lang-csharp">public override void SetParameters(ParameterCollection parameters)
 {
@@ -267,7 +282,8 @@
 &lt;h1&gt;Blazor is @Text!&lt;/h1&gt;
 
 @functions {
-    public string Text { get; set; } = &quot;fantastic&quot;;
+    [Parameter]
+    private string Text { get; set; } = &quot;fantastic&quot;;
 }
 </code></pre><p>Optional parameters aren&#39;t supported, so two <code>@page</code> directives are applied in the example above. The first permits navigation to the component without a parameter. The second <code>@page</code> directive takes the <code>{text}</code> route parameter and assigns the value to the <code>Text</code> property.</p>
 <h2 id="javascripttypescript-interop">JavaScript/TypeScript interop</h2>
@@ -319,7 +335,7 @@ public class BlazorRocksBase : BlazorComponent
 </tr>
 <tr>
 <td><code>@implements</code></td>
-<td>Implements an interface for the generated component class. Often used to create a component layout by implementing <code>ILayoutComponent</code>.</td>
+<td>Implements an interface for the generated component class.</td>
 </tr>
 <tr>
 <td><a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor#inherits">@inherits</a></td>

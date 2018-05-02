@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RenderTreeBuilder
    ">
-    <meta name="generator" content="docfx 2.35.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -190,53 +190,6 @@ The attribute is associated with the most recently added element.
   
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIEventHandler_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIEventHandler)">AddAttribute(Int32, String, UIEventHandler)</h4>
-  <div class="markdown level1 summary"><p>
-Appends a frame representing an <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandler.html">UIEventHandler</a>-valued attribute.
-</p>
-<p>
-The attribute is associated with the most recently added element. If the value is <code>null</code> and the
-current element is not a component, the frame will be omitted.
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddAttribute(int sequence, string name, UIEventHandler value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">sequence</span></td>
-        <td><p>An integer that represents the position of the instruction in the source code.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The name of the attribute.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandler.html">UIEventHandler</a></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>The value of the attribute.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Action_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Action)">AddAttribute(Int32, String, Action)</h4>
   <div class="markdown level1 summary"><p>
 Appends a frame representing an <span class="xref">System.Action</span>-valued attribute.
@@ -275,6 +228,53 @@ current element is not a component, the frame will be omitted.
       </tr>
       <tr>
         <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the attribute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIEventArgs__" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIEventArgs})">AddAttribute(Int32, String, Action&lt;UIEventArgs&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+Appends a frame representing an <span class="xref">System.Action&lt;&gt;</span>-valued attribute.
+</p>
+<p>
+The attribute is associated with the most recently added element. If the value is <code>null</code> and the
+current element is not a component, the frame will be omitted.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAttribute(int sequence, string name, Action&lt;UIEventArgs&gt; value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the attribute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgs.html">UIEventArgs</a>&gt;</td>
         <td><span class="parametername">value</span></td>
         <td><p>The value of the attribute.</p>
 </td>
@@ -331,6 +331,100 @@ current element is not a component, the frame will be omitted.
   
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIEventArgs_System_Threading_Tasks_Task__" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIEventArgs,System.Threading.Tasks.Task})">AddAttribute(Int32, String, Func&lt;UIEventArgs, Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+Appends a frame representing a <span class="xref">System.Func&lt;, &gt;</span>-valued attribute.
+</p>
+<p>
+The attribute is associated with the most recently added element. If the value is <code>null</code> and the
+current element is not a component, the frame will be omitted.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAttribute(int sequence, string name, Func&lt;UIEventArgs, Task&gt; value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the attribute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgs.html">UIEventArgs</a>, <span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the attribute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Func_System_Threading_Tasks_Task__" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Func{System.Threading.Tasks.Task})">AddAttribute(Int32, String, Func&lt;Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>
+Appends a frame representing a <span class="xref">System.Func&lt;&gt;</span>-valued attribute.
+</p>
+<p>
+The attribute is associated with the most recently added element. If the value is <code>null</code> and the
+current element is not a component, the frame will be omitted.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAttribute(int sequence, string name, Func&lt;Task&gt; value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the attribute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the attribute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_MulticastDelegate_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.MulticastDelegate)">AddAttribute(Int32, String, MulticastDelegate)</h4>
   <div class="markdown level1 summary"><p>
 Appends a frame representing a delegate-valued attribute.
@@ -377,10 +471,10 @@ current element is not a component, the frame will be omitted.
   </table>
   <h5 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_MulticastDelegate__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is provided for infrastructure purposes, and is used to be
-<a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html">UIEventHandlerRenderTreeBuilderExtensions</a> to provide support for delegates of specific
+<a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html">UIEventArgsRenderTreeBuilderExtensions</a> to provide support for delegates of specific
 types. For a good programming experience when using a custom delegate type, define an
 extension method similar to 
-<a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIChangeEventHandler_">AddAttribute(RenderTreeBuilder, Int32, String, UIChangeEventHandler)</a>
+<a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIChangeEventArgs__">AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UIChangeEventArgs&gt;)</a>
 that calls this method.</p>
 </div>
   
@@ -470,6 +564,41 @@ current element is not a component, the frame will be omitted.
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The value of the attribute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddComponentReferenceCapture_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddComponentReferenceCapture*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddComponentReferenceCapture_System_Int32_System_Action_System_Object__" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddComponentReferenceCapture(System.Int32,System.Action{System.Object})">AddComponentReferenceCapture(Int32, Action&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Appends a frame representing an instruction to capture a reference to the parent component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddComponentReferenceCapture(int sequence, Action&lt;object&gt; componentReferenceCaptureAction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">componentReferenceCaptureAction</span></td>
+        <td><p>An action to be invoked whenever the reference value changes.</p>
 </td>
       </tr>
     </tbody>
@@ -575,6 +704,41 @@ current element is not a component, the frame will be omitted.
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">textContent</span></td>
         <td><p>Content for the new text frame.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddElementReferenceCapture_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddElementReferenceCapture*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddElementReferenceCapture_System_Int32_System_Action_Microsoft_AspNetCore_Blazor_ElementRef__" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddElementReferenceCapture(System.Int32,System.Action{Microsoft.AspNetCore.Blazor.ElementRef})">AddElementReferenceCapture(Int32, Action&lt;ElementRef&gt;)</h4>
+  <div class="markdown level1 summary"><p>Appends a frame representing an instruction to capture a reference to the parent element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddElementReferenceCapture(int sequence, Action&lt;ElementRef&gt; elementReferenceCaptureAction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Microsoft.AspNetCore.Blazor.ElementRef.html">ElementRef</a>&gt;</td>
+        <td><span class="parametername">elementReferenceCaptureAction</span></td>
+        <td><p>An action to be invoked whenever the reference value changes.</p>
 </td>
       </tr>
     </tbody>
@@ -762,13 +926,70 @@ new element&apos;s child frames.</p>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIChangeEventHandler_">UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIChangeEventHandler)</a>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIChangeEventArgs__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UIChangeEventArgs&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_">UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIKeyboardEventHandler)</a>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIChangeEventArgs_System_Threading_Tasks_Task__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func&lt;UIChangeEventArgs, Task&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIMouseEventHandler_">UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIMouseEventHandler)</a>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIDragEventArgs__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UIDragEventArgs&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIDragEventArgs_System_Threading_Tasks_Task__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func&lt;UIDragEventArgs, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIClipboardEventArgs__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UIClipboardEventArgs&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIClipboardEventArgs_System_Threading_Tasks_Task__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func&lt;UIClipboardEventArgs, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIErrorEventArgs__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UIErrorEventArgs&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIErrorEventArgs_System_Threading_Tasks_Task__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func&lt;UIErrorEventArgs, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIFocusEventArgs__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UIFocusEventArgs&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIFocusEventArgs_System_Threading_Tasks_Task__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func&lt;UIFocusEventArgs, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UIKeyboardEventArgs&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_System_Threading_Tasks_Task__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func&lt;UIKeyboardEventArgs, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIMouseEventArgs__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UIMouseEventArgs&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIMouseEventArgs_System_Threading_Tasks_Task__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func&lt;UIMouseEventArgs, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIPointerEventArgs__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UIPointerEventArgs&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIPointerEventArgs_System_Threading_Tasks_Task__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func&lt;UIPointerEventArgs, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIProgressEventArgs__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UIProgressEventArgs&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIProgressEventArgs_System_Threading_Tasks_Task__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func&lt;UIProgressEventArgs, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UITouchEventArgs__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UITouchEventArgs&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UITouchEventArgs_System_Threading_Tasks_Task__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func&lt;UITouchEventArgs, Task&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIWheelEventArgs__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action&lt;UIWheelEventArgs&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIWheelEventArgs_System_Threading_Tasks_Task__">UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func&lt;UIWheelEventArgs, Task&gt;)</a>
   </div>
 </article>
           </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IHandleEvent
    ">
-    <meta name="generator" content="docfx 2.35.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -87,13 +87,13 @@
   
   
   <a id="Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_" data-uid="Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_Microsoft_AspNetCore_Blazor_UIEventHandler_Microsoft_AspNetCore_Blazor_UIEventArgs_" data-uid="Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(Microsoft.AspNetCore.Blazor.UIEventHandler,Microsoft.AspNetCore.Blazor.UIEventArgs)">HandleEvent(UIEventHandler, UIEventArgs)</h4>
+  <h4 id="Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_Microsoft_AspNetCore_Blazor_Components_EventHandlerInvoker_Microsoft_AspNetCore_Blazor_UIEventArgs_" data-uid="Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker,Microsoft.AspNetCore.Blazor.UIEventArgs)">HandleEvent(EventHandlerInvoker, UIEventArgs)</h4>
   <div class="markdown level1 summary"><p>Notifies the component that one of its event handlers has been triggered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void HandleEvent(UIEventHandler handler, UIEventArgs args)</code></pre>
+    <pre><code class="lang-csharp hljs">void HandleEvent(EventHandlerInvoker binding, UIEventArgs args)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -106,9 +106,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandler.html">UIEventHandler</a></td>
-        <td><span class="parametername">handler</span></td>
-        <td><p>The event handler.</p>
+        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.html">EventHandlerInvoker</a></td>
+        <td><span class="parametername">binding</span></td>
+        <td><p>The event binding.</p>
 </td>
       </tr>
       <tr>

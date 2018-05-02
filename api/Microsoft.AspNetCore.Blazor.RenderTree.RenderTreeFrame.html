@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RenderTreeFrame
    ">
-    <meta name="generator" content="docfx 2.35.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -119,7 +119,7 @@ gets the ID of the corresponding event handler, if any.</p>
   
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_AttributeName" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.AttributeName">AttributeName</h4>
   <div class="markdown level1 summary"><p>If the <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_FrameType">FrameType</a> property equals <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_Attribute">Attribute</a>,
-gets the attribute name. Otherwise, the value is <span class="xref">null</span>.</p>
+gets the attribute name. Otherwise, the value is undefined.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -145,7 +145,7 @@ gets the attribute name. Otherwise, the value is <span class="xref">null</span>.
   
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_AttributeValue" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.AttributeValue">AttributeValue</h4>
   <div class="markdown level1 summary"><p>If the <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_FrameType">FrameType</a> property equals <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_Attribute">Attribute</a>,
-gets the attribute value. Otherwise, the value is <span class="xref">null</span>.</p>
+gets the attribute value. Otherwise, the value is undefined.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -171,7 +171,7 @@ gets the attribute value. Otherwise, the value is <span class="xref">null</span>
   
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_Component" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.Component">Component</h4>
   <div class="markdown level1 summary"><p>If the <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_FrameType">FrameType</a> property equals <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_Component">Component</a>,
-gets the child component instance. Otherwise, the value is <span class="xref">null</span>.</p>
+gets the child component instance. Otherwise, the value is undefined.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -203,6 +203,64 @@ gets the child component instance identifier.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly int ComponentId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_ComponentReferenceCaptureAction" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ComponentReferenceCaptureAction">ComponentReferenceCaptureAction</h4>
+  <div class="markdown level1 summary"><p>If the <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_FrameType">FrameType</a> property equals <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_ComponentReferenceCapture">ComponentReferenceCapture</a>,
+gets the action that writes the reference to its target. Otherwise, the value is undefined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Action&lt;object&gt; ComponentReferenceCaptureAction</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_ComponentReferenceCaptureParentFrameIndex" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ComponentReferenceCaptureParentFrameIndex">ComponentReferenceCaptureParentFrameIndex</h4>
+  <div class="markdown level1 summary"><p>If the <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_FrameType">FrameType</a> property equals <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_ComponentReferenceCapture">ComponentReferenceCapture</a>,
+gets the index of the parent frame representing the component being captured. Otherwise, the value is undefined.
+WARNING: This index can only be used in the context of the frame&apos;s original render tree. If the frame is
+copied elsewhere, such as to the ReferenceFrames buffer of a RenderTreeDiff, then the index will
+not relate to entries in that other buffer.
+Currently there&apos;s no scenario where this matters, but if there was, we could change all of the subtree
+initialization logic in RenderTreeDiffBuilder to walk the frames hierarchically, then it would know
+the parent index at the point where it wants to initialize the ComponentReferenceCapture frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int ComponentReferenceCaptureParentFrameIndex</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -276,7 +334,7 @@ gets the type of the child component.</p>
   
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_ElementName" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementName">ElementName</h4>
   <div class="markdown level1 summary"><p>If the <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_FrameType">FrameType</a> property equals <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_Element">Element</a>,
-gets a name representing the type of the element. Otherwise, the value is <span class="xref">null</span>.</p>
+gets a name representing the type of the element. Otherwise, the value is undefined.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -294,6 +352,58 @@ gets a name representing the type of the element. Otherwise, the value is <span 
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_ElementReferenceCaptureAction" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementReferenceCaptureAction">ElementReferenceCaptureAction</h4>
+  <div class="markdown level1 summary"><p>If the <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_FrameType">FrameType</a> property equals <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_ElementReferenceCapture">ElementReferenceCapture</a>,
+gets the action that writes the reference to its target. Otherwise, the value is undefined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Action&lt;ElementRef&gt; ElementReferenceCaptureAction</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Microsoft.AspNetCore.Blazor.ElementRef.html">ElementRef</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_ElementReferenceCaptureId" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementReferenceCaptureId">ElementReferenceCaptureId</h4>
+  <div class="markdown level1 summary"><p>If the <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_FrameType">FrameType</a> property equals <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_ElementReferenceCapture">ElementReferenceCapture</a>,
+gets the ID of the reference capture. Otherwise, the value is undefined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int ElementReferenceCaptureId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -408,7 +518,7 @@ comparable within the same sequence (typically, the same source method).</p>
   
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_TextContent" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.TextContent">TextContent</h4>
   <div class="markdown level1 summary"><p>If the <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_FrameType">FrameType</a> property equals <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_Text">Text</a>,
-gets the content of the text frame. Otherwise, the value is <span class="xref">null</span>.</p>
+gets the content of the text frame. Otherwise, the value is undefined.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

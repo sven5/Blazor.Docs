@@ -8,7 +8,7 @@
     <title>Build your first Blazor app </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Build your first Blazor app ">
-    <meta name="generator" content="docfx 2.35.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -91,14 +91,14 @@ dotnet run
 </code></pre><p>Navigate to the app using the localhost address and port provided in the console window output after <code>dotnet run</code> is executed. Use <strong>Ctrl-C</strong> in the console window to shutdown the app.</p>
 </div>
 <p>The Blazor app runs in the browser:</p>
-<p><img src="https://msdnshared.blob.core.windows.net/media/2018/03/blazor-home.png" alt="Blazor app Home page"></p>
+<p><img src="https://user-images.githubusercontent.com/1874516/39509497-5515c3ea-4d9b-11e8-887f-019ea4fdb3ee.png" alt="Blazor app Home page"></p>
 <h2 id="build-components">Build components</h2>
 <ol>
 <li><p>Browse to each of the app&#39;s three pages: Home, Counter, and Fetch data.</p>
 <p> These three pages are implemented by the three Razor files in the <em>Pages</em> folder: <em>Index.cshtml</em>, <em>Counter.cshtml</em>, and <em>FetchData.cshtml</em>. Each of these files implements a Blazor component that&#39;s compiled and executed client-side in the browser.</p>
 </li>
 <li><p>Select the button on the Counter page.</p>
-<p> <img src="https://msdnshared.blob.core.windows.net/media/2018/03/blazor-counter.png" alt="Blazor app Home page"></p>
+<p> <img src="https://user-images.githubusercontent.com/1874516/39509525-6e367c66-4d9b-11e8-9978-e52a9750c34b.png" alt="Blazor app Home page"></p>
 <p> Each time the button is selected, the counter is incremented without a page refresh. Normally, this kind of client-side behavior is handled in JavaScript; but here, it&#39;s implemented in C# and .NET by the <code>Counter</code> component.</p>
 </li>
 <li><p>Take a look at the implementation of the <code>Counter</code> component in the <em>Counter.cshtml</em> file:</p>
@@ -108,7 +108,7 @@ dotnet run
 
 &lt;p&gt;Current count: @currentCount&lt;/p&gt;
 
-&lt;button onclick=&quot;@IncrementCount&quot;&gt;Click me&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot; onclick=&quot;@IncrementCount&quot;&gt;Click me&lt;/button&gt;
 
 @functions {
     int currentCount = 0;
@@ -137,7 +137,7 @@ dotnet run
 }
 </code></pre></li>
 <li><p>Refresh the counter page in the browser to see the changes.</p>
-<p> <img src="https://user-images.githubusercontent.com/1874516/38230870-efe5b4cc-36c4-11e8-9bbf-e1f51b451833.png" alt="Exciting counter"></p>
+<p> <img src="https://user-images.githubusercontent.com/1874516/39509668-e8949a92-4d9b-11e8-91e9-b6a494695d92.png" alt="Exciting counter"></p>
 </li>
 </ol>
 <h2 id="use-components">Use components</h2>
@@ -155,7 +155,7 @@ Welcome to your new app.
 &lt;Counter /&gt;
 </code></pre></li>
 <li><p>Refresh the home page in the browser. Note the separate instance of the <code>Counter</code> component on the Home page.</p>
-<p> <img src="https://msdnshared.blob.core.windows.net/media/2018/03/blazor-home-with-counter.png" alt="Blazor Home page with counter"></p>
+<p> <img src="https://user-images.githubusercontent.com/1874516/39509718-224483f6-4d9c-11e8-9030-b4c7228d669d.png" alt="Blazor Home page with counter"></p>
 </li>
 </ol>
 <h2 id="component-parameters">Component parameters</h2>
@@ -165,7 +165,8 @@ Welcome to your new app.
 <pre><code class="lang-cshtml">@functions {
     int currentCount = 0;
 
-    public int IncrementAmount { get; set; } = 1;
+    [Parameter]
+    private int IncrementAmount { get; set; } = 1;
 
     void IncrementCount()
     {
@@ -178,7 +179,7 @@ Welcome to your new app.
 </code></pre></li>
 <li><p>Reload the page.</p>
 <p> The counter on the Home page now increments by 10, while the counter on the Counter page still increments by 1.</p>
-<p> <img src="https://msdnshared.blob.core.windows.net/media/2018/03/blazor-home-count-by-ten.png" alt="Blazor count by ten"></p>
+<p> <img src="https://user-images.githubusercontent.com/1874516/39509798-618f0720-4d9c-11e8-9125-3d4c634dff46.png" alt="Blazor count by ten"></p>
 </li>
 </ol>
 <h2 id="route-to-components">Route to components</h2>
@@ -245,7 +246,7 @@ Welcome to your new app.
 &lt;/li&gt;
 </code></pre></li>
 <li><p>Refresh the app in the browser. See the new Todo page.</p>
-<p> <img src="https://msdnshared.blob.core.windows.net/media/2018/03/blazor-todo-start.png" alt="Blazor todo start"></p>
+<p> <img src="https://user-images.githubusercontent.com/1874516/39509907-bb27e77a-4d9c-11e8-91e7-ea1e7c01729e.png" alt="Blazor todo start"></p>
 </li>
 <li><p>Add a <em>TodoItem.cs</em> file to the root of the project to hold a class to represent the todo items.</p>
 </li>
@@ -285,7 +286,7 @@ Welcome to your new app.
     }
 &lt;/ul&gt;
 
-&lt;input placeholder=&quot;Something todo&quot; /&gt;
+&lt;input class placeholder=&quot;Something todo&quot; /&gt;
 &lt;button&gt;Add todo&lt;/button&gt;
 
 @functions {
@@ -293,7 +294,7 @@ Welcome to your new app.
 }
 </code></pre></li>
 <li><p>Refresh the browser.</p>
-<p> <img src="https://user-images.githubusercontent.com/1874516/38230030-ca1ddbb0-36c0-11e8-96b8-5e8985421567.png" alt="Add todo button"></p>
+<p> <img src="https://user-images.githubusercontent.com/1874516/39512402-bc88ab46-4da5-11e8-9e3f-87b875b56383.png" alt="Add todo button"></p>
 <p> Nothing happens when the <strong>Add todo</strong> button is selected because no event handler is wired up to the button.</p>
 </li>
 <li><p>Add an <code>AddTodo</code> method to the <code>Todo</code> component and register it for button clicks using the <code>onclick</code> attribute.</p>
@@ -345,7 +346,7 @@ string newTodo;
 }
 </code></pre></li>
 <li><p>Refresh the browser. Add some todos to the todo list.</p>
-<p> <img src="https://user-images.githubusercontent.com/1874516/38230128-385cb56a-36c1-11e8-9cf0-9f7035bbf1f5.png" alt="Add todos"></p>
+<p> <img src="https://user-images.githubusercontent.com/1874516/39512531-2d2ff62e-4da6-11e8-8b83-291b0efc821b.png" alt="Add todos"></p>
 </li>
 <li><p>Lastly, what&#39;s a todo list without check boxes? The title text for each todo item can be made editable as well. Add a check box input and text input for each todo item and bind their values to the <code>Title</code> and <code>IsDone</code> properties, respectively.</p>
 <pre><code class="lang-cshtml">&lt;ul&gt;
@@ -395,7 +396,7 @@ string newTodo;
 </code></pre></li>
 </ol>
 <p>Refresh the app in the browser. Try adding some todo items.</p>
-<p><img src="https://msdnshared.blob.core.windows.net/media/2018/03/blazor-todo-done.png" alt="Finished Blazor todo list"></p>
+<p><img src="https://user-images.githubusercontent.com/1874516/39512621-83406508-4da6-11e8-8244-5bae2ac6b22d.png" alt="Finished Blazor todo list"></p>
 <h2 id="publish-and-deploy">Publish and deploy</h2>
 <p>When using Visual Studio, perform the following steps to publish the Todo Blazor app to Azure:</p>
 <ol>
@@ -410,7 +411,7 @@ string newTodo;
 </ol>
 <p>Wait a minute or so for the app to be deployed.</p>
 <p>The app should now be running in Azure. Mark the todo item to build your first Blazor app as <em>done</em>. Nice job!</p>
-<p><img src="https://msdnshared.blob.core.windows.net/media/2018/03/blazor-azure.png" alt="Blazor on Azure"></p>
+<p><img src="https://user-images.githubusercontent.com/1874516/39512621-83406508-4da6-11e8-8244-5bae2ac6b22d.png" alt="Blazor on Azure"></p>
 <div class="NOTE"><h5>Note</h5><p>If not using Visual Studio, publish the Blazor app at a command prompt on Windows, macOS, or Linux:</p>
 <pre><code class="lang-console">dotnet publish -c Release
 </code></pre><p>The deployment is created in the <em>/bin/Release/&lt;target-framework&gt;/publish</em> folder. Move the contents of the <em>publish</em> folder to the server or hosting service.</p>

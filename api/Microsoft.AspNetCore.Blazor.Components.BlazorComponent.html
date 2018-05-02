@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BlazorComponent
    ">
-    <meta name="generator" content="docfx 2.35.2.0">
+    <meta name="generator" content="docfx 2.35.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,17 +81,19 @@ implement <a class="xref" href="Microsoft.AspNetCore.Blazor.Components.IComponen
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">BlazorComponent</span></div>
+      <div class="level2"><a class="xref" href="Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.html">BlazorLayoutComponent</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Microsoft.AspNetCore.Blazor.Components.IComponent.html">IComponent</a></div>
     <div><a class="xref" href="Microsoft.AspNetCore.Blazor.Components.IHandleEvent.html">IHandleEvent</a></div>
+    <div><a class="xref" href="Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.html">IHandleAfterRender</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.Components.html">Microsoft.AspNetCore.Blazor.Components</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.dll</h6>
   <h5 id="Microsoft_AspNetCore_Blazor_Components_BlazorComponent_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BlazorComponent : Object, IComponent, IHandleEvent</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class BlazorComponent : Object, IComponent, IHandleEvent, IHandleAfterRender</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -160,6 +162,46 @@ implement <a class="xref" href="Microsoft.AspNetCore.Blazor.Components.IComponen
         <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html">RenderTreeBuilder</a></td>
         <td><span class="parametername">builder</span></td>
         <td><p>A <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html">RenderTreeBuilder</a> that will receive the render output.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Components_BlazorComponent_OnAfterRender_" data-uid="Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRender*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Components_BlazorComponent_OnAfterRender" data-uid="Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRender">OnAfterRender()</h4>
+  <div class="markdown level1 summary"><p>Method invoked after each time the component has been rendered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnAfterRender()</code></pre>
+  </div>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Components_BlazorComponent_OnAfterRenderAsync_" data-uid="Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRenderAsync*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Components_BlazorComponent_OnAfterRenderAsync" data-uid="Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRenderAsync">OnAfterRenderAsync()</h4>
+  <div class="markdown level1 summary"><p>Method invoked after each time the component has been rendered. Note that the component does
+not automatically re-render after the completion of any returned <span class="xref">System.Threading.Tasks.Task</span>, because
+that would cause an infinite render loop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnAfterRenderAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> representing any asynchronous operation, or <span class="xref">null</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -241,7 +283,8 @@ the render tree, and the incoming values have been assigned to properties.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> representing any asynchronous operation, or <span class="xref">null</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -343,13 +386,23 @@ cause the component to be re-rendered.</p>
   </table>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_" data-uid="Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleEvent#HandleEvent*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_Microsoft_AspNetCore_Blazor_UIEventHandler_Microsoft_AspNetCore_Blazor_UIEventArgs_" data-uid="Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleEvent#HandleEvent(Microsoft.AspNetCore.Blazor.UIEventHandler,Microsoft.AspNetCore.Blazor.UIEventArgs)">IHandleEvent.HandleEvent(UIEventHandler, UIEventArgs)</h4>
+  <a id="Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IHandleAfterRender_OnAfterRender_" data-uid="Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleAfterRender#OnAfterRender*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IHandleAfterRender_OnAfterRender" data-uid="Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleAfterRender#OnAfterRender">IHandleAfterRender.OnAfterRender()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void IHandleEvent.HandleEvent(UIEventHandler handler, UIEventArgs args)</code></pre>
+    <pre><code class="lang-csharp hljs">void IHandleAfterRender.OnAfterRender()</code></pre>
+  </div>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_" data-uid="Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleEvent#HandleEvent*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_Microsoft_AspNetCore_Blazor_Components_EventHandlerInvoker_Microsoft_AspNetCore_Blazor_UIEventArgs_" data-uid="Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleEvent#HandleEvent(Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker,Microsoft.AspNetCore.Blazor.UIEventArgs)">IHandleEvent.HandleEvent(EventHandlerInvoker, UIEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IHandleEvent.HandleEvent(EventHandlerInvoker binding, UIEventArgs args)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -362,8 +415,8 @@ cause the component to be re-rendered.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventHandler.html">UIEventHandler</a></td>
-        <td><span class="parametername">handler</span></td>
+        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.html">EventHandlerInvoker</a></td>
+        <td><span class="parametername">binding</span></td>
         <td></td>
       </tr>
       <tr>
@@ -379,6 +432,9 @@ cause the component to be re-rendered.</p>
   </div>
   <div>
       <a class="xref" href="Microsoft.AspNetCore.Blazor.Components.IHandleEvent.html">IHandleEvent</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.html">IHandleAfterRender</a>
   </div>
 </article>
           </div>

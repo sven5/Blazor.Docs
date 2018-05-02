@@ -583,6 +583,24 @@ references:
   fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue(Of T)(System.Action(Of T))
   nameWithType: BindMethods.GetEventHandlerValue<T>(Action<T>)
   nameWithType.vb: BindMethods.GetEventHandlerValue(Of T)(Action(Of T))
+- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue``1(System.Func{``0,System.Threading.Tasks.Task})
+  name: GetEventHandlerValue<T>(Func<T, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_GetEventHandlerValue__1_System_Func___0_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue``1(System.Func{``0,System.Threading.Tasks.Task})
+  name.vb: GetEventHandlerValue(Of T)(Func(Of T, Task))
+  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue<T>(System.Func<T, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue(Of T)(System.Func(Of T, System.Threading.Tasks.Task))
+  nameWithType: BindMethods.GetEventHandlerValue<T>(Func<T, Task>)
+  nameWithType.vb: BindMethods.GetEventHandlerValue(Of T)(Func(Of T, Task))
+- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue``1(System.Func{System.Threading.Tasks.Task})
+  name: GetEventHandlerValue<T>(Func<Task>)
+  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_GetEventHandlerValue__1_System_Func_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue``1(System.Func{System.Threading.Tasks.Task})
+  name.vb: GetEventHandlerValue(Of T)(Func(Of Task))
+  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue<T>(System.Func<System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue(Of T)(System.Func(Of System.Threading.Tasks.Task))
+  nameWithType: BindMethods.GetEventHandlerValue<T>(Func<Task>)
+  nameWithType.vb: BindMethods.GetEventHandlerValue(Of T)(Func(Of Task))
 - uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetEventHandlerValue``1(System.String)
   name: GetEventHandlerValue<T>(String)
   href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_GetEventHandlerValue__1_System_String_
@@ -613,66 +631,6 @@ references:
   fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.GetValue(Of T)(T)
   nameWithType: BindMethods.GetValue<T>(T)
   nameWithType.vb: BindMethods.GetValue(Of T)(T)
-- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action{System.Boolean},System.Boolean)
-  name: SetValue(Action<Boolean>, Boolean)
-  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_SetValue_System_Action_System_Boolean__System_Boolean_
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action{System.Boolean},System.Boolean)
-  name.vb: SetValue(Action(Of Boolean), Boolean)
-  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action<System.Boolean>, System.Boolean)
-  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action(Of System.Boolean), System.Boolean)
-  nameWithType: BindMethods.SetValue(Action<Boolean>, Boolean)
-  nameWithType.vb: BindMethods.SetValue(Action(Of Boolean), Boolean)
-- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action{System.DateTime},System.DateTime)
-  name: SetValue(Action<DateTime>, DateTime)
-  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_SetValue_System_Action_System_DateTime__System_DateTime_
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action{System.DateTime},System.DateTime)
-  name.vb: SetValue(Action(Of DateTime), DateTime)
-  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action<System.DateTime>, System.DateTime)
-  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action(Of System.DateTime), System.DateTime)
-  nameWithType: BindMethods.SetValue(Action<DateTime>, DateTime)
-  nameWithType.vb: BindMethods.SetValue(Action(Of DateTime), DateTime)
-- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action{System.DateTime},System.DateTime,System.String)
-  name: SetValue(Action<DateTime>, DateTime, String)
-  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_SetValue_System_Action_System_DateTime__System_DateTime_System_String_
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action{System.DateTime},System.DateTime,System.String)
-  name.vb: SetValue(Action(Of DateTime), DateTime, String)
-  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action<System.DateTime>, System.DateTime, System.String)
-  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action(Of System.DateTime), System.DateTime, System.String)
-  nameWithType: BindMethods.SetValue(Action<DateTime>, DateTime, String)
-  nameWithType.vb: BindMethods.SetValue(Action(Of DateTime), DateTime, String)
-- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action{System.Int32},System.Int32)
-  name: SetValue(Action<Int32>, Int32)
-  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_SetValue_System_Action_System_Int32__System_Int32_
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action{System.Int32},System.Int32)
-  name.vb: SetValue(Action(Of Int32), Int32)
-  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action<System.Int32>, System.Int32)
-  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action(Of System.Int32), System.Int32)
-  nameWithType: BindMethods.SetValue(Action<Int32>, Int32)
-  nameWithType.vb: BindMethods.SetValue(Action(Of Int32), Int32)
-- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action{System.String},System.String)
-  name: SetValue(Action<String>, String)
-  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_SetValue_System_Action_System_String__System_String_
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action{System.String},System.String)
-  name.vb: SetValue(Action(Of String), String)
-  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action<System.String>, System.String)
-  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(System.Action(Of System.String), System.String)
-  nameWithType: BindMethods.SetValue(Action<String>, String)
-  nameWithType.vb: BindMethods.SetValue(Action(Of String), String)
-- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue*
-  name: SetValue
-  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_SetValue_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue
-  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue
-  nameWithType: BindMethods.SetValue
-- uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue``1(System.Action{``0},``0)
-  name: SetValue<T>(Action<T>, T)
-  href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_SetValue__1_System_Action___0____0_
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue``1(System.Action{``0},``0)
-  name.vb: SetValue(Of T)(Action(Of T), T)
-  fullName: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue<T>(System.Action<T>, T)
-  fullName.vb: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValue(Of T)(System.Action(Of T), T)
-  nameWithType: BindMethods.SetValue<T>(Action<T>, T)
-  nameWithType.vb: BindMethods.SetValue(Of T)(Action(Of T), T)
 - uid: Microsoft.AspNetCore.Blazor.Components.BindMethods.SetValueHandler(System.Action{System.Boolean},System.Boolean)
   name: SetValueHandler(Action<Boolean>, Boolean)
   href: api/Microsoft.AspNetCore.Blazor.Components.BindMethods.html#Microsoft_AspNetCore_Blazor_Components_BindMethods_SetValueHandler_System_Action_System_Boolean__System_Boolean_
@@ -785,14 +743,30 @@ references:
   fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IComponent.Init
   nameWithType: BlazorComponent.IComponent.Init
   nameWithType.vb: BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IComponent.Init
-- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleEvent#HandleEvent(Microsoft.AspNetCore.Blazor.UIEventHandler,Microsoft.AspNetCore.Blazor.UIEventArgs)
-  name: IHandleEvent.HandleEvent(UIEventHandler, UIEventArgs)
-  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_Microsoft_AspNetCore_Blazor_UIEventHandler_Microsoft_AspNetCore_Blazor_UIEventArgs_
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleEvent#HandleEvent(Microsoft.AspNetCore.Blazor.UIEventHandler,Microsoft.AspNetCore.Blazor.UIEventArgs)
-  name.vb: Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(UIEventHandler, UIEventArgs)
-  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(Microsoft.AspNetCore.Blazor.UIEventHandler, Microsoft.AspNetCore.Blazor.UIEventArgs)
-  nameWithType: BlazorComponent.IHandleEvent.HandleEvent(UIEventHandler, UIEventArgs)
-  nameWithType.vb: BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(UIEventHandler, UIEventArgs)
+- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleAfterRender#OnAfterRender
+  name: IHandleAfterRender.OnAfterRender()
+  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IHandleAfterRender_OnAfterRender
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleAfterRender#OnAfterRender
+  name.vb: Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender()
+  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender()
+  nameWithType: BlazorComponent.IHandleAfterRender.OnAfterRender()
+  nameWithType.vb: BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender()
+- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleAfterRender#OnAfterRender*
+  name: IHandleAfterRender.OnAfterRender
+  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IHandleAfterRender_OnAfterRender_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleAfterRender#OnAfterRender
+  name.vb: Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender
+  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender
+  nameWithType: BlazorComponent.IHandleAfterRender.OnAfterRender
+  nameWithType.vb: BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender
+- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleEvent#HandleEvent(Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker,Microsoft.AspNetCore.Blazor.UIEventArgs)
+  name: IHandleEvent.HandleEvent(EventHandlerInvoker, UIEventArgs)
+  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_Microsoft_AspNetCore_Blazor_Components_EventHandlerInvoker_Microsoft_AspNetCore_Blazor_UIEventArgs_
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleEvent#HandleEvent(Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker,Microsoft.AspNetCore.Blazor.UIEventArgs)
+  name.vb: Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(EventHandlerInvoker, UIEventArgs)
+  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker, Microsoft.AspNetCore.Blazor.UIEventArgs)
+  nameWithType: BlazorComponent.IHandleEvent.HandleEvent(EventHandlerInvoker, UIEventArgs)
+  nameWithType.vb: BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(EventHandlerInvoker, UIEventArgs)
 - uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft#AspNetCore#Blazor#Components#IHandleEvent#HandleEvent*
   name: IHandleEvent.HandleEvent
   href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_
@@ -801,6 +775,30 @@ references:
   fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent
   nameWithType: BlazorComponent.IHandleEvent.HandleEvent
   nameWithType.vb: BlazorComponent.Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent
+- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRender
+  name: OnAfterRender()
+  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_OnAfterRender
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRender
+  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRender()
+  nameWithType: BlazorComponent.OnAfterRender()
+- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRender*
+  name: OnAfterRender
+  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_OnAfterRender_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRender
+  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRender
+  nameWithType: BlazorComponent.OnAfterRender
+- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRenderAsync
+  name: OnAfterRenderAsync()
+  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_OnAfterRenderAsync
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRenderAsync
+  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRenderAsync()
+  nameWithType: BlazorComponent.OnAfterRenderAsync()
+- uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRenderAsync*
+  name: OnAfterRenderAsync
+  href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_OnAfterRenderAsync_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRenderAsync
+  fullName: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnAfterRenderAsync
+  nameWithType: BlazorComponent.OnAfterRenderAsync
 - uid: Microsoft.AspNetCore.Blazor.Components.BlazorComponent.OnInit
   name: OnInit()
   href: api/Microsoft.AspNetCore.Blazor.Components.BlazorComponent.html#Microsoft_AspNetCore_Blazor_Components_BlazorComponent_OnInit
@@ -927,6 +925,36 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventArgsType
   fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerAttribute.EventArgsType
   nameWithType: EventHandlerAttribute.EventArgsType
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker
+  name: EventHandlerInvoker
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker
+  nameWithType: EventHandlerInvoker
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.#ctor(System.MulticastDelegate)
+  name: EventHandlerInvoker(MulticastDelegate)
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.html#Microsoft_AspNetCore_Blazor_Components_EventHandlerInvoker__ctor_System_MulticastDelegate_
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.#ctor(System.MulticastDelegate)
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.EventHandlerInvoker(System.MulticastDelegate)
+  nameWithType: EventHandlerInvoker.EventHandlerInvoker(MulticastDelegate)
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.#ctor*
+  name: EventHandlerInvoker
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.html#Microsoft_AspNetCore_Blazor_Components_EventHandlerInvoker__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.EventHandlerInvoker
+  nameWithType: EventHandlerInvoker.EventHandlerInvoker
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.Invoke(Microsoft.AspNetCore.Blazor.UIEventArgs)
+  name: Invoke(UIEventArgs)
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.html#Microsoft_AspNetCore_Blazor_Components_EventHandlerInvoker_Invoke_Microsoft_AspNetCore_Blazor_UIEventArgs_
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.Invoke(Microsoft.AspNetCore.Blazor.UIEventArgs)
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.Invoke(Microsoft.AspNetCore.Blazor.UIEventArgs)
+  nameWithType: EventHandlerInvoker.Invoke(UIEventArgs)
+- uid: Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.Invoke*
+  name: Invoke
+  href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.html#Microsoft_AspNetCore_Blazor_Components_EventHandlerInvoker_Invoke_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.Invoke
+  fullName: Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker.Invoke
+  nameWithType: EventHandlerInvoker.Invoke
 - uid: Microsoft.AspNetCore.Blazor.Components.EventHandlers
   name: EventHandlers
   href: api/Microsoft.AspNetCore.Blazor.Components.EventHandlers.html
@@ -963,18 +991,36 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Components.IComponent.SetParameters
   fullName: Microsoft.AspNetCore.Blazor.Components.IComponent.SetParameters
   nameWithType: IComponent.SetParameters
+- uid: Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender
+  name: IHandleAfterRender
+  href: api/Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender
+  fullName: Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender
+  nameWithType: IHandleAfterRender
+- uid: Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender
+  name: OnAfterRender()
+  href: api/Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.html#Microsoft_AspNetCore_Blazor_Components_IHandleAfterRender_OnAfterRender
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender
+  fullName: Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender()
+  nameWithType: IHandleAfterRender.OnAfterRender()
+- uid: Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender*
+  name: OnAfterRender
+  href: api/Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.html#Microsoft_AspNetCore_Blazor_Components_IHandleAfterRender_OnAfterRender_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender
+  fullName: Microsoft.AspNetCore.Blazor.Components.IHandleAfterRender.OnAfterRender
+  nameWithType: IHandleAfterRender.OnAfterRender
 - uid: Microsoft.AspNetCore.Blazor.Components.IHandleEvent
   name: IHandleEvent
   href: api/Microsoft.AspNetCore.Blazor.Components.IHandleEvent.html
   commentId: T:Microsoft.AspNetCore.Blazor.Components.IHandleEvent
   fullName: Microsoft.AspNetCore.Blazor.Components.IHandleEvent
   nameWithType: IHandleEvent
-- uid: Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(Microsoft.AspNetCore.Blazor.UIEventHandler,Microsoft.AspNetCore.Blazor.UIEventArgs)
-  name: HandleEvent(UIEventHandler, UIEventArgs)
-  href: api/Microsoft.AspNetCore.Blazor.Components.IHandleEvent.html#Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_Microsoft_AspNetCore_Blazor_UIEventHandler_Microsoft_AspNetCore_Blazor_UIEventArgs_
-  commentId: M:Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(Microsoft.AspNetCore.Blazor.UIEventHandler,Microsoft.AspNetCore.Blazor.UIEventArgs)
-  fullName: Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(Microsoft.AspNetCore.Blazor.UIEventHandler, Microsoft.AspNetCore.Blazor.UIEventArgs)
-  nameWithType: IHandleEvent.HandleEvent(UIEventHandler, UIEventArgs)
+- uid: Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker,Microsoft.AspNetCore.Blazor.UIEventArgs)
+  name: HandleEvent(EventHandlerInvoker, UIEventArgs)
+  href: api/Microsoft.AspNetCore.Blazor.Components.IHandleEvent.html#Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_Microsoft_AspNetCore_Blazor_Components_EventHandlerInvoker_Microsoft_AspNetCore_Blazor_UIEventArgs_
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker,Microsoft.AspNetCore.Blazor.UIEventArgs)
+  fullName: Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent(Microsoft.AspNetCore.Blazor.Components.EventHandlerInvoker, Microsoft.AspNetCore.Blazor.UIEventArgs)
+  nameWithType: IHandleEvent.HandleEvent(EventHandlerInvoker, UIEventArgs)
 - uid: Microsoft.AspNetCore.Blazor.Components.IHandleEvent.HandleEvent*
   name: HandleEvent
   href: api/Microsoft.AspNetCore.Blazor.Components.IHandleEvent.html#Microsoft_AspNetCore_Blazor_Components_IHandleEvent_HandleEvent_
@@ -1029,6 +1075,24 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Components.Parameter.Value
   fullName: Microsoft.AspNetCore.Blazor.Components.Parameter.Value
   nameWithType: Parameter.Value
+- uid: Microsoft.AspNetCore.Blazor.Components.ParameterAttribute
+  name: ParameterAttribute
+  href: api/Microsoft.AspNetCore.Blazor.Components.ParameterAttribute.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Components.ParameterAttribute
+  fullName: Microsoft.AspNetCore.Blazor.Components.ParameterAttribute
+  nameWithType: ParameterAttribute
+- uid: Microsoft.AspNetCore.Blazor.Components.ParameterAttribute.#ctor
+  name: ParameterAttribute()
+  href: api/Microsoft.AspNetCore.Blazor.Components.ParameterAttribute.html#Microsoft_AspNetCore_Blazor_Components_ParameterAttribute__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.Components.ParameterAttribute.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Components.ParameterAttribute.ParameterAttribute()
+  nameWithType: ParameterAttribute.ParameterAttribute()
+- uid: Microsoft.AspNetCore.Blazor.Components.ParameterAttribute.#ctor*
+  name: ParameterAttribute
+  href: api/Microsoft.AspNetCore.Blazor.Components.ParameterAttribute.html#Microsoft_AspNetCore_Blazor_Components_ParameterAttribute__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Components.ParameterAttribute.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Components.ParameterAttribute.ParameterAttribute
+  nameWithType: ParameterAttribute.ParameterAttribute
 - uid: Microsoft.AspNetCore.Blazor.Components.ParameterCollection
   name: ParameterCollection
   href: api/Microsoft.AspNetCore.Blazor.Components.ParameterCollection.html
@@ -1218,6 +1282,12 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Components.RouteAttribute.Template
   fullName: Microsoft.AspNetCore.Blazor.Components.RouteAttribute.Template
   nameWithType: RouteAttribute.Template
+- uid: Microsoft.AspNetCore.Blazor.ElementRef
+  name: ElementRef
+  href: api/Microsoft.AspNetCore.Blazor.ElementRef.html
+  commentId: T:Microsoft.AspNetCore.Blazor.ElementRef
+  fullName: Microsoft.AspNetCore.Blazor.ElementRef
+  nameWithType: ElementRef
 - uid: Microsoft.AspNetCore.Blazor.HttpClientJsonExtensions
   name: HttpClientJsonExtensions
   href: api/Microsoft.AspNetCore.Blazor.HttpClientJsonExtensions.html
@@ -1341,24 +1411,36 @@ references:
   commentId: N:Microsoft.AspNetCore.Blazor.Layouts
   fullName: Microsoft.AspNetCore.Blazor.Layouts
   nameWithType: Microsoft.AspNetCore.Blazor.Layouts
-- uid: Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent
-  name: ILayoutComponent
-  href: api/Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.html
-  commentId: T:Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent
-  fullName: Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent
-  nameWithType: ILayoutComponent
-- uid: Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.Body
+- uid: Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent
+  name: BlazorLayoutComponent
+  href: api/Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent
+  fullName: Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent
+  nameWithType: BlazorLayoutComponent
+- uid: Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.#ctor
+  name: BlazorLayoutComponent()
+  href: api/Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.html#Microsoft_AspNetCore_Blazor_Layouts_BlazorLayoutComponent__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.BlazorLayoutComponent()
+  nameWithType: BlazorLayoutComponent.BlazorLayoutComponent()
+- uid: Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.#ctor*
+  name: BlazorLayoutComponent
+  href: api/Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.html#Microsoft_AspNetCore_Blazor_Layouts_BlazorLayoutComponent__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.BlazorLayoutComponent
+  nameWithType: BlazorLayoutComponent.BlazorLayoutComponent
+- uid: Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.Body
   name: Body
-  href: api/Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.html#Microsoft_AspNetCore_Blazor_Layouts_ILayoutComponent_Body
-  commentId: P:Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.Body
-  fullName: Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.Body
-  nameWithType: ILayoutComponent.Body
-- uid: Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.Body*
+  href: api/Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.html#Microsoft_AspNetCore_Blazor_Layouts_BlazorLayoutComponent_Body
+  commentId: P:Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.Body
+  fullName: Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.Body
+  nameWithType: BlazorLayoutComponent.Body
+- uid: Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.Body*
   name: Body
-  href: api/Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.html#Microsoft_AspNetCore_Blazor_Layouts_ILayoutComponent_Body_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.Body
-  fullName: Microsoft.AspNetCore.Blazor.Layouts.ILayoutComponent.Body
-  nameWithType: ILayoutComponent.Body
+  href: api/Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.html#Microsoft_AspNetCore_Blazor_Layouts_BlazorLayoutComponent_Body_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.Body
+  fullName: Microsoft.AspNetCore.Blazor.Layouts.BlazorLayoutComponent.Body
+  nameWithType: BlazorLayoutComponent.Body
 - uid: Microsoft.AspNetCore.Blazor.Layouts.LayoutAttribute
   name: LayoutAttribute
   href: api/Microsoft.AspNetCore.Blazor.Layouts.LayoutAttribute.html
@@ -1419,30 +1501,6 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.Init
   fullName: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.Init
   nameWithType: LayoutDisplay.Init
-- uid: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.Page
-  name: Page
-  href: api/Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.html#Microsoft_AspNetCore_Blazor_Layouts_LayoutDisplay_Page
-  commentId: P:Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.Page
-  fullName: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.Page
-  nameWithType: LayoutDisplay.Page
-- uid: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.Page*
-  name: Page
-  href: api/Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.html#Microsoft_AspNetCore_Blazor_Layouts_LayoutDisplay_Page_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.Page
-  fullName: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.Page
-  nameWithType: LayoutDisplay.Page
-- uid: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.PageParameters
-  name: PageParameters
-  href: api/Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.html#Microsoft_AspNetCore_Blazor_Layouts_LayoutDisplay_PageParameters
-  commentId: P:Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.PageParameters
-  fullName: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.PageParameters
-  nameWithType: LayoutDisplay.PageParameters
-- uid: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.PageParameters*
-  name: PageParameters
-  href: api/Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.html#Microsoft_AspNetCore_Blazor_Layouts_LayoutDisplay_PageParameters_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.PageParameters
-  fullName: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.PageParameters
-  nameWithType: LayoutDisplay.PageParameters
 - uid: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.SetParameters(Microsoft.AspNetCore.Blazor.Components.ParameterCollection)
   name: SetParameters(ParameterCollection)
   href: api/Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.html#Microsoft_AspNetCore_Blazor_Layouts_LayoutDisplay_SetParameters_Microsoft_AspNetCore_Blazor_Components_ParameterCollection_
@@ -1707,24 +1765,45 @@ references:
   commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame)
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame)
   nameWithType: RenderTreeBuilder.AddAttribute(Int32, RenderTreeFrame)
-- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIEventHandler)
-  name: AddAttribute(Int32, String, UIEventHandler)
-  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIEventHandler_
-  commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIEventHandler)
-  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, Microsoft.AspNetCore.Blazor.UIEventHandler)
-  nameWithType: RenderTreeBuilder.AddAttribute(Int32, String, UIEventHandler)
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Action)
   name: AddAttribute(Int32, String, Action)
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Action_
   commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Action)
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, System.Action)
   nameWithType: RenderTreeBuilder.AddAttribute(Int32, String, Action)
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIEventArgs})
+  name: AddAttribute(Int32, String, Action<UIEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIEventArgs})
+  name.vb: AddAttribute(Int32, String, Action(Of UIEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UIEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UIEventArgs))
+  nameWithType: RenderTreeBuilder.AddAttribute(Int32, String, Action<UIEventArgs>)
+  nameWithType.vb: RenderTreeBuilder.AddAttribute(Int32, String, Action(Of UIEventArgs))
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Boolean)
   name: AddAttribute(Int32, String, Boolean)
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Boolean_
   commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Boolean)
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, System.Boolean)
   nameWithType: RenderTreeBuilder.AddAttribute(Int32, String, Boolean)
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(Int32, String, Func<UIEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(Int32, String, Func(Of UIEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UIEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UIEventArgs, System.Threading.Tasks.Task))
+  nameWithType: RenderTreeBuilder.AddAttribute(Int32, String, Func<UIEventArgs, Task>)
+  nameWithType.vb: RenderTreeBuilder.AddAttribute(Int32, String, Func(Of UIEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Func{System.Threading.Tasks.Task})
+  name: AddAttribute(Int32, String, Func<Task>)
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_Func_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.Func{System.Threading.Tasks.Task})
+  name.vb: AddAttribute(Int32, String, Func(Of Task))
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, System.Func<System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32, System.String, System.Func(Of System.Threading.Tasks.Task))
+  nameWithType: RenderTreeBuilder.AddAttribute(Int32, String, Func<Task>)
+  nameWithType.vb: RenderTreeBuilder.AddAttribute(Int32, String, Func(Of Task))
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute(System.Int32,System.String,System.MulticastDelegate)
   name: AddAttribute(Int32, String, MulticastDelegate)
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddAttribute_System_Int32_System_String_System_MulticastDelegate_
@@ -1749,6 +1828,21 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddAttribute
   nameWithType: RenderTreeBuilder.AddAttribute
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddComponentReferenceCapture(System.Int32,System.Action{System.Object})
+  name: AddComponentReferenceCapture(Int32, Action<Object>)
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddComponentReferenceCapture_System_Int32_System_Action_System_Object__
+  commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddComponentReferenceCapture(System.Int32,System.Action{System.Object})
+  name.vb: AddComponentReferenceCapture(Int32, Action(Of Object))
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddComponentReferenceCapture(System.Int32, System.Action<System.Object>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddComponentReferenceCapture(System.Int32, System.Action(Of System.Object))
+  nameWithType: RenderTreeBuilder.AddComponentReferenceCapture(Int32, Action<Object>)
+  nameWithType.vb: RenderTreeBuilder.AddComponentReferenceCapture(Int32, Action(Of Object))
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddComponentReferenceCapture*
+  name: AddComponentReferenceCapture
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddComponentReferenceCapture_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddComponentReferenceCapture
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddComponentReferenceCapture
+  nameWithType: RenderTreeBuilder.AddComponentReferenceCapture
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent(System.Int32,Microsoft.AspNetCore.Blazor.RenderFragment)
   name: AddContent(Int32, RenderFragment)
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_System_Int32_Microsoft_AspNetCore_Blazor_RenderFragment_
@@ -1773,6 +1867,21 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent
   nameWithType: RenderTreeBuilder.AddContent
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddElementReferenceCapture(System.Int32,System.Action{Microsoft.AspNetCore.Blazor.ElementRef})
+  name: AddElementReferenceCapture(Int32, Action<ElementRef>)
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddElementReferenceCapture_System_Int32_System_Action_Microsoft_AspNetCore_Blazor_ElementRef__
+  commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddElementReferenceCapture(System.Int32,System.Action{Microsoft.AspNetCore.Blazor.ElementRef})
+  name.vb: AddElementReferenceCapture(Int32, Action(Of ElementRef))
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddElementReferenceCapture(System.Int32, System.Action<Microsoft.AspNetCore.Blazor.ElementRef>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddElementReferenceCapture(System.Int32, System.Action(Of Microsoft.AspNetCore.Blazor.ElementRef))
+  nameWithType: RenderTreeBuilder.AddElementReferenceCapture(Int32, Action<ElementRef>)
+  nameWithType.vb: RenderTreeBuilder.AddElementReferenceCapture(Int32, Action(Of ElementRef))
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddElementReferenceCapture*
+  name: AddElementReferenceCapture
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddElementReferenceCapture_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddElementReferenceCapture
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddElementReferenceCapture
+  nameWithType: RenderTreeBuilder.AddElementReferenceCapture
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.ChildContent
   name: ChildContent
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_ChildContent
@@ -1998,6 +2107,18 @@ references:
   commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ComponentId
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ComponentId
   nameWithType: RenderTreeFrame.ComponentId
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ComponentReferenceCaptureAction
+  name: ComponentReferenceCaptureAction
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_ComponentReferenceCaptureAction
+  commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ComponentReferenceCaptureAction
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ComponentReferenceCaptureAction
+  nameWithType: RenderTreeFrame.ComponentReferenceCaptureAction
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ComponentReferenceCaptureParentFrameIndex
+  name: ComponentReferenceCaptureParentFrameIndex
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_ComponentReferenceCaptureParentFrameIndex
+  commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ComponentReferenceCaptureParentFrameIndex
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ComponentReferenceCaptureParentFrameIndex
+  nameWithType: RenderTreeFrame.ComponentReferenceCaptureParentFrameIndex
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ComponentSubtreeLength
   name: ComponentSubtreeLength
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_ComponentSubtreeLength
@@ -2016,6 +2137,18 @@ references:
   commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementName
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementName
   nameWithType: RenderTreeFrame.ElementName
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementReferenceCaptureAction
+  name: ElementReferenceCaptureAction
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_ElementReferenceCaptureAction
+  commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementReferenceCaptureAction
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementReferenceCaptureAction
+  nameWithType: RenderTreeFrame.ElementReferenceCaptureAction
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementReferenceCaptureId
+  name: ElementReferenceCaptureId
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_ElementReferenceCaptureId
+  commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementReferenceCaptureId
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementReferenceCaptureId
+  nameWithType: RenderTreeFrame.ElementReferenceCaptureId
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.ElementSubtreeLength
   name: ElementSubtreeLength
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_ElementSubtreeLength
@@ -2076,12 +2209,24 @@ references:
   commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.Component
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.Component
   nameWithType: RenderTreeFrameType.Component
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.ComponentReferenceCapture
+  name: ComponentReferenceCapture
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_ComponentReferenceCapture
+  commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.ComponentReferenceCapture
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.ComponentReferenceCapture
+  nameWithType: RenderTreeFrameType.ComponentReferenceCapture
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.Element
   name: Element
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_Element
   commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.Element
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.Element
   nameWithType: RenderTreeFrameType.Element
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.ElementReferenceCapture
+  name: ElementReferenceCapture
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_ElementReferenceCapture
+  commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.ElementReferenceCapture
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.ElementReferenceCapture
+  nameWithType: RenderTreeFrameType.ElementReferenceCapture
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.Region
   name: Region
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_Region
@@ -2124,18 +2269,6 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Routing.NavLink.#ctor
   fullName: Microsoft.AspNetCore.Blazor.Routing.NavLink.NavLink
   nameWithType: NavLink.NavLink
-- uid: Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass
-  name: ActiveClass
-  href: api/Microsoft.AspNetCore.Blazor.Routing.NavLink.html#Microsoft_AspNetCore_Blazor_Routing_NavLink_ActiveClass
-  commentId: P:Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass
-  fullName: Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass
-  nameWithType: NavLink.ActiveClass
-- uid: Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass*
-  name: ActiveClass
-  href: api/Microsoft.AspNetCore.Blazor.Routing.NavLink.html#Microsoft_AspNetCore_Blazor_Routing_NavLink_ActiveClass_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass
-  fullName: Microsoft.AspNetCore.Blazor.Routing.NavLink.ActiveClass
-  nameWithType: NavLink.ActiveClass
 - uid: Microsoft.AspNetCore.Blazor.Routing.NavLink.Dispose
   name: Dispose()
   href: api/Microsoft.AspNetCore.Blazor.Routing.NavLink.html#Microsoft_AspNetCore_Blazor_Routing_NavLink_Dispose
@@ -2160,18 +2293,6 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Routing.NavLink.Init
   fullName: Microsoft.AspNetCore.Blazor.Routing.NavLink.Init
   nameWithType: NavLink.Init
-- uid: Microsoft.AspNetCore.Blazor.Routing.NavLink.Match
-  name: Match
-  href: api/Microsoft.AspNetCore.Blazor.Routing.NavLink.html#Microsoft_AspNetCore_Blazor_Routing_NavLink_Match
-  commentId: P:Microsoft.AspNetCore.Blazor.Routing.NavLink.Match
-  fullName: Microsoft.AspNetCore.Blazor.Routing.NavLink.Match
-  nameWithType: NavLink.Match
-- uid: Microsoft.AspNetCore.Blazor.Routing.NavLink.Match*
-  name: Match
-  href: api/Microsoft.AspNetCore.Blazor.Routing.NavLink.html#Microsoft_AspNetCore_Blazor_Routing_NavLink_Match_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Routing.NavLink.Match
-  fullName: Microsoft.AspNetCore.Blazor.Routing.NavLink.Match
-  nameWithType: NavLink.Match
 - uid: Microsoft.AspNetCore.Blazor.Routing.NavLink.SetParameters(Microsoft.AspNetCore.Blazor.Components.ParameterCollection)
   name: SetParameters(ParameterCollection)
   href: api/Microsoft.AspNetCore.Blazor.Routing.NavLink.html#Microsoft_AspNetCore_Blazor_Routing_NavLink_SetParameters_Microsoft_AspNetCore_Blazor_Components_ParameterCollection_
@@ -2226,18 +2347,6 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Routing.Router.#ctor
   fullName: Microsoft.AspNetCore.Blazor.Routing.Router.Router
   nameWithType: Router.Router
-- uid: Microsoft.AspNetCore.Blazor.Routing.Router.AppAssembly
-  name: AppAssembly
-  href: api/Microsoft.AspNetCore.Blazor.Routing.Router.html#Microsoft_AspNetCore_Blazor_Routing_Router_AppAssembly
-  commentId: P:Microsoft.AspNetCore.Blazor.Routing.Router.AppAssembly
-  fullName: Microsoft.AspNetCore.Blazor.Routing.Router.AppAssembly
-  nameWithType: Router.AppAssembly
-- uid: Microsoft.AspNetCore.Blazor.Routing.Router.AppAssembly*
-  name: AppAssembly
-  href: api/Microsoft.AspNetCore.Blazor.Routing.Router.html#Microsoft_AspNetCore_Blazor_Routing_Router_AppAssembly_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Routing.Router.AppAssembly
-  fullName: Microsoft.AspNetCore.Blazor.Routing.Router.AppAssembly
-  nameWithType: Router.AppAssembly
 - uid: Microsoft.AspNetCore.Blazor.Routing.Router.Dispose
   name: Dispose()
   href: api/Microsoft.AspNetCore.Blazor.Routing.Router.html#Microsoft_AspNetCore_Blazor_Routing_Router_Dispose
@@ -2421,60 +2530,60 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.UIChangeEventArgs.Value
   fullName: Microsoft.AspNetCore.Blazor.UIChangeEventArgs.Value
   nameWithType: UIChangeEventArgs.Value
-- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler
-  name: UIChangeEventHandler
-  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html
-  commentId: T:Microsoft.AspNetCore.Blazor.UIChangeEventHandler
-  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler
-  nameWithType: UIChangeEventHandler
-- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.#ctor(System.Object,System.IntPtr)
-  name: UIChangeEventHandler(Object, IntPtr)
-  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler__ctor_System_Object_System_IntPtr_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.#ctor(System.Object,System.IntPtr)
-  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.UIChangeEventHandler(System.Object, System.IntPtr)
-  nameWithType: UIChangeEventHandler.UIChangeEventHandler(Object, IntPtr)
-- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.#ctor*
-  name: UIChangeEventHandler
-  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler__ctor_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.UIChangeEventHandler
-  nameWithType: UIChangeEventHandler.UIChangeEventHandler
-- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs,System.AsyncCallback,System.Object)
-  name: BeginInvoke(UIChangeEventArgs, AsyncCallback, Object)
-  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_BeginInvoke_Microsoft_AspNetCore_Blazor_UIChangeEventArgs_System_AsyncCallback_System_Object_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs,System.AsyncCallback,System.Object)
-  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs, System.AsyncCallback, System.Object)
-  nameWithType: UIChangeEventHandler.BeginInvoke(UIChangeEventArgs, AsyncCallback, Object)
-- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke*
-  name: BeginInvoke
-  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_BeginInvoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke
-  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.BeginInvoke
-  nameWithType: UIChangeEventHandler.BeginInvoke
-- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke(System.IAsyncResult)
-  name: EndInvoke(IAsyncResult)
-  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_EndInvoke_System_IAsyncResult_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke(System.IAsyncResult)
-  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke(System.IAsyncResult)
-  nameWithType: UIChangeEventHandler.EndInvoke(IAsyncResult)
-- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke*
-  name: EndInvoke
-  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_EndInvoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke
-  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.EndInvoke
-  nameWithType: UIChangeEventHandler.EndInvoke
-- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs)
-  name: Invoke(UIChangeEventArgs)
-  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_Invoke_Microsoft_AspNetCore_Blazor_UIChangeEventArgs_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs)
-  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIChangeEventArgs)
-  nameWithType: UIChangeEventHandler.Invoke(UIChangeEventArgs)
-- uid: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke*
-  name: Invoke
-  href: api/Microsoft.AspNetCore.Blazor.UIChangeEventHandler.html#Microsoft_AspNetCore_Blazor_UIChangeEventHandler_Invoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke
-  fullName: Microsoft.AspNetCore.Blazor.UIChangeEventHandler.Invoke
-  nameWithType: UIChangeEventHandler.Invoke
+- uid: Microsoft.AspNetCore.Blazor.UIClipboardEventArgs
+  name: UIClipboardEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIClipboardEventArgs.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIClipboardEventArgs
+  fullName: Microsoft.AspNetCore.Blazor.UIClipboardEventArgs
+  nameWithType: UIClipboardEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIClipboardEventArgs.#ctor
+  name: UIClipboardEventArgs()
+  href: api/Microsoft.AspNetCore.Blazor.UIClipboardEventArgs.html#Microsoft_AspNetCore_Blazor_UIClipboardEventArgs__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.UIClipboardEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIClipboardEventArgs.UIClipboardEventArgs()
+  nameWithType: UIClipboardEventArgs.UIClipboardEventArgs()
+- uid: Microsoft.AspNetCore.Blazor.UIClipboardEventArgs.#ctor*
+  name: UIClipboardEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIClipboardEventArgs.html#Microsoft_AspNetCore_Blazor_UIClipboardEventArgs__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIClipboardEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIClipboardEventArgs.UIClipboardEventArgs
+  nameWithType: UIClipboardEventArgs.UIClipboardEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIDragEventArgs
+  name: UIDragEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIDragEventArgs.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIDragEventArgs
+  fullName: Microsoft.AspNetCore.Blazor.UIDragEventArgs
+  nameWithType: UIDragEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIDragEventArgs.#ctor
+  name: UIDragEventArgs()
+  href: api/Microsoft.AspNetCore.Blazor.UIDragEventArgs.html#Microsoft_AspNetCore_Blazor_UIDragEventArgs__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.UIDragEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIDragEventArgs.UIDragEventArgs()
+  nameWithType: UIDragEventArgs.UIDragEventArgs()
+- uid: Microsoft.AspNetCore.Blazor.UIDragEventArgs.#ctor*
+  name: UIDragEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIDragEventArgs.html#Microsoft_AspNetCore_Blazor_UIDragEventArgs__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIDragEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIDragEventArgs.UIDragEventArgs
+  nameWithType: UIDragEventArgs.UIDragEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIErrorEventArgs
+  name: UIErrorEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIErrorEventArgs.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIErrorEventArgs
+  fullName: Microsoft.AspNetCore.Blazor.UIErrorEventArgs
+  nameWithType: UIErrorEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIErrorEventArgs.#ctor
+  name: UIErrorEventArgs()
+  href: api/Microsoft.AspNetCore.Blazor.UIErrorEventArgs.html#Microsoft_AspNetCore_Blazor_UIErrorEventArgs__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.UIErrorEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIErrorEventArgs.UIErrorEventArgs()
+  nameWithType: UIErrorEventArgs.UIErrorEventArgs()
+- uid: Microsoft.AspNetCore.Blazor.UIErrorEventArgs.#ctor*
+  name: UIErrorEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIErrorEventArgs.html#Microsoft_AspNetCore_Blazor_UIErrorEventArgs__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIErrorEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIErrorEventArgs.UIErrorEventArgs
+  nameWithType: UIErrorEventArgs.UIErrorEventArgs
 - uid: Microsoft.AspNetCore.Blazor.UIEventArgs
   name: UIEventArgs
   href: api/Microsoft.AspNetCore.Blazor.UIEventArgs.html
@@ -2505,90 +2614,234 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.UIEventArgs.Type
   fullName: Microsoft.AspNetCore.Blazor.UIEventArgs.Type
   nameWithType: UIEventArgs.Type
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandler
-  name: UIEventHandler
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandler.html
-  commentId: T:Microsoft.AspNetCore.Blazor.UIEventHandler
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandler
-  nameWithType: UIEventHandler
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandler.#ctor(System.Object,System.IntPtr)
-  name: UIEventHandler(Object, IntPtr)
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandler.html#Microsoft_AspNetCore_Blazor_UIEventHandler__ctor_System_Object_System_IntPtr_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIEventHandler.#ctor(System.Object,System.IntPtr)
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandler.UIEventHandler(System.Object, System.IntPtr)
-  nameWithType: UIEventHandler.UIEventHandler(Object, IntPtr)
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandler.#ctor*
-  name: UIEventHandler
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandler.html#Microsoft_AspNetCore_Blazor_UIEventHandler__ctor_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIEventHandler.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandler.UIEventHandler
-  nameWithType: UIEventHandler.UIEventHandler
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIEventArgs,System.AsyncCallback,System.Object)
-  name: BeginInvoke(UIEventArgs, AsyncCallback, Object)
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandler.html#Microsoft_AspNetCore_Blazor_UIEventHandler_BeginInvoke_Microsoft_AspNetCore_Blazor_UIEventArgs_System_AsyncCallback_System_Object_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIEventArgs,System.AsyncCallback,System.Object)
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIEventArgs, System.AsyncCallback, System.Object)
-  nameWithType: UIEventHandler.BeginInvoke(UIEventArgs, AsyncCallback, Object)
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandler.BeginInvoke*
-  name: BeginInvoke
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandler.html#Microsoft_AspNetCore_Blazor_UIEventHandler_BeginInvoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIEventHandler.BeginInvoke
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandler.BeginInvoke
-  nameWithType: UIEventHandler.BeginInvoke
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandler.EndInvoke(System.IAsyncResult)
-  name: EndInvoke(IAsyncResult)
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandler.html#Microsoft_AspNetCore_Blazor_UIEventHandler_EndInvoke_System_IAsyncResult_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIEventHandler.EndInvoke(System.IAsyncResult)
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandler.EndInvoke(System.IAsyncResult)
-  nameWithType: UIEventHandler.EndInvoke(IAsyncResult)
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandler.EndInvoke*
-  name: EndInvoke
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandler.html#Microsoft_AspNetCore_Blazor_UIEventHandler_EndInvoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIEventHandler.EndInvoke
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandler.EndInvoke
-  nameWithType: UIEventHandler.EndInvoke
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIEventArgs)
-  name: Invoke(UIEventArgs)
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandler.html#Microsoft_AspNetCore_Blazor_UIEventHandler_Invoke_Microsoft_AspNetCore_Blazor_UIEventArgs_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIEventArgs)
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIEventArgs)
-  nameWithType: UIEventHandler.Invoke(UIEventArgs)
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandler.Invoke*
-  name: Invoke
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandler.html#Microsoft_AspNetCore_Blazor_UIEventHandler_Invoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIEventHandler.Invoke
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandler.Invoke
-  nameWithType: UIEventHandler.Invoke
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions
-  name: UIEventHandlerRenderTreeBuilderExtensions
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html
-  commentId: T:Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions
-  nameWithType: UIEventHandlerRenderTreeBuilderExtensions
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIChangeEventHandler)
-  name: AddAttribute(RenderTreeBuilder, Int32, String, UIChangeEventHandler)
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIChangeEventHandler_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIChangeEventHandler)
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, Microsoft.AspNetCore.Blazor.UIChangeEventHandler)
-  nameWithType: UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIChangeEventHandler)
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler)
-  name: AddAttribute(RenderTreeBuilder, Int32, String, UIKeyboardEventHandler)
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler)
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler)
-  nameWithType: UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIKeyboardEventHandler)
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIMouseEventHandler)
-  name: AddAttribute(RenderTreeBuilder, Int32, String, UIMouseEventHandler)
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_Microsoft_AspNetCore_Blazor_UIMouseEventHandler_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,Microsoft.AspNetCore.Blazor.UIMouseEventHandler)
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, Microsoft.AspNetCore.Blazor.UIMouseEventHandler)
-  nameWithType: UIEventHandlerRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, UIMouseEventHandler)
-- uid: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute*
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions
+  name: UIEventArgsRenderTreeBuilderExtensions
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIChangeEventArgs})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Action<UIChangeEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIChangeEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIChangeEventArgs})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIChangeEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UIChangeEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UIChangeEventArgs))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action<UIChangeEventArgs>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIChangeEventArgs))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIClipboardEventArgs})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Action<UIClipboardEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIClipboardEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIClipboardEventArgs})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIClipboardEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UIClipboardEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UIClipboardEventArgs))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action<UIClipboardEventArgs>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIClipboardEventArgs))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIDragEventArgs})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Action<UIDragEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIDragEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIDragEventArgs})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIDragEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UIDragEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UIDragEventArgs))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action<UIDragEventArgs>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIDragEventArgs))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIErrorEventArgs})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Action<UIErrorEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIErrorEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIErrorEventArgs})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIErrorEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UIErrorEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UIErrorEventArgs))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action<UIErrorEventArgs>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIErrorEventArgs))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIFocusEventArgs})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Action<UIFocusEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIFocusEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIFocusEventArgs})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIFocusEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UIFocusEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UIFocusEventArgs))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action<UIFocusEventArgs>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIFocusEventArgs))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Action<UIKeyboardEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIKeyboardEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action<UIKeyboardEventArgs>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIKeyboardEventArgs))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIMouseEventArgs})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Action<UIMouseEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIMouseEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIMouseEventArgs})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIMouseEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UIMouseEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UIMouseEventArgs))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action<UIMouseEventArgs>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIMouseEventArgs))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIPointerEventArgs})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Action<UIPointerEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIPointerEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIPointerEventArgs})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIPointerEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UIPointerEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UIPointerEventArgs))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action<UIPointerEventArgs>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIPointerEventArgs))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIProgressEventArgs})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Action<UIProgressEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIProgressEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIProgressEventArgs})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIProgressEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UIProgressEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UIProgressEventArgs))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action<UIProgressEventArgs>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIProgressEventArgs))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UITouchEventArgs})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Action<UITouchEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UITouchEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UITouchEventArgs})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UITouchEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UITouchEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UITouchEventArgs))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action<UITouchEventArgs>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UITouchEventArgs))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIWheelEventArgs})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Action<UIWheelEventArgs>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Action_Microsoft_AspNetCore_Blazor_UIWheelEventArgs__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Action{Microsoft.AspNetCore.Blazor.UIWheelEventArgs})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIWheelEventArgs))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action<Microsoft.AspNetCore.Blazor.UIWheelEventArgs>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Action(Of Microsoft.AspNetCore.Blazor.UIWheelEventArgs))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action<UIWheelEventArgs>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Action(Of UIWheelEventArgs))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIChangeEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Func<UIChangeEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIChangeEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIChangeEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIChangeEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UIChangeEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UIChangeEventArgs, System.Threading.Tasks.Task))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func<UIChangeEventArgs, Task>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIChangeEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIClipboardEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Func<UIClipboardEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIClipboardEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIClipboardEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIClipboardEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UIClipboardEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UIClipboardEventArgs, System.Threading.Tasks.Task))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func<UIClipboardEventArgs, Task>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIClipboardEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIDragEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Func<UIDragEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIDragEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIDragEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIDragEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UIDragEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UIDragEventArgs, System.Threading.Tasks.Task))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func<UIDragEventArgs, Task>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIDragEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIErrorEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Func<UIErrorEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIErrorEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIErrorEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIErrorEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UIErrorEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UIErrorEventArgs, System.Threading.Tasks.Task))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func<UIErrorEventArgs, Task>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIErrorEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIFocusEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Func<UIFocusEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIFocusEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIFocusEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIFocusEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UIFocusEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UIFocusEventArgs, System.Threading.Tasks.Task))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func<UIFocusEventArgs, Task>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIFocusEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Func<UIKeyboardEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIKeyboardEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs, System.Threading.Tasks.Task))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func<UIKeyboardEventArgs, Task>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIKeyboardEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIMouseEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Func<UIMouseEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIMouseEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIMouseEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIMouseEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UIMouseEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UIMouseEventArgs, System.Threading.Tasks.Task))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func<UIMouseEventArgs, Task>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIMouseEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIPointerEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Func<UIPointerEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIPointerEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIPointerEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIPointerEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UIPointerEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UIPointerEventArgs, System.Threading.Tasks.Task))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func<UIPointerEventArgs, Task>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIPointerEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIProgressEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Func<UIProgressEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIProgressEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIProgressEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIProgressEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UIProgressEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UIProgressEventArgs, System.Threading.Tasks.Task))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func<UIProgressEventArgs, Task>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIProgressEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UITouchEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Func<UITouchEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UITouchEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UITouchEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UITouchEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UITouchEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UITouchEventArgs, System.Threading.Tasks.Task))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func<UITouchEventArgs, Task>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UITouchEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIWheelEventArgs,System.Threading.Tasks.Task})
+  name: AddAttribute(RenderTreeBuilder, Int32, String, Func<UIWheelEventArgs, Task>)
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_System_Int32_System_String_System_Func_Microsoft_AspNetCore_Blazor_UIWheelEventArgs_System_Threading_Tasks_Task__
+  commentId: M:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder,System.Int32,System.String,System.Func{Microsoft.AspNetCore.Blazor.UIWheelEventArgs,System.Threading.Tasks.Task})
+  name.vb: AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIWheelEventArgs, Task))
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func<Microsoft.AspNetCore.Blazor.UIWheelEventArgs, System.Threading.Tasks.Task>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute(Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder, System.Int32, System.String, System.Func(Of Microsoft.AspNetCore.Blazor.UIWheelEventArgs, System.Threading.Tasks.Task))
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func<UIWheelEventArgs, Task>)
+  nameWithType.vb: UIEventArgsRenderTreeBuilderExtensions.AddAttribute(RenderTreeBuilder, Int32, String, Func(Of UIWheelEventArgs, Task))
+- uid: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute*
   name: AddAttribute
-  href: api/Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventHandlerRenderTreeBuilderExtensions_AddAttribute_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute
-  fullName: Microsoft.AspNetCore.Blazor.UIEventHandlerRenderTreeBuilderExtensions.AddAttribute
-  nameWithType: UIEventHandlerRenderTreeBuilderExtensions.AddAttribute
+  href: api/Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.html#Microsoft_AspNetCore_Blazor_UIEventArgsRenderTreeBuilderExtensions_AddAttribute_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute
+  fullName: Microsoft.AspNetCore.Blazor.UIEventArgsRenderTreeBuilderExtensions.AddAttribute
+  nameWithType: UIEventArgsRenderTreeBuilderExtensions.AddAttribute
+- uid: Microsoft.AspNetCore.Blazor.UIFocusEventArgs
+  name: UIFocusEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIFocusEventArgs.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIFocusEventArgs
+  fullName: Microsoft.AspNetCore.Blazor.UIFocusEventArgs
+  nameWithType: UIFocusEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIFocusEventArgs.#ctor
+  name: UIFocusEventArgs()
+  href: api/Microsoft.AspNetCore.Blazor.UIFocusEventArgs.html#Microsoft_AspNetCore_Blazor_UIFocusEventArgs__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.UIFocusEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIFocusEventArgs.UIFocusEventArgs()
+  nameWithType: UIFocusEventArgs.UIFocusEventArgs()
+- uid: Microsoft.AspNetCore.Blazor.UIFocusEventArgs.#ctor*
+  name: UIFocusEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIFocusEventArgs.html#Microsoft_AspNetCore_Blazor_UIFocusEventArgs__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIFocusEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIFocusEventArgs.UIFocusEventArgs
+  nameWithType: UIFocusEventArgs.UIFocusEventArgs
 - uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs
   name: UIKeyboardEventArgs
   href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.html
@@ -2619,60 +2872,6 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Key
   fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Key
   nameWithType: UIKeyboardEventArgs.Key
-- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler
-  name: UIKeyboardEventHandler
-  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html
-  commentId: T:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler
-  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler
-  nameWithType: UIKeyboardEventHandler
-- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.#ctor(System.Object,System.IntPtr)
-  name: UIKeyboardEventHandler(Object, IntPtr)
-  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler__ctor_System_Object_System_IntPtr_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.#ctor(System.Object,System.IntPtr)
-  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.UIKeyboardEventHandler(System.Object, System.IntPtr)
-  nameWithType: UIKeyboardEventHandler.UIKeyboardEventHandler(Object, IntPtr)
-- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.#ctor*
-  name: UIKeyboardEventHandler
-  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler__ctor_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.UIKeyboardEventHandler
-  nameWithType: UIKeyboardEventHandler.UIKeyboardEventHandler
-- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs,System.AsyncCallback,System.Object)
-  name: BeginInvoke(UIKeyboardEventArgs, AsyncCallback, Object)
-  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_BeginInvoke_Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_System_AsyncCallback_System_Object_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs,System.AsyncCallback,System.Object)
-  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs, System.AsyncCallback, System.Object)
-  nameWithType: UIKeyboardEventHandler.BeginInvoke(UIKeyboardEventArgs, AsyncCallback, Object)
-- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke*
-  name: BeginInvoke
-  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_BeginInvoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke
-  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.BeginInvoke
-  nameWithType: UIKeyboardEventHandler.BeginInvoke
-- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke(System.IAsyncResult)
-  name: EndInvoke(IAsyncResult)
-  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_EndInvoke_System_IAsyncResult_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke(System.IAsyncResult)
-  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke(System.IAsyncResult)
-  nameWithType: UIKeyboardEventHandler.EndInvoke(IAsyncResult)
-- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke*
-  name: EndInvoke
-  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_EndInvoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke
-  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.EndInvoke
-  nameWithType: UIKeyboardEventHandler.EndInvoke
-- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs)
-  name: Invoke(UIKeyboardEventArgs)
-  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_Invoke_Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs)
-  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs)
-  nameWithType: UIKeyboardEventHandler.Invoke(UIKeyboardEventArgs)
-- uid: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke*
-  name: Invoke
-  href: api/Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.html#Microsoft_AspNetCore_Blazor_UIKeyboardEventHandler_Invoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke
-  fullName: Microsoft.AspNetCore.Blazor.UIKeyboardEventHandler.Invoke
-  nameWithType: UIKeyboardEventHandler.Invoke
 - uid: Microsoft.AspNetCore.Blazor.UIMouseEventArgs
   name: UIMouseEventArgs
   href: api/Microsoft.AspNetCore.Blazor.UIMouseEventArgs.html
@@ -2691,60 +2890,78 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.UIMouseEventArgs.#ctor
   fullName: Microsoft.AspNetCore.Blazor.UIMouseEventArgs.UIMouseEventArgs
   nameWithType: UIMouseEventArgs.UIMouseEventArgs
-- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler
-  name: UIMouseEventHandler
-  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html
-  commentId: T:Microsoft.AspNetCore.Blazor.UIMouseEventHandler
-  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler
-  nameWithType: UIMouseEventHandler
-- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.#ctor(System.Object,System.IntPtr)
-  name: UIMouseEventHandler(Object, IntPtr)
-  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler__ctor_System_Object_System_IntPtr_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.#ctor(System.Object,System.IntPtr)
-  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.UIMouseEventHandler(System.Object, System.IntPtr)
-  nameWithType: UIMouseEventHandler.UIMouseEventHandler(Object, IntPtr)
-- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.#ctor*
-  name: UIMouseEventHandler
-  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler__ctor_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.UIMouseEventHandler
-  nameWithType: UIMouseEventHandler.UIMouseEventHandler
-- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs,System.AsyncCallback,System.Object)
-  name: BeginInvoke(UIMouseEventArgs, AsyncCallback, Object)
-  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_BeginInvoke_Microsoft_AspNetCore_Blazor_UIMouseEventArgs_System_AsyncCallback_System_Object_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs,System.AsyncCallback,System.Object)
-  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs, System.AsyncCallback, System.Object)
-  nameWithType: UIMouseEventHandler.BeginInvoke(UIMouseEventArgs, AsyncCallback, Object)
-- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke*
-  name: BeginInvoke
-  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_BeginInvoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke
-  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.BeginInvoke
-  nameWithType: UIMouseEventHandler.BeginInvoke
-- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke(System.IAsyncResult)
-  name: EndInvoke(IAsyncResult)
-  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_EndInvoke_System_IAsyncResult_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke(System.IAsyncResult)
-  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke(System.IAsyncResult)
-  nameWithType: UIMouseEventHandler.EndInvoke(IAsyncResult)
-- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke*
-  name: EndInvoke
-  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_EndInvoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke
-  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.EndInvoke
-  nameWithType: UIMouseEventHandler.EndInvoke
-- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs)
-  name: Invoke(UIMouseEventArgs)
-  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_Invoke_Microsoft_AspNetCore_Blazor_UIMouseEventArgs_
-  commentId: M:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs)
-  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke(Microsoft.AspNetCore.Blazor.UIMouseEventArgs)
-  nameWithType: UIMouseEventHandler.Invoke(UIMouseEventArgs)
-- uid: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke*
-  name: Invoke
-  href: api/Microsoft.AspNetCore.Blazor.UIMouseEventHandler.html#Microsoft_AspNetCore_Blazor_UIMouseEventHandler_Invoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke
-  fullName: Microsoft.AspNetCore.Blazor.UIMouseEventHandler.Invoke
-  nameWithType: UIMouseEventHandler.Invoke
+- uid: Microsoft.AspNetCore.Blazor.UIPointerEventArgs
+  name: UIPointerEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIPointerEventArgs.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIPointerEventArgs
+  fullName: Microsoft.AspNetCore.Blazor.UIPointerEventArgs
+  nameWithType: UIPointerEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIPointerEventArgs.#ctor
+  name: UIPointerEventArgs()
+  href: api/Microsoft.AspNetCore.Blazor.UIPointerEventArgs.html#Microsoft_AspNetCore_Blazor_UIPointerEventArgs__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.UIPointerEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIPointerEventArgs.UIPointerEventArgs()
+  nameWithType: UIPointerEventArgs.UIPointerEventArgs()
+- uid: Microsoft.AspNetCore.Blazor.UIPointerEventArgs.#ctor*
+  name: UIPointerEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIPointerEventArgs.html#Microsoft_AspNetCore_Blazor_UIPointerEventArgs__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIPointerEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIPointerEventArgs.UIPointerEventArgs
+  nameWithType: UIPointerEventArgs.UIPointerEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIProgressEventArgs
+  name: UIProgressEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIProgressEventArgs.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIProgressEventArgs
+  fullName: Microsoft.AspNetCore.Blazor.UIProgressEventArgs
+  nameWithType: UIProgressEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIProgressEventArgs.#ctor
+  name: UIProgressEventArgs()
+  href: api/Microsoft.AspNetCore.Blazor.UIProgressEventArgs.html#Microsoft_AspNetCore_Blazor_UIProgressEventArgs__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.UIProgressEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIProgressEventArgs.UIProgressEventArgs()
+  nameWithType: UIProgressEventArgs.UIProgressEventArgs()
+- uid: Microsoft.AspNetCore.Blazor.UIProgressEventArgs.#ctor*
+  name: UIProgressEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIProgressEventArgs.html#Microsoft_AspNetCore_Blazor_UIProgressEventArgs__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIProgressEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIProgressEventArgs.UIProgressEventArgs
+  nameWithType: UIProgressEventArgs.UIProgressEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UITouchEventArgs
+  name: UITouchEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UITouchEventArgs.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UITouchEventArgs
+  fullName: Microsoft.AspNetCore.Blazor.UITouchEventArgs
+  nameWithType: UITouchEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UITouchEventArgs.#ctor
+  name: UITouchEventArgs()
+  href: api/Microsoft.AspNetCore.Blazor.UITouchEventArgs.html#Microsoft_AspNetCore_Blazor_UITouchEventArgs__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.UITouchEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UITouchEventArgs.UITouchEventArgs()
+  nameWithType: UITouchEventArgs.UITouchEventArgs()
+- uid: Microsoft.AspNetCore.Blazor.UITouchEventArgs.#ctor*
+  name: UITouchEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UITouchEventArgs.html#Microsoft_AspNetCore_Blazor_UITouchEventArgs__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UITouchEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UITouchEventArgs.UITouchEventArgs
+  nameWithType: UITouchEventArgs.UITouchEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIWheelEventArgs
+  name: UIWheelEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIWheelEventArgs.html
+  commentId: T:Microsoft.AspNetCore.Blazor.UIWheelEventArgs
+  fullName: Microsoft.AspNetCore.Blazor.UIWheelEventArgs
+  nameWithType: UIWheelEventArgs
+- uid: Microsoft.AspNetCore.Blazor.UIWheelEventArgs.#ctor
+  name: UIWheelEventArgs()
+  href: api/Microsoft.AspNetCore.Blazor.UIWheelEventArgs.html#Microsoft_AspNetCore_Blazor_UIWheelEventArgs__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.UIWheelEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIWheelEventArgs.UIWheelEventArgs()
+  nameWithType: UIWheelEventArgs.UIWheelEventArgs()
+- uid: Microsoft.AspNetCore.Blazor.UIWheelEventArgs.#ctor*
+  name: UIWheelEventArgs
+  href: api/Microsoft.AspNetCore.Blazor.UIWheelEventArgs.html#Microsoft_AspNetCore_Blazor_UIWheelEventArgs__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.UIWheelEventArgs.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.UIWheelEventArgs.UIWheelEventArgs
+  nameWithType: UIWheelEventArgs.UIWheelEventArgs
 - uid: Microsoft.AspNetCore.Builder
   name: Microsoft.AspNetCore.Builder
   href: api/Microsoft.AspNetCore.Builder.html
