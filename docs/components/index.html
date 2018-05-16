@@ -157,7 +157,8 @@
 <pre><code class="lang-cshtml">&lt;input bind=&quot;@StartDate&quot; format-value=&quot;yyyy-MM-dd&quot; /&gt;
 
 @functions {
-    public DateTime StartDate { get; set; } = new DateTime(2020, 1, 1);
+    [Parameter]
+    private DateTime StartDate { get; set; } = new DateTime(2020, 1, 1);
 }
 </code></pre><p><strong>Component attributes</strong></p>
 <p>Binding also recognizes component attributes, where <code>bind-{property}</code> can bind a property value across components.</p>
@@ -166,14 +167,18 @@
 <pre><code class="lang-cshtml">&lt;ChildComponent bind-Year=&quot;@ParentYear&quot; /&gt;
 
 @functions {
-    public int ParentYear { get; set; } = 1979;
+    [Parameter]
+    private int ParentYear { get; set; } = 1979;
 }
 </code></pre><p>Child component:</p>
 <pre><code class="lang-cshtml">&lt;div&gt; ... &lt;/div&gt;
 
 @functions {
-    public int Year { get; set; }
-    public Action&lt;int&gt; YearChanged { get; set; }
+    [Parameter]
+    private int Year { get; set; }
+
+    [Parameter]
+    private Action&lt;int&gt; YearChanged { get; set; }
 }
 </code></pre><p>The <code>Year</code> parameter is bindable because it has a companion <code>YearChanged</code> event that matches the type of the <code>Year</code> parameter.</p>
 <h2 id="event-handling">Event handling</h2>
@@ -369,7 +374,8 @@ public class BlazorRocksBase : BlazorComponent
 <pre><code class="lang-cshtml">&lt;input type=&quot;checkbox&quot; checked=&quot;@IsCompleted&quot; /&gt;
 
 @functions {
-    public bool IsCompleted { get; set; }
+    [Parameter]
+    private bool IsCompleted { get; set; }
 }
 </code></pre><p>If <code>IsCompleted</code> is <code>true</code>, the check box is rendered as:</p>
 <pre><code class="lang-html">&lt;input type=&quot;checkbox&quot; checked /&gt;
