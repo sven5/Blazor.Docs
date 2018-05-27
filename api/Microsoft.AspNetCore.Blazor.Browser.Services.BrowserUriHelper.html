@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BrowserUriHelper
    ">
-    <meta name="generator" content="docfx 2.35.4.0">
+    <meta name="generator" content="docfx 2.36.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -109,7 +109,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_GetAbsoluteUri_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetAbsoluteUri*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_GetAbsoluteUri" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetAbsoluteUri">GetAbsoluteUri()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the current absolute URI.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -126,7 +127,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The current absolute URI.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -134,7 +136,9 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_GetBaseUriPrefix_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetBaseUriPrefix*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_GetBaseUriPrefix" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetBaseUriPrefix">GetBaseUriPrefix()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the URI prefix that can be prepended before URI paths to produce an absolute URI.
+Typically this corresponds to the &apos;href&apos; attribute on the document&apos;s &lt;base&gt; element.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -151,7 +155,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The URI prefix.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -159,7 +164,8 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NavigateTo_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateTo*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NavigateTo_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateTo(System.String)">NavigateTo(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Navigates to the specified URI.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -178,7 +184,9 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">uri</span></td>
-        <td></td>
+        <td><p>The destination URI. This can be absolute, or relative to the base URI
+prefix (as returned by <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html#Microsoft_AspNetCore_Blazor_Services_IUriHelper_GetBaseUriPrefix">GetBaseUriPrefix()</a>).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -186,7 +194,9 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_ToAbsoluteUri_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToAbsoluteUri*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_ToAbsoluteUri_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToAbsoluteUri(System.String)">ToAbsoluteUri(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts a relative URI into an absolute one (by resolving it
+relative to the current absolute URI).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -220,7 +230,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Uri</span></td>
-        <td></td>
+        <td><p>The absolute URI.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -228,7 +239,9 @@
   
   <a id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_ToBaseRelativePath_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToBaseRelativePath*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_ToBaseRelativePath_System_String_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToBaseRelativePath(System.String,System.String)">ToBaseRelativePath(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Given a base URI prefix (e.g., one previously returned by <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html#Microsoft_AspNetCore_Blazor_Services_IUriHelper_GetBaseUriPrefix">GetBaseUriPrefix()</a>),
+converts an absolute URI into one relative to the base URI prefix.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -247,7 +260,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">baseUriPrefix</span></td>
-        <td></td>
+        <td><p>The base URI prefix (e.g., previously returned by <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html#Microsoft_AspNetCore_Blazor_Services_IUriHelper_GetBaseUriPrefix">GetBaseUriPrefix()</a>).</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -267,7 +281,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>A relative URI path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -276,7 +291,8 @@
   
   
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_OnLocationChanged" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.OnLocationChanged">OnLocationChanged</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An event that fires when the navigation location has changed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
