@@ -80,8 +80,7 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgs.html">UIEventArgs</a></div>
-    <div class="level2"><a class="xref" href="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.html">UIMouseEventArgs</a></div>
-    <div class="level3"><span class="xref">UIProgressEventArgs</span></div>
+    <div class="level2"><span class="xref">UIProgressEventArgs</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -93,7 +92,7 @@
   <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.dll</h6>
   <h5 id="Microsoft_AspNetCore_Blazor_UIProgressEventArgs_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UIProgressEventArgs : UIMouseEventArgs</code></pre>
+    <pre><code class="lang-csharp hljs">public class UIProgressEventArgs : UIEventArgs</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -107,6 +106,88 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UIProgressEventArgs()</code></pre>
   </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIProgressEventArgs_LengthComputable_" data-uid="Microsoft.AspNetCore.Blazor.UIProgressEventArgs.LengthComputable*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIProgressEventArgs_LengthComputable" data-uid="Microsoft.AspNetCore.Blazor.UIProgressEventArgs.LengthComputable">LengthComputable</h4>
+  <div class="markdown level1 summary"><p>Whether or not the total size of the transfer is known.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LengthComputable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIProgressEventArgs_Loaded_" data-uid="Microsoft.AspNetCore.Blazor.UIProgressEventArgs.Loaded*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIProgressEventArgs_Loaded" data-uid="Microsoft.AspNetCore.Blazor.UIProgressEventArgs.Loaded">Loaded</h4>
+  <div class="markdown level1 summary"><p>The number of bytes transferred since the beginning of the operation.
+This doesn&apos;t include headers and other overhead, but only the content itself.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Loaded { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIProgressEventArgs_Total_" data-uid="Microsoft.AspNetCore.Blazor.UIProgressEventArgs.Total*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIProgressEventArgs_Total" data-uid="Microsoft.AspNetCore.Blazor.UIProgressEventArgs.Total">Total</h4>
+  <div class="markdown level1 summary"><p>The total number of bytes of content that will be transferred during the operation.
+If the total size is unknown, this value is zero. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Total { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

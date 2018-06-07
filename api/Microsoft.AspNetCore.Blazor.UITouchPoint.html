@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class UIKeyboardEventArgs
+    <title>Class UITouchPoint
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class UIKeyboardEventArgs
+    <meta name="title" content="Class UITouchPoint
    ">
     <meta name="generator" content="docfx 2.36.1.0">
     
@@ -68,56 +68,50 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs">
+            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint">
   
   
-  <h1 id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs" class="text-break">Class UIKeyboardEventArgs
+  <h1 id="Microsoft_AspNetCore_Blazor_UITouchPoint" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint" class="text-break">Class UITouchPoint
   </h1>
-  <div class="markdown level0 summary"><p>Supplies information about a keyboard event that is being raised.</p>
+  <div class="markdown level0 summary"><p>Represents a single contact point on a touch-sensitive device.
+The contact point is commonly a finger or stylus and the device may be a touchscreen or trackpad.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgs.html">UIEventArgs</a></div>
-    <div class="level2"><span class="xref">UIKeyboardEventArgs</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgs.html#Microsoft_AspNetCore_Blazor_UIEventArgs_Type">UIEventArgs.Type</a>
-    </div>
+    <div class="level1"><span class="xref">UITouchPoint</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.html">Microsoft.AspNetCore.Blazor</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.dll</h6>
-  <h5 id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_syntax">Syntax</h5>
+  <h5 id="Microsoft_AspNetCore_Blazor_UITouchPoint_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UIKeyboardEventArgs : UIEventArgs</code></pre>
+    <pre><code class="lang-csharp hljs">public class UITouchPoint : Object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs__ctor_" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.#ctor*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs__ctor" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.#ctor">UIKeyboardEventArgs()</h4>
+  <a id="Microsoft_AspNetCore_Blazor_UITouchPoint__ctor_" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.#ctor*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UITouchPoint__ctor" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.#ctor">UITouchPoint()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UIKeyboardEventArgs()</code></pre>
+    <pre><code class="lang-csharp hljs">public UITouchPoint()</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_AltKey_" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.AltKey*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_AltKey" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.AltKey">AltKey</h4>
-  <div class="markdown level1 summary"><p>true if the alt key was down when the event was fired. false otherwise.</p>
+  <a id="Microsoft_AspNetCore_Blazor_UITouchPoint_ClientX_" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.ClientX*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UITouchPoint_ClientX" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.ClientX">ClientX</h4>
+  <div class="markdown level1 summary"><p>The X coordinate of the touch point relative to the left edge of the browser viewport, not including any scroll offset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AltKey { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long ClientX { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -129,22 +123,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_Code_" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Code*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_Code" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Code">Code</h4>
-  <div class="markdown level1 summary"><p>Holds a string that identifies the physical key being pressed. 
-The value is not affected by the current keyboard layout or modifier state, so a particular key will always return the same value.</p>
+  <a id="Microsoft_AspNetCore_Blazor_UITouchPoint_ClientY_" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.ClientY*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UITouchPoint_ClientY" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.ClientY">ClientY</h4>
+  <div class="markdown level1 summary"><p>The Y coordinate of the touch point relative to the top edge of the browser viewport, not including any scroll offset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Code { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long ClientY { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,21 +149,23 @@ The value is not affected by the current keyboard layout or modifier state, so a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_CtrlKey_" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.CtrlKey*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_CtrlKey" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.CtrlKey">CtrlKey</h4>
-  <div class="markdown level1 summary"><p>true if the control key was down when the event was fired. false otherwise.</p>
+  <a id="Microsoft_AspNetCore_Blazor_UITouchPoint_Identifier_" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.Identifier*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UITouchPoint_Identifier" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.Identifier">Identifier</h4>
+  <div class="markdown level1 summary"><p>A unique identifier for this Touch object.
+A given touch point (say, by a finger) will have the same identifier for the duration of its movement around the surface.
+This lets you ensure that you&apos;re tracking the same touch all the time.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CtrlKey { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long Identifier { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -182,24 +177,22 @@ The value is not affected by the current keyboard layout or modifier state, so a
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_Key_" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Key*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_Key" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Key">Key</h4>
-  <div class="markdown level1 summary"><p>The key value of the key represented by the event. 
-If the value has a printed representation, this attribute&apos;s value is the same as the char attribute. 
-Otherwise, it&apos;s one of the key value strings specified in &apos;Key values&apos;. 
-If the key can&apos;t be identified, this is the string &quot;Unidentified&quot;</p>
+  <a id="Microsoft_AspNetCore_Blazor_UITouchPoint_PageX_" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.PageX*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UITouchPoint_PageX" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.PageX">PageX</h4>
+  <div class="markdown level1 summary"><p>The X coordinate of the touch point relative to the left edge of the document.
+Unlike <a class="xref" href="Microsoft.AspNetCore.Blazor.UITouchPoint.html#Microsoft_AspNetCore_Blazor_UITouchPoint_ClientX">ClientX</a>, this value includes the horizontal scroll offset, if any.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Key { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long PageX { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -211,21 +204,22 @@ If the key can&apos;t be identified, this is the string &quot;Unidentified&quot;
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_Location_" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Location*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_Location" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Location">Location</h4>
-  <div class="markdown level1 summary"><p>The location of the key on the device.</p>
+  <a id="Microsoft_AspNetCore_Blazor_UITouchPoint_PageY_" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.PageY*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UITouchPoint_PageY" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.PageY">PageY</h4>
+  <div class="markdown level1 summary"><p>The Y coordinate of the touch point relative to the top of the document.
+Unlike <a class="xref" href="Microsoft.AspNetCore.Blazor.UITouchPoint.html#Microsoft_AspNetCore_Blazor_UITouchPoint_ClientY">ClientY</a>, this value includes the vertical scroll offset, if any.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Location { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long PageY { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -237,21 +231,21 @@ If the key can&apos;t be identified, this is the string &quot;Unidentified&quot;
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Single</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_MetaKey_" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.MetaKey*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_MetaKey" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.MetaKey">MetaKey</h4>
-  <div class="markdown level1 summary"><p>true if the meta key was down when the event was fired. false otherwise.</p>
+  <a id="Microsoft_AspNetCore_Blazor_UITouchPoint_ScreenX_" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.ScreenX*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UITouchPoint_ScreenX" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.ScreenX">ScreenX</h4>
+  <div class="markdown level1 summary"><p>The X coordinate of the touch point relative to the left edge of the screen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool MetaKey { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long ScreenX { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -263,21 +257,21 @@ If the key can&apos;t be identified, this is the string &quot;Unidentified&quot;
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_Repeat_" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Repeat*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_Repeat" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.Repeat">Repeat</h4>
-  <div class="markdown level1 summary"><p>true if a key has been depressed long enough to trigger key repetition, otherwise false.</p>
+  <a id="Microsoft_AspNetCore_Blazor_UITouchPoint_ScreenY_" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.ScreenY*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UITouchPoint_ScreenY" data-uid="Microsoft.AspNetCore.Blazor.UITouchPoint.ScreenY">ScreenY</h4>
+  <div class="markdown level1 summary"><p>The Y coordinate of the touch point relative to the top edge of the screen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Repeat { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long ScreenY { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -289,33 +283,7 @@ If the key can&apos;t be identified, this is the string &quot;Unidentified&quot;
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_ShiftKey_" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.ShiftKey*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_UIKeyboardEventArgs_ShiftKey" data-uid="Microsoft.AspNetCore.Blazor.UIKeyboardEventArgs.ShiftKey">ShiftKey</h4>
-  <div class="markdown level1 summary"><p>true if the shift key was down when the event was fired. false otherwise.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ShiftKey { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.Int64</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class EventHandlers
+    <title>Class UIDataTransferItem
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class EventHandlers
+    <meta name="title" content="Class UIDataTransferItem
    ">
     <meta name="generator" content="docfx 2.36.1.0">
     
@@ -68,117 +68,93 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.Components.EventHandlers">
+            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.UIDataTransferItem">
   
   
-  <h1 id="Microsoft_AspNetCore_Blazor_Components_EventHandlers" data-uid="Microsoft.AspNetCore.Blazor.Components.EventHandlers" class="text-break">Class EventHandlers
+  <h1 id="Microsoft_AspNetCore_Blazor_UIDataTransferItem" data-uid="Microsoft.AspNetCore.Blazor.UIDataTransferItem" class="text-break">Class UIDataTransferItem
   </h1>
-  <div class="markdown level0 summary"><p>Holds <span class="xref">System.EventHandler</span> attributes to configure the mappings between event names and
-event argument types.</p>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="Microsoft.AspNetCore.Blazor.UIDataTransferItem.html">UIDataTransferItem</a> object represents one drag data item.
+During a drag operation, each drag event has a dataTransfer property which contains a list of drag data items.
+Each item in the list is a <a class="xref" href="Microsoft.AspNetCore.Blazor.UIDataTransferItem.html">UIDataTransferItem</a> object.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">EventHandlers</span></div>
+    <div class="level1"><span class="xref">UIDataTransferItem</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.Components.html">Microsoft.AspNetCore.Blazor.Components</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.html">Microsoft.AspNetCore.Blazor</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.dll</h6>
-  <h5 id="Microsoft_AspNetCore_Blazor_Components_EventHandlers_syntax">Syntax</h5>
+  <h5 id="Microsoft_AspNetCore_Blazor_UIDataTransferItem_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-[EventHandler]
-public static class EventHandlers : Object</code></pre>
+    <pre><code class="lang-csharp hljs">public class UIDataTransferItem : Object</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIDataTransferItem__ctor_" data-uid="Microsoft.AspNetCore.Blazor.UIDataTransferItem.#ctor*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIDataTransferItem__ctor" data-uid="Microsoft.AspNetCore.Blazor.UIDataTransferItem.#ctor">UIDataTransferItem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIDataTransferItem()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIDataTransferItem_Kind_" data-uid="Microsoft.AspNetCore.Blazor.UIDataTransferItem.Kind*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIDataTransferItem_Kind" data-uid="Microsoft.AspNetCore.Blazor.UIDataTransferItem.Kind">Kind</h4>
+  <div class="markdown level1 summary"><p>The kind of drag data item, string or file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Kind { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIDataTransferItem_Type_" data-uid="Microsoft.AspNetCore.Blazor.UIDataTransferItem.Type*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIDataTransferItem_Type" data-uid="Microsoft.AspNetCore.Blazor.UIDataTransferItem.Type">Type</h4>
+  <div class="markdown level1 summary"><p>The drag data item&apos;s type, typically a MIME type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

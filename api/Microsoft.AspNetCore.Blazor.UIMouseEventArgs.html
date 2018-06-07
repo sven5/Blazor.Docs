@@ -82,7 +82,7 @@
     <div class="level1"><a class="xref" href="Microsoft.AspNetCore.Blazor.UIEventArgs.html">UIEventArgs</a></div>
     <div class="level2"><span class="xref">UIMouseEventArgs</span></div>
       <div class="level3"><a class="xref" href="Microsoft.AspNetCore.Blazor.UIPointerEventArgs.html">UIPointerEventArgs</a></div>
-      <div class="level3"><a class="xref" href="Microsoft.AspNetCore.Blazor.UIProgressEventArgs.html">UIProgressEventArgs</a></div>
+      <div class="level3"><a class="xref" href="Microsoft.AspNetCore.Blazor.UIWheelEventArgs.html">UIWheelEventArgs</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -108,6 +108,305 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public UIMouseEventArgs()</code></pre>
   </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_AltKey_" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.AltKey*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_AltKey" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.AltKey">AltKey</h4>
+  <div class="markdown level1 summary"><p>true if the alt key was down when the event was fired. false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AltKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_Button_" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.Button*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_Button" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.Button">Button</h4>
+  <div class="markdown level1 summary"><p>The button number that was pressed when the mouse event was fired:
+Left button=0,
+middle button=1 (if present),
+right button=2.
+For mice configured for left handed use in which the button actions are reversed the values are instead read from right to left.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Button { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_Buttons_" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.Buttons*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_Buttons" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.Buttons">Buttons</h4>
+  <div class="markdown level1 summary"><p>The buttons being pressed when the mouse event was fired:
+Left button=1,
+Right button=2,
+Middle (wheel) button=4,
+4th button (typically, &quot;Browser Back&quot; button)=8,
+5th button (typically, &quot;Browser Forward&quot; button)=16.
+If two or more buttons are pressed, returns the logical sum of the values.
+E.g., if Left button and Right button are pressed, returns 3 (=1 | 2).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Buttons { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_ClientX_" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.ClientX*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_ClientX" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.ClientX">ClientX</h4>
+  <div class="markdown level1 summary"><p>The X coordinate of the mouse pointer in local (DOM content) coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ClientX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_ClientY_" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.ClientY*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_ClientY" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.ClientY">ClientY</h4>
+  <div class="markdown level1 summary"><p>The Y coordinate of the mouse pointer in local (DOM content) coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ClientY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_CtrlKey_" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.CtrlKey*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_CtrlKey" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.CtrlKey">CtrlKey</h4>
+  <div class="markdown level1 summary"><p>true if the control key was down when the event was fired. false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CtrlKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_Detail_" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.Detail*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_Detail" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.Detail">Detail</h4>
+  <div class="markdown level1 summary"><p>A count of consecutive clicks that happened in a short amount of time, incremented by one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Detail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_MetaKey_" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.MetaKey*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_MetaKey" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.MetaKey">MetaKey</h4>
+  <div class="markdown level1 summary"><p>true if the meta key was down when the event was fired. false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MetaKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_ScreenX_" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.ScreenX*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_ScreenX" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.ScreenX">ScreenX</h4>
+  <div class="markdown level1 summary"><p>The X coordinate of the mouse pointer in global (screen) coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ScreenX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_ScreenY_" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.ScreenY*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_ScreenY" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.ScreenY">ScreenY</h4>
+  <div class="markdown level1 summary"><p>The Y coordinate of the mouse pointer in global (screen) coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ScreenY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_ShiftKey_" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.ShiftKey*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_UIMouseEventArgs_ShiftKey" data-uid="Microsoft.AspNetCore.Blazor.UIMouseEventArgs.ShiftKey">ShiftKey</h4>
+  <div class="markdown level1 summary"><p>true if the shift key was down when the event was fired. false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShiftKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

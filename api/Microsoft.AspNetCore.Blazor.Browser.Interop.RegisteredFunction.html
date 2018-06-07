@@ -159,6 +159,74 @@ Arguments and return values are marshalled via JSON serialization.</p>
   </table>
   
   
+  <a id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeAsync_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeAsync*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeAsync__1_System_String_System_Object___" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeAsync``1(System.String,System.Object[])">InvokeAsync&lt;TRes&gt;(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Invokes the JavaScript function registered with the specified identifier.
+Arguments and return values are marshalled via JSON serialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;TRes&gt; InvokeAsync&lt;TRes&gt;(string identifier, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>The identifier used when registering the target function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>The arguments to pass, each of which must be JSON serializable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TRes&gt;</td>
+        <td><p>The result of the function invocation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRes</span></td>
+        <td><p>The .NET type corresponding to the function&apos;s return value type. This type must be JSON deserializable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled__1_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``1(System.String)">InvokeUnmarshalled&lt;TRes&gt;(String)</h4>
   <div class="markdown level1 summary"><p>Invokes the JavaScript function registered with the specified identifier.</p>
