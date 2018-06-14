@@ -8,7 +8,7 @@
     <title>Blazor components </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor components ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.36.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -150,7 +150,7 @@
 <p>The check box is updated in the UI only when the component is rendered, not in response to changing the property&#39;s value. Since components render themselves after event handler code executes, property updates are usually reflected in the UI immediately.</p>
 <p>Using <code>bind</code> with a <code>CurrentValue</code> property (<code>&lt;input bind=&quot;@CurrentValue&quot; /&gt;</code>) is essentially equivalent to the following:</p>
 <pre><code class="lang-cshtml">&lt;input value=&quot;@CurrentValue&quot; 
-    onchange=&quot;@((UIValueEventArgs __e) =&gt; CurrentValue = __e.Value) /&gt;
+    onchange=&quot;@((UIValueEventArgs __e) =&gt; CurrentValue = __e.Value)&quot; /&gt;
 </code></pre><p>When the component is rendered, the <code>value</code> of the input element comes from the <code>CurrentValue</code> property. When the user types in the text box, the <code>onchange</code> is fired and the <code>CurrentValue</code> property is set to the changed value. In reality, the code generation is a little more complex because <code>bind</code> deals with a few cases where type conversions are performed. In principle, <code>bind</code> associates the current value of an expression with a <code>value</code> attribute and handles changes using the registered handler.</p>
 <p><strong>Format strings</strong></p>
 <p>Data binding works with <a href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a> format strings (but not other format expressions at this time, such as currency or number formats):</p>
