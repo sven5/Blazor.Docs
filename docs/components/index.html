@@ -160,18 +160,34 @@
     [Parameter]
     private DateTime StartDate { get; set; } = new DateTime(2020, 1, 1);
 }
-</code></pre><p><strong>Component attributes</strong></p>
-<p>Binding also recognizes component attributes, where <code>bind-{property}</code> can bind a property value across components.</p>
-<p>The following parent component uses <code>ChildComponent</code> and binds the value <code>1979</code> from <code>ParentYear</code> to the child component&#39;s <code>Year</code> property:</p>
+</code></pre><p>The <code>format-value</code> attribute specifies the date format to apply to the <code>value</code> of the <code>input</code> element. The format is also used to parse the value when an <code>onchange</code> event occurs.</p>
+<p><strong>Component parameters</strong></p>
+<p>Binding also recognizes component parameters, where <code>bind-{property}</code> can bind a property value across components.</p>
+<p>The following component uses <code>ChildComponent</code> and binds the <code>ParentYear</code> parameter from the parent to the <code>Year</code> parameter on the child component:</p>
 <p>Parent component:</p>
-<pre><code class="lang-cshtml">&lt;ChildComponent bind-Year=&quot;@ParentYear&quot; /&gt;
+<pre><code class="lang-cshtml">@page &quot;/ParentComponent&quot;
+
+&lt;h1&gt;Parent Component&lt;/h1&gt;
+
+&lt;p&gt;ParentYear: @ParentYear&lt;/p&gt;
+
+&lt;ChildComponent bind-Year=&quot;@ParentYear&quot; /&gt;
+
+&lt;button class=&quot;btn btn-primary&quot; onclick=&quot;@ChangeTheYear&quot;&gt;Change Year to 1986&lt;/button&gt;
 
 @functions {
     [Parameter]
-    private int ParentYear { get; set; } = 1979;
+    private int ParentYear { get; set; } = 1978;
+
+    void ChangeTheYear()
+    {
+        ParentYear = 1986;
+    }
 }
 </code></pre><p>Child component:</p>
-<pre><code class="lang-cshtml">&lt;div&gt; ... &lt;/div&gt;
+<pre><code class="lang-cshtml">&lt;h2&gt;Child Component&lt;/h2&gt;
+
+&lt;p&gt;Year: @Year&lt;/p&gt;
 
 @functions {
     [Parameter]
@@ -181,7 +197,23 @@
     private Action&lt;int&gt; YearChanged { get; set; }
 }
 </code></pre><p>The <code>Year</code> parameter is bindable because it has a companion <code>YearChanged</code> event that matches the type of the <code>Year</code> parameter.</p>
-<h2 id="event-handling">Event handling</h2>
+<p>Loading the <code>ParentComponent</code> produces the following markup:</p>
+<pre><code class="lang-html">&lt;h1&gt;Parent Component&lt;/h1&gt;
+
+&lt;p&gt;ParentYear: 1978&lt;/p&gt;
+
+&lt;h2&gt;Child Component&lt;/h2&gt;
+
+&lt;p&gt;Year: 1978&lt;/p&gt;
+</code></pre><p>If the value of the <code>ParentYear</code> property is changed by selecting the button in the <code>ParentComponent</code>, the <code>Year</code> property of the <code>ChildComponent</code> is updated. The new value of <code>Year</code> is rendered in the UI when the <code>ParentComponent</code> is rerendered:</p>
+<pre><code class="lang-html">&lt;h1&gt;Parent Component&lt;/h1&gt;
+
+&lt;p&gt;ParentYear: 1986&lt;/p&gt;
+
+&lt;h2&gt;Child Component&lt;/h2&gt;
+
+&lt;p&gt;Year: 1986&lt;/p&gt;
+</code></pre><h2 id="event-handling">Event handling</h2>
 <p>Blazor provides event handling features. For an HTML element attribute named <code>on&lt;event&gt;</code> (for example, <code>onclick</code>, <code>onsubmit</code>) with a delegate-typed value, Blazor treats the attribute&#39;s value as an event handler. The attribute&#39;s name always starts with <code>on</code>.</p>
 <p>The following code calls the <code>UpdateHeading</code> method when the button is selected in the UI:</p>
 <pre><code class="lang-cshtml">&lt;button class=&quot;btn btn-primary&quot; onclick=&quot;@UpdateHeading&quot;&gt;
@@ -291,18 +323,6 @@
     private string Text { get; set; } = &quot;fantastic&quot;;
 }
 </code></pre><p>Optional parameters aren&#39;t supported, so two <code>@page</code> directives are applied in the example above. The first permits navigation to the component without a parameter. The second <code>@page</code> directive takes the <code>{text}</code> route parameter and assigns the value to the <code>Text</code> property.</p>
-<h2 id="javascripttypescript-interop">JavaScript/TypeScript interop</h2>
-<p>To call JavaScript libraries or custom JavaScript/TypeScript code from .NET, the current approach is to register a named function with JavaScript/TypeScript. Place the <code>registerFunction</code> call in the <em>index.html</em> file or a JavaScript file (<em>*.js</em>) loaded by the <em>index.html</em> file. Place the inline JavaScript or <code>&lt;script&gt;</code> tag below <code>&lt;script type=&quot;blazor-boot&quot;&gt;&lt;/script&gt;</code>, and the JavaScript/TypeScript loads at the correct time and only executes once. </p>
-<pre><code class="lang-javascript">Blazor.registerFunction(&#39;doPrompt&#39;, function(message) {
-    return prompt(message);
-});
-</code></pre><p>Wrap the named function for calls from .NET:</p>
-<pre><code class="lang-csharp">public static bool DoPrompt(string message)
-{
-    return RegisteredFunction.Invoke&lt;bool&gt;(&quot;doPrompt&quot;, message);
-}
-</code></pre><p>This approach has the benefit of working with JavaScript build tools, such as <a href="https://webpack.js.org/">webpack</a>.</p>
-<p>The Mono team is working on a library that exposes standard browser APIs to .NET.</p>
 <h2 id="base-class-inheritance-for-a-code-behind-experience">Base class inheritance for a &quot;code-behind&quot; experience</h2>
 <p>Blazor component files (<em>*.cshtml</em>) mix HTML markup and C# processing code in the same file. The <code>@inherits</code> directive can be used to provide Blazor with a &quot;code-behind&quot; experience that separates component markup from processing code.</p>
 <p>The <a href="https://github.com/aspnet/Blazor.Docs/tree/master/docs/components/common/samples/">sample app</a> shows how a component can inherit a base class, <code>BlazorRocksBase</code>, to provide the component&#39;s properties and methods.</p>
@@ -356,7 +376,7 @@ public class BlazorRocksBase : BlazorComponent
 </tr>
 <tr>
 <td><a href="https://docs.microsoft.com/aspnet/core/mvc/razor-pages#razor-pages">@page</a></td>
-<td>Specifies that the component should handle requests directly. The <code>@page</code> directive can be specified with a route and optional parameters. Unlike Razor Pages, the <code>@page</code> directive doesn&#39;t need to be the first directive at the top of the file.</td>
+<td>Specifies that the component should handle requests directly. The <code>@page</code> directive can be specified with a route and optional parameters. Unlike Razor Pages, the <code>@page</code> directive doesn&#39;t need to be the first directive at the top of the file. For more information, see <a class="xref" href="../routing.html">Routing</a>.</td>
 </tr>
 <tr>
 <td><a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor#using">@using</a></td>

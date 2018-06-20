@@ -25,9 +25,15 @@ references:
 - uid: client-side/blazor/introduction/index
   name: Introduction to Blazor
   href: docs/introduction/index.html
+- uid: client-side/blazor/javascript-interop
+  name: Blazor JavaScript interop
+  href: docs/javascript-interop.html
 - uid: client-side/blazor/layouts
   name: Blazor layouts
   href: docs/layouts.html
+- uid: client-side/blazor/routing
+  name: Blazor routing
+  href: docs/routing.html
 - uid: client-side/blazor/tutorials/first-app
   name: Build your first Blazor app
   href: docs/tutorials/build-your-first-blazor-app.html
