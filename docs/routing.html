@@ -8,7 +8,7 @@
     <title>Blazor routing </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor routing ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,12 +73,12 @@
 <div class="NOTE"><h5>Note</h5><p>Blazor is an unsupported experimental web framework that shouldn&#39;t be used for production workloads at this time.</p>
 </div>
 <p>Learn how to route requests in a client-side Blazor app and about the NavLink component.</p>
-<p><a href="https://github.com/aspnet/Blazor.Docs/tree/master/docs/components/common/samples/">View or download sample code</a> (<a class="xref" href="index.html#view-and-download-samples">how to download</a>). See the <a class="xref" href="get-started.html">Get started</a> topic for prerequisites.</p>
+<p><a href="https://github.com/aspnet/Blazor.Docs/tree/master/docs/common/samples/">View or download sample code</a> (<a class="xref" href="index.html#view-and-download-samples">how to download</a>). See the <a class="xref" href="get-started.html">Get started</a> topic for prerequisites.</p>
 <h2 id="route-templates">Route templates</h2>
 <p>The <strong>&lt;Router&gt;</strong> component enables routing, and a route template is provided to each accessible component. The <strong>&lt;Router&gt;</strong> component appears in the <em>App.cshtml</em> file:</p>
 <pre><code class="lang-cshtml">&lt;Router AppAssembly=typeof(Program).Assembly /&gt;
 </code></pre><p>When a <em>*.cshtml</em> file with an <code>@page</code> directive is compiled, the generated class is given a <a href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.routeattribute">RouteAttribute</a> specifying the route template. At runtime, the router looks for component classes with a <code>RouteAttribute</code> and renders whichever component has a route template that matches the requested URL.</p>
-<p>Multiple route templates can be applied to a component. In the <a href="https://github.com/aspnet/Blazor.Docs/tree/master/docs/components/common/samples/">sample app</a>, the following component responds to requests for <code>/BlazorRoute</code> and <code>/DifferentBlazorRoute</code>.</p>
+<p>Multiple route templates can be applied to a component. In the <a href="https://github.com/aspnet/Blazor.Docs/tree/master/docs/common/samples/">sample app</a>, the following component responds to requests for <code>/BlazorRoute</code> and <code>/DifferentBlazorRoute</code>.</p>
 <p><em>Pages/BlazorRoute.cshtml</em>:</p>
 <pre><code class="lang-cshtml">@page &quot;/BlazorRoute&quot;
 @page &quot;/DifferentBlazorRoute&quot;
@@ -98,16 +98,16 @@
 </code></pre><p>Optional parameters aren&#39;t supported yet, so two <code>@page</code> directives are applied in the example above. The first permits navigation to the component without a parameter. The second <code>@page</code> directive takes the <code>{text}</code> route parameter and assigns the value to the <code>Text</code> property.</p>
 <h2 id="navlink-component">NavLink component</h2>
 <p>Use a NavLink component in place of HTML <strong>&lt;a&gt;</strong> elements when creating navigation links. A NavLink component behaves like an <strong>&lt;a&gt;</strong> element, except it toggles an <code>active</code> CSS class based on whether its <code>href</code> matches the current URL. The <code>active</code> class helps a user understand which page is the active page among the navigation links displayed.</p>
-<p>The NavMenu component in the <a href="https://github.com/aspnet/Blazor.Docs/tree/master/docs/components/common/samples/">sample app</a> creates a <a href="https://getbootstrap.com/docs/">Bootstrap</a> nav bar that demonstrates how to use NavLink components. The following markup shows the first two NavLinks in the <em>Shared/NavMenu.cshtml</em> file.</p>
+<p>The NavMenu component in the <a href="https://github.com/aspnet/Blazor.Docs/tree/master/docs/common/samples/">sample app</a> creates a <a href="https://getbootstrap.com/docs/">Bootstrap</a> nav bar that demonstrates how to use NavLink components. The following markup shows the first two NavLinks in the <em>Shared/NavMenu.cshtml</em> file.</p>
 <pre><code class="lang-cshtml" highlight-lines="4-6,9-11">&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
     &lt;ul class=&quot;nav navbar-nav&quot;&gt;
         &lt;li&gt;
-            &lt;NavLink href=&quot;/&quot; Match=NavLinkMatch.All&gt;
+            &lt;NavLink href=&quot;&quot; Match=NavLinkMatch.All&gt;
                 &lt;span class=&quot;glyphicon glyphicon-home&quot;&gt;&lt;/span&gt; Home
             &lt;/NavLink&gt;
         &lt;/li&gt;
         &lt;li&gt;
-            &lt;NavLink href=&quot;/BlazorRoute&quot;&gt;
+            &lt;NavLink href=&quot;BlazorRoute&quot;&gt;
                 &lt;span class=&quot;glyphicon glyphicon-th-list&quot;&gt;&lt;/span&gt; Blazor Route
             &lt;/NavLink&gt;
         &lt;/li&gt;
@@ -116,7 +116,7 @@
 <li><code>NavLinkMatch.All</code> &ndash; Specifies that the NavLink should be active when it matches the entire current URL.</li>
 <li><code>NavLinkMatch.Prefix</code> &ndash; Specifies that the NavLink should be active when it matches any prefix of the current URL.</li>
 </ul>
-<p>In the preceding example, the Home NavLink (<code>href=&quot;/&quot;</code>) matches all URLs and always receives the <code>active</code> CSS class. The second NavLink only receives the <code>active</code> class when the user visits the BlazorRoute component (<code>href=&quot;/BlazorRoute&quot;</code>).</p>
+<p>In the preceding example, the Home NavLink (<code>href=&quot;&quot;</code>) matches all URLs and always receives the <code>active</code> CSS class. The second NavLink only receives the <code>active</code> class when the user visits the BlazorRoute component (<code>href=&quot;BlazorRoute&quot;</code>).</p>
 </article>
           </div>
           
