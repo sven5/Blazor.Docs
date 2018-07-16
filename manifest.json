@@ -1017,7 +1017,7 @@
       "output": {
         ".html": {
           "relative_path": "community.html",
-          "hash": "7bi68i9D4MaWJTkcbIOcuw=="
+          "hash": "j+/Cnx5OAvV7FMmmoNIyuA=="
         }
       },
       "is_incremental": false,
@@ -1244,11 +1244,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
