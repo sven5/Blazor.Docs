@@ -161,7 +161,7 @@ Welcome to your new app.
 <h2 id="component-parameters">Component parameters</h2>
 <p>Components can also have parameters, which are defined using private properties on the component class decorated with <code>[Parameter]</code>. Use attributes to specify arguments for a component in markup. </p>
 <ol>
-<li><p>Update the <code>Counter</code> component to have an <code>IncrementAmount</code> property that defaults to 1.</p>
+<li><p>Update the <code>Counter</code> component to have an <code>IncrementAmount</code> parameter that defaults to 1.</p>
 <pre><code class="lang-cshtml">@functions {
     int currentCount = 0;
 
@@ -173,7 +173,9 @@ Welcome to your new app.
         currentCount += IncrementAmount;
     }
 }
-</code></pre></li>
+</code></pre><div class="NOTE"><h5>Note</h5><p>From Visual Studio, you can quickly add a component parameter by using the <code>para</code> snippet. Type <code>para</code> and then press the <code>Tab</code> key twice.</p>
+</div>
+</li>
 <li><p>On the Home page (<em>Index.cshtml</em>), change the increment amount for the <code>Counter</code> to 10 by setting an attribute that matches the name of the component&#39;s property for <code>IncrementCount</code>.</p>
 <pre><code class="lang-cshtml">&lt;Counter IncrementAmount=&quot;10&quot; /&gt;
 </code></pre></li>
