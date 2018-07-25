@@ -69,82 +69,78 @@
             <article class="content wrap" id="_content" data-uid="client-side/blazor/javascript-interop">
 <h1 id="blazor-javascript-interop">Blazor JavaScript interop</h1>
 
-<p>By <a href="https://github.com/javiercn">Javier Calvarro Nelson</a> and <a href="https://github.com/guardrex">Luke Latham</a></p>
+<p>By <a href="https://github.com/javiercn">Javier Calvarro Nelson</a>, <a href="https://github.com/danroth27">Daniel Roth</a>, and <a href="https://github.com/guardrex">Luke Latham</a></p>
 <div class="NOTE"><h5>Note</h5><p>Blazor is an unsupported experimental web framework that shouldn&#39;t be used for production workloads at this time.</p>
 </div>
 <p>A Blazor app can invoke JavaScript functions from .NET and .NET methods from JavaScript code.</p>
 <h2 id="invoke-javascript-functions-from-net-methods">Invoke JavaScript functions from .NET methods</h2>
 <p>There are times when Blazor .NET code is required to call a JavaScript function. For example, a JavaScript call can expose browser capabilities or functionality from a JavaScript library to the Blazor app.</p>
-<p>To call a JavaScript function, register the JavaScript function and call it in the .NET method:</p>
-<ol>
-<li><p>Register a JavaScript function by calling <code>Blazor.registerFunction(&#39;functionName&#39;, functionImplementation)</code> in JavaScript. The following example registers two functions that echo a message. The <code>echo</code> function is synchronous, while the <code>echoAsync</code> version is asynchronous:</p>
-<pre><code class="lang-javascript">Blazor.registerFunction(
-  &#39;echo&#39;,
-  function(message){
-    return message;
-  });
-
-Blazor.registerFunction(
-  &#39;echoAsync&#39;,
-  function(message){
-    return Promise.Resolve(message);
-  });
-</code></pre></li>
-<li><p>To invoke a JavaScript function from C#, use the <code>T Invoke&lt;T&gt;(functionName, args)</code> (synchronous) or <code>Task&lt;T&gt; InvokeAsync&lt;T&gt;(functionName, args)</code> (asynchronous) method from the <a href="/api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html">RegisteredFunction</a> class. The following example calls the two preceding JavaScript functions from C# code by indicating their function names and passing <code>message</code> arguments:</p>
-<pre><code class="lang-csharp">var helloWorld = RegisteredFunction.Invoke&lt;string&gt;(&quot;echo&quot;, &quot;Hello world!&quot;);
-var helloWorldAsync = 
-    await RegisteredFunction
-        .InvokeAsync&lt;string&gt;(&quot;echoAsync&quot;, &quot;Hello world async!&quot;);
-</code></pre><p>Often, the JavaScript interop call is composed as a static .NET method so that it can be easily called throughout the Blazor app. The <a href="#share-interop-code-in-a-blazor-class-library">Blazor class library template</a>, described later in this topic, follows this pattern.</p>
-</li>
-</ol>
-<h2 id="invoke-net-methods-from-javascript-functions">Invoke .NET methods from JavaScript functions</h2>
-<p>JavaScript code in the browser might be required to call .NET methods. For example, a .NET method call can be made when a callback in JavaScript is triggered.</p>
-<p>A .NET method call can be achieved by using the JavaScript functions <code>Blazor.invokeDotNetMethod</code> and <code>Blazor.invokeDotNetMethodAsync</code>. These two functions allow JavaScript to call synchronous and asynchronous .NET methods, respectively. The .NET method must have the following characteristics:</p>
-<ul>
-<li>Static</li>
-<li>Non-generic</li>
-<li>Not overloaded</li>
-<li>Concrete type method parameters</li>
-<li>Parameters deserializable using JSON</li>
-</ul>
-<p>To call a .NET method, create the method in C# and invoke the method from JavaScript:</p>
-<ol>
-<li><p>Create the .NET method in C#. The following example creates a <code>TimeoutCallback</code> method that writes a message to the console when the method is invoked:</p>
-<pre><code class="lang-csharp">namespace Alerts
+<p>To call into JavaScript from .NET, use the <code>IJSRuntime</code> abstraction, which is accessible from <code>JSRuntime.Current</code>. The <code>InvokeAsync&lt;T&gt;</code> method on <code>IJSRuntime</code> takes an identifier for the JavaScript function you wish to invoke along with any number of JSON serializable arguments. The function identifier is relative to the global scope (<code>window</code>). For example if you wish to call <code>window.someScope.someFunction</code>, the identifier is <code>someScope.someFunction</code>. There&#39;s no longer any need to register the function before it&#39;s called. The return type <code>T</code> must also be JSON serializable.</p>
+<p><em>exampleJsInterop.js</em>:</p>
+<pre><code class="lang-javascript">window.exampleJsFunctions = {
+  showPrompt: function (message) {
+    return prompt(message, &#39;Type anything here&#39;);
+  }
+};
+</code></pre><p><em>ExampleJsInterop.cs</em>:</p>
+<pre><code class="lang-csharp">public class ExampleJsInterop
 {
-    public class Timeout
+    public static Task&lt;string&gt; Prompt(string message)
     {
-        public static void TimeoutCallback()
-        {
-            Console.WriteLine(&#39;Timeout triggered!&#39;);
-        }
+        // Implemented in exampleJsInterop.js
+        return JSRuntime.Current.InvokeAsync&lt;string&gt;(
+            &quot;exampleJsFunctions.showPrompt&quot;,
+            message);
     }
 }
-</code></pre></li>
-<li><p>Invoke the .NET method from JavaScript with a call to <code>Blazor.invokeDotNetMethod</code> (or <code>Blazor.invokeDotNetMethodAsync</code>). Specify the .NET assembly, namespace with class, and method name. The following example calls the <code>TimeoutCallback</code> .NET method in the preceding step:</p>
-<pre><code class="lang-javascript">Blazor.invokeDotNetMethod({
-  type: {
-    assembly: &#39;MyTimeoutAssembly&#39;,
-    name: &#39;Alerts.Timeout&#39;
-  },
-  method: {
-    name: &#39;TimeoutCallback&#39;
-  }
-});
-</code></pre><p>The schema for the object parameter is:</p>
-<pre><code class="lang-json">{
-  &quot;type&quot;: {
-    &quot;assembly&quot;: &quot;AssemblyName&quot;,
-    &quot;name&quot;: &quot;NamespaceWithClass&quot;
-  },
-  &quot;method&quot;: {
-    &quot;name&quot;: &quot;MethodName&quot;
-  }
+</code></pre><p>The <code>IJSRuntime</code> abstraction is asynchronous to allow for out-of-process scenarios. If the app runs in-process and you want to invoke a JavaScript function synchronously, downcast to <code>IJSInProcessRuntime</code> and call <code>Invoke&lt;T&gt;</code> instead. We recommend that most JavaScript interop libraries use the async APIs to ensure the libraries are available in all Blazor scenarios, client-side or server-side.</p>
+<h2 id="invoke-net-methods-from-javascript-functions">Invoke .NET methods from JavaScript functions</h2>
+<p>To invoke a static .NET method from JavaScript, use the <code>DotNet.invokeMethod</code> or <code>DotNet.invokeMethodAsync</code> functions. Pass in the identifier of the static method you wish to call, the name of the assembly containing the function, and any arguments. Again, the async version is preferred to support out-of-process scenarios. To be invokable from JavaScript, the .NET method must be public, static, and decorated with <code>[JSInvokable]</code>. By default, the method identifier is the method name, but you can specify a different identifier using the <code>JSInvokableAttribute</code> constructor. Calling open generic methods isn&#39;t currently supported.</p>
+<p><em>JavaScriptInteroperable.cs</em>:</p>
+<pre><code class="lang-csharp">public class JavaScriptInvokable
+{
+    [JSInvokable]
+    public static Task&lt;int[]&gt; ReturnArrayAsync()
+    {
+        return Task.FromResult(new int[] { 1, 2, 3 });
+    }
 }
-</code></pre></li>
-</ol>
-<h2 id="share-interop-code-in-a-blazor-class-library">Share interop code in a Blazor class library</h2>
+</code></pre><p><em>dotnetInterop.js</em>:</p>
+<pre><code class="lang-javascript">DotNet.invokeMethodAsync(assemblyName, &#39;ReturnArrayAsync&#39;).then(data =&gt; ...)
+</code></pre><p>New in Blazor 0.5.0, you can also call .NET instance methods from JavaScript. To invoke a .NET instance method from JavaScript, first pass the .NET instance to JavaScript by wrapping it in a <code>DotNetObjectRef</code> instance. The .NET instance is passed by reference to JavaScript, and you can invoke .NET instance methods on the instance using the <code>invokeMethod</code> or <code>invokeMethodAsync</code> functions. The .NET instance can also be passed as an argument when invoking other .NET methods from JavaScript.</p>
+<p><em>ExampleJsInterop.cs</em>:</p>
+<pre><code class="lang-csharp">public class ExampleJsInterop
+{
+    public static Task SayHello(string name)
+    {
+        return JSRuntime.Current.InvokeAsync&lt;object&gt;(
+            &quot;exampleJsFunctions.sayHello&quot;, 
+            new DotNetObjectRef(new HelloHelper(name)));
+    }
+}
+</code></pre><p><em>exampleJsInterop.js</em>:</p>
+<pre><code class="lang-javascript">window.exampleJsFunctions = {
+  sayHello: function (dotnetHelper) {
+    return dotnetHelper.invokeMethodAsync(&#39;SayHello&#39;)
+      .then(r =&gt; console.log(r));
+  }
+};
+</code></pre><p><em>HelloHelper.cs</em>:</p>
+<pre><code class="lang-csharp">public class HelloHelper
+{
+    public HelloHelper(string name)
+    {
+        Name = name;
+    }
+
+    public string Name { get; set; }
+
+    [JSInvokable]
+    public string SayHello() =&gt; $&quot;Hello, {Name}!&quot;;
+}
+</code></pre><p><em>Output</em>:</p>
+<pre><code>Hello, Blazor!
+</code></pre><h2 id="share-interop-code-in-a-blazor-class-library">Share interop code in a Blazor class library</h2>
 <p>JavaScript interop code can be included in a Blazor class library (<code>dotnet new blazorlib</code>), which allows you to share the code in a NuGet package.</p>
 <p>The Blazor class library handles embedding JavaScript resources in the built assembly. The JavaScript files are placed in the <em>wwwroot</em> folder, and the tooling takes care of embedding the resources when the library is built.</p>
 <p>The built NuGet package is referenced in the project file of a Blazor app just as any normal NuGet package is referenced. After the app has been restored, app code can call into JavaScript as if it were C#.</p>

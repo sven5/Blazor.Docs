@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Blazor hosting models </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Blazor hosting models ">
+    <meta name="generator" content="docfx 2.37.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="client-side/blazor/host-and-deploy/hosting-models">
+<h1 id="blazor-hosting-models">Blazor hosting models</h1>
+
+<p>By <a href="https://github.com/danroth27">Daniel Roth</a></p>
+<div class="NOTE"><h5>Note</h5><p>Blazor is an unsupported experimental web framework that shouldn&#39;t be used for production workloads at this time.</p>
+</div>
+<p>Blazor is a client-side web framework designed primarily to run in the browser on a WebAssembly-based .NET runtime. Blazor supports multiple hosting models, including out-of-process hosting models, where the Blazor component logic runs separately from the UI thread. Regardless of the hosting model, the Blazor app and component models remain <em>the same</em>. This article discusses the available hosting models for Blazor.</p>
+<h2 id="client-side-in-process-hosting-model">Client-side (in-process) hosting model</h2>
+<p>The principal hosting model for Blazor is running client-side in the browser. In this model, the Blazor app, its dependencies, and the .NET runtime are downloaded to the browser, and the app is executed directly on the browser UI thread. All UI updates and event handling happens within the same process. The app assets can be deployed as static files using whatever web server is preferred (see <a class="xref" href="index.html">Host and deploy</a>).</p>
+<p><img src="https://user-images.githubusercontent.com/1874516/43042852-998bb680-8d3b-11e8-9d39-adf8d3d77360.png" alt="Blazor client-side"></p>
+<p>To create a Blazor app using the client-side hosting model, use the &quot;Blazor&quot; or &quot;Blazor (ASP.NET Core Hosted)&quot; project templates (<code>blazor</code> or <code>blazorhosted</code> template when using <a href="/dotnet/core/tools/dotnet-new">dotnet new</a> at a command prompt). The included <em>blazor.webassembly.js</em> script handles:</p>
+<ul>
+<li>Downloading the .NET runtime, the app, and its dependencies.</li>
+<li>Initialization of the runtime to run the app. </li>
+</ul>
+<p>The benefits of the client-side hosting model are:</p>
+<ul>
+<li>No .NET server-side dependency</li>
+<li>Rich interactive UI</li>
+<li>Fully leverage the client resources and capabilities</li>
+<li>Offload work from the server to the client</li>
+<li>Support offline scenarios</li>
+</ul>
+<p>The downsides to the client-side hosting model are:</p>
+<ul>
+<li>Restricted to the capabilities of the browser</li>
+<li>Requires more capable client hardware and software (for example, WebAssembly support)</li>
+<li>Larger download size and app load time</li>
+<li>Less mature .NET runtime and tooling support (for example, limitations in .NET Standard support and debugging)</li>
+</ul>
+<h2 id="server-side-hosting-model">Server-side hosting model</h2>
+<p>In the server-side hosting model, Blazor is executed on the server from within an ASP.NET COre app. UI updates, event handling, and JavaScript calls are handled over a SignalR connection.</p>
+<p><img src="https://user-images.githubusercontent.com/1874516/43042867-eaa8bb76-8d3b-11e8-8f1d-60768f86f710.png" alt="Blazor server-side"></p>
+<p>To create a Blazor app using the server-side hosting model, use the &quot;Blazor (Server-side on ASP.NET Core)&quot; template (<code>blazorserver</code> when using <a href="/dotnet/core/tools/dotnet-new">dotnet new</a> at a command prompt). An ASP.NET Core app hosts the Blazor server-side app and sets up the SignalR endpoint where clients connect. The ASP.NET Core app references the Blazor <code>Startup</code> class to both add the server-side  Blazor services and to add the Blazor app to the request handling pipeline:</p>
+<pre><code class="lang-csharp">public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        ...
+        services.AddServerSideBlazor&lt;App.Startup&gt;();
+    }
+
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    {
+        ...
+        app.UseServerSideBlazor&lt;App.Startup&gt;();
+    }
+}
+</code></pre><p>The <em>blazor.server.js</em> script establishes the client connection. It&#39;s the app&#39;s responsibility to persist and restore app state as needed (for example, in the event of a lost network connection).</p>
+<p>The benefits of the server-side hosting model are:</p>
+<ul>
+<li>You can still write your entire app with .NET and C# using the Blazor component model.</li>
+<li>Your app still has a rich interactive feel and avoids unnecessary page refreshes.</li>
+<li>Your app download size is significantly smaller, and the initial app load time is much faster.</li>
+<li>Your Blazor component logic can take full advantage of server capabilities, including using any .NET Core compatible APIs.</li>
+<li>Because you&#39;re running on .NET Core on the server, existing .NET tooling, such as debugging, works as expected.</li>
+<li>Server-side hosting works with thin clients (for example, browsers that don&#39;t support WebAssembly and resource constrained devices).</li>
+</ul>
+<p>The downsides of the server-side hosting model are:</p>
+<ul>
+<li>Latency: every user interaction now involves a network hop.</li>
+<li>No offline support: if the client connection goes down, the app stops working.</li>
+<li>Scalability: the server must manage multiple client connections and handle client state.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/aspnet/Blazor.Docs/blob/master/docs/host-and-deploy/hosting-models.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

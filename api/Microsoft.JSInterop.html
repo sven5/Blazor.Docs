@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace Microsoft.AspNetCore.Blazor.Services
+    <title>Namespace Microsoft.JSInterop
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace Microsoft.AspNetCore.Blazor.Services
+    <meta name="title" content="Namespace Microsoft.JSInterop
    ">
     <meta name="generator" content="docfx 2.37.1.0">
     
@@ -68,22 +68,54 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.Services">
+            <article class="content wrap" id="_content" data-uid="Microsoft.JSInterop">
   
-  <h1 id="Microsoft_AspNetCore_Blazor_Services" data-uid="Microsoft.AspNetCore.Blazor.Services" class="text-break">Namespace Microsoft.AspNetCore.Blazor.Services
+  <h1 id="Microsoft_JSInterop" data-uid="Microsoft.JSInterop" class="text-break">Namespace Microsoft.JSInterop
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html">UriHelperBase</a></h4>
-      <section><p>A base class for <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html">IUriHelper</a> implementations.</p>
+      <h4><a class="xref" href="Microsoft.JSInterop.DotNetDispatcher.html">DotNetDispatcher</a></h4>
+      <section><p>Provides methods that receive incoming calls from JS to .NET.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.JSInterop.DotNetObjectRef.html">DotNetObjectRef</a></h4>
+      <section><p>Wraps a JS interop argument, indicating that the value should not be serialized as JSON
+but instead should be passed as a reference.</p>
+<p>To avoid leaking memory, the reference must later be disposed by JS code or by .NET code.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.JSInterop.JSException.html">JSException</a></h4>
+      <section><p>Represents errors that occur during an interop call from .NET to JavaScript.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.JSInterop.JSInProcessRuntimeBase.html">JSInProcessRuntimeBase</a></h4>
+      <section><p>Abstract base class for an in-process JavaScript runtime.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.JSInterop.JSInvokableAttribute.html">JSInvokableAttribute</a></h4>
+      <section><p>Identifies a .NET method as allowing invocation from JavaScript code.
+Any method marked with this attribute may receive arbitrary parameter values
+from untrusted callers. All inputs should be validated carefully.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.JSInterop.Json.html">Json</a></h4>
+      <section><p>Provides mechanisms for converting between .NET objects and JSON strings for use
+when making calls to JavaScript functions via <a class="xref" href="Microsoft.JSInterop.IJSRuntime.html">IJSRuntime</a>.</p>
+<p>Warning: This is not intended as a general-purpose JSON library. It is only intended
+for use when making calls via <a class="xref" href="Microsoft.JSInterop.IJSRuntime.html">IJSRuntime</a>. Eventually its implementation
+will be replaced by something more general-purpose.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.JSInterop.JSRuntime.html">JSRuntime</a></h4>
+      <section><p>Provides mechanisms for accessing the current <a class="xref" href="Microsoft.JSInterop.IJSRuntime.html">IJSRuntime</a>.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.JSInterop.JSRuntimeBase.html">JSRuntimeBase</a></h4>
+      <section><p>Abstract base class for a JavaScript runtime.</p>
 </section>
     <h3 id="interfaces">Interfaces
   </h3>
-      <h4><a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html">IUriHelper</a></h4>
-      <section><p>Helpers for working with URIs and navigation state.</p>
+      <h4><a class="xref" href="Microsoft.JSInterop.IJSInProcessRuntime.html">IJSInProcessRuntime</a></h4>
+      <section><p>Represents an instance of a JavaScript runtime to which calls may be dispatched.</p>
+</section>
+      <h4><a class="xref" href="Microsoft.JSInterop.IJSRuntime.html">IJSRuntime</a></h4>
+      <section><p>Represents an instance of a JavaScript runtime to which calls may be dispatched.</p>
 </section>
 </article>
           </div>

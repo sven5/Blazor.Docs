@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RenderTreeEditType
+    <title>Class RendererRegistry
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RenderTreeEditType
+    <meta name="title" content="Class RendererRegistry
    ">
     <meta name="generator" content="docfx 2.37.1.0">
     
@@ -68,241 +68,96 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType">
+            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry">
   
   
-  <h1 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType" class="text-break">Class RenderTreeEditType
+  <h1 id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry" class="text-break">Class RendererRegistry
   </h1>
-  <div class="markdown level0 summary"><p>Describes the type of a render tree edit operation.</p>
+  <div class="markdown level0 summary"><p>Framework infrastructure, not intended to be used by application code.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">RenderTreeEditType</span></div>
+    <div class="level1"><span class="xref">RendererRegistry</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.html">Microsoft.AspNetCore.Blazor.RenderTree</a></h6>
-  <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.dll</h6>
-  <h5 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.html">Microsoft.AspNetCore.Blazor.Rendering</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.Browser.dll</h6>
+  <h5 id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class RenderTreeEditType : Enum</code></pre>
+    <pre><code class="lang-csharp hljs">public class RendererRegistry : Object</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_PrependFrame" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.PrependFrame">PrependFrame</h4>
-  <div class="markdown level1 summary"><p>Indicates that a new frame should be inserted before the specified tree frame.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const RenderTreeEditType PrependFrame</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html">RenderTreeEditType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_RemoveAttribute" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.RemoveAttribute">RemoveAttribute</h4>
-  <div class="markdown level1 summary"><p>Indicates that a named attribute should be removed from the specified frame.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const RenderTreeEditType RemoveAttribute</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html">RenderTreeEditType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_RemoveFrame" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.RemoveFrame">RemoveFrame</h4>
-  <div class="markdown level1 summary"><p>Indicates that the specified tree frame should be removed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const RenderTreeEditType RemoveFrame</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html">RenderTreeEditType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_SetAttribute" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.SetAttribute">SetAttribute</h4>
-  <div class="markdown level1 summary"><p>Indicates that an attribute value should be applied to the specified frame.
-This may be a change to an existing attribute, or the addition of a new attribute.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const RenderTreeEditType SetAttribute</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html">RenderTreeEditType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_StepIn" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.StepIn">StepIn</h4>
-  <div class="markdown level1 summary"><p>Indicates that the edit position should move inside the specified frame.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const RenderTreeEditType StepIn</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html">RenderTreeEditType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_StepOut" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.StepOut">StepOut</h4>
-  <div class="markdown level1 summary"><p>Indicates that there are no further edit operations on the current frame, and the
-edit position should move back to the parent frame.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const RenderTreeEditType StepOut</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html">RenderTreeEditType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_UpdateMarkup" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.UpdateMarkup">UpdateMarkup</h4>
-  <div class="markdown level1 summary"><p>Indicates that the markup content of the specified frame (which must be a markup frame)
-should be updated.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const RenderTreeEditType UpdateMarkup</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html">RenderTreeEditType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_UpdateText" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.UpdateText">UpdateText</h4>
-  <div class="markdown level1 summary"><p>Indicates that the text content of the specified frame (which must be a text frame)
-should be updated.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const RenderTreeEditType UpdateText</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html">RenderTreeEditType</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_value__" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.value__">value__</h4>
+  <a id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry__ctor_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.#ctor*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry__ctor" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.#ctor">RendererRegistry()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int value__</code></pre>
+    <pre><code class="lang-csharp hljs">public RendererRegistry()</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Current_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Current*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Current" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Current">Current</h4>
+  <div class="markdown level1 summary"><p>Framework infrastructure, not intended to be used by application code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RendererRegistry Current { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html">RendererRegistry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Add_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Add*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Add_Microsoft_AspNetCore_Blazor_Rendering_Renderer_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Add(Microsoft.AspNetCore.Blazor.Rendering.Renderer)">Add(Renderer)</h4>
+  <div class="markdown level1 summary"><p>Framework infrastructure, not intended by used by application code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Add(Renderer renderer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.Renderer.html">Renderer</a></td>
+        <td><span class="parametername">renderer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -313,6 +168,120 @@ should be updated.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Find_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Find*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Find_System_Int32_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Find(System.Int32)">Find(Int32)</h4>
+  <div class="markdown level1 summary"><p>Framework infrastructure, not intended by used by application code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Renderer Find(int browserRendererId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">browserRendererId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.Renderer.html">Renderer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_SetCurrentRendererRegistry_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.SetCurrentRendererRegistry*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_SetCurrentRendererRegistry_Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.SetCurrentRendererRegistry(Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry)">SetCurrentRendererRegistry(RendererRegistry)</h4>
+  <div class="markdown level1 summary"><p>Framework infrastructure, not intended by used by application code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCurrentRendererRegistry(RendererRegistry registry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html">RendererRegistry</a></td>
+        <td><span class="parametername">registry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_TryRemove_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.TryRemove*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_TryRemove_System_Int32_" data-uid="Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.TryRemove(System.Int32)">TryRemove(Int32)</h4>
+  <div class="markdown level1 summary"><p>Framework infrastructure, not intended by used by application code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryRemove(int browserRendererId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">browserRendererId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>

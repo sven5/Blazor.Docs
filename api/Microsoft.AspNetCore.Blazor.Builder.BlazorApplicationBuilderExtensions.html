@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BlazorOptions
+    <title>Class BlazorApplicationBuilderExtensions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BlazorOptions
+    <meta name="title" content="Class BlazorApplicationBuilderExtensions
    ">
     <meta name="generator" content="docfx 2.37.1.0">
     
@@ -68,63 +68,77 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions">
+            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions">
   
   
-  <h1 id="Microsoft_AspNetCore_Builder_BlazorOptions" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions" class="text-break">Class BlazorOptions
+  <h1 id="Microsoft_AspNetCore_Blazor_Builder_BlazorApplicationBuilderExtensions" data-uid="Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions" class="text-break">Class BlazorApplicationBuilderExtensions
   </h1>
-  <div class="markdown level0 summary"><p>Provides configuration options to the <a class="xref" href="Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_UseBlazor_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Builder_BlazorOptions_">UseBlazor(IApplicationBuilder, BlazorOptions)</a>
-middleware.</p>
+  <div class="markdown level0 summary"><p>Provides extension methods for <a class="xref" href="Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.html">IBlazorApplicationBuilder</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">BlazorOptions</span></div>
+    <div class="level1"><span class="xref">BlazorApplicationBuilderExtensions</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Builder.html">Microsoft.AspNetCore.Builder</a></h6>
-  <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.Server.dll</h6>
-  <h5 id="Microsoft_AspNetCore_Builder_BlazorOptions_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.Builder.html">Microsoft.AspNetCore.Blazor.Builder</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.Browser.dll</h6>
+  <h5 id="Microsoft_AspNetCore_Blazor_Builder_BlazorApplicationBuilderExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BlazorOptions : Object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class BlazorApplicationBuilderExtensions : Object</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="methods">Methods
   </h3>
   
   
-  <a id="Microsoft_AspNetCore_Builder_BlazorOptions__ctor_" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.#ctor*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_BlazorOptions__ctor" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.#ctor">BlazorOptions()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlazorOptions()</code></pre>
-  </div>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="Microsoft_AspNetCore_Builder_BlazorOptions_ClientAssemblyPath_" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.ClientAssemblyPath*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_BlazorOptions_ClientAssemblyPath" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.ClientAssemblyPath">ClientAssemblyPath</h4>
-  <div class="markdown level1 summary"><p>Full path to the client assembly.</p>
+  <a id="Microsoft_AspNetCore_Blazor_Builder_BlazorApplicationBuilderExtensions_AddComponent_" data-uid="Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.AddComponent*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Builder_BlazorApplicationBuilderExtensions_AddComponent__1_Microsoft_AspNetCore_Blazor_Builder_IBlazorApplicationBuilder_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.AddComponent``1(Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder,System.String)">AddComponent&lt;TComponent&gt;(IBlazorApplicationBuilder, String)</h4>
+  <div class="markdown level1 summary"><p>Associates the component type with the application,
+causing it to be displayed in the specified DOM element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ClientAssemblyPath { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AddComponent&lt;TComponent&gt;(this IBlazorApplicationBuilder app, string domElementSelector)
+    where TComponent : IComponent</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.html">IBlazorApplicationBuilder</a></td>
+        <td><span class="parametername">app</span></td>
+        <td><p>The <a class="xref" href="Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.html">IBlazorApplicationBuilder</a>.</p>
+</td>
+      </tr>
+      <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><span class="parametername">domElementSelector</span></td>
+        <td><p>A CSS selector that uniquely identifies a DOM element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TComponent</span></td>
+        <td><p>The type of the component.</p>
+</td>
       </tr>
     </tbody>
   </table>

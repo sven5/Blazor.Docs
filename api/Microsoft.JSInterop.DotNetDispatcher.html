@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DotNetDispatcher
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DotNetDispatcher
+   ">
+    <meta name="generator" content="docfx 2.37.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.JSInterop.DotNetDispatcher">
+  
+  
+  <h1 id="Microsoft_JSInterop_DotNetDispatcher" data-uid="Microsoft.JSInterop.DotNetDispatcher" class="text-break">Class DotNetDispatcher
+  </h1>
+  <div class="markdown level0 summary"><p>Provides methods that receive incoming calls from JS to .NET.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DotNetDispatcher</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.JSInterop.html">Microsoft.JSInterop</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.JSInterop.dll</h6>
+  <h5 id="Microsoft_JSInterop_DotNetDispatcher_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DotNetDispatcher : Object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_JSInterop_DotNetDispatcher_BeginInvoke_" data-uid="Microsoft.JSInterop.DotNetDispatcher.BeginInvoke*"></a>
+  <h4 id="Microsoft_JSInterop_DotNetDispatcher_BeginInvoke_System_String_System_String_System_String_System_Int64_System_String_" data-uid="Microsoft.JSInterop.DotNetDispatcher.BeginInvoke(System.String,System.String,System.String,System.Int64,System.String)">BeginInvoke(String, String, String, Int64, String)</h4>
+  <div class="markdown level1 summary"><p>Receives a call from JS to .NET, locating and invoking the specified method asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BeginInvoke(string callId, string assemblyName, string methodIdentifier, long dotNetObjectId, string argsJson)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">callId</span></td>
+        <td><p>A value identifying the asynchronous call that should be passed back with the result, or null if no result notification is required.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">assemblyName</span></td>
+        <td><p>The assembly containing the method to be invoked.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodIdentifier</span></td>
+        <td><p>The identifier of the method to be invoked. The method must be annotated with a <a class="xref" href="Microsoft.JSInterop.JSInvokableAttribute.html">JSInvokableAttribute</a> matching this identifier string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">dotNetObjectId</span></td>
+        <td><p>For instance method calls, identifies the target object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argsJson</span></td>
+        <td><p>A JSON representation of the parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_JSInterop_DotNetDispatcher_EndInvoke_" data-uid="Microsoft.JSInterop.DotNetDispatcher.EndInvoke*"></a>
+  <h4 id="Microsoft_JSInterop_DotNetDispatcher_EndInvoke_System_Int64_System_Boolean_Microsoft_JSInterop_Internal_JSAsyncCallResult_" data-uid="Microsoft.JSInterop.DotNetDispatcher.EndInvoke(System.Int64,System.Boolean,Microsoft.JSInterop.Internal.JSAsyncCallResult)">EndInvoke(Int64, Boolean, JSAsyncCallResult)</h4>
+  <div class="markdown level1 summary"><p>Receives notification that a call from .NET to JS has finished, marking the
+associated <span class="xref">System.Threading.Tasks.Task</span> as completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JSInvokable(&quot;DotNetDispatcher.EndInvoke&quot;)]
+public static void EndInvoke(long asyncHandle, bool succeeded, JSAsyncCallResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">asyncHandle</span></td>
+        <td><p>The identifier for the function invocation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">succeeded</span></td>
+        <td><p>A flag to indicate whether the invocation succeeded.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.JSInterop.Internal.JSAsyncCallResult.html">JSAsyncCallResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>If <code data-dev-comment-type="paramref" class="paramref">succeeded</code> is <code>true</code>, specifies the invocation result. If <code data-dev-comment-type="paramref" class="paramref">succeeded</code> is <code>false</code>, gives the <span class="xref">System.Exception</span> corresponding to the invocation failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_JSInterop_DotNetDispatcher_Invoke_" data-uid="Microsoft.JSInterop.DotNetDispatcher.Invoke*"></a>
+  <h4 id="Microsoft_JSInterop_DotNetDispatcher_Invoke_System_String_System_String_System_Int64_System_String_" data-uid="Microsoft.JSInterop.DotNetDispatcher.Invoke(System.String,System.String,System.Int64,System.String)">Invoke(String, String, Int64, String)</h4>
+  <div class="markdown level1 summary"><p>Receives a call from JS to .NET, locating and invoking the specified method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Invoke(string assemblyName, string methodIdentifier, long dotNetObjectId, string argsJson)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">assemblyName</span></td>
+        <td><p>The assembly containing the method to be invoked.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodIdentifier</span></td>
+        <td><p>The identifier of the method to be invoked. The method must be annotated with a <a class="xref" href="Microsoft.JSInterop.JSInvokableAttribute.html">JSInvokableAttribute</a> matching this identifier string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">dotNetObjectId</span></td>
+        <td><p>For instance method calls, identifies the target object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argsJson</span></td>
+        <td><p>A JSON representation of the parameters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A JSON representation of the return value, or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_JSInterop_DotNetDispatcher_ReleaseDotNetObject_" data-uid="Microsoft.JSInterop.DotNetDispatcher.ReleaseDotNetObject*"></a>
+  <h4 id="Microsoft_JSInterop_DotNetDispatcher_ReleaseDotNetObject_System_Int64_" data-uid="Microsoft.JSInterop.DotNetDispatcher.ReleaseDotNetObject(System.Int64)">ReleaseDotNetObject(Int64)</h4>
+  <div class="markdown level1 summary"><p>Releases the reference to the specified .NET object. This allows the .NET runtime
+to garbage collect that object if there are no other references to it.</p>
+<p>To avoid leaking memory, the JavaScript side code must call this for every .NET
+object it obtains a reference to. The exception is if that object is used for
+the entire lifetime of a given user&apos;s session, in which case it is released
+automatically when the JavaScript runtime is disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JSInvokable(&quot;DotNetDispatcher.ReleaseDotNetObject&quot;)]
+public static void ReleaseDotNetObject(long dotNetObjectId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">dotNetObjectId</span></td>
+        <td><p>The identifier previously passed to JavaScript code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

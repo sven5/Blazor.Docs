@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BlazorOptions
+    <title>Class Circuit
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BlazorOptions
+    <meta name="title" content="Class Circuit
    ">
     <meta name="generator" content="docfx 2.37.1.0">
     
@@ -68,50 +68,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions">
+            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit">
   
   
-  <h1 id="Microsoft_AspNetCore_Builder_BlazorOptions" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions" class="text-break">Class BlazorOptions
+  <h1 id="Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit" class="text-break">Class Circuit
   </h1>
-  <div class="markdown level0 summary"><p>Provides configuration options to the <a class="xref" href="Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_UseBlazor_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Builder_BlazorOptions_">UseBlazor(IApplicationBuilder, BlazorOptions)</a>
-middleware.</p>
+  <div class="markdown level0 summary"><p>Represents an active connection between a Blazor server and a client.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">BlazorOptions</span></div>
+    <div class="level1"><span class="xref">Circuit</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Builder.html">Microsoft.AspNetCore.Builder</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.Server.Circuits.html">Microsoft.AspNetCore.Blazor.Server.Circuits</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.Server.dll</h6>
-  <h5 id="Microsoft_AspNetCore_Builder_BlazorOptions_syntax">Syntax</h5>
+  <h5 id="Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BlazorOptions : Object</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="Microsoft_AspNetCore_Builder_BlazorOptions__ctor_" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.#ctor*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_BlazorOptions__ctor" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.#ctor">BlazorOptions()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlazorOptions()</code></pre>
+    <pre><code class="lang-csharp hljs">public class Circuit : Object</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="Microsoft_AspNetCore_Builder_BlazorOptions_ClientAssemblyPath_" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.ClientAssemblyPath*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_BlazorOptions_ClientAssemblyPath" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.ClientAssemblyPath">ClientAssemblyPath</h4>
-  <div class="markdown level1 summary"><p>Full path to the client assembly.</p>
+  <a id="Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_Current_" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Current*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_Current" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Current">Current</h4>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.html">Circuit</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ClientAssemblyPath { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Circuit Current { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -123,7 +110,59 @@ middleware.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.html">Circuit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_JSRuntime_" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.JSRuntime*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_JSRuntime" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.JSRuntime">JSRuntime</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.JSInterop.IJSRuntime.html">IJSRuntime</a> associated with this circuit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IJSRuntime JSRuntime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.JSInterop.IJSRuntime.html">IJSRuntime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_Services_" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Services*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_Services" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Services">Services</h4>
+  <div class="markdown level1 summary"><p>Gets the <span class="xref">System.IServiceProvider</span> associated with this circuit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IServiceProvider Services { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IServiceProvider</span></td>
         <td></td>
       </tr>
     </tbody>

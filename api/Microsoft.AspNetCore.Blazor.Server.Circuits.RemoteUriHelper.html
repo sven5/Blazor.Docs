@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BrowserUriHelper
+    <title>Class RemoteUriHelper
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BrowserUriHelper
+    <meta name="title" content="Class RemoteUriHelper
    ">
     <meta name="generator" content="docfx 2.37.1.0">
     
@@ -68,19 +68,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper">
+            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper">
   
   
-  <h1 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper" class="text-break">Class BrowserUriHelper
+  <h1 id="Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper" class="text-break">Class RemoteUriHelper
   </h1>
-  <div class="markdown level0 summary"><p>Default browser implementation of <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html">IUriHelper</a>.</p>
+  <div class="markdown level0 summary"><p>A Server-Side Blazor implemenation of <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html">IUriHelper</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html">UriHelperBase</a></div>
-    <div class="level2"><span class="xref">BrowserUriHelper</span></div>
+    <div class="level2"><span class="xref">RemoteUriHelper</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -90,6 +90,9 @@
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_NavigateTo_System_String_">UriHelperBase.NavigateTo(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_InitializeState">UriHelperBase.InitializeState()</a>
     </div>
     <div>
       <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_GetAbsoluteUri">UriHelperBase.GetAbsoluteUri()</a>
@@ -116,35 +119,38 @@
       <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_OnLocationChanged">UriHelperBase.OnLocationChanged</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.Browser.Services.html">Microsoft.AspNetCore.Blazor.Browser.Services</a></h6>
-  <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.Browser.dll</h6>
-  <h5 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.Server.Circuits.html">Microsoft.AspNetCore.Blazor.Server.Circuits</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.Server.dll</h6>
+  <h5 id="Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BrowserUriHelper : UriHelperBase, IUriHelper</code></pre>
+    <pre><code class="lang-csharp hljs">public class RemoteUriHelper : UriHelperBase, IUriHelper</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <h4 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_Instance" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.Instance">Instance</h4>
-  <div class="markdown level1 summary"><p>Gets the instance of <a class="xref" href="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html">BrowserUriHelper</a>.</p>
+  <a id="Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper__ctor_" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.#ctor*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper__ctor_Microsoft_JSInterop_IJSRuntime_" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.#ctor(Microsoft.JSInterop.IJSRuntime)">RemoteUriHelper(IJSRuntime)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html">RemoteUriHelper</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly BrowserUriHelper Instance</code></pre>
+    <pre><code class="lang-csharp hljs">public RemoteUriHelper(IJSRuntime jsRuntime)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html">BrowserUriHelper</a></td>
+        <td><a class="xref" href="Microsoft.JSInterop.IJSRuntime.html">IJSRuntime</a></td>
+        <td><span class="parametername">jsRuntime</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -153,22 +159,43 @@
   </h3>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_InitializeState_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.InitializeState*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_InitializeState" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.InitializeState">InitializeState()</h4>
-  <div class="markdown level1 summary"><p>Called to initialize BaseURI and current URI before those values the first time.
-Override this method to dynamically calculate the those values.</p>
+  <a id="Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_Initialize_" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.Initialize*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_Initialize_System_String_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.Initialize(System.String,System.String)">Initialize(String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes the <a class="xref" href="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html">RemoteUriHelper</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void InitializeState()</code></pre>
+    <pre><code class="lang-csharp hljs">public void Initialize(string uriAbsolute, string baseUriAbsolute)</code></pre>
   </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_InitializeState">UriHelperBase.InitializeState()</a></div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uriAbsolute</span></td>
+        <td><p>The absolute URI of the current page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">baseUriAbsolute</span></td>
+        <td><p>The absolute base URI of the current page.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NavigateToCore_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateToCore*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NavigateToCore_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateToCore(System.String)">NavigateToCore(String)</h4>
+  <a id="Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_NavigateToCore_" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NavigateToCore*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_NavigateToCore_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NavigateToCore(System.String)">NavigateToCore(String)</h4>
   <div class="markdown level1 summary"><p>Navigates to the specified URI.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -190,7 +217,7 @@ Override this method to dynamically calculate the those values.</p>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">uri</span></td>
         <td><p>The destination URI. This can be absolute, or relative to the base URI
-(as returned by <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_GetBaseUri">GetBaseUri()</a>).</p>
+(as returned by <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html#Microsoft_AspNetCore_Blazor_Services_IUriHelper_GetBaseUri">GetBaseUri()</a>).</p>
 </td>
       </tr>
     </tbody>
@@ -199,15 +226,15 @@ Override this method to dynamically calculate the those values.</p>
   <div><a class="xref" href="Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_NavigateToCore_System_String_">UriHelperBase.NavigateToCore(String)</a></div>
   
   
-  <a id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NotifyLocationChanged_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NotifyLocationChanged*"></a>
-  <h4 id="Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NotifyLocationChanged_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NotifyLocationChanged(System.String)">NotifyLocationChanged(String)</h4>
+  <a id="Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_NotifyLocationChanged_" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NotifyLocationChanged*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_NotifyLocationChanged_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NotifyLocationChanged(System.String)">NotifyLocationChanged(String)</h4>
   <div class="markdown level1 summary"><p>For framework use only.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[JSInvokable(&quot;NotifyLocationChanged&quot;)]
-public static void NotifyLocationChanged(string newAbsoluteUri)</code></pre>
+public static void NotifyLocationChanged(string uriAbsolute)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,7 +248,7 @@ public static void NotifyLocationChanged(string newAbsoluteUri)</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">newAbsoluteUri</span></td>
+        <td><span class="parametername">uriAbsolute</span></td>
         <td></td>
       </tr>
     </tbody>

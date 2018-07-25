@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BlazorOptions
+    <title>Class JSInvokableAttribute
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BlazorOptions
+    <meta name="title" content="Class JSInvokableAttribute
    ">
     <meta name="generator" content="docfx 2.37.1.0">
     
@@ -68,50 +68,86 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions">
+            <article class="content wrap" id="_content" data-uid="Microsoft.JSInterop.JSInvokableAttribute">
   
   
-  <h1 id="Microsoft_AspNetCore_Builder_BlazorOptions" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions" class="text-break">Class BlazorOptions
+  <h1 id="Microsoft_JSInterop_JSInvokableAttribute" data-uid="Microsoft.JSInterop.JSInvokableAttribute" class="text-break">Class JSInvokableAttribute
   </h1>
-  <div class="markdown level0 summary"><p>Provides configuration options to the <a class="xref" href="Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_UseBlazor_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Builder_BlazorOptions_">UseBlazor(IApplicationBuilder, BlazorOptions)</a>
-middleware.</p>
+  <div class="markdown level0 summary"><p>Identifies a .NET method as allowing invocation from JavaScript code.
+Any method marked with this attribute may receive arbitrary parameter values
+from untrusted callers. All inputs should be validated carefully.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">BlazorOptions</span></div>
+    <div class="level1"><span class="xref">JSInvokableAttribute</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Builder.html">Microsoft.AspNetCore.Builder</a></h6>
-  <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.Server.dll</h6>
-  <h5 id="Microsoft_AspNetCore_Builder_BlazorOptions_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.JSInterop.html">Microsoft.JSInterop</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.JSInterop.dll</h6>
+  <h5 id="Microsoft_JSInterop_JSInvokableAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BlazorOptions : Object</code></pre>
+    <pre><code class="lang-csharp hljs">public class JSInvokableAttribute : Attribute</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Microsoft_AspNetCore_Builder_BlazorOptions__ctor_" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.#ctor*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_BlazorOptions__ctor" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.#ctor">BlazorOptions()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlazorOptions()</code></pre>
-  </div>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="Microsoft_AspNetCore_Builder_BlazorOptions_ClientAssemblyPath_" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.ClientAssemblyPath*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_BlazorOptions_ClientAssemblyPath" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.ClientAssemblyPath">ClientAssemblyPath</h4>
-  <div class="markdown level1 summary"><p>Full path to the client assembly.</p>
+  <a id="Microsoft_JSInterop_JSInvokableAttribute__ctor_" data-uid="Microsoft.JSInterop.JSInvokableAttribute.#ctor*"></a>
+  <h4 id="Microsoft_JSInterop_JSInvokableAttribute__ctor" data-uid="Microsoft.JSInterop.JSInvokableAttribute.#ctor">JSInvokableAttribute()</h4>
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="Microsoft.JSInterop.JSInvokableAttribute.html">JSInvokableAttribute</a> without setting
+an identifier for the method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ClientAssemblyPath { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public JSInvokableAttribute()</code></pre>
+  </div>
+  
+  
+  <a id="Microsoft_JSInterop_JSInvokableAttribute__ctor_" data-uid="Microsoft.JSInterop.JSInvokableAttribute.#ctor*"></a>
+  <h4 id="Microsoft_JSInterop_JSInvokableAttribute__ctor_System_String_" data-uid="Microsoft.JSInterop.JSInvokableAttribute.#ctor(System.String)">JSInvokableAttribute(String)</h4>
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="Microsoft.JSInterop.JSInvokableAttribute.html">JSInvokableAttribute</a> using the specified
+identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JSInvokableAttribute(string identifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>An identifier for the method, which must be unique within the scope of the assembly.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_JSInterop_JSInvokableAttribute_Identifier_" data-uid="Microsoft.JSInterop.JSInvokableAttribute.Identifier*"></a>
+  <h4 id="Microsoft_JSInterop_JSInvokableAttribute_Identifier" data-uid="Microsoft.JSInterop.JSInvokableAttribute.Identifier">Identifier</h4>
+  <div class="markdown level1 summary"><p>Gets the identifier for the method. The identifier must be unique within the scope
+of an assembly.</p>
+<p>If not set, the identifier is taken from the name of the method. In this case the
+method name must be unique within the assembly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Identifier { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -81,27 +81,15 @@
 </ul>
 <p>Blazor&#39;s DI system is responsible for supplying instances of services to components. DI also resolves dependencies recursively so that services themselves can depend on further services. DI is configured during startup of the app. An example is shown later in this topic.</p>
 <h2 id="add-services-to-di">Add services to DI</h2>
-<p>After creating a new app, examine the <code>Main</code> method in <em>Program.cs</em>:</p>
-<pre><code class="lang-csharp">static void Main(string[] args)
+<p>After creating a new app, examine the <code>Startup.ConfigureServices</code> method:</p>
+<pre><code class="lang-csharp">public void ConfigureServices(IServiceCollection services)
 {
-    var serviceProvider = new BrowserServiceProvider(services =&gt;
-    {
-        // Add custom services here
-    });
-
-    new BrowserRenderer(serviceProvider).AddComponent&lt;App&gt;(&quot;app&quot;);
+    // Add custom services here
 }
-</code></pre><p><code>BrowserServiceProvider</code> receives an action where app services are added to DI. <code>services</code> references the underlying <a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>, which is a list of service descriptor objects (<a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a>). Services are added by providing service descriptors to the service collection. The following code sample demonstrates the concept:</p>
-<pre><code class="lang-csharp">@using Microsoft.Extensions.DependencyInjection
-
-static void Main(string[] args)
+</code></pre><p>The <code>ConfigureServices</code> method is passed an <a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>, which is a list of service descriptor objects (<a href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.servicedescriptor">ServiceDescriptor</a>). Services are added by providing service descriptors to the service collection. The following code sample demonstrates the concept:</p>
+<pre><code class="lang-csharp">public void ConfigureServices(IServiceCollection services)
 {
-    var serviceProvider = new BrowserServiceProvider(services =&gt;
-    {
-        services.AddSingleton&lt;IDataAccess, DataAccess&gt;();
-    });
-
-    new BrowserRenderer(serviceProvider).AddComponent&lt;App&gt;(&quot;app&quot;);
+    services.AddSingleton&lt;IDataAccess, DataAccess&gt;();
 }
 </code></pre><p>Services can be configured with the following lifetimes:</p>
 <table>
@@ -126,6 +114,7 @@ static void Main(string[] args)
 </tr>
 </tbody>
 </table>
+<p>Blazor&#39;s DI system is based on the DI system in ASP.NET Core. For more information, see <a href="https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection">Dependency injection in ASP.NET Core</a>.</p>
 <h2 id="default-services">Default services</h2>
 <p>Blazor provides default services that are automatically added to the service collection of an app. The following table shows a list of the default services currently provided by Blazor&#39;s <a href="/api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserServiceProvider.html">BrowserServiceProvider</a>.</p>
 <table>

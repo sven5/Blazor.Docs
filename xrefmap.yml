@@ -7,12 +7,18 @@ references:
 - uid: client-side/blazor/components/index
   name: Blazor components
   href: docs/components/index.html
+- uid: client-side/blazor/debugging
+  name: Blazor debugging
+  href: docs/debugging.html
 - uid: client-side/blazor/dependency-injection
   name: Dependency injection in Blazor
   href: docs/dependency-injection.html
 - uid: client-side/blazor/get-started
   name: Get started with Blazor
   href: docs/get-started.html
+- uid: client-side/blazor/host-and-deploy/hosting-models
+  name: Blazor hosting models
+  href: docs/host-and-deploy/hosting-models.html
 - uid: client-side/blazor/host-and-deploy/index
   name: Host and deploy Blazor
   href: docs/host-and-deploy/index.html
@@ -127,105 +133,6 @@ references:
   commentId: F:Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.value__
   fullName: Microsoft.AspNetCore.Blazor.Browser.Http.FetchCredentialsOption.value__
   nameWithType: FetchCredentialsOption.value__
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop
-  name: Microsoft.AspNetCore.Blazor.Browser.Interop
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.html
-  commentId: N:Microsoft.AspNetCore.Blazor.Browser.Interop
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop
-  nameWithType: Microsoft.AspNetCore.Blazor.Browser.Interop
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.JavaScriptException
-  name: JavaScriptException
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.JavaScriptException.html
-  commentId: T:Microsoft.AspNetCore.Blazor.Browser.Interop.JavaScriptException
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.JavaScriptException
-  nameWithType: JavaScriptException
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction
-  name: RegisteredFunction
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html
-  commentId: T:Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction
-  nameWithType: RegisteredFunction
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.Invoke*
-  name: Invoke
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html#Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_Invoke_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.Invoke
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.Invoke
-  nameWithType: RegisteredFunction.Invoke
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.Invoke``1(System.String,System.Object[])
-  name: Invoke<TRes>(String, Object[])
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html#Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_Invoke__1_System_String_System_Object___
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.Invoke``1(System.String,System.Object[])
-  name.vb: Invoke(Of TRes)(String, Object())
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.Invoke<TRes>(System.String, System.Object[])
-  fullName.vb: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.Invoke(Of TRes)(System.String, System.Object())
-  nameWithType: RegisteredFunction.Invoke<TRes>(String, Object[])
-  nameWithType.vb: RegisteredFunction.Invoke(Of TRes)(String, Object())
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeAsync*
-  name: InvokeAsync
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html#Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeAsync_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeAsync
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeAsync
-  nameWithType: RegisteredFunction.InvokeAsync
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeAsync``1(System.String,System.Object[])
-  name: InvokeAsync<TRes>(String, Object[])
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html#Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeAsync__1_System_String_System_Object___
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeAsync``1(System.String,System.Object[])
-  name.vb: InvokeAsync(Of TRes)(String, Object())
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeAsync<TRes>(System.String, System.Object[])
-  fullName.vb: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeAsync(Of TRes)(System.String, System.Object())
-  nameWithType: RegisteredFunction.InvokeAsync<TRes>(String, Object[])
-  nameWithType.vb: RegisteredFunction.InvokeAsync(Of TRes)(String, Object())
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled*
-  name: InvokeUnmarshalled
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html#Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled
-  nameWithType: RegisteredFunction.InvokeUnmarshalled
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``1(System.String)
-  name: InvokeUnmarshalled<TRes>(String)
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html#Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled__1_System_String_
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``1(System.String)
-  name.vb: InvokeUnmarshalled(Of TRes)(String)
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled<TRes>(System.String)
-  fullName.vb: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled(Of TRes)(System.String)
-  nameWithType: RegisteredFunction.InvokeUnmarshalled<TRes>(String)
-  nameWithType.vb: RegisteredFunction.InvokeUnmarshalled(Of TRes)(String)
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``1(System.String,System.Object[])
-  name: InvokeUnmarshalled<TRes>(String, Object[])
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html#Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled__1_System_String_System_Object___
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``1(System.String,System.Object[])
-  name.vb: InvokeUnmarshalled(Of TRes)(String, Object())
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled<TRes>(System.String, System.Object[])
-  fullName.vb: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled(Of TRes)(System.String, System.Object())
-  nameWithType: RegisteredFunction.InvokeUnmarshalled<TRes>(String, Object[])
-  nameWithType.vb: RegisteredFunction.InvokeUnmarshalled(Of TRes)(String, Object())
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``2(System.String,``0)
-  name: InvokeUnmarshalled<T0, TRes>(String, T0)
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html#Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled__2_System_String___0_
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``2(System.String,``0)
-  name.vb: InvokeUnmarshalled(Of T0, TRes)(String, T0)
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled<T0, TRes>(System.String, T0)
-  fullName.vb: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled(Of T0, TRes)(System.String, T0)
-  nameWithType: RegisteredFunction.InvokeUnmarshalled<T0, TRes>(String, T0)
-  nameWithType.vb: RegisteredFunction.InvokeUnmarshalled(Of T0, TRes)(String, T0)
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``3(System.String,``0,``1)
-  name: InvokeUnmarshalled<T0, T1, TRes>(String, T0, T1)
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html#Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled__3_System_String___0___1_
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``3(System.String,``0,``1)
-  name.vb: InvokeUnmarshalled(Of T0, T1, TRes)(String, T0, T1)
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled<T0, T1, TRes>(System.String, T0, T1)
-  fullName.vb: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled(Of T0, T1, TRes)(System.String, T0, T1)
-  nameWithType: RegisteredFunction.InvokeUnmarshalled<T0, T1, TRes>(String, T0, T1)
-  nameWithType.vb: RegisteredFunction.InvokeUnmarshalled(Of T0, T1, TRes)(String, T0, T1)
-- uid: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``4(System.String,``0,``1,``2)
-  name: InvokeUnmarshalled<T0, T1, T2, TRes>(String, T0, T1, T2)
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html#Microsoft_AspNetCore_Blazor_Browser_Interop_RegisteredFunction_InvokeUnmarshalled__4_System_String___0___1___2_
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled``4(System.String,``0,``1,``2)
-  name.vb: InvokeUnmarshalled(Of T0, T1, T2, TRes)(String, T0, T1, T2)
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled<T0, T1, T2, TRes>(System.String, T0, T1, T2)
-  fullName.vb: Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.InvokeUnmarshalled(Of T0, T1, T2, TRes)(System.String, T0, T1, T2)
-  nameWithType: RegisteredFunction.InvokeUnmarshalled<T0, T1, T2, TRes>(String, T0, T1, T2)
-  nameWithType.vb: RegisteredFunction.InvokeUnmarshalled(Of T0, T1, T2, TRes)(String, T0, T1, T2)
 - uid: Microsoft.AspNetCore.Blazor.Browser.Rendering
   name: Microsoft.AspNetCore.Blazor.Browser.Rendering
   href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.html
@@ -304,12 +211,126 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRenderer.UpdateDisplay
   fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRenderer.UpdateDisplay
   nameWithType: BrowserRenderer.UpdateDisplay
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher
+  name: BrowserRendererEventDispatcher
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher
+  nameWithType: BrowserRendererEventDispatcher
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor
+  name: BrowserRendererEventDispatcher.BrowserEventDescriptor
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor
+  nameWithType: BrowserRendererEventDispatcher.BrowserEventDescriptor
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.#ctor
+  name: BrowserEventDescriptor()
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserEventDescriptor()
+  nameWithType: BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserEventDescriptor()
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.#ctor*
+  name: BrowserEventDescriptor
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserEventDescriptor
+  nameWithType: BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserEventDescriptor
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserRendererId
+  name: BrowserRendererId
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor_BrowserRendererId
+  commentId: P:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserRendererId
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserRendererId
+  nameWithType: BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserRendererId
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserRendererId*
+  name: BrowserRendererId
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor_BrowserRendererId_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserRendererId
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserRendererId
+  nameWithType: BrowserRendererEventDispatcher.BrowserEventDescriptor.BrowserRendererId
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.ComponentId
+  name: ComponentId
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor_ComponentId
+  commentId: P:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.ComponentId
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.ComponentId
+  nameWithType: BrowserRendererEventDispatcher.BrowserEventDescriptor.ComponentId
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.ComponentId*
+  name: ComponentId
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor_ComponentId_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.ComponentId
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.ComponentId
+  nameWithType: BrowserRendererEventDispatcher.BrowserEventDescriptor.ComponentId
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventArgsType
+  name: EventArgsType
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor_EventArgsType
+  commentId: P:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventArgsType
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventArgsType
+  nameWithType: BrowserRendererEventDispatcher.BrowserEventDescriptor.EventArgsType
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventArgsType*
+  name: EventArgsType
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor_EventArgsType_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventArgsType
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventArgsType
+  nameWithType: BrowserRendererEventDispatcher.BrowserEventDescriptor.EventArgsType
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventHandlerId
+  name: EventHandlerId
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor_EventHandlerId
+  commentId: P:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventHandlerId
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventHandlerId
+  nameWithType: BrowserRendererEventDispatcher.BrowserEventDescriptor.EventHandlerId
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventHandlerId*
+  name: EventHandlerId
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor_EventHandlerId_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventHandlerId
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.EventHandlerId
+  nameWithType: BrowserRendererEventDispatcher.BrowserEventDescriptor.EventHandlerId
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.DispatchEvent(Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor,System.String)
+  name: DispatchEvent(BrowserRendererEventDispatcher.BrowserEventDescriptor, String)
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_DispatchEvent_Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.DispatchEvent(Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor,System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.DispatchEvent(Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor, System.String)
+  nameWithType: BrowserRendererEventDispatcher.DispatchEvent(BrowserRendererEventDispatcher.BrowserEventDescriptor, String)
+- uid: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.DispatchEvent*
+  name: DispatchEvent
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.html#Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_DispatchEvent_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.DispatchEvent
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.DispatchEvent
+  nameWithType: BrowserRendererEventDispatcher.DispatchEvent
 - uid: Microsoft.AspNetCore.Blazor.Browser.Services
   name: Microsoft.AspNetCore.Blazor.Browser.Services
   href: api/Microsoft.AspNetCore.Blazor.Browser.Services.html
   commentId: N:Microsoft.AspNetCore.Blazor.Browser.Services
   fullName: Microsoft.AspNetCore.Blazor.Browser.Services
   nameWithType: Microsoft.AspNetCore.Blazor.Browser.Services
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime
+  name: ActivateMonoJSRuntime
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime
+  nameWithType: ActivateMonoJSRuntime
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.#ctor
+  name: ActivateMonoJSRuntime()
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.html#Microsoft_AspNetCore_Blazor_Browser_Services_ActivateMonoJSRuntime__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.ActivateMonoJSRuntime()
+  nameWithType: ActivateMonoJSRuntime.ActivateMonoJSRuntime()
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.#ctor*
+  name: ActivateMonoJSRuntime
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.html#Microsoft_AspNetCore_Blazor_Browser_Services_ActivateMonoJSRuntime__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.ActivateMonoJSRuntime
+  nameWithType: ActivateMonoJSRuntime.ActivateMonoJSRuntime
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.EnsureActivated
+  name: EnsureActivated()
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.html#Microsoft_AspNetCore_Blazor_Browser_Services_ActivateMonoJSRuntime_EnsureActivated
+  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.EnsureActivated
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.EnsureActivated()
+  nameWithType: ActivateMonoJSRuntime.EnsureActivated()
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.EnsureActivated*
+  name: EnsureActivated
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.html#Microsoft_AspNetCore_Blazor_Browser_Services_ActivateMonoJSRuntime_EnsureActivated_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.EnsureActivated
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.EnsureActivated
+  nameWithType: ActivateMonoJSRuntime.EnsureActivated
 - uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserServiceProvider
   name: BrowserServiceProvider
   href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserServiceProvider.html
@@ -355,84 +376,105 @@ references:
   commentId: T:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper
   fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper
   nameWithType: BrowserUriHelper
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.#ctor
-  name: BrowserUriHelper()
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper__ctor
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.BrowserUriHelper()
-  nameWithType: BrowserUriHelper.BrowserUriHelper()
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.#ctor*
-  name: BrowserUriHelper
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper__ctor_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.#ctor
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.BrowserUriHelper
-  nameWithType: BrowserUriHelper.BrowserUriHelper
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetAbsoluteUri
-  name: GetAbsoluteUri()
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_GetAbsoluteUri
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetAbsoluteUri
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetAbsoluteUri()
-  nameWithType: BrowserUriHelper.GetAbsoluteUri()
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetAbsoluteUri*
-  name: GetAbsoluteUri
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_GetAbsoluteUri_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetAbsoluteUri
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetAbsoluteUri
-  nameWithType: BrowserUriHelper.GetAbsoluteUri
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetBaseUri
-  name: GetBaseUri()
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_GetBaseUri
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetBaseUri
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetBaseUri()
-  nameWithType: BrowserUriHelper.GetBaseUri()
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetBaseUri*
-  name: GetBaseUri
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_GetBaseUri_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetBaseUri
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.GetBaseUri
-  nameWithType: BrowserUriHelper.GetBaseUri
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateTo(System.String)
-  name: NavigateTo(String)
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NavigateTo_System_String_
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateTo(System.String)
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateTo(System.String)
-  nameWithType: BrowserUriHelper.NavigateTo(String)
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateTo*
-  name: NavigateTo
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NavigateTo_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateTo
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateTo
-  nameWithType: BrowserUriHelper.NavigateTo
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.OnLocationChanged
-  name: OnLocationChanged
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_OnLocationChanged
-  commentId: E:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.OnLocationChanged
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.OnLocationChanged
-  nameWithType: BrowserUriHelper.OnLocationChanged
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToAbsoluteUri(System.String)
-  name: ToAbsoluteUri(String)
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_ToAbsoluteUri_System_String_
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToAbsoluteUri(System.String)
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToAbsoluteUri(System.String)
-  nameWithType: BrowserUriHelper.ToAbsoluteUri(String)
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToAbsoluteUri*
-  name: ToAbsoluteUri
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_ToAbsoluteUri_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToAbsoluteUri
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToAbsoluteUri
-  nameWithType: BrowserUriHelper.ToAbsoluteUri
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToBaseRelativePath(System.String,System.String)
-  name: ToBaseRelativePath(String, String)
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_ToBaseRelativePath_System_String_System_String_
-  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToBaseRelativePath(System.String,System.String)
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToBaseRelativePath(System.String, System.String)
-  nameWithType: BrowserUriHelper.ToBaseRelativePath(String, String)
-- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToBaseRelativePath*
-  name: ToBaseRelativePath
-  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_ToBaseRelativePath_
-  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToBaseRelativePath
-  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.ToBaseRelativePath
-  nameWithType: BrowserUriHelper.ToBaseRelativePath
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.InitializeState
+  name: InitializeState()
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_InitializeState
+  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.InitializeState
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.InitializeState()
+  nameWithType: BrowserUriHelper.InitializeState()
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.InitializeState*
+  name: InitializeState
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_InitializeState_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.InitializeState
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.InitializeState
+  nameWithType: BrowserUriHelper.InitializeState
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.Instance
+  name: Instance
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_Instance
+  commentId: F:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.Instance
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.Instance
+  nameWithType: BrowserUriHelper.Instance
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateToCore(System.String)
+  name: NavigateToCore(String)
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NavigateToCore_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateToCore(System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateToCore(System.String)
+  nameWithType: BrowserUriHelper.NavigateToCore(String)
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateToCore*
+  name: NavigateToCore
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NavigateToCore_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateToCore
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NavigateToCore
+  nameWithType: BrowserUriHelper.NavigateToCore
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NotifyLocationChanged(System.String)
+  name: NotifyLocationChanged(String)
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NotifyLocationChanged_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NotifyLocationChanged(System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NotifyLocationChanged(System.String)
+  nameWithType: BrowserUriHelper.NotifyLocationChanged(String)
+- uid: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NotifyLocationChanged*
+  name: NotifyLocationChanged
+  href: api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html#Microsoft_AspNetCore_Blazor_Browser_Services_BrowserUriHelper_NotifyLocationChanged_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NotifyLocationChanged
+  fullName: Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.NotifyLocationChanged
+  nameWithType: BrowserUriHelper.NotifyLocationChanged
+- uid: Microsoft.AspNetCore.Blazor.Builder
+  name: Microsoft.AspNetCore.Blazor.Builder
+  href: api/Microsoft.AspNetCore.Blazor.Builder.html
+  commentId: N:Microsoft.AspNetCore.Blazor.Builder
+  fullName: Microsoft.AspNetCore.Blazor.Builder
+  nameWithType: Microsoft.AspNetCore.Blazor.Builder
+- uid: Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions
+  name: BlazorApplicationBuilderExtensions
+  href: api/Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions
+  fullName: Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions
+  nameWithType: BlazorApplicationBuilderExtensions
+- uid: Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.AddComponent*
+  name: AddComponent
+  href: api/Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Blazor_Builder_BlazorApplicationBuilderExtensions_AddComponent_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.AddComponent
+  fullName: Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.AddComponent
+  nameWithType: BlazorApplicationBuilderExtensions.AddComponent
+- uid: Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.AddComponent``1(Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder,System.String)
+  name: AddComponent<TComponent>(IBlazorApplicationBuilder, String)
+  href: api/Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Blazor_Builder_BlazorApplicationBuilderExtensions_AddComponent__1_Microsoft_AspNetCore_Blazor_Builder_IBlazorApplicationBuilder_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.AddComponent``1(Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder,System.String)
+  name.vb: AddComponent(Of TComponent)(IBlazorApplicationBuilder, String)
+  fullName: Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.AddComponent<TComponent>(Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder, System.String)
+  fullName.vb: Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.AddComponent(Of TComponent)(Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder, System.String)
+  nameWithType: BlazorApplicationBuilderExtensions.AddComponent<TComponent>(IBlazorApplicationBuilder, String)
+  nameWithType.vb: BlazorApplicationBuilderExtensions.AddComponent(Of TComponent)(IBlazorApplicationBuilder, String)
+- uid: Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder
+  name: IBlazorApplicationBuilder
+  href: api/Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder
+  fullName: Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder
+  nameWithType: IBlazorApplicationBuilder
+- uid: Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.AddComponent(System.Type,System.String)
+  name: AddComponent(Type, String)
+  href: api/Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.html#Microsoft_AspNetCore_Blazor_Builder_IBlazorApplicationBuilder_AddComponent_System_Type_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.AddComponent(System.Type,System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.AddComponent(System.Type, System.String)
+  nameWithType: IBlazorApplicationBuilder.AddComponent(Type, String)
+- uid: Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.AddComponent*
+  name: AddComponent
+  href: api/Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.html#Microsoft_AspNetCore_Blazor_Builder_IBlazorApplicationBuilder_AddComponent_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.AddComponent
+  fullName: Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.AddComponent
+  nameWithType: IBlazorApplicationBuilder.AddComponent
+- uid: Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.Services
+  name: Services
+  href: api/Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.html#Microsoft_AspNetCore_Blazor_Builder_IBlazorApplicationBuilder_Services
+  commentId: P:Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.Services
+  fullName: Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.Services
+  nameWithType: IBlazorApplicationBuilder.Services
+- uid: Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.Services*
+  name: Services
+  href: api/Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.html#Microsoft_AspNetCore_Blazor_Builder_IBlazorApplicationBuilder_Services_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.Services
+  fullName: Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.Services
+  nameWithType: IBlazorApplicationBuilder.Services
 - uid: Microsoft.AspNetCore.Blazor.Components
   name: Microsoft.AspNetCore.Blazor.Components
   href: api/Microsoft.AspNetCore.Blazor.Components.html
@@ -1450,6 +1492,226 @@ references:
   commentId: T:Microsoft.AspNetCore.Blazor.ElementRef
   fullName: Microsoft.AspNetCore.Blazor.ElementRef
   nameWithType: ElementRef
+- uid: Microsoft.AspNetCore.Blazor.ElementRef.Microsoft#JSInterop#Internal#ICustomArgSerializer#ToJsonPrimitive
+  name: ICustomArgSerializer.ToJsonPrimitive()
+  href: api/Microsoft.AspNetCore.Blazor.ElementRef.html#Microsoft_AspNetCore_Blazor_ElementRef_Microsoft_JSInterop_Internal_ICustomArgSerializer_ToJsonPrimitive
+  commentId: M:Microsoft.AspNetCore.Blazor.ElementRef.Microsoft#JSInterop#Internal#ICustomArgSerializer#ToJsonPrimitive
+  name.vb: Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive()
+  fullName: Microsoft.AspNetCore.Blazor.ElementRef.Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive()
+  nameWithType: ElementRef.ICustomArgSerializer.ToJsonPrimitive()
+  nameWithType.vb: ElementRef.Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive()
+- uid: Microsoft.AspNetCore.Blazor.ElementRef.Microsoft#JSInterop#Internal#ICustomArgSerializer#ToJsonPrimitive*
+  name: ICustomArgSerializer.ToJsonPrimitive
+  href: api/Microsoft.AspNetCore.Blazor.ElementRef.html#Microsoft_AspNetCore_Blazor_ElementRef_Microsoft_JSInterop_Internal_ICustomArgSerializer_ToJsonPrimitive_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.ElementRef.Microsoft#JSInterop#Internal#ICustomArgSerializer#ToJsonPrimitive
+  name.vb: Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive
+  fullName: Microsoft.AspNetCore.Blazor.ElementRef.Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive
+  nameWithType: ElementRef.ICustomArgSerializer.ToJsonPrimitive
+  nameWithType.vb: ElementRef.Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive
+- uid: Microsoft.AspNetCore.Blazor.Hosting
+  name: Microsoft.AspNetCore.Blazor.Hosting
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.html
+  commentId: N:Microsoft.AspNetCore.Blazor.Hosting
+  fullName: Microsoft.AspNetCore.Blazor.Hosting
+  nameWithType: Microsoft.AspNetCore.Blazor.Hosting
+- uid: Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost
+  name: BlazorWebAssemblyHost
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost
+  nameWithType: BlazorWebAssemblyHost
+- uid: Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost.CreateDefaultBuilder
+  name: CreateDefaultBuilder()
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost.html#Microsoft_AspNetCore_Blazor_Hosting_BlazorWebAssemblyHost_CreateDefaultBuilder
+  commentId: M:Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost.CreateDefaultBuilder
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost.CreateDefaultBuilder()
+  nameWithType: BlazorWebAssemblyHost.CreateDefaultBuilder()
+- uid: Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost.CreateDefaultBuilder*
+  name: CreateDefaultBuilder
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost.html#Microsoft_AspNetCore_Blazor_Hosting_BlazorWebAssemblyHost_CreateDefaultBuilder_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost.CreateDefaultBuilder
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost.CreateDefaultBuilder
+  nameWithType: BlazorWebAssemblyHost.CreateDefaultBuilder
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost
+  name: IWebAssemblyHost
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost
+  nameWithType: IWebAssemblyHost
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.Services
+  name: Services
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHost_Services
+  commentId: P:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.Services
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.Services
+  nameWithType: IWebAssemblyHost.Services
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.Services*
+  name: Services
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHost_Services_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.Services
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.Services
+  nameWithType: IWebAssemblyHost.Services
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StartAsync(System.Threading.CancellationToken)
+  name: StartAsync(CancellationToken)
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHost_StartAsync_System_Threading_CancellationToken_
+  commentId: M:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StartAsync(System.Threading.CancellationToken)
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StartAsync(System.Threading.CancellationToken)
+  nameWithType: IWebAssemblyHost.StartAsync(CancellationToken)
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StartAsync*
+  name: StartAsync
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHost_StartAsync_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StartAsync
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StartAsync
+  nameWithType: IWebAssemblyHost.StartAsync
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StopAsync(System.Threading.CancellationToken)
+  name: StopAsync(CancellationToken)
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHost_StopAsync_System_Threading_CancellationToken_
+  commentId: M:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StopAsync(System.Threading.CancellationToken)
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StopAsync(System.Threading.CancellationToken)
+  nameWithType: IWebAssemblyHost.StopAsync(CancellationToken)
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StopAsync*
+  name: StopAsync
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHost_StopAsync_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StopAsync
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.StopAsync
+  nameWithType: IWebAssemblyHost.StopAsync
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder
+  name: IWebAssemblyHostBuilder
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder
+  nameWithType: IWebAssemblyHostBuilder
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Build
+  name: Build()
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHostBuilder_Build
+  commentId: M:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Build
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Build()
+  nameWithType: IWebAssemblyHostBuilder.Build()
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Build*
+  name: Build
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHostBuilder_Build_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Build
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Build
+  nameWithType: IWebAssemblyHostBuilder.Build
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.ConfigureServices(System.Action{Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext,Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  name: ConfigureServices(Action<WebAssemblyHostBuilderContext, IServiceCollection>)
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHostBuilder_ConfigureServices_System_Action_Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  commentId: M:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.ConfigureServices(System.Action{Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext,Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  name.vb: ConfigureServices(Action(Of WebAssemblyHostBuilderContext, IServiceCollection))
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.ConfigureServices(System.Action<Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext, Microsoft.Extensions.DependencyInjection.IServiceCollection>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.ConfigureServices(System.Action(Of Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext, Microsoft.Extensions.DependencyInjection.IServiceCollection))
+  nameWithType: IWebAssemblyHostBuilder.ConfigureServices(Action<WebAssemblyHostBuilderContext, IServiceCollection>)
+  nameWithType.vb: IWebAssemblyHostBuilder.ConfigureServices(Action(Of WebAssemblyHostBuilderContext, IServiceCollection))
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.ConfigureServices*
+  name: ConfigureServices
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHostBuilder_ConfigureServices_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.ConfigureServices
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.ConfigureServices
+  nameWithType: IWebAssemblyHostBuilder.ConfigureServices
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Properties
+  name: Properties
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHostBuilder_Properties
+  commentId: P:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Properties
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Properties
+  nameWithType: IWebAssemblyHostBuilder.Properties
+- uid: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Properties*
+  name: Properties
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.html#Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHostBuilder_Properties_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Properties
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.Properties
+  nameWithType: IWebAssemblyHostBuilder.Properties
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext
+  name: WebAssemblyHostBuilderContext
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext
+  nameWithType: WebAssemblyHostBuilderContext
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.#ctor(System.Collections.Generic.IDictionary{System.Object,System.Object})
+  name: WebAssemblyHostBuilderContext(IDictionary<Object, Object>)
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.html#Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostBuilderContext__ctor_System_Collections_Generic_IDictionary_System_Object_System_Object__
+  commentId: M:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.#ctor(System.Collections.Generic.IDictionary{System.Object,System.Object})
+  name.vb: WebAssemblyHostBuilderContext(IDictionary(Of Object, Object))
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.WebAssemblyHostBuilderContext(System.Collections.Generic.IDictionary<System.Object, System.Object>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.WebAssemblyHostBuilderContext(System.Collections.Generic.IDictionary(Of System.Object, System.Object))
+  nameWithType: WebAssemblyHostBuilderContext.WebAssemblyHostBuilderContext(IDictionary<Object, Object>)
+  nameWithType.vb: WebAssemblyHostBuilderContext.WebAssemblyHostBuilderContext(IDictionary(Of Object, Object))
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.#ctor*
+  name: WebAssemblyHostBuilderContext
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.html#Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostBuilderContext__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.WebAssemblyHostBuilderContext
+  nameWithType: WebAssemblyHostBuilderContext.WebAssemblyHostBuilderContext
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.Properties
+  name: Properties
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.html#Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostBuilderContext_Properties
+  commentId: P:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.Properties
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.Properties
+  nameWithType: WebAssemblyHostBuilderContext.Properties
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.Properties*
+  name: Properties
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.html#Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostBuilderContext_Properties_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.Properties
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.Properties
+  nameWithType: WebAssemblyHostBuilderContext.Properties
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions
+  name: WebAssemblyHostBuilderExtensions
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions
+  nameWithType: WebAssemblyHostBuilderExtensions
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.ConfigureServices(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder,System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  name: ConfigureServices(IWebAssemblyHostBuilder, Action<IServiceCollection>)
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.html#Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostBuilderExtensions_ConfigureServices_Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHostBuilder_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  commentId: M:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.ConfigureServices(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder,System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  name.vb: ConfigureServices(IWebAssemblyHostBuilder, Action(Of IServiceCollection))
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.ConfigureServices(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder, System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>)
+  fullName.vb: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.ConfigureServices(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder, System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection))
+  nameWithType: WebAssemblyHostBuilderExtensions.ConfigureServices(IWebAssemblyHostBuilder, Action<IServiceCollection>)
+  nameWithType.vb: WebAssemblyHostBuilderExtensions.ConfigureServices(IWebAssemblyHostBuilder, Action(Of IServiceCollection))
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.ConfigureServices*
+  name: ConfigureServices
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.html#Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostBuilderExtensions_ConfigureServices_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.ConfigureServices
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.ConfigureServices
+  nameWithType: WebAssemblyHostBuilderExtensions.ConfigureServices
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.UseBlazorStartup(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder,System.Type)
+  name: UseBlazorStartup(IWebAssemblyHostBuilder, Type)
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.html#Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostBuilderExtensions_UseBlazorStartup_Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHostBuilder_System_Type_
+  commentId: M:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.UseBlazorStartup(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder,System.Type)
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.UseBlazorStartup(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder, System.Type)
+  nameWithType: WebAssemblyHostBuilderExtensions.UseBlazorStartup(IWebAssemblyHostBuilder, Type)
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.UseBlazorStartup*
+  name: UseBlazorStartup
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.html#Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostBuilderExtensions_UseBlazorStartup_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.UseBlazorStartup
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.UseBlazorStartup
+  nameWithType: WebAssemblyHostBuilderExtensions.UseBlazorStartup
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.UseBlazorStartup``1(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder)
+  name: UseBlazorStartup<TStartup>(IWebAssemblyHostBuilder)
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.html#Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostBuilderExtensions_UseBlazorStartup__1_Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHostBuilder_
+  commentId: M:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.UseBlazorStartup``1(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder)
+  name.vb: UseBlazorStartup(Of TStartup)(IWebAssemblyHostBuilder)
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.UseBlazorStartup<TStartup>(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder)
+  fullName.vb: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.UseBlazorStartup(Of TStartup)(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder)
+  nameWithType: WebAssemblyHostBuilderExtensions.UseBlazorStartup<TStartup>(IWebAssemblyHostBuilder)
+  nameWithType.vb: WebAssemblyHostBuilderExtensions.UseBlazorStartup(Of TStartup)(IWebAssemblyHostBuilder)
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions
+  name: WebAssemblyHostExtensions
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions
+  nameWithType: WebAssemblyHostExtensions
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions.Run(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost)
+  name: Run(IWebAssemblyHost)
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions.html#Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostExtensions_Run_Microsoft_AspNetCore_Blazor_Hosting_IWebAssemblyHost_
+  commentId: M:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions.Run(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost)
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions.Run(Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost)
+  nameWithType: WebAssemblyHostExtensions.Run(IWebAssemblyHost)
+- uid: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions.Run*
+  name: Run
+  href: api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions.html#Microsoft_AspNetCore_Blazor_Hosting_WebAssemblyHostExtensions_Run_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions.Run
+  fullName: Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions.Run
+  nameWithType: WebAssemblyHostExtensions.Run
 - uid: Microsoft.AspNetCore.Blazor.HttpClientJsonExtensions
   name: HttpClientJsonExtensions
   href: api/Microsoft.AspNetCore.Blazor.HttpClientJsonExtensions.html
@@ -1675,6 +1937,66 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.SetParameters
   fullName: Microsoft.AspNetCore.Blazor.Layouts.LayoutDisplay.SetParameters
   nameWithType: LayoutDisplay.SetParameters
+- uid: Microsoft.AspNetCore.Blazor.MarkupString
+  name: MarkupString
+  href: api/Microsoft.AspNetCore.Blazor.MarkupString.html
+  commentId: T:Microsoft.AspNetCore.Blazor.MarkupString
+  fullName: Microsoft.AspNetCore.Blazor.MarkupString
+  nameWithType: MarkupString
+- uid: Microsoft.AspNetCore.Blazor.MarkupString.#ctor(System.String)
+  name: MarkupString(String)
+  href: api/Microsoft.AspNetCore.Blazor.MarkupString.html#Microsoft_AspNetCore_Blazor_MarkupString__ctor_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.MarkupString.#ctor(System.String)
+  fullName: Microsoft.AspNetCore.Blazor.MarkupString.MarkupString(System.String)
+  nameWithType: MarkupString.MarkupString(String)
+- uid: Microsoft.AspNetCore.Blazor.MarkupString.#ctor*
+  name: MarkupString
+  href: api/Microsoft.AspNetCore.Blazor.MarkupString.html#Microsoft_AspNetCore_Blazor_MarkupString__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.MarkupString.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.MarkupString.MarkupString
+  nameWithType: MarkupString.MarkupString
+- uid: Microsoft.AspNetCore.Blazor.MarkupString.op_Explicit(System.String)~Microsoft.AspNetCore.Blazor.MarkupString
+  name: Explicit(String to MarkupString)
+  href: api/Microsoft.AspNetCore.Blazor.MarkupString.html#Microsoft_AspNetCore_Blazor_MarkupString_op_Explicit_System_String__Microsoft_AspNetCore_Blazor_MarkupString
+  commentId: M:Microsoft.AspNetCore.Blazor.MarkupString.op_Explicit(System.String)~Microsoft.AspNetCore.Blazor.MarkupString
+  name.vb: Narrowing(String to MarkupString)
+  fullName: Microsoft.AspNetCore.Blazor.MarkupString.Explicit(System.String to Microsoft.AspNetCore.Blazor.MarkupString)
+  fullName.vb: Microsoft.AspNetCore.Blazor.MarkupString.Narrowing(System.String to Microsoft.AspNetCore.Blazor.MarkupString)
+  nameWithType: MarkupString.Explicit(String to MarkupString)
+  nameWithType.vb: MarkupString.Narrowing(String to MarkupString)
+- uid: Microsoft.AspNetCore.Blazor.MarkupString.op_Explicit*
+  name: Explicit
+  href: api/Microsoft.AspNetCore.Blazor.MarkupString.html#Microsoft_AspNetCore_Blazor_MarkupString_op_Explicit_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.MarkupString.op_Explicit
+  name.vb: Narrowing
+  fullName: Microsoft.AspNetCore.Blazor.MarkupString.Explicit
+  fullName.vb: Microsoft.AspNetCore.Blazor.MarkupString.Narrowing
+  nameWithType: MarkupString.Explicit
+  nameWithType.vb: MarkupString.Narrowing
+- uid: Microsoft.AspNetCore.Blazor.MarkupString.ToString
+  name: ToString()
+  href: api/Microsoft.AspNetCore.Blazor.MarkupString.html#Microsoft_AspNetCore_Blazor_MarkupString_ToString
+  commentId: M:Microsoft.AspNetCore.Blazor.MarkupString.ToString
+  fullName: Microsoft.AspNetCore.Blazor.MarkupString.ToString()
+  nameWithType: MarkupString.ToString()
+- uid: Microsoft.AspNetCore.Blazor.MarkupString.ToString*
+  name: ToString
+  href: api/Microsoft.AspNetCore.Blazor.MarkupString.html#Microsoft_AspNetCore_Blazor_MarkupString_ToString_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.MarkupString.ToString
+  fullName: Microsoft.AspNetCore.Blazor.MarkupString.ToString
+  nameWithType: MarkupString.ToString
+- uid: Microsoft.AspNetCore.Blazor.MarkupString.Value
+  name: Value
+  href: api/Microsoft.AspNetCore.Blazor.MarkupString.html#Microsoft_AspNetCore_Blazor_MarkupString_Value
+  commentId: P:Microsoft.AspNetCore.Blazor.MarkupString.Value
+  fullName: Microsoft.AspNetCore.Blazor.MarkupString.Value
+  nameWithType: MarkupString.Value
+- uid: Microsoft.AspNetCore.Blazor.MarkupString.Value*
+  name: Value
+  href: api/Microsoft.AspNetCore.Blazor.MarkupString.html#Microsoft_AspNetCore_Blazor_MarkupString_Value_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.MarkupString.Value
+  fullName: Microsoft.AspNetCore.Blazor.MarkupString.Value
+  nameWithType: MarkupString.Value
 - uid: Microsoft.AspNetCore.Blazor.RenderFragment
   name: RenderFragment
   href: api/Microsoft.AspNetCore.Blazor.RenderFragment.html
@@ -1858,6 +2180,84 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Rendering.Renderer.UpdateDisplay
   fullName: Microsoft.AspNetCore.Blazor.Rendering.Renderer.UpdateDisplay
   nameWithType: Renderer.UpdateDisplay
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry
+  name: RendererRegistry
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry
+  nameWithType: RendererRegistry
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.#ctor
+  name: RendererRegistry()
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.RendererRegistry()
+  nameWithType: RendererRegistry.RendererRegistry()
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.#ctor*
+  name: RendererRegistry
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.RendererRegistry
+  nameWithType: RendererRegistry.RendererRegistry
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Add(Microsoft.AspNetCore.Blazor.Rendering.Renderer)
+  name: Add(Renderer)
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Add_Microsoft_AspNetCore_Blazor_Rendering_Renderer_
+  commentId: M:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Add(Microsoft.AspNetCore.Blazor.Rendering.Renderer)
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Add(Microsoft.AspNetCore.Blazor.Rendering.Renderer)
+  nameWithType: RendererRegistry.Add(Renderer)
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Add*
+  name: Add
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Add_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Add
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Add
+  nameWithType: RendererRegistry.Add
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Current
+  name: Current
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Current
+  commentId: P:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Current
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Current
+  nameWithType: RendererRegistry.Current
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Current*
+  name: Current
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Current_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Current
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Current
+  nameWithType: RendererRegistry.Current
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Find(System.Int32)
+  name: Find(Int32)
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Find_System_Int32_
+  commentId: M:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Find(System.Int32)
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Find(System.Int32)
+  nameWithType: RendererRegistry.Find(Int32)
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Find*
+  name: Find
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_Find_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Find
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.Find
+  nameWithType: RendererRegistry.Find
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.SetCurrentRendererRegistry(Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry)
+  name: SetCurrentRendererRegistry(RendererRegistry)
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_SetCurrentRendererRegistry_Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_
+  commentId: M:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.SetCurrentRendererRegistry(Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry)
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.SetCurrentRendererRegistry(Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry)
+  nameWithType: RendererRegistry.SetCurrentRendererRegistry(RendererRegistry)
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.SetCurrentRendererRegistry*
+  name: SetCurrentRendererRegistry
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_SetCurrentRendererRegistry_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.SetCurrentRendererRegistry
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.SetCurrentRendererRegistry
+  nameWithType: RendererRegistry.SetCurrentRendererRegistry
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.TryRemove(System.Int32)
+  name: TryRemove(Int32)
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_TryRemove_System_Int32_
+  commentId: M:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.TryRemove(System.Int32)
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.TryRemove(System.Int32)
+  nameWithType: RendererRegistry.TryRemove(Int32)
+- uid: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.TryRemove*
+  name: TryRemove
+  href: api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html#Microsoft_AspNetCore_Blazor_Rendering_RendererRegistry_TryRemove_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.TryRemove
+  fullName: Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.TryRemove
+  nameWithType: RendererRegistry.TryRemove
 - uid: Microsoft.AspNetCore.Blazor.RenderTree
   name: Microsoft.AspNetCore.Blazor.RenderTree
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.html
@@ -2011,6 +2411,12 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddComponentReferenceCapture
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddComponentReferenceCapture
   nameWithType: RenderTreeBuilder.AddComponentReferenceCapture
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent(System.Int32,Microsoft.AspNetCore.Blazor.MarkupString)
+  name: AddContent(Int32, MarkupString)
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_System_Int32_Microsoft_AspNetCore_Blazor_MarkupString_
+  commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent(System.Int32,Microsoft.AspNetCore.Blazor.MarkupString)
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent(System.Int32, Microsoft.AspNetCore.Blazor.MarkupString)
+  nameWithType: RenderTreeBuilder.AddContent(Int32, MarkupString)
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent(System.Int32,Microsoft.AspNetCore.Blazor.RenderFragment)
   name: AddContent(Int32, RenderFragment)
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_System_Int32_Microsoft_AspNetCore_Blazor_RenderFragment_
@@ -2050,6 +2456,18 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddElementReferenceCapture
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddElementReferenceCapture
   nameWithType: RenderTreeBuilder.AddElementReferenceCapture
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddMarkupContent(System.Int32,System.String)
+  name: AddMarkupContent(Int32, String)
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddMarkupContent_System_Int32_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddMarkupContent(System.Int32,System.String)
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddMarkupContent(System.Int32, System.String)
+  nameWithType: RenderTreeBuilder.AddMarkupContent(Int32, String)
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddMarkupContent*
+  name: AddMarkupContent
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddMarkupContent_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddMarkupContent
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddMarkupContent
+  nameWithType: RenderTreeBuilder.AddMarkupContent
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.ChildContent
   name: ChildContent
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_ChildContent
@@ -2227,6 +2645,12 @@ references:
   commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.StepOut
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.StepOut
   nameWithType: RenderTreeEditType.StepOut
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.UpdateMarkup
+  name: UpdateMarkup
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_UpdateMarkup
+  commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.UpdateMarkup
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.UpdateMarkup
+  nameWithType: RenderTreeEditType.UpdateMarkup
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.UpdateText
   name: UpdateText
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeEditType_UpdateText
@@ -2329,6 +2753,12 @@ references:
   commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.FrameType
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.FrameType
   nameWithType: RenderTreeFrame.FrameType
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.MarkupContent
+  name: MarkupContent
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_MarkupContent
+  commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.MarkupContent
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.MarkupContent
+  nameWithType: RenderTreeFrame.MarkupContent
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.RegionSubtreeLength
   name: RegionSubtreeLength
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrame_RegionSubtreeLength
@@ -2395,6 +2825,12 @@ references:
   commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.ElementReferenceCapture
   fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.ElementReferenceCapture
   nameWithType: RenderTreeFrameType.ElementReferenceCapture
+- uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.Markup
+  name: Markup
+  href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_Markup
+  commentId: F:Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.Markup
+  fullName: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.Markup
+  nameWithType: RenderTreeFrameType.Markup
 - uid: Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.Region
   name: Region
   href: api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html#Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeFrameType_Region
@@ -2572,6 +3008,108 @@ references:
   commentId: N:Microsoft.AspNetCore.Blazor.Server
   fullName: Microsoft.AspNetCore.Blazor.Server
   nameWithType: Microsoft.AspNetCore.Blazor.Server
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits
+  name: Microsoft.AspNetCore.Blazor.Server.Circuits
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.html
+  commentId: N:Microsoft.AspNetCore.Blazor.Server.Circuits
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits
+  nameWithType: Microsoft.AspNetCore.Blazor.Server.Circuits
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit
+  name: Circuit
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit
+  nameWithType: Circuit
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Current
+  name: Current
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.html#Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_Current
+  commentId: P:Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Current
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Current
+  nameWithType: Circuit.Current
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Current*
+  name: Current
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.html#Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_Current_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Current
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Current
+  nameWithType: Circuit.Current
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.JSRuntime
+  name: JSRuntime
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.html#Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_JSRuntime
+  commentId: P:Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.JSRuntime
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.JSRuntime
+  nameWithType: Circuit.JSRuntime
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.JSRuntime*
+  name: JSRuntime
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.html#Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_JSRuntime_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.JSRuntime
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.JSRuntime
+  nameWithType: Circuit.JSRuntime
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Services
+  name: Services
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.html#Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_Services
+  commentId: P:Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Services
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Services
+  nameWithType: Circuit.Services
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Services*
+  name: Services
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.html#Microsoft_AspNetCore_Blazor_Server_Circuits_Circuit_Services_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Services
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.Services
+  nameWithType: Circuit.Services
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper
+  name: RemoteUriHelper
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper
+  nameWithType: RemoteUriHelper
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.#ctor(Microsoft.JSInterop.IJSRuntime)
+  name: RemoteUriHelper(IJSRuntime)
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html#Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper__ctor_Microsoft_JSInterop_IJSRuntime_
+  commentId: M:Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.#ctor(Microsoft.JSInterop.IJSRuntime)
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.RemoteUriHelper(Microsoft.JSInterop.IJSRuntime)
+  nameWithType: RemoteUriHelper.RemoteUriHelper(IJSRuntime)
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.#ctor*
+  name: RemoteUriHelper
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html#Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.RemoteUriHelper
+  nameWithType: RemoteUriHelper.RemoteUriHelper
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.Initialize(System.String,System.String)
+  name: Initialize(String, String)
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html#Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_Initialize_System_String_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.Initialize(System.String,System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.Initialize(System.String, System.String)
+  nameWithType: RemoteUriHelper.Initialize(String, String)
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.Initialize*
+  name: Initialize
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html#Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_Initialize_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.Initialize
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.Initialize
+  nameWithType: RemoteUriHelper.Initialize
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NavigateToCore(System.String)
+  name: NavigateToCore(String)
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html#Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_NavigateToCore_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NavigateToCore(System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NavigateToCore(System.String)
+  nameWithType: RemoteUriHelper.NavigateToCore(String)
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NavigateToCore*
+  name: NavigateToCore
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html#Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_NavigateToCore_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NavigateToCore
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NavigateToCore
+  nameWithType: RemoteUriHelper.NavigateToCore
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NotifyLocationChanged(System.String)
+  name: NotifyLocationChanged(String)
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html#Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_NotifyLocationChanged_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NotifyLocationChanged(System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NotifyLocationChanged(System.String)
+  nameWithType: RemoteUriHelper.NotifyLocationChanged(String)
+- uid: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NotifyLocationChanged*
+  name: NotifyLocationChanged
+  href: api/Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html#Microsoft_AspNetCore_Blazor_Server_Circuits_RemoteUriHelper_NotifyLocationChanged_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NotifyLocationChanged
+  fullName: Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.NotifyLocationChanged
+  nameWithType: RemoteUriHelper.NotifyLocationChanged
 - uid: Microsoft.AspNetCore.Blazor.Server.WasmMediaTypeNames
   name: WasmMediaTypeNames
   href: api/Microsoft.AspNetCore.Blazor.Server.WasmMediaTypeNames.html
@@ -2590,6 +3128,24 @@ references:
   commentId: F:Microsoft.AspNetCore.Blazor.Server.WasmMediaTypeNames.Application.Wasm
   fullName: Microsoft.AspNetCore.Blazor.Server.WasmMediaTypeNames.Application.Wasm
   nameWithType: WasmMediaTypeNames.Application.Wasm
+- uid: Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions
+  name: ServerSideBlazorOptions
+  href: api/Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions.html
+  commentId: T:Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions
+  fullName: Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions
+  nameWithType: ServerSideBlazorOptions
+- uid: Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions.#ctor
+  name: ServerSideBlazorOptions()
+  href: api/Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions.html#Microsoft_AspNetCore_Blazor_ServerSideBlazorOptions__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions.ServerSideBlazorOptions()
+  nameWithType: ServerSideBlazorOptions.ServerSideBlazorOptions()
+- uid: Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions.#ctor*
+  name: ServerSideBlazorOptions
+  href: api/Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions.html#Microsoft_AspNetCore_Blazor_ServerSideBlazorOptions__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions.ServerSideBlazorOptions
+  nameWithType: ServerSideBlazorOptions.ServerSideBlazorOptions
 - uid: Microsoft.AspNetCore.Blazor.Services
   name: Microsoft.AspNetCore.Blazor.Services
   href: api/Microsoft.AspNetCore.Blazor.Services.html
@@ -2668,6 +3224,150 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Blazor.Services.IUriHelper.ToBaseRelativePath
   fullName: Microsoft.AspNetCore.Blazor.Services.IUriHelper.ToBaseRelativePath
   nameWithType: IUriHelper.ToBaseRelativePath
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase
+  name: UriHelperBase
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html
+  commentId: T:Microsoft.AspNetCore.Blazor.Services.UriHelperBase
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase
+  nameWithType: UriHelperBase
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.#ctor
+  name: UriHelperBase()
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase__ctor
+  commentId: M:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.UriHelperBase()
+  nameWithType: UriHelperBase.UriHelperBase()
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.#ctor*
+  name: UriHelperBase
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase__ctor_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.#ctor
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.UriHelperBase
+  nameWithType: UriHelperBase.UriHelperBase
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetAbsoluteUri
+  name: GetAbsoluteUri()
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_GetAbsoluteUri
+  commentId: M:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetAbsoluteUri
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetAbsoluteUri()
+  nameWithType: UriHelperBase.GetAbsoluteUri()
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetAbsoluteUri*
+  name: GetAbsoluteUri
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_GetAbsoluteUri_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetAbsoluteUri
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetAbsoluteUri
+  nameWithType: UriHelperBase.GetAbsoluteUri
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetBaseUri
+  name: GetBaseUri()
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_GetBaseUri
+  commentId: M:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetBaseUri
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetBaseUri()
+  nameWithType: UriHelperBase.GetBaseUri()
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetBaseUri*
+  name: GetBaseUri
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_GetBaseUri_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetBaseUri
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.GetBaseUri
+  nameWithType: UriHelperBase.GetBaseUri
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.InitializeState
+  name: InitializeState()
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_InitializeState
+  commentId: M:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.InitializeState
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.InitializeState()
+  nameWithType: UriHelperBase.InitializeState()
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.InitializeState*
+  name: InitializeState
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_InitializeState_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.InitializeState
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.InitializeState
+  nameWithType: UriHelperBase.InitializeState
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateTo(System.String)
+  name: NavigateTo(String)
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_NavigateTo_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateTo(System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateTo(System.String)
+  nameWithType: UriHelperBase.NavigateTo(String)
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateTo*
+  name: NavigateTo
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_NavigateTo_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateTo
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateTo
+  nameWithType: UriHelperBase.NavigateTo
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateToCore(System.String)
+  name: NavigateToCore(String)
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_NavigateToCore_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateToCore(System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateToCore(System.String)
+  nameWithType: UriHelperBase.NavigateToCore(String)
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateToCore*
+  name: NavigateToCore
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_NavigateToCore_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateToCore
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.NavigateToCore
+  nameWithType: UriHelperBase.NavigateToCore
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.OnLocationChanged
+  name: OnLocationChanged
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_OnLocationChanged
+  commentId: E:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.OnLocationChanged
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.OnLocationChanged
+  nameWithType: UriHelperBase.OnLocationChanged
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteBaseUri(System.String)
+  name: SetAbsoluteBaseUri(String)
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_SetAbsoluteBaseUri_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteBaseUri(System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteBaseUri(System.String)
+  nameWithType: UriHelperBase.SetAbsoluteBaseUri(String)
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteBaseUri*
+  name: SetAbsoluteBaseUri
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_SetAbsoluteBaseUri_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteBaseUri
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteBaseUri
+  nameWithType: UriHelperBase.SetAbsoluteBaseUri
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteUri(System.String)
+  name: SetAbsoluteUri(String)
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_SetAbsoluteUri_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteUri(System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteUri(System.String)
+  nameWithType: UriHelperBase.SetAbsoluteUri(String)
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteUri*
+  name: SetAbsoluteUri
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_SetAbsoluteUri_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteUri
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.SetAbsoluteUri
+  nameWithType: UriHelperBase.SetAbsoluteUri
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToAbsoluteUri(System.String)
+  name: ToAbsoluteUri(String)
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_ToAbsoluteUri_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToAbsoluteUri(System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToAbsoluteUri(System.String)
+  nameWithType: UriHelperBase.ToAbsoluteUri(String)
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToAbsoluteUri*
+  name: ToAbsoluteUri
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_ToAbsoluteUri_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToAbsoluteUri
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToAbsoluteUri
+  nameWithType: UriHelperBase.ToAbsoluteUri
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToBaseRelativePath(System.String,System.String)
+  name: ToBaseRelativePath(String, String)
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_ToBaseRelativePath_System_String_System_String_
+  commentId: M:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToBaseRelativePath(System.String,System.String)
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToBaseRelativePath(System.String, System.String)
+  nameWithType: UriHelperBase.ToBaseRelativePath(String, String)
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToBaseRelativePath*
+  name: ToBaseRelativePath
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_ToBaseRelativePath_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToBaseRelativePath
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.ToBaseRelativePath
+  nameWithType: UriHelperBase.ToBaseRelativePath
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.TriggerOnLocationChanged
+  name: TriggerOnLocationChanged()
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_TriggerOnLocationChanged
+  commentId: M:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.TriggerOnLocationChanged
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.TriggerOnLocationChanged()
+  nameWithType: UriHelperBase.TriggerOnLocationChanged()
+- uid: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.TriggerOnLocationChanged*
+  name: TriggerOnLocationChanged
+  href: api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html#Microsoft_AspNetCore_Blazor_Services_UriHelperBase_TriggerOnLocationChanged_
+  commentId: Overload:Microsoft.AspNetCore.Blazor.Services.UriHelperBase.TriggerOnLocationChanged
+  fullName: Microsoft.AspNetCore.Blazor.Services.UriHelperBase.TriggerOnLocationChanged
+  nameWithType: UriHelperBase.TriggerOnLocationChanged
 - uid: Microsoft.AspNetCore.Blazor.UIChangeEventArgs
   name: UIChangeEventArgs
   href: api/Microsoft.AspNetCore.Blazor.UIChangeEventArgs.html
@@ -3964,33 +4664,33 @@ references:
   commentId: N:Microsoft.AspNetCore.Builder
   fullName: Microsoft.AspNetCore.Builder
   nameWithType: Microsoft.AspNetCore.Builder
-- uid: Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions
-  name: BlazorAppBuilderExtensions
-  href: api/Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.html
-  commentId: T:Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions
-  fullName: Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions
-  nameWithType: BlazorAppBuilderExtensions
-- uid: Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Builder.BlazorOptions)
+- uid: Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions
+  name: BlazorApplicationBuilderExtensions
+  href: api/Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions
+  fullName: Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions
+  nameWithType: BlazorApplicationBuilderExtensions
+- uid: Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Builder.BlazorOptions)
   name: UseBlazor(IApplicationBuilder, BlazorOptions)
-  href: api/Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.html#Microsoft_AspNetCore_Builder_BlazorAppBuilderExtensions_UseBlazor_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Builder_BlazorOptions_
-  commentId: M:Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Builder.BlazorOptions)
-  fullName: Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Builder.BlazorOptions)
-  nameWithType: BlazorAppBuilderExtensions.UseBlazor(IApplicationBuilder, BlazorOptions)
-- uid: Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor*
+  href: api/Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_UseBlazor_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Builder_BlazorOptions_
+  commentId: M:Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Builder.BlazorOptions)
+  fullName: Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Builder.BlazorOptions)
+  nameWithType: BlazorApplicationBuilderExtensions.UseBlazor(IApplicationBuilder, BlazorOptions)
+- uid: Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor*
   name: UseBlazor
-  href: api/Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.html#Microsoft_AspNetCore_Builder_BlazorAppBuilderExtensions_UseBlazor_
-  commentId: Overload:Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor
-  fullName: Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor
-  nameWithType: BlazorAppBuilderExtensions.UseBlazor
-- uid: Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  href: api/Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_UseBlazor_
+  commentId: Overload:Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor
+  fullName: Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor
+  nameWithType: BlazorApplicationBuilderExtensions.UseBlazor
+- uid: Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)
   name: UseBlazor<TProgram>(IApplicationBuilder)
-  href: api/Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.html#Microsoft_AspNetCore_Builder_BlazorAppBuilderExtensions_UseBlazor__1_Microsoft_AspNetCore_Builder_IApplicationBuilder_
-  commentId: M:Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  href: api/Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_UseBlazor__1_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)
   name.vb: UseBlazor(Of TProgram)(IApplicationBuilder)
-  fullName: Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor<TProgram>(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  fullName.vb: Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor(Of TProgram)(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  nameWithType: BlazorAppBuilderExtensions.UseBlazor<TProgram>(IApplicationBuilder)
-  nameWithType.vb: BlazorAppBuilderExtensions.UseBlazor(Of TProgram)(IApplicationBuilder)
+  fullName: Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor<TProgram>(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName.vb: Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor(Of TProgram)(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: BlazorApplicationBuilderExtensions.UseBlazor<TProgram>(IApplicationBuilder)
+  nameWithType.vb: BlazorApplicationBuilderExtensions.UseBlazor(Of TProgram)(IApplicationBuilder)
 - uid: Microsoft.AspNetCore.Builder.BlazorOptions
   name: BlazorOptions
   href: api/Microsoft.AspNetCore.Builder.BlazorOptions.html
@@ -4021,3 +4721,522 @@ references:
   commentId: Overload:Microsoft.AspNetCore.Builder.BlazorOptions.ClientAssemblyPath
   fullName: Microsoft.AspNetCore.Builder.BlazorOptions.ClientAssemblyPath
   nameWithType: BlazorOptions.ClientAssemblyPath
+- uid: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions
+  name: ServerSideBlazorApplicationBuilderExtensions
+  href: api/Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions
+  fullName: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions
+  nameWithType: ServerSideBlazorApplicationBuilderExtensions
+- uid: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Builder.BlazorOptions,System.Action{Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder})
+  name: UseServerSideBlazor(IApplicationBuilder, BlazorOptions, Action<IBlazorApplicationBuilder>)
+  href: api/Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ServerSideBlazorApplicationBuilderExtensions_UseServerSideBlazor_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Builder_BlazorOptions_System_Action_Microsoft_AspNetCore_Blazor_Builder_IBlazorApplicationBuilder__
+  commentId: M:Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Builder.BlazorOptions,System.Action{Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder})
+  name.vb: UseServerSideBlazor(IApplicationBuilder, BlazorOptions, Action(Of IBlazorApplicationBuilder))
+  fullName: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Builder.BlazorOptions, System.Action<Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder>)
+  fullName.vb: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Builder.BlazorOptions, System.Action(Of Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder))
+  nameWithType: ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(IApplicationBuilder, BlazorOptions, Action<IBlazorApplicationBuilder>)
+  nameWithType.vb: ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(IApplicationBuilder, BlazorOptions, Action(Of IBlazorApplicationBuilder))
+- uid: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Type)
+  name: UseServerSideBlazor(IApplicationBuilder, Type)
+  href: api/Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ServerSideBlazorApplicationBuilderExtensions_UseServerSideBlazor_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Type_
+  commentId: M:Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Type)
+  fullName: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Type)
+  nameWithType: ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(IApplicationBuilder, Type)
+- uid: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor*
+  name: UseServerSideBlazor
+  href: api/Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ServerSideBlazorApplicationBuilderExtensions_UseServerSideBlazor_
+  commentId: Overload:Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor
+  fullName: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor
+  nameWithType: ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor
+- uid: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseServerSideBlazor<TStartup>(IApplicationBuilder)
+  href: api/Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ServerSideBlazorApplicationBuilderExtensions_UseServerSideBlazor__1_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name.vb: UseServerSideBlazor(Of TStartup)(IApplicationBuilder)
+  fullName: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor<TStartup>(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName.vb: Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(Of TStartup)(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor<TStartup>(IApplicationBuilder)
+  nameWithType.vb: ServerSideBlazorApplicationBuilderExtensions.UseServerSideBlazor(Of TStartup)(IApplicationBuilder)
+- uid: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  href: api/Microsoft.Extensions.DependencyInjection.html
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions
+  name: ServerSideBlazorServiceCollectionExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions
+  nameWithType: ServerSideBlazorServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddServerSideBlazor(IServiceCollection)
+  href: api/Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServerSideBlazorServiceCollectionExtensions_AddServerSideBlazor_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions})
+  name: AddServerSideBlazor(IServiceCollection, Action<ServerSideBlazorOptions>)
+  href: api/Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServerSideBlazorServiceCollectionExtensions_AddServerSideBlazor_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Microsoft_AspNetCore_Blazor_ServerSideBlazorOptions__
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions})
+  name.vb: AddServerSideBlazor(IServiceCollection, Action(Of ServerSideBlazorOptions))
+  fullName: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions>)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions))
+  nameWithType: ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(IServiceCollection, Action<ServerSideBlazorOptions>)
+  nameWithType.vb: ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(IServiceCollection, Action(Of ServerSideBlazorOptions))
+- uid: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type)
+  name: AddServerSideBlazor(IServiceCollection, Type)
+  href: api/Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServerSideBlazorServiceCollectionExtensions_AddServerSideBlazor_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Type_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type)
+  fullName: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type)
+  nameWithType: ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(IServiceCollection, Type)
+- uid: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Action{Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions})
+  name: AddServerSideBlazor(IServiceCollection, Type, Action<ServerSideBlazorOptions>)
+  href: api/Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServerSideBlazorServiceCollectionExtensions_AddServerSideBlazor_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Type_System_Action_Microsoft_AspNetCore_Blazor_ServerSideBlazorOptions__
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Action{Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions})
+  name.vb: AddServerSideBlazor(IServiceCollection, Type, Action(Of ServerSideBlazorOptions))
+  fullName: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Action<Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions>)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type, System.Action(Of Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions))
+  nameWithType: ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(IServiceCollection, Type, Action<ServerSideBlazorOptions>)
+  nameWithType.vb: ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(IServiceCollection, Type, Action(Of ServerSideBlazorOptions))
+- uid: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor*
+  name: AddServerSideBlazor
+  href: api/Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServerSideBlazorServiceCollectionExtensions_AddServerSideBlazor_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor
+  fullName: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor
+  nameWithType: ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor
+- uid: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddServerSideBlazor<TStartup>(IServiceCollection)
+  href: api/Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServerSideBlazorServiceCollectionExtensions_AddServerSideBlazor__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddServerSideBlazor(Of TStartup)(IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor<TStartup>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Of TStartup)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor<TStartup>(IServiceCollection)
+  nameWithType.vb: ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Of TStartup)(IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions})
+  name: AddServerSideBlazor<TStartup>(IServiceCollection, Action<ServerSideBlazorOptions>)
+  href: api/Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServerSideBlazorServiceCollectionExtensions_AddServerSideBlazor__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Microsoft_AspNetCore_Blazor_ServerSideBlazorOptions__
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions})
+  name.vb: AddServerSideBlazor(Of TStartup)(IServiceCollection, Action(Of ServerSideBlazorOptions))
+  fullName: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor<TStartup>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions>)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Of TStartup)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions))
+  nameWithType: ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor<TStartup>(IServiceCollection, Action<ServerSideBlazorOptions>)
+  nameWithType.vb: ServerSideBlazorServiceCollectionExtensions.AddServerSideBlazor(Of TStartup)(IServiceCollection, Action(Of ServerSideBlazorOptions))
+- uid: Microsoft.JSInterop
+  name: Microsoft.JSInterop
+  href: api/Microsoft.JSInterop.html
+  commentId: N:Microsoft.JSInterop
+  fullName: Microsoft.JSInterop
+  nameWithType: Microsoft.JSInterop
+- uid: Microsoft.JSInterop.DotNetDispatcher
+  name: DotNetDispatcher
+  href: api/Microsoft.JSInterop.DotNetDispatcher.html
+  commentId: T:Microsoft.JSInterop.DotNetDispatcher
+  fullName: Microsoft.JSInterop.DotNetDispatcher
+  nameWithType: DotNetDispatcher
+- uid: Microsoft.JSInterop.DotNetDispatcher.BeginInvoke(System.String,System.String,System.String,System.Int64,System.String)
+  name: BeginInvoke(String, String, String, Int64, String)
+  href: api/Microsoft.JSInterop.DotNetDispatcher.html#Microsoft_JSInterop_DotNetDispatcher_BeginInvoke_System_String_System_String_System_String_System_Int64_System_String_
+  commentId: M:Microsoft.JSInterop.DotNetDispatcher.BeginInvoke(System.String,System.String,System.String,System.Int64,System.String)
+  fullName: Microsoft.JSInterop.DotNetDispatcher.BeginInvoke(System.String, System.String, System.String, System.Int64, System.String)
+  nameWithType: DotNetDispatcher.BeginInvoke(String, String, String, Int64, String)
+- uid: Microsoft.JSInterop.DotNetDispatcher.BeginInvoke*
+  name: BeginInvoke
+  href: api/Microsoft.JSInterop.DotNetDispatcher.html#Microsoft_JSInterop_DotNetDispatcher_BeginInvoke_
+  commentId: Overload:Microsoft.JSInterop.DotNetDispatcher.BeginInvoke
+  fullName: Microsoft.JSInterop.DotNetDispatcher.BeginInvoke
+  nameWithType: DotNetDispatcher.BeginInvoke
+- uid: Microsoft.JSInterop.DotNetDispatcher.EndInvoke(System.Int64,System.Boolean,Microsoft.JSInterop.Internal.JSAsyncCallResult)
+  name: EndInvoke(Int64, Boolean, JSAsyncCallResult)
+  href: api/Microsoft.JSInterop.DotNetDispatcher.html#Microsoft_JSInterop_DotNetDispatcher_EndInvoke_System_Int64_System_Boolean_Microsoft_JSInterop_Internal_JSAsyncCallResult_
+  commentId: M:Microsoft.JSInterop.DotNetDispatcher.EndInvoke(System.Int64,System.Boolean,Microsoft.JSInterop.Internal.JSAsyncCallResult)
+  fullName: Microsoft.JSInterop.DotNetDispatcher.EndInvoke(System.Int64, System.Boolean, Microsoft.JSInterop.Internal.JSAsyncCallResult)
+  nameWithType: DotNetDispatcher.EndInvoke(Int64, Boolean, JSAsyncCallResult)
+- uid: Microsoft.JSInterop.DotNetDispatcher.EndInvoke*
+  name: EndInvoke
+  href: api/Microsoft.JSInterop.DotNetDispatcher.html#Microsoft_JSInterop_DotNetDispatcher_EndInvoke_
+  commentId: Overload:Microsoft.JSInterop.DotNetDispatcher.EndInvoke
+  fullName: Microsoft.JSInterop.DotNetDispatcher.EndInvoke
+  nameWithType: DotNetDispatcher.EndInvoke
+- uid: Microsoft.JSInterop.DotNetDispatcher.Invoke(System.String,System.String,System.Int64,System.String)
+  name: Invoke(String, String, Int64, String)
+  href: api/Microsoft.JSInterop.DotNetDispatcher.html#Microsoft_JSInterop_DotNetDispatcher_Invoke_System_String_System_String_System_Int64_System_String_
+  commentId: M:Microsoft.JSInterop.DotNetDispatcher.Invoke(System.String,System.String,System.Int64,System.String)
+  fullName: Microsoft.JSInterop.DotNetDispatcher.Invoke(System.String, System.String, System.Int64, System.String)
+  nameWithType: DotNetDispatcher.Invoke(String, String, Int64, String)
+- uid: Microsoft.JSInterop.DotNetDispatcher.Invoke*
+  name: Invoke
+  href: api/Microsoft.JSInterop.DotNetDispatcher.html#Microsoft_JSInterop_DotNetDispatcher_Invoke_
+  commentId: Overload:Microsoft.JSInterop.DotNetDispatcher.Invoke
+  fullName: Microsoft.JSInterop.DotNetDispatcher.Invoke
+  nameWithType: DotNetDispatcher.Invoke
+- uid: Microsoft.JSInterop.DotNetDispatcher.ReleaseDotNetObject(System.Int64)
+  name: ReleaseDotNetObject(Int64)
+  href: api/Microsoft.JSInterop.DotNetDispatcher.html#Microsoft_JSInterop_DotNetDispatcher_ReleaseDotNetObject_System_Int64_
+  commentId: M:Microsoft.JSInterop.DotNetDispatcher.ReleaseDotNetObject(System.Int64)
+  fullName: Microsoft.JSInterop.DotNetDispatcher.ReleaseDotNetObject(System.Int64)
+  nameWithType: DotNetDispatcher.ReleaseDotNetObject(Int64)
+- uid: Microsoft.JSInterop.DotNetDispatcher.ReleaseDotNetObject*
+  name: ReleaseDotNetObject
+  href: api/Microsoft.JSInterop.DotNetDispatcher.html#Microsoft_JSInterop_DotNetDispatcher_ReleaseDotNetObject_
+  commentId: Overload:Microsoft.JSInterop.DotNetDispatcher.ReleaseDotNetObject
+  fullName: Microsoft.JSInterop.DotNetDispatcher.ReleaseDotNetObject
+  nameWithType: DotNetDispatcher.ReleaseDotNetObject
+- uid: Microsoft.JSInterop.DotNetObjectRef
+  name: DotNetObjectRef
+  href: api/Microsoft.JSInterop.DotNetObjectRef.html
+  commentId: T:Microsoft.JSInterop.DotNetObjectRef
+  fullName: Microsoft.JSInterop.DotNetObjectRef
+  nameWithType: DotNetObjectRef
+- uid: Microsoft.JSInterop.DotNetObjectRef.#ctor(System.Object)
+  name: DotNetObjectRef(Object)
+  href: api/Microsoft.JSInterop.DotNetObjectRef.html#Microsoft_JSInterop_DotNetObjectRef__ctor_System_Object_
+  commentId: M:Microsoft.JSInterop.DotNetObjectRef.#ctor(System.Object)
+  fullName: Microsoft.JSInterop.DotNetObjectRef.DotNetObjectRef(System.Object)
+  nameWithType: DotNetObjectRef.DotNetObjectRef(Object)
+- uid: Microsoft.JSInterop.DotNetObjectRef.#ctor*
+  name: DotNetObjectRef
+  href: api/Microsoft.JSInterop.DotNetObjectRef.html#Microsoft_JSInterop_DotNetObjectRef__ctor_
+  commentId: Overload:Microsoft.JSInterop.DotNetObjectRef.#ctor
+  fullName: Microsoft.JSInterop.DotNetObjectRef.DotNetObjectRef
+  nameWithType: DotNetObjectRef.DotNetObjectRef
+- uid: Microsoft.JSInterop.DotNetObjectRef.Dispose
+  name: Dispose()
+  href: api/Microsoft.JSInterop.DotNetObjectRef.html#Microsoft_JSInterop_DotNetObjectRef_Dispose
+  commentId: M:Microsoft.JSInterop.DotNetObjectRef.Dispose
+  fullName: Microsoft.JSInterop.DotNetObjectRef.Dispose()
+  nameWithType: DotNetObjectRef.Dispose()
+- uid: Microsoft.JSInterop.DotNetObjectRef.Dispose*
+  name: Dispose
+  href: api/Microsoft.JSInterop.DotNetObjectRef.html#Microsoft_JSInterop_DotNetObjectRef_Dispose_
+  commentId: Overload:Microsoft.JSInterop.DotNetObjectRef.Dispose
+  fullName: Microsoft.JSInterop.DotNetObjectRef.Dispose
+  nameWithType: DotNetObjectRef.Dispose
+- uid: Microsoft.JSInterop.DotNetObjectRef.EnsureAttachedToJsRuntime(Microsoft.JSInterop.IJSRuntime)
+  name: EnsureAttachedToJsRuntime(IJSRuntime)
+  href: api/Microsoft.JSInterop.DotNetObjectRef.html#Microsoft_JSInterop_DotNetObjectRef_EnsureAttachedToJsRuntime_Microsoft_JSInterop_IJSRuntime_
+  commentId: M:Microsoft.JSInterop.DotNetObjectRef.EnsureAttachedToJsRuntime(Microsoft.JSInterop.IJSRuntime)
+  fullName: Microsoft.JSInterop.DotNetObjectRef.EnsureAttachedToJsRuntime(Microsoft.JSInterop.IJSRuntime)
+  nameWithType: DotNetObjectRef.EnsureAttachedToJsRuntime(IJSRuntime)
+- uid: Microsoft.JSInterop.DotNetObjectRef.EnsureAttachedToJsRuntime*
+  name: EnsureAttachedToJsRuntime
+  href: api/Microsoft.JSInterop.DotNetObjectRef.html#Microsoft_JSInterop_DotNetObjectRef_EnsureAttachedToJsRuntime_
+  commentId: Overload:Microsoft.JSInterop.DotNetObjectRef.EnsureAttachedToJsRuntime
+  fullName: Microsoft.JSInterop.DotNetObjectRef.EnsureAttachedToJsRuntime
+  nameWithType: DotNetObjectRef.EnsureAttachedToJsRuntime
+- uid: Microsoft.JSInterop.DotNetObjectRef.Value
+  name: Value
+  href: api/Microsoft.JSInterop.DotNetObjectRef.html#Microsoft_JSInterop_DotNetObjectRef_Value
+  commentId: P:Microsoft.JSInterop.DotNetObjectRef.Value
+  fullName: Microsoft.JSInterop.DotNetObjectRef.Value
+  nameWithType: DotNetObjectRef.Value
+- uid: Microsoft.JSInterop.DotNetObjectRef.Value*
+  name: Value
+  href: api/Microsoft.JSInterop.DotNetObjectRef.html#Microsoft_JSInterop_DotNetObjectRef_Value_
+  commentId: Overload:Microsoft.JSInterop.DotNetObjectRef.Value
+  fullName: Microsoft.JSInterop.DotNetObjectRef.Value
+  nameWithType: DotNetObjectRef.Value
+- uid: Microsoft.JSInterop.IJSInProcessRuntime
+  name: IJSInProcessRuntime
+  href: api/Microsoft.JSInterop.IJSInProcessRuntime.html
+  commentId: T:Microsoft.JSInterop.IJSInProcessRuntime
+  fullName: Microsoft.JSInterop.IJSInProcessRuntime
+  nameWithType: IJSInProcessRuntime
+- uid: Microsoft.JSInterop.IJSInProcessRuntime.Invoke*
+  name: Invoke
+  href: api/Microsoft.JSInterop.IJSInProcessRuntime.html#Microsoft_JSInterop_IJSInProcessRuntime_Invoke_
+  commentId: Overload:Microsoft.JSInterop.IJSInProcessRuntime.Invoke
+  fullName: Microsoft.JSInterop.IJSInProcessRuntime.Invoke
+  nameWithType: IJSInProcessRuntime.Invoke
+- uid: Microsoft.JSInterop.IJSInProcessRuntime.Invoke``1(System.String,System.Object[])
+  name: Invoke<T>(String, Object[])
+  href: api/Microsoft.JSInterop.IJSInProcessRuntime.html#Microsoft_JSInterop_IJSInProcessRuntime_Invoke__1_System_String_System_Object___
+  commentId: M:Microsoft.JSInterop.IJSInProcessRuntime.Invoke``1(System.String,System.Object[])
+  name.vb: Invoke(Of T)(String, Object())
+  fullName: Microsoft.JSInterop.IJSInProcessRuntime.Invoke<T>(System.String, System.Object[])
+  fullName.vb: Microsoft.JSInterop.IJSInProcessRuntime.Invoke(Of T)(System.String, System.Object())
+  nameWithType: IJSInProcessRuntime.Invoke<T>(String, Object[])
+  nameWithType.vb: IJSInProcessRuntime.Invoke(Of T)(String, Object())
+- uid: Microsoft.JSInterop.IJSRuntime
+  name: IJSRuntime
+  href: api/Microsoft.JSInterop.IJSRuntime.html
+  commentId: T:Microsoft.JSInterop.IJSRuntime
+  fullName: Microsoft.JSInterop.IJSRuntime
+  nameWithType: IJSRuntime
+- uid: Microsoft.JSInterop.IJSRuntime.InvokeAsync*
+  name: InvokeAsync
+  href: api/Microsoft.JSInterop.IJSRuntime.html#Microsoft_JSInterop_IJSRuntime_InvokeAsync_
+  commentId: Overload:Microsoft.JSInterop.IJSRuntime.InvokeAsync
+  fullName: Microsoft.JSInterop.IJSRuntime.InvokeAsync
+  nameWithType: IJSRuntime.InvokeAsync
+- uid: Microsoft.JSInterop.IJSRuntime.InvokeAsync``1(System.String,System.Object[])
+  name: InvokeAsync<T>(String, Object[])
+  href: api/Microsoft.JSInterop.IJSRuntime.html#Microsoft_JSInterop_IJSRuntime_InvokeAsync__1_System_String_System_Object___
+  commentId: M:Microsoft.JSInterop.IJSRuntime.InvokeAsync``1(System.String,System.Object[])
+  name.vb: InvokeAsync(Of T)(String, Object())
+  fullName: Microsoft.JSInterop.IJSRuntime.InvokeAsync<T>(System.String, System.Object[])
+  fullName.vb: Microsoft.JSInterop.IJSRuntime.InvokeAsync(Of T)(System.String, System.Object())
+  nameWithType: IJSRuntime.InvokeAsync<T>(String, Object[])
+  nameWithType.vb: IJSRuntime.InvokeAsync(Of T)(String, Object())
+- uid: Microsoft.JSInterop.IJSRuntime.UntrackObjectRef(Microsoft.JSInterop.DotNetObjectRef)
+  name: UntrackObjectRef(DotNetObjectRef)
+  href: api/Microsoft.JSInterop.IJSRuntime.html#Microsoft_JSInterop_IJSRuntime_UntrackObjectRef_Microsoft_JSInterop_DotNetObjectRef_
+  commentId: M:Microsoft.JSInterop.IJSRuntime.UntrackObjectRef(Microsoft.JSInterop.DotNetObjectRef)
+  fullName: Microsoft.JSInterop.IJSRuntime.UntrackObjectRef(Microsoft.JSInterop.DotNetObjectRef)
+  nameWithType: IJSRuntime.UntrackObjectRef(DotNetObjectRef)
+- uid: Microsoft.JSInterop.IJSRuntime.UntrackObjectRef*
+  name: UntrackObjectRef
+  href: api/Microsoft.JSInterop.IJSRuntime.html#Microsoft_JSInterop_IJSRuntime_UntrackObjectRef_
+  commentId: Overload:Microsoft.JSInterop.IJSRuntime.UntrackObjectRef
+  fullName: Microsoft.JSInterop.IJSRuntime.UntrackObjectRef
+  nameWithType: IJSRuntime.UntrackObjectRef
+- uid: Microsoft.JSInterop.Internal
+  name: Microsoft.JSInterop.Internal
+  href: api/Microsoft.JSInterop.Internal.html
+  commentId: N:Microsoft.JSInterop.Internal
+  fullName: Microsoft.JSInterop.Internal
+  nameWithType: Microsoft.JSInterop.Internal
+- uid: Microsoft.JSInterop.Internal.ICustomArgSerializer
+  name: ICustomArgSerializer
+  href: api/Microsoft.JSInterop.Internal.ICustomArgSerializer.html
+  commentId: T:Microsoft.JSInterop.Internal.ICustomArgSerializer
+  fullName: Microsoft.JSInterop.Internal.ICustomArgSerializer
+  nameWithType: ICustomArgSerializer
+- uid: Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive
+  name: ToJsonPrimitive()
+  href: api/Microsoft.JSInterop.Internal.ICustomArgSerializer.html#Microsoft_JSInterop_Internal_ICustomArgSerializer_ToJsonPrimitive
+  commentId: M:Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive
+  fullName: Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive()
+  nameWithType: ICustomArgSerializer.ToJsonPrimitive()
+- uid: Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive*
+  name: ToJsonPrimitive
+  href: api/Microsoft.JSInterop.Internal.ICustomArgSerializer.html#Microsoft_JSInterop_Internal_ICustomArgSerializer_ToJsonPrimitive_
+  commentId: Overload:Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive
+  fullName: Microsoft.JSInterop.Internal.ICustomArgSerializer.ToJsonPrimitive
+  nameWithType: ICustomArgSerializer.ToJsonPrimitive
+- uid: Microsoft.JSInterop.Internal.JSAsyncCallResult
+  name: JSAsyncCallResult
+  href: api/Microsoft.JSInterop.Internal.JSAsyncCallResult.html
+  commentId: T:Microsoft.JSInterop.Internal.JSAsyncCallResult
+  fullName: Microsoft.JSInterop.Internal.JSAsyncCallResult
+  nameWithType: JSAsyncCallResult
+- uid: Microsoft.JSInterop.JSException
+  name: JSException
+  href: api/Microsoft.JSInterop.JSException.html
+  commentId: T:Microsoft.JSInterop.JSException
+  fullName: Microsoft.JSInterop.JSException
+  nameWithType: JSException
+- uid: Microsoft.JSInterop.JSException.#ctor(System.String)
+  name: JSException(String)
+  href: api/Microsoft.JSInterop.JSException.html#Microsoft_JSInterop_JSException__ctor_System_String_
+  commentId: M:Microsoft.JSInterop.JSException.#ctor(System.String)
+  fullName: Microsoft.JSInterop.JSException.JSException(System.String)
+  nameWithType: JSException.JSException(String)
+- uid: Microsoft.JSInterop.JSException.#ctor*
+  name: JSException
+  href: api/Microsoft.JSInterop.JSException.html#Microsoft_JSInterop_JSException__ctor_
+  commentId: Overload:Microsoft.JSInterop.JSException.#ctor
+  fullName: Microsoft.JSInterop.JSException.JSException
+  nameWithType: JSException.JSException
+- uid: Microsoft.JSInterop.JSInProcessRuntimeBase
+  name: JSInProcessRuntimeBase
+  href: api/Microsoft.JSInterop.JSInProcessRuntimeBase.html
+  commentId: T:Microsoft.JSInterop.JSInProcessRuntimeBase
+  fullName: Microsoft.JSInterop.JSInProcessRuntimeBase
+  nameWithType: JSInProcessRuntimeBase
+- uid: Microsoft.JSInterop.JSInProcessRuntimeBase.#ctor
+  name: JSInProcessRuntimeBase()
+  href: api/Microsoft.JSInterop.JSInProcessRuntimeBase.html#Microsoft_JSInterop_JSInProcessRuntimeBase__ctor
+  commentId: M:Microsoft.JSInterop.JSInProcessRuntimeBase.#ctor
+  fullName: Microsoft.JSInterop.JSInProcessRuntimeBase.JSInProcessRuntimeBase()
+  nameWithType: JSInProcessRuntimeBase.JSInProcessRuntimeBase()
+- uid: Microsoft.JSInterop.JSInProcessRuntimeBase.#ctor*
+  name: JSInProcessRuntimeBase
+  href: api/Microsoft.JSInterop.JSInProcessRuntimeBase.html#Microsoft_JSInterop_JSInProcessRuntimeBase__ctor_
+  commentId: Overload:Microsoft.JSInterop.JSInProcessRuntimeBase.#ctor
+  fullName: Microsoft.JSInterop.JSInProcessRuntimeBase.JSInProcessRuntimeBase
+  nameWithType: JSInProcessRuntimeBase.JSInProcessRuntimeBase
+- uid: Microsoft.JSInterop.JSInProcessRuntimeBase.Invoke*
+  name: Invoke
+  href: api/Microsoft.JSInterop.JSInProcessRuntimeBase.html#Microsoft_JSInterop_JSInProcessRuntimeBase_Invoke_
+  commentId: Overload:Microsoft.JSInterop.JSInProcessRuntimeBase.Invoke
+  fullName: Microsoft.JSInterop.JSInProcessRuntimeBase.Invoke
+  nameWithType: JSInProcessRuntimeBase.Invoke
+- uid: Microsoft.JSInterop.JSInProcessRuntimeBase.Invoke``1(System.String,System.Object[])
+  name: Invoke<T>(String, Object[])
+  href: api/Microsoft.JSInterop.JSInProcessRuntimeBase.html#Microsoft_JSInterop_JSInProcessRuntimeBase_Invoke__1_System_String_System_Object___
+  commentId: M:Microsoft.JSInterop.JSInProcessRuntimeBase.Invoke``1(System.String,System.Object[])
+  name.vb: Invoke(Of T)(String, Object())
+  fullName: Microsoft.JSInterop.JSInProcessRuntimeBase.Invoke<T>(System.String, System.Object[])
+  fullName.vb: Microsoft.JSInterop.JSInProcessRuntimeBase.Invoke(Of T)(System.String, System.Object())
+  nameWithType: JSInProcessRuntimeBase.Invoke<T>(String, Object[])
+  nameWithType.vb: JSInProcessRuntimeBase.Invoke(Of T)(String, Object())
+- uid: Microsoft.JSInterop.JSInProcessRuntimeBase.InvokeJS(System.String,System.String)
+  name: InvokeJS(String, String)
+  href: api/Microsoft.JSInterop.JSInProcessRuntimeBase.html#Microsoft_JSInterop_JSInProcessRuntimeBase_InvokeJS_System_String_System_String_
+  commentId: M:Microsoft.JSInterop.JSInProcessRuntimeBase.InvokeJS(System.String,System.String)
+  fullName: Microsoft.JSInterop.JSInProcessRuntimeBase.InvokeJS(System.String, System.String)
+  nameWithType: JSInProcessRuntimeBase.InvokeJS(String, String)
+- uid: Microsoft.JSInterop.JSInProcessRuntimeBase.InvokeJS*
+  name: InvokeJS
+  href: api/Microsoft.JSInterop.JSInProcessRuntimeBase.html#Microsoft_JSInterop_JSInProcessRuntimeBase_InvokeJS_
+  commentId: Overload:Microsoft.JSInterop.JSInProcessRuntimeBase.InvokeJS
+  fullName: Microsoft.JSInterop.JSInProcessRuntimeBase.InvokeJS
+  nameWithType: JSInProcessRuntimeBase.InvokeJS
+- uid: Microsoft.JSInterop.JSInvokableAttribute
+  name: JSInvokableAttribute
+  href: api/Microsoft.JSInterop.JSInvokableAttribute.html
+  commentId: T:Microsoft.JSInterop.JSInvokableAttribute
+  fullName: Microsoft.JSInterop.JSInvokableAttribute
+  nameWithType: JSInvokableAttribute
+- uid: Microsoft.JSInterop.JSInvokableAttribute.#ctor
+  name: JSInvokableAttribute()
+  href: api/Microsoft.JSInterop.JSInvokableAttribute.html#Microsoft_JSInterop_JSInvokableAttribute__ctor
+  commentId: M:Microsoft.JSInterop.JSInvokableAttribute.#ctor
+  fullName: Microsoft.JSInterop.JSInvokableAttribute.JSInvokableAttribute()
+  nameWithType: JSInvokableAttribute.JSInvokableAttribute()
+- uid: Microsoft.JSInterop.JSInvokableAttribute.#ctor(System.String)
+  name: JSInvokableAttribute(String)
+  href: api/Microsoft.JSInterop.JSInvokableAttribute.html#Microsoft_JSInterop_JSInvokableAttribute__ctor_System_String_
+  commentId: M:Microsoft.JSInterop.JSInvokableAttribute.#ctor(System.String)
+  fullName: Microsoft.JSInterop.JSInvokableAttribute.JSInvokableAttribute(System.String)
+  nameWithType: JSInvokableAttribute.JSInvokableAttribute(String)
+- uid: Microsoft.JSInterop.JSInvokableAttribute.#ctor*
+  name: JSInvokableAttribute
+  href: api/Microsoft.JSInterop.JSInvokableAttribute.html#Microsoft_JSInterop_JSInvokableAttribute__ctor_
+  commentId: Overload:Microsoft.JSInterop.JSInvokableAttribute.#ctor
+  fullName: Microsoft.JSInterop.JSInvokableAttribute.JSInvokableAttribute
+  nameWithType: JSInvokableAttribute.JSInvokableAttribute
+- uid: Microsoft.JSInterop.JSInvokableAttribute.Identifier
+  name: Identifier
+  href: api/Microsoft.JSInterop.JSInvokableAttribute.html#Microsoft_JSInterop_JSInvokableAttribute_Identifier
+  commentId: P:Microsoft.JSInterop.JSInvokableAttribute.Identifier
+  fullName: Microsoft.JSInterop.JSInvokableAttribute.Identifier
+  nameWithType: JSInvokableAttribute.Identifier
+- uid: Microsoft.JSInterop.JSInvokableAttribute.Identifier*
+  name: Identifier
+  href: api/Microsoft.JSInterop.JSInvokableAttribute.html#Microsoft_JSInterop_JSInvokableAttribute_Identifier_
+  commentId: Overload:Microsoft.JSInterop.JSInvokableAttribute.Identifier
+  fullName: Microsoft.JSInterop.JSInvokableAttribute.Identifier
+  nameWithType: JSInvokableAttribute.Identifier
+- uid: Microsoft.JSInterop.Json
+  name: Json
+  href: api/Microsoft.JSInterop.Json.html
+  commentId: T:Microsoft.JSInterop.Json
+  fullName: Microsoft.JSInterop.Json
+  nameWithType: Json
+- uid: Microsoft.JSInterop.Json.Deserialize*
+  name: Deserialize
+  href: api/Microsoft.JSInterop.Json.html#Microsoft_JSInterop_Json_Deserialize_
+  commentId: Overload:Microsoft.JSInterop.Json.Deserialize
+  fullName: Microsoft.JSInterop.Json.Deserialize
+  nameWithType: Json.Deserialize
+- uid: Microsoft.JSInterop.Json.Deserialize``1(System.String)
+  name: Deserialize<T>(String)
+  href: api/Microsoft.JSInterop.Json.html#Microsoft_JSInterop_Json_Deserialize__1_System_String_
+  commentId: M:Microsoft.JSInterop.Json.Deserialize``1(System.String)
+  name.vb: Deserialize(Of T)(String)
+  fullName: Microsoft.JSInterop.Json.Deserialize<T>(System.String)
+  fullName.vb: Microsoft.JSInterop.Json.Deserialize(Of T)(System.String)
+  nameWithType: Json.Deserialize<T>(String)
+  nameWithType.vb: Json.Deserialize(Of T)(String)
+- uid: Microsoft.JSInterop.Json.Serialize(System.Object)
+  name: Serialize(Object)
+  href: api/Microsoft.JSInterop.Json.html#Microsoft_JSInterop_Json_Serialize_System_Object_
+  commentId: M:Microsoft.JSInterop.Json.Serialize(System.Object)
+  fullName: Microsoft.JSInterop.Json.Serialize(System.Object)
+  nameWithType: Json.Serialize(Object)
+- uid: Microsoft.JSInterop.Json.Serialize*
+  name: Serialize
+  href: api/Microsoft.JSInterop.Json.html#Microsoft_JSInterop_Json_Serialize_
+  commentId: Overload:Microsoft.JSInterop.Json.Serialize
+  fullName: Microsoft.JSInterop.Json.Serialize
+  nameWithType: Json.Serialize
+- uid: Microsoft.JSInterop.JSRuntime
+  name: JSRuntime
+  href: api/Microsoft.JSInterop.JSRuntime.html
+  commentId: T:Microsoft.JSInterop.JSRuntime
+  fullName: Microsoft.JSInterop.JSRuntime
+  nameWithType: JSRuntime
+- uid: Microsoft.JSInterop.JSRuntime.Current
+  name: Current
+  href: api/Microsoft.JSInterop.JSRuntime.html#Microsoft_JSInterop_JSRuntime_Current
+  commentId: P:Microsoft.JSInterop.JSRuntime.Current
+  fullName: Microsoft.JSInterop.JSRuntime.Current
+  nameWithType: JSRuntime.Current
+- uid: Microsoft.JSInterop.JSRuntime.Current*
+  name: Current
+  href: api/Microsoft.JSInterop.JSRuntime.html#Microsoft_JSInterop_JSRuntime_Current_
+  commentId: Overload:Microsoft.JSInterop.JSRuntime.Current
+  fullName: Microsoft.JSInterop.JSRuntime.Current
+  nameWithType: JSRuntime.Current
+- uid: Microsoft.JSInterop.JSRuntime.SetCurrentJSRuntime(Microsoft.JSInterop.IJSRuntime)
+  name: SetCurrentJSRuntime(IJSRuntime)
+  href: api/Microsoft.JSInterop.JSRuntime.html#Microsoft_JSInterop_JSRuntime_SetCurrentJSRuntime_Microsoft_JSInterop_IJSRuntime_
+  commentId: M:Microsoft.JSInterop.JSRuntime.SetCurrentJSRuntime(Microsoft.JSInterop.IJSRuntime)
+  fullName: Microsoft.JSInterop.JSRuntime.SetCurrentJSRuntime(Microsoft.JSInterop.IJSRuntime)
+  nameWithType: JSRuntime.SetCurrentJSRuntime(IJSRuntime)
+- uid: Microsoft.JSInterop.JSRuntime.SetCurrentJSRuntime*
+  name: SetCurrentJSRuntime
+  href: api/Microsoft.JSInterop.JSRuntime.html#Microsoft_JSInterop_JSRuntime_SetCurrentJSRuntime_
+  commentId: Overload:Microsoft.JSInterop.JSRuntime.SetCurrentJSRuntime
+  fullName: Microsoft.JSInterop.JSRuntime.SetCurrentJSRuntime
+  nameWithType: JSRuntime.SetCurrentJSRuntime
+- uid: Microsoft.JSInterop.JSRuntimeBase
+  name: JSRuntimeBase
+  href: api/Microsoft.JSInterop.JSRuntimeBase.html
+  commentId: T:Microsoft.JSInterop.JSRuntimeBase
+  fullName: Microsoft.JSInterop.JSRuntimeBase
+  nameWithType: JSRuntimeBase
+- uid: Microsoft.JSInterop.JSRuntimeBase.#ctor
+  name: JSRuntimeBase()
+  href: api/Microsoft.JSInterop.JSRuntimeBase.html#Microsoft_JSInterop_JSRuntimeBase__ctor
+  commentId: M:Microsoft.JSInterop.JSRuntimeBase.#ctor
+  fullName: Microsoft.JSInterop.JSRuntimeBase.JSRuntimeBase()
+  nameWithType: JSRuntimeBase.JSRuntimeBase()
+- uid: Microsoft.JSInterop.JSRuntimeBase.#ctor*
+  name: JSRuntimeBase
+  href: api/Microsoft.JSInterop.JSRuntimeBase.html#Microsoft_JSInterop_JSRuntimeBase__ctor_
+  commentId: Overload:Microsoft.JSInterop.JSRuntimeBase.#ctor
+  fullName: Microsoft.JSInterop.JSRuntimeBase.JSRuntimeBase
+  nameWithType: JSRuntimeBase.JSRuntimeBase
+- uid: Microsoft.JSInterop.JSRuntimeBase.BeginInvokeJS(System.Int64,System.String,System.String)
+  name: BeginInvokeJS(Int64, String, String)
+  href: api/Microsoft.JSInterop.JSRuntimeBase.html#Microsoft_JSInterop_JSRuntimeBase_BeginInvokeJS_System_Int64_System_String_System_String_
+  commentId: M:Microsoft.JSInterop.JSRuntimeBase.BeginInvokeJS(System.Int64,System.String,System.String)
+  fullName: Microsoft.JSInterop.JSRuntimeBase.BeginInvokeJS(System.Int64, System.String, System.String)
+  nameWithType: JSRuntimeBase.BeginInvokeJS(Int64, String, String)
+- uid: Microsoft.JSInterop.JSRuntimeBase.BeginInvokeJS*
+  name: BeginInvokeJS
+  href: api/Microsoft.JSInterop.JSRuntimeBase.html#Microsoft_JSInterop_JSRuntimeBase_BeginInvokeJS_
+  commentId: Overload:Microsoft.JSInterop.JSRuntimeBase.BeginInvokeJS
+  fullName: Microsoft.JSInterop.JSRuntimeBase.BeginInvokeJS
+  nameWithType: JSRuntimeBase.BeginInvokeJS
+- uid: Microsoft.JSInterop.JSRuntimeBase.InvokeAsync*
+  name: InvokeAsync
+  href: api/Microsoft.JSInterop.JSRuntimeBase.html#Microsoft_JSInterop_JSRuntimeBase_InvokeAsync_
+  commentId: Overload:Microsoft.JSInterop.JSRuntimeBase.InvokeAsync
+  fullName: Microsoft.JSInterop.JSRuntimeBase.InvokeAsync
+  nameWithType: JSRuntimeBase.InvokeAsync
+- uid: Microsoft.JSInterop.JSRuntimeBase.InvokeAsync``1(System.String,System.Object[])
+  name: InvokeAsync<T>(String, Object[])
+  href: api/Microsoft.JSInterop.JSRuntimeBase.html#Microsoft_JSInterop_JSRuntimeBase_InvokeAsync__1_System_String_System_Object___
+  commentId: M:Microsoft.JSInterop.JSRuntimeBase.InvokeAsync``1(System.String,System.Object[])
+  name.vb: InvokeAsync(Of T)(String, Object())
+  fullName: Microsoft.JSInterop.JSRuntimeBase.InvokeAsync<T>(System.String, System.Object[])
+  fullName.vb: Microsoft.JSInterop.JSRuntimeBase.InvokeAsync(Of T)(System.String, System.Object())
+  nameWithType: JSRuntimeBase.InvokeAsync<T>(String, Object[])
+  nameWithType.vb: JSRuntimeBase.InvokeAsync(Of T)(String, Object())
+- uid: Microsoft.JSInterop.JSRuntimeBase.UntrackObjectRef(Microsoft.JSInterop.DotNetObjectRef)
+  name: UntrackObjectRef(DotNetObjectRef)
+  href: api/Microsoft.JSInterop.JSRuntimeBase.html#Microsoft_JSInterop_JSRuntimeBase_UntrackObjectRef_Microsoft_JSInterop_DotNetObjectRef_
+  commentId: M:Microsoft.JSInterop.JSRuntimeBase.UntrackObjectRef(Microsoft.JSInterop.DotNetObjectRef)
+  fullName: Microsoft.JSInterop.JSRuntimeBase.UntrackObjectRef(Microsoft.JSInterop.DotNetObjectRef)
+  nameWithType: JSRuntimeBase.UntrackObjectRef(DotNetObjectRef)
+- uid: Microsoft.JSInterop.JSRuntimeBase.UntrackObjectRef*
+  name: UntrackObjectRef
+  href: api/Microsoft.JSInterop.JSRuntimeBase.html#Microsoft_JSInterop_JSRuntimeBase_UntrackObjectRef_
+  commentId: Overload:Microsoft.JSInterop.JSRuntimeBase.UntrackObjectRef
+  fullName: Microsoft.JSInterop.JSRuntimeBase.UntrackObjectRef
+  nameWithType: JSRuntimeBase.UntrackObjectRef

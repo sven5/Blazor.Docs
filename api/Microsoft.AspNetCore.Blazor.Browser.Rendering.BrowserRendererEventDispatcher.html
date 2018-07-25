@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace Microsoft.AspNetCore.Blazor.Services
+    <title>Class BrowserRendererEventDispatcher
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace Microsoft.AspNetCore.Blazor.Services
+    <meta name="title" content="Class BrowserRendererEventDispatcher
    ">
     <meta name="generator" content="docfx 2.37.1.0">
     
@@ -68,23 +68,62 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.Services">
+            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher">
   
-  <h1 id="Microsoft_AspNetCore_Blazor_Services" data-uid="Microsoft.AspNetCore.Blazor.Services" class="text-break">Namespace Microsoft.AspNetCore.Blazor.Services
+  
+  <h1 id="Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher" data-uid="Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher" class="text-break">Class BrowserRendererEventDispatcher
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides mechanisms for dispatching events to components in a <a class="xref" href="Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRenderer.html">BrowserRenderer</a>.
+This is marked &apos;internal&apos; because it only gets invoked from JS code.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BrowserRendererEventDispatcher</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Blazor.Browser.Rendering.html">Microsoft.AspNetCore.Blazor.Browser.Rendering</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.Browser.dll</h6>
+  <h5 id="Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class BrowserRendererEventDispatcher : Object</code></pre>
+  </div>
+  <h3 id="methods">Methods
   </h3>
-      <h4><a class="xref" href="Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html">UriHelperBase</a></h4>
-      <section><p>A base class for <a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html">IUriHelper</a> implementations.</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="Microsoft.AspNetCore.Blazor.Services.IUriHelper.html">IUriHelper</a></h4>
-      <section><p>Helpers for working with URIs and navigation state.</p>
-</section>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_DispatchEvent_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.DispatchEvent*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_DispatchEvent_Microsoft_AspNetCore_Blazor_Browser_Rendering_BrowserRendererEventDispatcher_BrowserEventDescriptor_System_String_" data-uid="Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.DispatchEvent(Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor,System.String)">DispatchEvent(BrowserRendererEventDispatcher.BrowserEventDescriptor, String)</h4>
+  <div class="markdown level1 summary"><p>For framework use only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JSInvokable(&quot;DispatchEvent&quot;)]
+public static void DispatchEvent(BrowserRendererEventDispatcher.BrowserEventDescriptor eventDescriptor, string eventArgsJson)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html">BrowserRendererEventDispatcher.BrowserEventDescriptor</a></td>
+        <td><span class="parametername">eventDescriptor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventArgsJson</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

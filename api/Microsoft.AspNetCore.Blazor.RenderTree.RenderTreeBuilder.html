@@ -606,6 +606,41 @@ current element is not a component, the frame will be omitted.
   
   
   <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_System_Int32_Microsoft_AspNetCore_Blazor_MarkupString_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent(System.Int32,Microsoft.AspNetCore.Blazor.MarkupString)">AddContent(Int32, MarkupString)</h4>
+  <div class="markdown level1 summary"><p>Appends a frame representing markup content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddContent(int sequence, MarkupString markupContent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.AspNetCore.Blazor.MarkupString.html">MarkupString</a></td>
+        <td><span class="parametername">markupContent</span></td>
+        <td><p>Content for the new markup frame.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent*"></a>
   <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddContent_System_Int32_Microsoft_AspNetCore_Blazor_RenderFragment_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddContent(System.Int32,Microsoft.AspNetCore.Blazor.RenderFragment)">AddContent(Int32, RenderFragment)</h4>
   <div class="markdown level1 summary"><p>Appends frames representing an arbitrary fragment of content.</p>
 </div>
@@ -739,6 +774,41 @@ current element is not a component, the frame will be omitted.
         <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Microsoft.AspNetCore.Blazor.ElementRef.html">ElementRef</a>&gt;</td>
         <td><span class="parametername">elementReferenceCaptureAction</span></td>
         <td><p>An action to be invoked whenever the reference value changes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddMarkupContent_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddMarkupContent*"></a>
+  <h4 id="Microsoft_AspNetCore_Blazor_RenderTree_RenderTreeBuilder_AddMarkupContent_System_Int32_System_String_" data-uid="Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.AddMarkupContent(System.Int32,System.String)">AddMarkupContent(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Appends a frame representing markup content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMarkupContent(int sequence, string markupContent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequence</span></td>
+        <td><p>An integer that represents the position of the instruction in the source code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">markupContent</span></td>
+        <td><p>Content for the new markup frame.</p>
 </td>
       </tr>
     </tbody>

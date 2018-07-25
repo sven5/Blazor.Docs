@@ -65,42 +65,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Interop.JavaScriptException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Interop.JavaScriptException.html",
-          "hash": "gSy2wq/a69rWrwKod7OiDg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Interop.RegisteredFunction.html",
-          "hash": "Pw/LLY7eaAchKck7Vpn7Fg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Interop.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Interop.html",
-          "hash": "vAmaqHjiiOGWUQb6KfZkrA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRenderer.yml",
       "output": {
         ".html": {
@@ -113,11 +77,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.BrowserEventDescriptor.html",
+          "hash": "aAxLDQIPfkwxNsohJqF6GQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Rendering.BrowserRendererEventDispatcher.html",
+          "hash": "VgWLKn1AsBAKYmGxgK+SxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Rendering.yml",
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Rendering.html",
-          "hash": "bpepoHsSWlHh0Nobbt5nmQ=="
+          "hash": "rKdM8FuPM3WRclA36dvq3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Services.ActivateMonoJSRuntime.html",
+          "hash": "cJ5q392ipS9dzAuogFoTrA=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Services.BrowserUriHelper.html",
-          "hash": "d4fXAoO0QgYPA796I+cYew=="
+          "hash": "XVWWyhdxHVdPmd0l8jyKaA=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,43 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.Browser.Services.html",
-          "hash": "YY0vaUe1Yb1ue55QgBDvJQ=="
+          "hash": "Csjt8y8z+8J59GSWwYKoNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Builder.BlazorApplicationBuilderExtensions.html",
+          "hash": "f81uJB+2JfizX/+rOSuV3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Builder.IBlazorApplicationBuilder.html",
+          "hash": "9bW51StqHIur6kht1CHQkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Builder.html",
+          "hash": "FbKW9ViMd6feoB3cVQiylA=="
         }
       },
       "is_incremental": false,
@@ -429,7 +465,91 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.ElementRef.html",
-          "hash": "+BWietuGNYgHP/sbj8A2kA=="
+          "hash": "qrH3404lbdeVHfKP+cR3Pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.BlazorWebAssemblyHost.html",
+          "hash": "DTabJJXH/KauGDqIi0pVLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHost.html",
+          "hash": "eh0KF9+Hqmk9AMT3NHO8Yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.IWebAssemblyHostBuilder.html",
+          "hash": "a9KAaJuCykrzzHpFhG3CeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderContext.html",
+          "hash": "TB+Gn2ND+Ipc8tj7hrfZ6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostBuilderExtensions.html",
+          "hash": "bEa4JVRBAcMoTZb/EPfukg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.WebAssemblyHostExtensions.html",
+          "hash": "NlNFd0rs4l7R3Ay4Jwz7gA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Hosting.html",
+          "hash": "YpPXOmsDj2mkJ/S4V8dvSA=="
         }
       },
       "is_incremental": false,
@@ -509,6 +629,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.MarkupString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.MarkupString.html",
+          "hash": "e7YEPEp1Du/QTUQkZ3P4ZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.AspNetCore.Blazor.RenderFragment.yml",
       "output": {
         ".html": {
@@ -537,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeBuilder.html",
-          "hash": "ch5Q5lc8mtbAipfsEfyxEA=="
+          "hash": "Z3B7BWhqoFEHkP7iEPe0EQ=="
         }
       },
       "is_incremental": false,
@@ -573,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeEditType.html",
-          "hash": "jEt+EDEm0DPxXPBspSgkzQ=="
+          "hash": "6JCN+C1QArj/xvv53oJRaQ=="
         }
       },
       "is_incremental": false,
@@ -585,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrame.html",
-          "hash": "xx5goR7wBeu1+BoFN3t6mQ=="
+          "hash": "Ao9ijcVpV/PzqoH+TViBLg=="
         }
       },
       "is_incremental": false,
@@ -597,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.RenderTree.RenderTreeFrameType.html",
-          "hash": "V4vaLVAj/of0kfFYN0rOzg=="
+          "hash": "0oJ0rtjbJXH/XkLI4eV3ZQ=="
         }
       },
       "is_incremental": false,
@@ -633,7 +765,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.Rendering.Renderer.html",
-          "hash": "krtexnDyvMAGRiNMhYpoGg=="
+          "hash": "bjqI7CWw/fHOP13pzuz/tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Rendering.RendererRegistry.html",
+          "hash": "k9Ssxh3Faj55oFvDiGhklw=="
         }
       },
       "is_incremental": false,
@@ -645,7 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.Rendering.html",
-          "hash": "oI8itUNZjo+aDrBKoMQBjg=="
+          "hash": "G+qTfI9HK0iY/iR0DO/s2Q=="
         }
       },
       "is_incremental": false,
@@ -701,6 +845,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Server.Circuits.Circuit.html",
+          "hash": "oCRctUKzyz6V8w3YYxWvCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Server.Circuits.RemoteUriHelper.html",
+          "hash": "N639QAAM1QcQV9M42FQNMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Server.Circuits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Server.Circuits.html",
+          "hash": "3iqkXkiBCv557wxw3Tk+fA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Server.WasmMediaTypeNames.Application.yml",
       "output": {
         ".html": {
@@ -737,6 +917,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.ServerSideBlazorOptions.html",
+          "hash": "gft5Tkacw3298qs7i8+J9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Services.IUriHelper.yml",
       "output": {
         ".html": {
@@ -749,11 +941,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Blazor.Services.UriHelperBase.html",
+          "hash": "K/CSVQD+Fh6kJRh3AXWrNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.AspNetCore.Blazor.Services.yml",
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.Services.html",
-          "hash": "yw5y8QnJHiUGl8u4v18NIw=="
+          "hash": "FdEPKIQb9Po6xvqAJA9aQQ=="
         }
       },
       "is_incremental": false,
@@ -945,7 +1149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Blazor.html",
-          "hash": "Khxvh+10PYlncgoI7CLnvg=="
+          "hash": "mMUSRJ0QPxUCiHSZM1TZwg=="
         }
       },
       "is_incremental": false,
@@ -953,11 +1157,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.yml",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.html",
-          "hash": "KWK/DX0oo+B8iPvAFnUjRQ=="
+          "relative_path": "api/Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.html",
+          "hash": "nxJQE+I+mOgiJWniNKykFQ=="
         }
       },
       "is_incremental": false,
@@ -969,7 +1173,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.BlazorOptions.html",
-          "hash": "XPKq3oUsalF6trcrOXHQnA=="
+          "hash": "10fQF2FpbhcZwrmX4Ko/iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.ServerSideBlazorApplicationBuilderExtensions.html",
+          "hash": "z2vUaChZUCQF4BAgobPoLg=="
         }
       },
       "is_incremental": false,
@@ -981,7 +1197,199 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.html",
-          "hash": "CjR3hzS8iU0XTDDqvERn1Q=="
+          "hash": "Kv9qlRzQ0um5PHwm/1nkfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServerSideBlazorServiceCollectionExtensions.html",
+          "hash": "VMvLoJCSB9737V6MbD4Vig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
+          "hash": "KnG/OJaE5L5VXMAuQjzAGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.DotNetDispatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.DotNetDispatcher.html",
+          "hash": "8MHS0BqGoAsxXIhGeK7ohQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.DotNetObjectRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.DotNetObjectRef.html",
+          "hash": "IIPB8xxhOcEBB7uElT5n8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.IJSInProcessRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.IJSInProcessRuntime.html",
+          "hash": "WRYpkPtgdQPDzSFA/Lepyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.IJSRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.IJSRuntime.html",
+          "hash": "28KGXL36ozCvIIEAIlDU1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.Internal.ICustomArgSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.Internal.ICustomArgSerializer.html",
+          "hash": "kKw2COHMFUsC0XcZ74/W6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.Internal.JSAsyncCallResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.Internal.JSAsyncCallResult.html",
+          "hash": "rlNNyx6T7SzSRmzfZzcWPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.Internal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.Internal.html",
+          "hash": "YMycOWcYFGJnjSGiGBE4qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.JSException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.JSException.html",
+          "hash": "em33qKRkhNgxWcYMdry0qA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.JSInProcessRuntimeBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.JSInProcessRuntimeBase.html",
+          "hash": "Yp1XyAje4K7uFQGjUltSXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.JSInvokableAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.JSInvokableAttribute.html",
+          "hash": "Feel9mlUvrtLPq3+4xqcXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.JSRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.JSRuntime.html",
+          "hash": "F+V3Ocb7Zx2KkgbUl0ZT6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.JSRuntimeBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.JSRuntimeBase.html",
+          "hash": "wDCBMhDJCvAf68YAzJCniA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.Json.html",
+          "hash": "CWRfV/CQ75drUfMzsPM9EQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.JSInterop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.JSInterop.html",
+          "hash": "asEQJGmA6S/aiZcXf4Ia9Q=="
         }
       },
       "is_incremental": false,
@@ -1005,7 +1413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ZLT+irzrXlJBZRWl6jcD9w=="
+          "hash": "hWlfS25+c6RxBv0N+zeZGw=="
         }
       },
       "is_incremental": false,
@@ -1029,7 +1437,19 @@
       "output": {
         ".html": {
           "relative_path": "docs/components/index.html",
-          "hash": "EFO15JvpLcZ19Zo909UBTA=="
+          "hash": "ukCJdC1G4PL6q2+OF8naAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/debugging.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/debugging.html",
+          "hash": "HsNBlLkpVGpYhIKaIySdcg=="
         }
       },
       "is_incremental": false,
@@ -1041,7 +1461,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/dependency-injection.html",
-          "hash": "1vID63H5pzPLenEvTd68JQ=="
+          "hash": "CBqfvCBPyViQppye11bVlw=="
         }
       },
       "is_incremental": false,
@@ -1054,6 +1474,18 @@
         ".html": {
           "relative_path": "docs/get-started.html",
           "hash": "qDWzSOgvWx1fD0rfrEUGdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/host-and-deploy/hosting-models.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/host-and-deploy/hosting-models.html",
+          "hash": "k+Y9+cxtWdH3IXhTC4rgmw=="
         }
       },
       "is_incremental": false,
@@ -1113,7 +1545,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/javascript-interop.html",
-          "hash": "YN12MGjKtmGyvaErk8oWDg=="
+          "hash": "hJDPeBxh201Whcp9bk4N3Q=="
         }
       },
       "is_incremental": false,
@@ -1149,7 +1581,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/toc.html",
-          "hash": "hZQdw+N4DkRbn+7B7KhHXg=="
+          "hash": "CZIraDEIJ4rS/T5gMxBLxg=="
         }
       },
       "is_incremental": false,
@@ -1253,13 +1685,13 @@
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }

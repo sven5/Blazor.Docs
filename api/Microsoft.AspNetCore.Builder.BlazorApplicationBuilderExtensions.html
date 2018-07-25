@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BlazorOptions
+    <title>Class BlazorApplicationBuilderExtensions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BlazorOptions
+    <meta name="title" content="Class BlazorApplicationBuilderExtensions
    ">
     <meta name="generator" content="docfx 2.37.1.0">
     
@@ -68,63 +68,101 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions">
+            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions">
   
   
-  <h1 id="Microsoft_AspNetCore_Builder_BlazorOptions" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions" class="text-break">Class BlazorOptions
+  <h1 id="Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions" data-uid="Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions" class="text-break">Class BlazorApplicationBuilderExtensions
   </h1>
-  <div class="markdown level0 summary"><p>Provides configuration options to the <a class="xref" href="Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_UseBlazor_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Builder_BlazorOptions_">UseBlazor(IApplicationBuilder, BlazorOptions)</a>
-middleware.</p>
+  <div class="markdown level0 summary"><p>Provides extension methods that add Blazor-related middleware to the ASP.NET pipeline.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">BlazorOptions</span></div>
+    <div class="level1"><span class="xref">BlazorApplicationBuilderExtensions</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Builder.html">Microsoft.AspNetCore.Builder</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.Server.dll</h6>
-  <h5 id="Microsoft_AspNetCore_Builder_BlazorOptions_syntax">Syntax</h5>
+  <h5 id="Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BlazorOptions : Object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class BlazorApplicationBuilderExtensions : Object</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="methods">Methods
   </h3>
   
   
-  <a id="Microsoft_AspNetCore_Builder_BlazorOptions__ctor_" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.#ctor*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_BlazorOptions__ctor" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.#ctor">BlazorOptions()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlazorOptions()</code></pre>
-  </div>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="Microsoft_AspNetCore_Builder_BlazorOptions_ClientAssemblyPath_" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.ClientAssemblyPath*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_BlazorOptions_ClientAssemblyPath" data-uid="Microsoft.AspNetCore.Builder.BlazorOptions.ClientAssemblyPath">ClientAssemblyPath</h4>
-  <div class="markdown level1 summary"><p>Full path to the client assembly.</p>
+  <a id="Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_UseBlazor_" data-uid="Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor*"></a>
+  <h4 id="Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_UseBlazor_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Builder_BlazorOptions_" data-uid="Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Builder.BlazorOptions)">UseBlazor(IApplicationBuilder, BlazorOptions)</h4>
+  <div class="markdown level1 summary"><p>Configures the middleware pipeline to work with Blazor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ClientAssemblyPath { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static void UseBlazor(this IApplicationBuilder app, BlazorOptions options)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">Microsoft.AspNetCore.Builder.IApplicationBuilder</span></td>
+        <td><span class="parametername">app</span></td>
         <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.AspNetCore.Builder.BlazorOptions.html">BlazorOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_UseBlazor_" data-uid="Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor*"></a>
+  <h4 id="Microsoft_AspNetCore_Builder_BlazorApplicationBuilderExtensions_UseBlazor__1_Microsoft_AspNetCore_Builder_IApplicationBuilder_" data-uid="Microsoft.AspNetCore.Builder.BlazorApplicationBuilderExtensions.UseBlazor``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)">UseBlazor&lt;TProgram&gt;(IApplicationBuilder)</h4>
+  <div class="markdown level1 summary"><p>Configures the middleware pipeline to work with Blazor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UseBlazor&lt;TProgram&gt;(this IApplicationBuilder app)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Builder.IApplicationBuilder</span></td>
+        <td><span class="parametername">app</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TProgram</span></td>
+        <td><p>Any type from the client app project. This is used to identify the client app assembly.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -403,7 +403,17 @@ public class BlazorRocksBase : BlazorComponent
 <pre><code class="lang-html">&lt;input type=&quot;checkbox&quot; /&gt;
 </code></pre><p><strong>Additional information on Razor</strong></p>
 <p>For more information on Razor, see the <a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor">Razor syntax reference</a>. Note that not all of the features of Razor are available in Blazor at this time.</p>
-</article>
+<h2 id="raw-html">Raw HTML</h2>
+<p>Blazor normally renders strings using DOM text nodes, which means that any markup they may contain is ignored and treated as literal text. To render raw HTML, wrap the HTML content in a <code>MarkupString</code> value, which is then parsed as HTML or SVG and inserted into the DOM.</p>
+<div class="WARNING"><h5>Warning</h5><p>Rendering raw HTML constructed from any untrusted source is a <strong>security risk</strong> and should be avoided!</p>
+</div>
+<p>The following example shows using the <code>MarkupString</code> type to add a block of static HTML content to the rendered output of a component:</p>
+<pre><code class="lang-html">@((MarkupString)myMarkup)
+
+@functions {
+    string myMarkup = &quot;&lt;p class=&#39;markup&#39;&gt;This is a &lt;em&gt;markup string&lt;/em&gt;.&lt;/p&gt;&quot;;
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

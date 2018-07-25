@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BlazorAppBuilderExtensions
+    <title>Class DotNetObjectRef
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BlazorAppBuilderExtensions
+    <meta name="title" content="Class DotNetObjectRef
    ">
     <meta name="generator" content="docfx 2.37.1.0">
     
@@ -68,37 +68,43 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions">
+            <article class="content wrap" id="_content" data-uid="Microsoft.JSInterop.DotNetObjectRef">
   
   
-  <h1 id="Microsoft_AspNetCore_Builder_BlazorAppBuilderExtensions" data-uid="Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions" class="text-break">Class BlazorAppBuilderExtensions
+  <h1 id="Microsoft_JSInterop_DotNetObjectRef" data-uid="Microsoft.JSInterop.DotNetObjectRef" class="text-break">Class DotNetObjectRef
   </h1>
-  <div class="markdown level0 summary"><p>Provides extension methods that add Blazor-related middleware to the ASP.NET pipeline.</p>
+  <div class="markdown level0 summary"><p>Wraps a JS interop argument, indicating that the value should not be serialized as JSON
+but instead should be passed as a reference.</p>
+<p>To avoid leaking memory, the reference must later be disposed by JS code or by .NET code.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">BlazorAppBuilderExtensions</span></div>
+    <div class="level1"><span class="xref">DotNetObjectRef</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.AspNetCore.Builder.html">Microsoft.AspNetCore.Builder</a></h6>
-  <h6><strong>Assembly</strong>: Microsoft.AspNetCore.Blazor.Server.dll</h6>
-  <h5 id="Microsoft_AspNetCore_Builder_BlazorAppBuilderExtensions_syntax">Syntax</h5>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.JSInterop.html">Microsoft.JSInterop</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.JSInterop.dll</h6>
+  <h5 id="Microsoft_JSInterop_DotNetObjectRef_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class BlazorAppBuilderExtensions : Object</code></pre>
+    <pre><code class="lang-csharp hljs">public class DotNetObjectRef : Object, IDisposable</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Microsoft_AspNetCore_Builder_BlazorAppBuilderExtensions_UseBlazor_" data-uid="Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_BlazorAppBuilderExtensions_UseBlazor_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Builder_BlazorOptions_" data-uid="Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Builder.BlazorOptions)">UseBlazor(IApplicationBuilder, BlazorOptions)</h4>
-  <div class="markdown level1 summary"><p>Configures the middleware pipeline to work with Blazor.</p>
+  <a id="Microsoft_JSInterop_DotNetObjectRef__ctor_" data-uid="Microsoft.JSInterop.DotNetObjectRef.#ctor*"></a>
+  <h4 id="Microsoft_JSInterop_DotNetObjectRef__ctor_System_Object_" data-uid="Microsoft.JSInterop.DotNetObjectRef.#ctor(System.Object)">DotNetObjectRef(Object)</h4>
+  <div class="markdown level1 summary"><p>Constructs an instance of <a class="xref" href="Microsoft.JSInterop.DotNetObjectRef.html">DotNetObjectRef</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UseBlazor(this IApplicationBuilder applicationBuilder, BlazorOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public DotNetObjectRef(object value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -111,61 +117,91 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Builder.IApplicationBuilder</span></td>
-        <td><span class="parametername">applicationBuilder</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Microsoft.AspNetCore.Builder.BlazorOptions.html">BlazorOptions</a></td>
-        <td><span class="parametername">options</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Microsoft_AspNetCore_Builder_BlazorAppBuilderExtensions_UseBlazor_" data-uid="Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_BlazorAppBuilderExtensions_UseBlazor__1_Microsoft_AspNetCore_Builder_IApplicationBuilder_" data-uid="Microsoft.AspNetCore.Builder.BlazorAppBuilderExtensions.UseBlazor``1(Microsoft.AspNetCore.Builder.IApplicationBuilder)">UseBlazor&lt;TProgram&gt;(IApplicationBuilder)</h4>
-  <div class="markdown level1 summary"><p>Configures the middleware pipeline to work with Blazor.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UseBlazor&lt;TProgram&gt;(this IApplicationBuilder applicationBuilder)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Builder.IApplicationBuilder</span></td>
-        <td><span class="parametername">applicationBuilder</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TProgram</span></td>
-        <td><p>Any type from the client app project. This is used to identify the client app assembly.</p>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value being wrapped.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_JSInterop_DotNetObjectRef_Value_" data-uid="Microsoft.JSInterop.DotNetObjectRef.Value*"></a>
+  <h4 id="Microsoft_JSInterop_DotNetObjectRef_Value" data-uid="Microsoft.JSInterop.DotNetObjectRef.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets the object instance represented by this wrapper.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_JSInterop_DotNetObjectRef_Dispose_" data-uid="Microsoft.JSInterop.DotNetObjectRef.Dispose*"></a>
+  <h4 id="Microsoft_JSInterop_DotNetObjectRef_Dispose" data-uid="Microsoft.JSInterop.DotNetObjectRef.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Stops tracking this object reference, allowing it to be garbage collected
+(if there are no other references to it). Once the instance is disposed, it
+can no longer be used in interop calls from JavaScript code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="Microsoft_JSInterop_DotNetObjectRef_EnsureAttachedToJsRuntime_" data-uid="Microsoft.JSInterop.DotNetObjectRef.EnsureAttachedToJsRuntime*"></a>
+  <h4 id="Microsoft_JSInterop_DotNetObjectRef_EnsureAttachedToJsRuntime_Microsoft_JSInterop_IJSRuntime_" data-uid="Microsoft.JSInterop.DotNetObjectRef.EnsureAttachedToJsRuntime(Microsoft.JSInterop.IJSRuntime)">EnsureAttachedToJsRuntime(IJSRuntime)</h4>
+  <div class="markdown level1 summary"><p>Ensures the <a class="xref" href="Microsoft.JSInterop.DotNetObjectRef.html">DotNetObjectRef</a> is associated with the specified <a class="xref" href="Microsoft.JSInterop.IJSRuntime.html">IJSRuntime</a>.
+Developers do not normally need to invoke this manually, since it is called automatically by
+framework code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureAttachedToJsRuntime(IJSRuntime runtime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.JSInterop.IJSRuntime.html">IJSRuntime</a></td>
+        <td><span class="parametername">runtime</span></td>
+        <td><p>The <a class="xref" href="Microsoft.JSInterop.IJSRuntime.html">IJSRuntime</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
 </article>
           </div>
           
