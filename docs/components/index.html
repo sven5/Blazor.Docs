@@ -106,8 +106,8 @@
 &lt;/ChildComponent&gt;
 </code></pre><p><em>ChildComponent.cshtml</em>:</p>
 <pre><code class="lang-cshtml" highlight-lines="7-8">&lt;div class=&quot;panel panel-success&quot;&gt;
-  &lt;div class=&quot;panel-heading&quot;&gt;@Title&lt;/div&gt;
-  &lt;div class=&quot;panel-body&quot;&gt;@ChildContent&lt;/div&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;@Title&lt;/div&gt;
+    &lt;div class=&quot;panel-body&quot;&gt;@ChildContent&lt;/div&gt;
 &lt;/div&gt;
 
 @functions {
@@ -130,8 +130,8 @@
 </code></pre><p>The child component has a <code>ChildContent</code> property that represents a <a href="/api/Microsoft.AspNetCore.Blazor.RenderFragment.html">RenderFragment</a>. The value of <code>ChildContent</code> is positioned in the child component&#39;s markup where the content should be rendered. In the following example, the value of <code>ChildContent</code> is received from the parent component and rendered inside the Bootstrap panel&#39;s <code>panel-body</code>.</p>
 <p><em>ChildComponent.cshtml</em>:</p>
 <pre><code class="lang-cshtml" highlight-lines="3,10-11">&lt;div class=&quot;panel panel-success&quot;&gt;
-  &lt;div class=&quot;panel-heading&quot;&gt;@Title&lt;/div&gt;
-  &lt;div class=&quot;panel-body&quot;&gt;@ChildContent&lt;/div&gt;
+    &lt;div class=&quot;panel-heading&quot;&gt;@Title&lt;/div&gt;
+    &lt;div class=&quot;panel-body&quot;&gt;@ChildContent&lt;/div&gt;
 &lt;/div&gt;
 
 @functions {
