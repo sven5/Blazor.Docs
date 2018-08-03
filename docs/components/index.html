@@ -245,7 +245,25 @@
 </ul>
 <p>Lambda expressions can also be used:</p>
 <pre><code class="lang-cshtml">&lt;button onclick=&quot;@(e =&gt; Console.WriteLine(&quot;Hello, world!&quot;))&quot;&gt;Say hello&lt;/button&gt;
-</code></pre><h2 id="lifecycle-methods">Lifecycle methods</h2>
+</code></pre><h2 id="capture-references-to-components">Capture references to components</h2>
+<p>Component references provide a way get a reference to a component instance so that you can issue commands to that instance, such as <code>Show</code> or <code>Reset</code>. To capture a component reference, add a <code>ref</code> attribute to the child component and then define a field with the same name and the same type as the child component.</p>
+<pre><code class="lang-cshtml">&lt;MyLoginDialog ref=&quot;loginDialog&quot; ... /&gt;
+
+@functions {
+    MyLoginDialog loginDialog;
+
+    void OnSomething()
+    {
+        loginDialog.Show();
+    }
+}
+</code></pre><p>When the component is rendered, the <code>loginDialog</code> field is populated with the <code>MyLoginDialog</code> child component instance. You can then invoke .NET methods on the component instance.</p>
+<div class="IMPORTANT"><h5>Important</h5><p>The <code>loginDialog</code> variable is only populated after the component is rendered and its output includes the <code>MyLoginDialog</code> element because until then there is nothing to reference. To manipulate components references after the component has finished rendering, use the <code>OnAfterRenderAsync</code> or <code>OnAfterRender</code> lifecycle methods.</p>
+</div>
+<p>While capturing component references uses a similar syntax to <a class="xref" href="../javascript-interop.html#capturing-references-to-elements">capturing element references</a>, it isn&#39;t a <a class="xref" href="../javascript-interop.html">JavaScript interop</a> feature. Component references aren&#39;t passed to JavaScript code; they&#39;re only used in .NET code.</p>
+<div class="NOTE"><h5>Note</h5><p>Do <strong>not</strong> use component references to mutate the state of child components. Instead, always use normal declarative parameters to pass data to child components. This causes child components to rerender at the correct times automatically.</p>
+</div>
+<h2 id="lifecycle-methods">Lifecycle methods</h2>
 <p><code>OnInitAsync</code> and <code>OnInit</code> execute code after the component has been initialized. To perform an asynchronous operation, use <code>OnInitAsync</code> and use the <code>await</code> keyword:</p>
 <pre><code class="lang-csharp">protected override async Task OnInitAsync()
 {
