@@ -8,7 +8,7 @@
     <title>Blazor hosting models </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Blazor hosting models ">
-    <meta name="generator" content="docfx 2.37.2.0">
+    <meta name="generator" content="docfx 2.38.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -97,7 +97,7 @@
 <li>Less mature .NET runtime and tooling support (for example, limitations in .NET Standard support and debugging)</li>
 </ul>
 <h2 id="server-side-hosting-model">Server-side hosting model</h2>
-<p>In the server-side hosting model, Blazor is executed on the server from within an ASP.NET COre app. UI updates, event handling, and JavaScript calls are handled over a SignalR connection.</p>
+<p>In the server-side hosting model, Blazor is executed on the server from within an ASP.NET Core app. UI updates, event handling, and JavaScript calls are handled over a SignalR connection.</p>
 <p><img src="https://user-images.githubusercontent.com/1874516/43042867-eaa8bb76-8d3b-11e8-8f1d-60768f86f710.png" alt="Blazor server-side"></p>
 <p>To create a Blazor app using the server-side hosting model, use the &quot;Blazor (Server-side on ASP.NET Core)&quot; template (<code>blazorserver</code> when using <a href="/dotnet/core/tools/dotnet-new">dotnet new</a> at a command prompt). An ASP.NET Core app hosts the Blazor server-side app and sets up the SignalR endpoint where clients connect. The ASP.NET Core app references the Blazor <code>Startup</code> class to both add the server-side  Blazor services and to add the Blazor app to the request handling pipeline:</p>
 <pre><code class="lang-csharp">public class Startup
