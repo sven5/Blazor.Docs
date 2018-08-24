@@ -16,6 +16,9 @@ references:
 - uid: client-side/blazor/get-started
   name: Get started with Blazor
   href: docs/get-started.html
+- uid: client-side/blazor/host-and-deploy/configure-linker
+  name: Configure the Linker
+  href: docs/host-and-deploy/configure-linker.html
 - uid: client-side/blazor/host-and-deploy/hosting-models
   name: Blazor hosting models
   href: docs/host-and-deploy/hosting-models.html

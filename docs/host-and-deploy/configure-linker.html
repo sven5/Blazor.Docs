@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure the Linker </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure the Linker ">
+    <meta name="generator" content="docfx 2.38.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="client-side/blazor/host-and-deploy/configure-linker">
+<h1 id="configure-the-linker">Configure the Linker</h1>
+
+<p>By <a href="https://github.com/guardrex">Luke Latham</a></p>
+<div class="NOTE"><h5>Note</h5><p>Blazor is an unsupported experimental web framework that shouldn&#39;t be used for production workloads at this time.</p>
+</div>
+<p>Blazor performs <a href="https://docs.microsoft.com/dotnet/standard/managed-code#intermediate-language--execution">Intermediate Language (IL)</a> linking during each Release mode build to remove unnecessary IL from the output assemblies.</p>
+<p>You can control assembly linking with either of the following approaches:</p>
+<ul>
+<li>Disable linking globally with an MSBuild property.</li>
+<li>Control linking on a per-assembly basis with a configuration file.</li>
+</ul>
+<h2 id="disable-linking-with-an-msbuild-property">Disable linking with an MSBuild property</h2>
+<p>Linking is enabled by default in Release mode when an app is built, which includes publishing. To disable linking for all assemblies, set the <code>&lt;BlazorLinkOnBuild&gt;</code> MSBuild property to <code>false</code> in the project file:</p>
+<pre><code class="lang-xml">&lt;PropertyGroup&gt;
+  &lt;BlazorLinkOnBuild&gt;false&lt;/BlazorLinkOnBuild&gt;
+&lt;/PropertyGroup&gt;
+</code></pre><h2 id="control-linking-with-a-configuration-file">Control linking with a configuration file</h2>
+<p>Linking can be controlled on a per-assembly basis by providing an XML configuration file and specifying the file as an MSBuild item in the project file.</p>
+<p>The following is an example configuration file (<em>Linker.xml</em>):</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;!--
+  This file specifies which parts of the BCL or Blazor packages must not be
+  stripped by the IL Linker even if they aren&#39;t referenced by user code.
+--&gt;
+&lt;linker&gt;
+  &lt;assembly fullname=&quot;mscorlib&quot;&gt;
+    &lt;!--
+      Preserve the methods in WasmRuntime because its methods are called by 
+      JavaScript client-side code to implement timers.
+      Fixes: https://github.com/aspnet/Blazor/issues/239
+    --&gt;
+    &lt;type fullname=&quot;System.Threading.WasmRuntime&quot; /&gt;
+  &lt;/assembly&gt;
+  &lt;assembly fullname=&quot;System.Core&quot;&gt;
+    &lt;!--
+      System.Linq.Expressions* is required by Json.NET and any 
+      expression.Compile caller. The assembly isn&#39;t stripped.
+    --&gt;
+    &lt;type fullname=&quot;System.Linq.Expressions*&quot; /&gt;
+  &lt;/assembly&gt;
+  &lt;!--
+    In this example, the app&#39;s entry point assembly is listed. The assembly
+    isn&#39;t stripped by the IL Linker.
+  --&gt;
+  &lt;assembly fullname=&quot;MyCoolBlazorApp&quot; /&gt;
+&lt;/linker&gt;
+</code></pre><p>To learn more about the file format for the configuration file, see <a href="https://github.com/mono/linker/blob/master/linker/README.md#syntax-of-xml-descriptor">IL Linker: Syntax of xml descriptor</a>.</p>
+<p>Specify the configuration file in the project file with the <code>BlazorLinkerDescriptor</code> item:</p>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+  &lt;BlazorLinkerDescriptor Include=&quot;Linker.xml&quot; /&gt;
+&lt;/ItemGroup&gt;
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/aspnet/Blazor.Docs/blob/master/docs/host-and-deploy/configure-linker.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

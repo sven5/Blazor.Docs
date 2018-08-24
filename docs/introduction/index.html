@@ -123,7 +123,7 @@
 <li>Routing</li>
 <li>Dependency injection</li>
 </ul>
-<p>All of these features are optional. When one of these features isn&#39;t used in an app, the implementation is stripped out of the app when published by the IL linker.</p>
+<p>All of these features are optional. When one of these features isn&#39;t used in an app, the implementation is stripped out of the app when published by the <a class="xref" href="../host-and-deploy/configure-linker.html">Intermediate Language (IL) Linker</a>.</p>
 <h2 id="code-sharing-and-net-standard">Code sharing and .NET Standard</h2>
 <p>Blazor apps can reference and use existing <a href="https://docs.microsoft.com/dotnet/standard/net-standard">.NET Standard</a> libraries. .NET Standard is a formal specification of .NET APIs that are common across .NET implementations. Blazor supports .NET Standard 2.0 or higher. APIs that aren&#39;t applicable inside a web browser (for example, accessing the file system, opening a socket, threading, and other features) throw <a href="https://docs.microsoft.com/dotnet/api/system.platformnotsupportedexception">PlatformNotSupportedException</a>. .NET Standard class libraries can be shared across server code and in browser-based apps.</p>
 <h2 id="javascript-interop">JavaScript interop</h2>

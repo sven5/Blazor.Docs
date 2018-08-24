@@ -1425,7 +1425,7 @@
       "output": {
         ".html": {
           "relative_path": "community.html",
-          "hash": "1+7nU6qXInvRDx6HfSfgzg=="
+          "hash": "umdZghDv5AbkZrUDMcGt0g=="
         }
       },
       "is_incremental": false,
@@ -1481,6 +1481,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/host-and-deploy/configure-linker.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/host-and-deploy/configure-linker.html",
+          "hash": "FCDmg2ZhmnFVOGaFGyMPJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/host-and-deploy/hosting-models.md",
       "output": {
         ".html": {
@@ -1497,7 +1509,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/host-and-deploy/index.html",
-          "hash": "mvZYm+AzSRCmXMqNA6GyRw=="
+          "hash": "OfYL6jPzB85QF3NIHHJ5AA=="
         }
       },
       "is_incremental": false,
@@ -1533,7 +1545,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/introduction/index.html",
-          "hash": "h7IkpBWWPoBLSqBfKK+vKQ=="
+          "hash": "wI0q4OReDPWo5pYZZNnE2g=="
         }
       },
       "is_incremental": false,
@@ -1581,7 +1593,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/toc.html",
-          "hash": "S5+ndzyDfpODxe0RLpIJUg=="
+          "hash": "p658kn0HJE3dJVjzRkFSXQ=="
         }
       },
       "is_incremental": false,
@@ -1593,7 +1605,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/tutorials/build-your-first-blazor-app.html",
-          "hash": "i1Wr1GUe7LywblYe5IF5gw=="
+          "hash": "HwEz26T9ah6HMbpU+2YB/Q=="
         }
       },
       "is_incremental": false,
@@ -1676,17 +1688,17 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
