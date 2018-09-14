@@ -94,6 +94,8 @@ cd BlazorApp1
 dotnet run
 </code></pre><p>Congrats! You just ran your first Blazor app!</p>
 <p><img src="https://msdnshared.blob.core.windows.net/media/2018/04/blazor-bootstrap-4.png" alt="Blazor app home page"></p>
+<div class="IMPORTANT"><h5>Important</h5><p>The default <em>global.json</em> file included in the Blazor project templates may cause the project to fail to load or run if you don&#39;t have version 2.1.3xx of the .NET Core SDK installed. The <em>global.json</em> file pins the project to 2.1.3xx; so if you don&#39;t have that specific version range installed, the project fails to load or run. The workaround is to remove the <em>global.json</em> file from the project.</p>
+</div>
 <h2 id="help--feedback">Help &amp; feedback</h2>
 <p>Your feedback is especially important to us during this experimental phase for Blazor. If you run into issues or have questions while trying out Blazor, please let us know!</p>
 <ul>
